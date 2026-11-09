@@ -1,0 +1,32 @@
+{
+  "title": "MNT04_M06 XAI 원인 인자 기여도 및 의심 부품 매핑 데이터",
+  "xai_breakdown_sample": {
+    "unit_id": "MNT-HEL-014",
+    "top3_contributors": [
+      {
+        "feature": "vib_gearbox_kurtosis",
+        "contribution_pct": 52.4,
+        "status": "ABNORMAL_HIGH"
+      },
+      {
+        "feature": "vib_engine_rms",
+        "contribution_pct": 31.8,
+        "status": "ABNORMAL_HIGH"
+      },
+      {
+        "feature": "temp_gearbox_bearing",
+        "contribution_pct": 11.2,
+        "status": "WARNING"
+      }
+    ],
+    "counterfactual_test": "1순위 인자 정규화 시 이상 점수 88 -> 24 하강 (검증 통과)",
+    "suspect_part": "메인 기어박스 베어링 마모",
+    "briefing_text": "구동계 첨도 급증 및 베어링 발열 징후가 포착되어 메인 기어박스 베어링 손상이 의심됩니다. 15일 이내 조기 점검을 권고합니다."
+  },
+  "fleet_status_summary": {
+    "NORMAL": 32,
+    "WARNING": 10,
+    "ALARM": 6,
+    "TOTAL": 48
+  }
+}

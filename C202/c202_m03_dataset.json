@@ -1,0 +1,38 @@
+{
+  "project": "C202",
+  "mission": "C202_M03",
+  "title": "메시지 긴급도(Flash/Immediate/Priority/Routine) 기반 1차 우선순위 큐(Queue) 구현",
+  "simulation_duration_sec": 1200,
+  "bandwidth_bps": 2400,
+  "urgency_deadlines_sec": {
+    "FLASH": 10,
+    "IMMEDIATE": 30,
+    "PRIORITY": 120,
+    "ROUTINE": 600
+  },
+  "total_messages": 250,
+  "distribution": {
+    "FLASH": {
+      "count": 25,
+      "pct": 10
+    },
+    "IMMEDIATE": {
+      "count": 50,
+      "pct": 20
+    },
+    "PRIORITY": {
+      "count": 75,
+      "pct": 30
+    },
+    "ROUTINE": {
+      "count": 100,
+      "pct": 40
+    }
+  },
+  "non_preemptive_bottleneck_case": {
+    "scenario": "ROUTINE 행정전문(3200B) 전송 시작 직후(0.5초 경과 시점) 최우선 FLASH(180B) 인입",
+    "expected_fifo_delay_sec": 10.6,
+    "deadline_exceeded": true,
+    "cause": "채널 비선점(Non-preemption)으로 인한 채널 독점 현상"
+  }
+}

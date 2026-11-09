@@ -1,0 +1,53 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M08",
+  "title": "글로벌 공급망 전면 차단 스트레스 시뮬레이션",
+  "scenarios": [
+    {
+      "id": "SC-01",
+      "name": "평시 상태",
+      "blocked_countries": [],
+      "disrupted_parts": 0,
+      "quarterly_start": 420
+    },
+    {
+      "id": "SC-02",
+      "name": "가상국가A 차단",
+      "blocked_countries": [
+        "가상국가A"
+      ],
+      "disrupted_parts": 685,
+      "quarterly_start": 310
+    },
+    {
+      "id": "SC-03",
+      "name": "가상국가A+B 차단",
+      "blocked_countries": [
+        "가상국가A",
+        "가상국가B"
+      ],
+      "disrupted_parts": 1280,
+      "quarterly_start": 210
+    },
+    {
+      "id": "SC-04",
+      "name": "해외 전면 차단",
+      "blocked_countries": [
+        "가상국가A",
+        "가상국가B",
+        "가상국가C"
+      ],
+      "disrupted_parts": 1574,
+      "quarterly_start": 140
+    }
+  ],
+  "simulation_scale": {
+    "total_parts": 2000,
+    "corrupted_records_pct": 2.0,
+    "transient_error_pct": 3.0
+  },
+  "graceful_degradation_trigger": {
+    "time_budget_sec": 0.01,
+    "fallback_mode": "RULE_ONLY"
+  }
+}

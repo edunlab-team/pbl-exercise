@@ -1,0 +1,36 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M06",
+  "title": "후송 헬기/의무대(MEDEVAC) 인계를 위한 9-Line MIST 보고 실습",
+  "stanag_9line_template": {
+    "Line_1": "후송 지점 좌표 (가상 MGRS 52S TE 1234 5678)",
+    "Line_2": "무전 주파수 및 호출부호 (Freq: 45.50MHz, Callsign: Eagle-6)",
+    "Line_3": "사상자 수 및 우선순위 (A-긴급 1명, B-응급 1명)",
+    "Line_4": "필수 특수 장비 (A-없음, B-인공호흡기/감압키트)",
+    "Line_5": "사상자 유형 (L-들것 환자 2명)",
+    "Line_6": "후송 지점 안보 상황 (N-적 위협 없음, E-적 교전 중)",
+    "Line_7": "착륙지 마킹 방법 (C-적색 연막, D-적외선 스트로브)",
+    "Line_8": "사상자 국적 및 신분 (A-아군 군인 2명)",
+    "Line_9": "화생방 오염 여부 (N-비오염)"
+  },
+  "mist_template": {
+    "M": "Mechanism of Injury (박격포 파편상 및 폭풍)",
+    "I": "Injuries Found (우측 대퇴부 절단창, 우측 개방성 기흉)",
+    "S": "Signs & Vitals (BP 85/50, HR 130, RR 28, SpO2 90%)",
+    "T": "Treatment Given (우측 대퇴부 CAT 09:40 체결, 흉부 Vent Seal 부착, TXA 2g IV 10:05)"
+  },
+  "unexpected_questions": [
+    {
+      "q": "지혈대 체결한 지 지금 정확히 몇 분 지났습니까?",
+      "target_answer": "체결 시각 09:40 기준으로 현재 35분 경과했습니다."
+    },
+    {
+      "q": "진통제나 항생제 투약된 내역이 있습니까?",
+      "target_answer": "목시플록사신 400mg 구강 투약되었으며 마약류 진통제는 아직 투약되지 않았습니다."
+    },
+    {
+      "q": "흉부 감압 바늘 천자 후 호흡음 개선이 있었습니까?",
+      "target_answer": "천자 직후 공기 배출 확인되었으며 SpO2가 86%에서 90%로 상승했습니다."
+    }
+  ]
+}

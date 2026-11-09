@@ -1,0 +1,60 @@
+{
+  "project": "C202",
+  "mission": "C202_M05",
+  "title": "네트워크 혼잡도 기반 전송 성공 확률 및 링크 신뢰도 산출 엔진 개발",
+  "feature_names": [
+    "snr_db",
+    "recent_loss_rate",
+    "queue_occupancy_ratio",
+    "packet_size_bytes",
+    "rtt_jitter_sec"
+  ],
+  "sample_feature_records": [
+    {
+      "snr_db": 18.2,
+      "recent_loss_rate": 0.01,
+      "queue_occupancy_ratio": 0.12,
+      "packet_size_bytes": 180,
+      "rtt_jitter_sec": 0.05,
+      "label_success": 1
+    },
+    {
+      "snr_db": 8.5,
+      "recent_loss_rate": 0.18,
+      "queue_occupancy_ratio": 0.65,
+      "packet_size_bytes": 512,
+      "rtt_jitter_sec": 0.42,
+      "label_success": 0
+    },
+    {
+      "snr_db": 14.0,
+      "recent_loss_rate": 0.04,
+      "queue_occupancy_ratio": 0.35,
+      "packet_size_bytes": 220,
+      "rtt_jitter_sec": 0.12,
+      "label_success": 1
+    },
+    {
+      "snr_db": 5.1,
+      "recent_loss_rate": 0.45,
+      "queue_occupancy_ratio": 0.9,
+      "packet_size_bytes": 512,
+      "rtt_jitter_sec": 0.98,
+      "label_success": 0
+    },
+    {
+      "snr_db": 11.2,
+      "recent_loss_rate": 0.1,
+      "queue_occupancy_ratio": 0.45,
+      "packet_size_bytes": 380,
+      "rtt_jitter_sec": 0.22,
+      "label_success": 1
+    }
+  ],
+  "target_thresholds": {
+    "rule_based_far_pct": 28.5,
+    "ml_engine_target_far_pct": 11.0,
+    "ml_engine_target_recall_pct": 92.0,
+    "target_roc_auc": 0.88
+  }
+}

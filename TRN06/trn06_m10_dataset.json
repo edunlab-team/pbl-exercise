@@ -1,0 +1,61 @@
+{
+  "project": "TRN06",
+  "mission": "TRN06_M10",
+  "title": "AAR 관찰·평가 루브릭 및 피드백 표준 가이드북 최종 완성",
+  "guidebook_structure": [
+    {
+      "chapter": 1,
+      "name": "목적 및 적용 범위",
+      "source_mission": "M01"
+    },
+    {
+      "chapter": 2,
+      "name": "용어 정의 및 평가 기본 원칙",
+      "source_mission": "M01, M02"
+    },
+    {
+      "chapter": 3,
+      "name": "관찰 가이드라인 (전·중·후 수칙)",
+      "source_mission": "M03"
+    },
+    {
+      "chapter": 4,
+      "name": "5대 영역 4단계 표준 평가 루브릭",
+      "source_mission": "M02, M07"
+    },
+    {
+      "chapter": 5,
+      "name": "점수 확정 산식 및 코칭 대화 스크립트 SOP",
+      "source_mission": "M04, M05"
+    },
+    {
+      "chapter": 6,
+      "name": "지휘관 1-Page 성과 종합 분석표 및 개선 과제 카드",
+      "source_mission": "M06"
+    },
+    {
+      "chapter": 7,
+      "name": "신뢰도 스트레스 테스트 및 척도 보정 지침",
+      "source_mission": "M07, M08"
+    },
+    {
+      "chapter": 8,
+      "name": "가이드북 개정 관리 SOP 및 인간 최종 책임(HITL)",
+      "source_mission": "미션09, 미션10"
+    }
+  ],
+  "joint_review_agencies": [
+    {
+      "agency": "교리 발전 부서",
+      "check_focus": "합목적성 및 전술 교범 정합성"
+    },
+    {
+      "agency": "법무 참모부",
+      "check_focus": "교전수칙(ROE), 인도주의 법규, 인격권 보호 규정 준수"
+    },
+    {
+      "agency": "야전 작전처",
+      "check_focus": "현장 적용 가능성 및 관찰관 행정 부하 수용성"
+    }
+  ]
+}

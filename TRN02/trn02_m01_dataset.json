@@ -1,0 +1,157 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M01",
+  "title": "방공 식별 및 대드론 교전 수칙 퀴즈 문항 데이터베이스 및 평가 기준 수립",
+  "areas": [
+    "형상식별",
+    "피아식별",
+    "경보보고",
+    "교전통제",
+    "대드론일반"
+  ],
+  "error_types": [
+    "개념 혼동",
+    "피아 오인",
+    "절차 누락"
+  ],
+  "points_rule": {
+    "1": 2,
+    "2": 3,
+    "3": 5
+  },
+  "pass_score_ratio": 0.7,
+  "schema_fields": [
+    "qid",
+    "type",
+    "area",
+    "diff",
+    "stem",
+    "options",
+    "answer",
+    "dist",
+    "accept",
+    "wrong",
+    "sid",
+    "unit",
+    "submitted_at",
+    "situational_context"
+  ],
+  "question_bank_sample": [
+    {
+      "qid": "Q01",
+      "type": "MC",
+      "area": "형상식별",
+      "diff": 1,
+      "stem": "꼬리날개 없이 삼각형 날개를 가진 소형 고정익 실루엣은?",
+      "options": [
+        "쿼드콥터형",
+        "삼각익 고정익형",
+        "회전익 헬기형",
+        "조류"
+      ],
+      "answer": 2
+    },
+    {
+      "qid": "Q05",
+      "type": "MC",
+      "area": "피아식별",
+      "diff": 2,
+      "stem": "식별 신호 응답이 없는 항공기에 대한 올바른 판단은?",
+      "options": [
+        "즉시 적기로 확정",
+        "미확인 항공기로 분류하고 추가 확인",
+        "아군기로 간주",
+        "무시"
+      ],
+      "answer": 2
+    },
+    {
+      "qid": "Q09",
+      "type": "MC",
+      "area": "경보보고",
+      "diff": 1,
+      "stem": "공중 위협 최초 보고에 포함하지 않아도 되는 것은?",
+      "options": [
+        "관측 시각",
+        "방향과 거리",
+        "추정 유형",
+        "관측자 개인 연락처"
+      ],
+      "answer": 4
+    },
+    {
+      "qid": "Q13",
+      "type": "MC",
+      "area": "교전통제",
+      "diff": 1,
+      "stem": "AI 탐지 결과만으로 대응을 결정할 수 있는가?",
+      "options": [
+        "가능하다",
+        "인간 지휘관의 승인이 필요하다",
+        "신뢰도 90% 이상이면 가능",
+        "야간에만 가능"
+      ],
+      "answer": 2
+    },
+    {
+      "qid": "Q21",
+      "type": "SA",
+      "area": "피아식별",
+      "diff": 1,
+      "stem": "아군·적·민간을 구분하는 절차를 무엇이라 하는가?",
+      "accept": [
+        "피아식별",
+        "IFF"
+      ],
+      "wrong": {
+        "표적획득": "개념 혼동",
+        "적기판정": "피아 오인"
+      }
+    },
+    {
+      "qid": "Q29",
+      "type": "ORDER",
+      "area": "경보보고",
+      "diff": 2,
+      "stem": "최초 보고 순서: A 관측 시각, B 방향·거리, C 추정 유형, D 관측자 조치",
+      "answer": "ABCD"
+    }
+  ],
+  "sample_responses_count": 50,
+  "injected_errors_test": [
+    {
+      "error_type": "diff_out_of_range",
+      "record": {
+        "qid": "Q99",
+        "diff": 4
+      },
+      "expected_rule": "diff in [1, 2, 3]"
+    },
+    {
+      "error_type": "invalid_points",
+      "record": {
+        "qid": "Q99",
+        "points": 4
+      },
+      "expected_rule": "points in [2, 3, 5]"
+    },
+    {
+      "error_type": "missing_sid",
+      "record": {
+        "qid": "Q01",
+        "unit": "가상1중대"
+      },
+      "expected_rule": "required field 'sid' missing"
+    },
+    {
+      "error_type": "unmapped_distractor",
+      "record": {
+        "qid": "Q01",
+        "dist": {
+          "1": "미정의유형"
+        }
+      },
+      "expected_rule": "etype in ETYPES"
+    }
+  ]
+}

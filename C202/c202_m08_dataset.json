@@ -1,0 +1,49 @@
+{
+  "project": "C202",
+  "mission": "C202_M08",
+  "title": "대역폭 90% 급감 및 대량 전문 폭주 상황 모의 전송 스트레스 시뮬레이션",
+  "stress_scenarios": [
+    {
+      "name": "기준 평시 상태",
+      "bandwidth_bps": 2400,
+      "traffic_multiplier": 1.0,
+      "jamming_duration_sec": 0
+    },
+    {
+      "name": "전문 트래픽 6배 폭증",
+      "bandwidth_bps": 2400,
+      "traffic_multiplier": 6.0,
+      "jamming_duration_sec": 0
+    },
+    {
+      "name": "대역폭 90% 급감 (240bps)",
+      "bandwidth_bps": 240,
+      "traffic_multiplier": 1.0,
+      "jamming_duration_sec": 0
+    },
+    {
+      "name": "트래픽 6배 + 대역폭 90% 동시 급감",
+      "bandwidth_bps": 240,
+      "traffic_multiplier": 6.0,
+      "jamming_duration_sec": 0
+    },
+    {
+      "name": "120초간 연속 완전 재밍",
+      "bandwidth_bps": 2400,
+      "traffic_multiplier": 2.0,
+      "jamming_duration_sec": 120
+    },
+    {
+      "name": "대역폭 1% 극단 두절 (24bps)",
+      "bandwidth_bps": 24,
+      "traffic_multiplier": 1.0,
+      "jamming_duration_sec": 0
+    }
+  ],
+  "fail_safe_requirements": {
+    "crash_count": 0,
+    "message_loss_rate_pct": 0.0,
+    "accounting_formula": "Delivered_Count + Stored_Count == Total_Generated_Count",
+    "graceful_degradation_target_flash_rate_pct": 90.0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "project": "LOG06",
+  "mission": "LOG06_M04",
+  "title": "가상 전투 손실 물자 기록 및 임시 폐기 보고서 작성 실습(Dry-run)",
+  "combat_records_d_day": [
+    {
+      "event_id": "E1",
+      "category": "L-1",
+      "name": "비상식량",
+      "amount": "8상자",
+      "status": "교전 진지 소모",
+      "evidence": "소모 확인서(정상 서명)",
+      "score_hint": 3
+    },
+    {
+      "event_id": "E2",
+      "category": "L-2",
+      "name": "방호자재",
+      "amount": "5묶음",
+      "status": "적 포격 회피 중 이동 유실",
+      "evidence": "소대장 구두 전언 메모(시각 미상)",
+      "score_hint": -2
+    },
+    {
+      "event_id": "E3",
+      "category": "L-3",
+      "name": "수리부속",
+      "amount": "12세트",
+      "status": "궤도 긴급 복구 소모",
+      "evidence": "소모 확인서(시각 누락, 단일 서명)",
+      "score_hint": 1
+    },
+    {
+      "event_id": "E4",
+      "category": "U-2",
+      "name": "전술단말",
+      "amount": "1점",
+      "status": "적 유기 진지 발견",
+      "evidence": "임시 영수증(비접촉 확인, B-1 격리)",
+      "score_hint": 3
+    },
+    {
+      "event_id": "E5",
+      "category": "U-4",
+      "name": "배터리팩",
+      "amount": "1점",
+      "status": "팽창 외형 식별 격리",
+      "evidence": "격리 확인서(보고시각 미기재, 차폐백)",
+      "score_hint": 0
+    }
+  ],
+  "attribution_scoring_rubric": [
+    {
+      "criterion": "인수자와 다른 확인관의 이중 서명이 날인되었는가",
+      "impact": "인정 지지",
+      "weight": 3
+    },
+    {
+      "criterion": "불출 대장, 현물 재고, 소모 영수증의 수량이 100% 일치하는가",
+      "impact": "인정 지지",
+      "weight": 3
+    },
+    {
+      "criterion": "GPS 좌표 및 4방향 사진 증빙 카드가 첨부되었는가",
+      "impact": "인정 지지",
+      "weight": 2
+    },
+    {
+      "criterion": "교전 상황 보고 타임라인과 소모 시각이 전술적으로 부합하는가",
+      "impact": "인정 지지",
+      "weight": 2
+    },
+    {
+      "criterion": "출처불명 장비에 대해 전원 차단 및 비접촉 격리가 문서로 입증되는가",
+      "impact": "인정 지지",
+      "weight": 3
+    },
+    {
+      "criterion": "구두 보고 후 24시간이 경과하여 사후 작성되었는가",
+      "impact": "불인정 지지",
+      "weight": -3
+    },
+    {
+      "criterion": "인수자와 확인자가 동일인으로 서명되어 직무 분리가 위반되었는가",
+      "impact": "불인정 지지",
+      "weight": -3
+    },
+    {
+      "criterion": "영수증과 인계 확인서 간 물자 수량이 어긋나는가",
+      "impact": "불인정 지지",
+      "weight": -2
+    },
+    {
+      "criterion": "격리 구역 위치 좌표가 누락되었거나 변경 이력이 없는가",
+      "impact": "불인정 지지",
+      "weight": -2
+    },
+    {
+      "criterion": "전문기관 접수 서명이 누락된 채 현장 보관으로 종결되었는가",
+      "impact": "불인정 지지",
+      "weight": -3
+    },
+    {
+      "criterion": "전투 손실에 대한 지휘관 지휘 서명이 부재한가",
+      "impact": "불인정 지지",
+      "weight": -3
+    },
+    {
+      "criterion": "파기 인증 사진에 스케일 바 및 파기 후 잔해 식별이 불가능한가",
+      "impact": "불인정 지지",
+      "weight": -2
+    }
+  ]
+}

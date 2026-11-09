@@ -1,0 +1,123 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M01",
+  "title": "전투현장 전술적 전투사상자 처치(TCCC) 가이드라인 및 모의환자 시나리오 분석",
+  "lessons_learned_cards": [
+    {
+      "id": "L1",
+      "topic": "지연 후송(Prolonged Casualty Care)",
+      "finding": "드론 감시와 지속 포격으로 평균 후송 대기시간이 3시간 이상으로 급증",
+      "implication": "CUF-TFC 전술 분기 명확화 및 지속적 활력징후 모니터링 필수"
+    },
+    {
+      "id": "L2",
+      "topic": "기록 유실에 의한 2차 의료사고",
+      "finding": "현장 지혈대 체결 시각과 진통제 투약 내역 미기재로 후속 의무대 오판 발생",
+      "implication": "처치와 동시 기록을 전담하는 기록자 지정 필수"
+    },
+    {
+      "id": "L3",
+      "topic": "지휘 혼선 및 보고 지연",
+      "finding": "사상자 발생 시 처치에만 몰두하여 상급 부대 9-Line 보고가 15분 이상 지연",
+      "implication": "처치조와 통신자 간 명확한 RACI 역할 분담 필요"
+    },
+    {
+      "id": "L4",
+      "topic": "야간 및 암흑 환경 기록 제한",
+      "finding": "등화관제 및 파편 위협으로 사상자 카드 작성이 지체되고 분실 빈발",
+      "implication": "방수 파우치 및 적색등/야광 마킹 규격화"
+    },
+    {
+      "id": "L5",
+      "topic": "부대 특성별 여건 편차",
+      "finding": "야전 수색대와 기지방호부대 간 가용 의무 물자 및 인력 차이 극심",
+      "implication": "작전 환경 변수를 반영한 가변형 체크리스트 구축"
+    }
+  ],
+  "mock_casualty_cards": [
+    {
+      "id": "CAS-01",
+      "alias": "모의환자 A (대퇴부 복합파편창)",
+      "injury_mechanism": "적 120mm 박격포 파편상",
+      "injuries": "우측 대퇴부 대량 동맥 출혈, 의식 명료하나 불안",
+      "vitals": {
+        "pulse": 128,
+        "bp": "90/60",
+        "rr": 26,
+        "spo2": 94
+      },
+      "tccc_phase": "Care Under Fire -> Tactical Field Care 전환 대상",
+      "evac_time_limit_min": 180,
+      "critical_actions": [
+        "대퇴부 지혈대(CAT) 즉각 적용 및 시각 마킹",
+        "상태 안정 후 3분 내 상급 보고",
+        "보온 포낭 적용"
+      ]
+    },
+    {
+      "id": "CAS-02",
+      "alias": "모의환자 B (긴장성 기흉 의심)",
+      "injury_mechanism": "소총탄 흉부 관통상",
+      "injuries": "우측 흉부 개방성 창상, 호흡곤란 및 경정맥 노창, 청색증",
+      "vitals": {
+        "pulse": 136,
+        "bp": "80/50",
+        "rr": 34,
+        "spo2": 86
+      },
+      "tccc_phase": "Tactical Field Care 즉각 외과적 처치 요구",
+      "evac_time_limit_min": 90,
+      "critical_actions": [
+        "가슴밀봉패치(Chest Seal) 부착",
+        "14G/10G 바늘 감압술(NCD) 관측 기록",
+        "산소/기도 개방 유지"
+      ]
+    },
+    {
+      "id": "CAS-03",
+      "alias": "모의환자 C (폭풍 파편 및 기도 폐쇄 의심)",
+      "injury_mechanism": "드론 자폭 폭탄 폭풍파편",
+      "injuries": "안면부 및 경부 열상, 구강 내 분비물로 인한 상기도 폐쇄 징후, 의식 혼미",
+      "vitals": {
+        "pulse": 110,
+        "bp": "100/70",
+        "rr": 8,
+        "spo2": 89
+      },
+      "tccc_phase": "Care Under Fire 신속 엄폐 후 TFC 기도 확보",
+      "evac_time_limit_min": 60,
+      "critical_actions": [
+        "엄폐 지점 긴급 견인",
+        "구강 이물질 흡인 및 비강인두기도기(NPA) 삽입",
+        "회복 자세 유지"
+      ]
+    }
+  ],
+  "raci_roles": [
+    "처치자(Medic/Combat Lifesaver)",
+    "보조자(Assistant)",
+    "기록자(Recorder)",
+    "통신자(RTO)",
+    "관측자/평가관(Observer)"
+  ],
+  "environmental_variables": {
+    "야전보병부대": {
+      "lighting": "완전 암흑/적색등 한정",
+      "distance_to_lz": "800m 도보 들것 이송",
+      "comms": "전술 무전기 간헐적 음영",
+      "medic_ratio": "분대당 CLS 1명"
+    },
+    "기지방호부대": {
+      "lighting": "기지 비상 조명 및 탐조등",
+      "distance_to_lz": "차량 5분 이송 가능",
+      "comms": "유무선 안정",
+      "medic_ratio": "의무실 구급차 1대 대기"
+    },
+    "전방의무지원대": {
+      "lighting": "실내 수술등 및 발전기 조명",
+      "distance_to_lz": "LZ 인접(50m)",
+      "comms": "위성통신 및 전술망 완비",
+      "medic_ratio": "군의관 및 의무부사관 상주"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "project": "ADM05",
+  "mission": "ADM05_M01",
+  "title": "전투/훈련 AAR 원시 기록 데이터 구조 및 행정 보고 요구 분석",
+  "standard_fields": [
+    "timestamp",
+    "author",
+    "target",
+    "content",
+    "evidence",
+    "action_taken"
+  ],
+  "case_records": [
+    {
+      "case_id": "C1",
+      "timestamp": "2026-10-12 04:15",
+      "author": "제1수색중대 1소대장 중위 김진태",
+      "target": "적 정찰조 3명 (WP 4821)",
+      "content": "WP 4821 일대 능선에서 적 3명 남하 관측.",
+      "evidence": "열상감시장비(TOD) 녹화 영상(파일 #20261012-0415) 확인 완료.",
+      "action_taken": "인접 2소대에 무전 전파 후 감시태세 강화 및 박격포 조명탄 사격 요청."
+    },
+    {
+      "case_id": "C2",
+      "timestamp": null,
+      "author": "제2포병대대 사격지휘관 대위 박상철",
+      "target": "적 박격포 추정 진지 (좌표 3812-7741)",
+      "content": "미상 포격음 4발 청취 후 해당 방향 대포병사격 수행.",
+      "evidence": "음향탐지장비 신호 수신(신뢰도 중급).",
+      "action_taken": "K9 자주포 2문 효력사 4발 즉각 대응사격 실시."
+    },
+    {
+      "case_id": "C3",
+      "timestamp": "2026-10-12 06:40",
+      "author": "제3기계화보병중대 행정보급관 상사 최영호",
+      "target": "보급로 A구간 (국도 43호선)",
+      "content": "적 특작조 매복으로 추정되는 소화기 사격 받음. 피해는 경미함.",
+      "evidence": "운전병 구두 진술 (직접 확인된 탄흔 없음).",
+      "action_taken": "전차 호송 요청 및 보급로 B구간으로 임시 우회."
+    },
+    {
+      "case_id": "C4",
+      "timestamp": "2026-10-12 08:00",
+      "author": "제1기동대대 정비과장 준위 정해성",
+      "target": "K21 장갑차 (차호 104호)",
+      "content": "궤도 파손으로 기동 불가 상태. 현장 수리 시도 중.",
+      "evidence": "정비반장 현장 검사 보고서.",
+      "action_taken": "구난전차 파견 요청."
+    },
+    {
+      "case_id": "C5",
+      "timestamp": "2026-10-12 09:20",
+      "author": "미상 (상황실 메모지 접수)",
+      "target": "적 무인기(드론) 1기",
+      "content": "대대 주둔지 상공 500m 선회 후 북상.",
+      "evidence": "위병소 근무자 2인 육안 목격.",
+      "action_taken": null
+    }
+  ],
+  "doc_chapters": [
+    {
+      "chapter": 1,
+      "title": "총칙: 목적 및 적용 범위"
+    },
+    {
+      "chapter": 2,
+      "title": "전장 일지 데이터 구조 및 기록 요건"
+    },
+    {
+      "chapter": 3,
+      "title": "사실·조치·미확인 3대 분류 기준"
+    },
+    {
+      "chapter": 4,
+      "title": "출처 신뢰도 6단계 판정 매트릭스"
+    },
+    {
+      "chapter": 5,
+      "title": "일일보고서 표준 서식 및 작성 지침"
+    },
+    {
+      "chapter": 6,
+      "title": "중복·왜곡 방지 교차 확인 및 결재 SOP"
+    },
+    {
+      "chapter": 7,
+      "title": "보고 품질 평가 루브릭 및 고부하 운영"
+    },
+    {
+      "chapter": 8,
+      "title": "지침 개정 관리 및 인간 최종 책임(HITL)"
+    }
+  ]
+}

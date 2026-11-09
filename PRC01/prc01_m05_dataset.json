@@ -1,0 +1,32 @@
+{
+  "project": "PRC01",
+  "mission": "PRC01_M05",
+  "title": "위험 점수 산출 및 신뢰도 모델링 데이터셋",
+  "validation_contracts_count": 400,
+  "metrics_summary": {
+    "auc": 0.954,
+    "high_risk_count": 112,
+    "high_risk_violation_rate": 0.94,
+    "caution_count": 108,
+    "caution_violation_rate": 0.65,
+    "attention_count": 180,
+    "attention_violation_rate": 0.05
+  },
+  "confidence_intervals": [
+    {
+      "interval": "90 이상 (높음)",
+      "accuracy": 0.95,
+      "desc": "자동 승인 보조 적합"
+    },
+    {
+      "interval": "50~90 (보통)",
+      "accuracy": 0.89,
+      "desc": "통상 심사"
+    },
+    {
+      "interval": "50 미만 (낮음)",
+      "accuracy": 0.84,
+      "desc": "계약관 정밀 대면 심사 필수"
+    }
+  ]
+}

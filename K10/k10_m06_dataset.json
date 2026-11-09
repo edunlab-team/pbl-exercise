@@ -1,0 +1,38 @@
+{
+  "project": "K10",
+  "mission": "K10_M06",
+  "title": "대화 흐름 설계하기",
+  "thresholds": {
+    "THRESH": 0.15,
+    "DIFF": 0.03
+  },
+  "greeting_keywords": [
+    "안녕",
+    "반가",
+    "하이",
+    "충성",
+    "고마",
+    "감사",
+    "수고",
+    "종료",
+    "끝"
+  ],
+  "scenario_cases": [
+    {
+      "input": "안녕하세요",
+      "expected": "GREETING"
+    },
+    {
+      "input": "휴가 어떻게 신청해요",
+      "expected": "ANSWER"
+    },
+    {
+      "input": "외출이나 면회 되나요",
+      "expected": "ASK_AGAIN"
+    },
+    {
+      "input": "오늘 코스피 주가 알려줘",
+      "expected": "UNKNOWN"
+    }
+  ]
+}

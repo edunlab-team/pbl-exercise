@@ -1,0 +1,30 @@
+{
+  "title": "MNT06_M06 대시보드 지표 및 XAI 설명 데이터셋",
+  "evaluated_parts_count": 300,
+  "top3_attribution_success_rate": 1.0,
+  "sample_shap_waterfall": {
+    "part_id": "P282",
+    "part_name": "유압 펌프 서포트 브래킷",
+    "base_score": 57.9,
+    "predicted_score": 7.2,
+    "score_gap": -50.7,
+    "top3_negative_factors": [
+      {
+        "feature": "certified_material_flag",
+        "impact": -24.5,
+        "desc": "소재 공인 인증서 결측"
+      },
+      {
+        "feature": "operating_load_n",
+        "impact": -16.8,
+        "desc": "작전 최대 하중 과다"
+      },
+      {
+        "feature": "min_wall_thickness_mm",
+        "impact": -11.2,
+        "desc": "최소 벽두께 기준 미달"
+      }
+    ],
+    "actionable_guidance": "소재 공급처 공인 시험 성적서 확보 필수 및 최소 벽두께 1.5mm 이상 형상 설계 보완 필요"
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M01",
+  "title": "전장 수송 자산 및 도로망 네트워크 스키마 정의 데이터셋",
+  "meta": {
+    "network_dimensions": "6 rows x 8 cols (48 nodes, 91 edges)",
+    "asset_count": 12,
+    "request_count": 6
+  },
+  "asset_specs": {
+    "truck": {
+      "name": "중형 트럭",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "weight_t": 10.0
+    },
+    "trailer": {
+      "name": "대형 트레일러",
+      "cap_t": 20.0,
+      "speed_kmh": 40,
+      "cost_km": 2.4,
+      "weight_t": 30.0
+    },
+    "airlift": {
+      "name": "수송기",
+      "cap_t": 12.0,
+      "speed_kmh": 300,
+      "cost_km": 9.0,
+      "weight_t": 0.0
+    }
+  },
+  "schema_rules": {
+    "asset": {
+      "fields": [
+        "asset_id",
+        "kind",
+        "cap_t",
+        "speed_kmh",
+        "cost_km",
+        "status"
+      ],
+      "id_pattern": "^(TRK|TRL|AIR)-\\d{3}$"
+    },
+    "node": {
+      "fields": [
+        "node_id",
+        "x_km",
+        "y_km"
+      ],
+      "id_pattern": "^N\\d{4}$"
+    },
+    "edge": {
+      "fields": [
+        "id",
+        "u",
+        "v",
+        "km",
+        "road",
+        "bridge",
+        "open"
+      ],
+      "id_pattern": "^E\\d{3}$"
+    },
+    "request": {
+      "fields": [
+        "req_id",
+        "dest",
+        "cargo_t",
+        "deadline_h"
+      ],
+      "id_pattern": "^REQ-\\d{4}$"
+    }
+  },
+  "sample_assets": [
+    {
+      "asset_id": "TRK-000",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRK-001",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRK-002",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "운행중"
+    },
+    {
+      "asset_id": "TRK-003",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRK-004",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "정비"
+    },
+    {
+      "asset_id": "TRK-005",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRK-006",
+      "kind": "truck",
+      "cap_t": 5.0,
+      "speed_kmh": 50,
+      "cost_km": 1.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRL-007",
+      "kind": "trailer",
+      "cap_t": 20.0,
+      "speed_kmh": 40,
+      "cost_km": 2.4,
+      "status": "가용"
+    },
+    {
+      "asset_id": "TRL-008",
+      "kind": "trailer",
+      "cap_t": 20.0,
+      "speed_kmh": 40,
+      "cost_km": 2.4,
+      "status": "운행중"
+    },
+    {
+      "asset_id": "TRL-009",
+      "kind": "trailer",
+      "cap_t": 20.0,
+      "speed_kmh": 40,
+      "cost_km": 2.4,
+      "status": "가용"
+    },
+    {
+      "asset_id": "AIR-010",
+      "kind": "airlift",
+      "cap_t": 12.0,
+      "speed_kmh": 300,
+      "cost_km": 9.0,
+      "status": "가용"
+    },
+    {
+      "asset_id": "AIR-011",
+      "kind": "airlift",
+      "cap_t": 12.0,
+      "speed_kmh": 300,
+      "cost_km": 9.0,
+      "status": "정비"
+    }
+  ],
+  "sample_requests": [
+    {
+      "req_id": "REQ-0000",
+      "dest": "N0007",
+      "cargo_t": 12.5,
+      "deadline_h": 2.0
+    },
+    {
+      "req_id": "REQ-0001",
+      "dest": "N0107",
+      "cargo_t": 4.8,
+      "deadline_h": 3.0
+    },
+    {
+      "req_id": "REQ-0002",
+      "dest": "N0207",
+      "cargo_t": 18.2,
+      "deadline_h": 4.0
+    },
+    {
+      "req_id": "REQ-0003",
+      "dest": "N0307",
+      "cargo_t": 8.5,
+      "deadline_h": 2.0
+    },
+    {
+      "req_id": "REQ-0004",
+      "dest": "N0407",
+      "cargo_t": 15.0,
+      "deadline_h": 3.0
+    },
+    {
+      "req_id": "REQ-0005",
+      "dest": "N0507",
+      "cargo_t": 6.2,
+      "deadline_h": 4.0
+    }
+  ],
+  "fault_injection_samples": [
+    {
+      "group": "asset",
+      "target": {
+        "asset_id": "TRUCK-1",
+        "kind": "truck",
+        "cap_t": 5.0
+      },
+      "expected_err": "asset.asset_id: 형식 불일치 'TRUCK-1'"
+    },
+    {
+      "group": "asset",
+      "target": {
+        "asset_id": "TRK-999",
+        "kind": "tank",
+        "cap_t": 50.0
+      },
+      "expected_err": "asset.kind: 허용되지 않은 값 'tank'"
+    },
+    {
+      "group": "edge",
+      "target": {
+        "id": "E000",
+        "u": "N0000",
+        "v": "N9999",
+        "km": 5.0
+      },
+      "expected_err": "edge.v: 존재하지 않는 노드 N9999"
+    },
+    {
+      "group": "edge",
+      "target": {
+        "id": "E001",
+        "u": "N0000",
+        "v": "N0001",
+        "road": "paved"
+      },
+      "expected_err": "edge.km: 필수 필드 누락"
+    },
+    {
+      "group": "edge",
+      "target": {
+        "id": "E002",
+        "u": "N0000",
+        "v": "N0100",
+        "km": 5.0,
+        "bridge": true,
+        "limit_t": null
+      },
+      "expected_err": "edge.limit_t: 교량 하중 제한 누락"
+    },
+    {
+      "group": "request",
+      "target": {
+        "req_id": "REQ-0000",
+        "dest": "N0007",
+        "cargo_t": -2.0,
+        "deadline_h": 2.0
+      },
+      "expected_err": "request.cargo_t: 최소값 0.1 미만"
+    }
+  ],
+  "as_is_steps": [
+    {
+      "step": 1,
+      "name": "수송 요청 접수(전화·메신저)",
+      "asis_min": 20,
+      "tobe_min": 2,
+      "bottleneck": false
+    },
+    {
+      "step": 2,
+      "name": "가용 자산 확인(차량 일지 수기 대조)",
+      "asis_min": 30,
+      "tobe_min": 2,
+      "bottleneck": false
+    },
+    {
+      "step": 3,
+      "name": "도로 상황 확인(구두 보고 취합)",
+      "asis_min": 40,
+      "tobe_min": 5,
+      "bottleneck": true
+    },
+    {
+      "step": 4,
+      "name": "경로 선정(지도 수작업)",
+      "asis_min": 35,
+      "tobe_min": 3,
+      "bottleneck": false
+    },
+    {
+      "step": 5,
+      "name": "배차·적재 계획 작성",
+      "asis_min": 25,
+      "tobe_min": 5,
+      "bottleneck": false
+    },
+    {
+      "step": 6,
+      "name": "수송통제관 승인",
+      "asis_min": 15,
+      "tobe_min": 10,
+      "bottleneck": false
+    },
+    {
+      "step": 7,
+      "name": "운행 기록 수기 작성",
+      "asis_min": 20,
+      "tobe_min": 3,
+      "bottleneck": false
+    },
+    {
+      "step": 8,
+      "name": "지연·사고 보고 작성",
+      "asis_min": 25,
+      "tobe_min": 5,
+      "bottleneck": false
+    },
+    {
+      "step": 9,
+      "name": "운행 실적 집계(엑셀 복사·붙여넣기)",
+      "asis_min": 60,
+      "tobe_min": 1,
+      "bottleneck": true
+    },
+    {
+      "step": 10,
+      "name": "비용 산출(유류·거리 단가 계산)",
+      "asis_min": 45,
+      "tobe_min": 1,
+      "bottleneck": true
+    },
+    {
+      "step": 11,
+      "name": "실적·비용 보고서 작성",
+      "asis_min": 50,
+      "tobe_min": 5,
+      "bottleneck": true
+    },
+    {
+      "step": 12,
+      "name": "상급 부대 보고·수정 요청 반영",
+      "asis_min": 30,
+      "tobe_min": 10,
+      "bottleneck": false
+    }
+  ]
+}

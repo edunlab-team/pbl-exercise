@@ -1,0 +1,17 @@
+{
+  "project": "K06",
+  "mission": "K06_M08",
+  "title": "변경 공지와 빠진 정보 점검하기",
+  "change_notices": [
+    {
+      "change_id": "N08",
+      "target_id": "N01",
+      "change_detail": "휴가 신청 마감 11/5 18시 -> 11/6 12시로 연장"
+    },
+    {
+      "change_id": "N10",
+      "target_id": "N02",
+      "change_detail": "독감 접종 3중대 일정 11/12 09시 -> 11/12 14시로 변경"
+    }
+  ]
+}

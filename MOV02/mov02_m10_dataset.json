@@ -1,0 +1,190 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M10",
+  "title": "수송 관제 통합 시스템 최종 배포 패키지 및 검수 데이터셋",
+  "meta": {
+    "daily_requests_count": 14,
+    "kpi_consistency_pct": 100.0,
+    "manual_chapters_count": 9
+  },
+  "preflight_checklist": [
+    {
+      "item": "Python 버전 검사 (3.10 이상)",
+      "status": "PASS"
+    },
+    {
+      "item": "필수 라이브러리 (numpy, pandas, scipy, sklearn, matplotlib)",
+      "status": "PASS"
+    },
+    {
+      "item": "입력 데이터 디렉터리 및 스키마 파일 존재 확인",
+      "status": "PASS"
+    },
+    {
+      "item": "로그 디렉터리 쓰기 권한 점검",
+      "status": "PASS"
+    }
+  ],
+  "daily_requests_14": [
+    {
+      "time": "08:00",
+      "req_id": "REQ-1001",
+      "dest": "N0107",
+      "cargo_t": 4.5,
+      "deadline_h": 2.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "08:30",
+      "req_id": "REQ-1002",
+      "dest": "N0207",
+      "cargo_t": 18.0,
+      "deadline_h": 3.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "09:10",
+      "req_id": "REQ-1003",
+      "dest": "N0307",
+      "cargo_t": 12.0,
+      "deadline_h": 2.5,
+      "status": "PENDING_APPROVAL",
+      "reason": "TZ2 적 위협 구역 통과"
+    },
+    {
+      "time": "09:40",
+      "req_id": "REQ-1004",
+      "dest": "N0407",
+      "cargo_t": 5.0,
+      "deadline_h": 1.5,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "10:15",
+      "req_id": "REQ-1005",
+      "dest": "N0507",
+      "cargo_t": 22.0,
+      "deadline_h": 4.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "11:00",
+      "req_id": "REQ-1006",
+      "dest": "N0007",
+      "cargo_t": 8.0,
+      "deadline_h": 2.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "11:30",
+      "req_id": "REQ-1007",
+      "dest": "N0107",
+      "cargo_t": 15.0,
+      "deadline_h": 3.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "13:00",
+      "req_id": "REQ-1008",
+      "dest": "N0207",
+      "cargo_t": 6.0,
+      "deadline_h": 2.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "13:45",
+      "req_id": "REQ-1009",
+      "dest": "N0307",
+      "cargo_t": 19.5,
+      "deadline_h": 3.5,
+      "status": "PENDING_APPROVAL",
+      "reason": "교량 하중 한계 근접"
+    },
+    {
+      "time": "14:20",
+      "req_id": "REQ-1010",
+      "dest": "N0407",
+      "cargo_t": 7.5,
+      "deadline_h": 2.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "15:00",
+      "req_id": "REQ-1011",
+      "dest": "N0507",
+      "cargo_t": 10.0,
+      "deadline_h": 2.5,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "15:40",
+      "req_id": "REQ-1012",
+      "dest": "N0007",
+      "cargo_t": 16.0,
+      "deadline_h": 3.0,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "16:10",
+      "req_id": "REQ-1013",
+      "dest": "N0107",
+      "cargo_t": 5.0,
+      "deadline_h": 1.5,
+      "status": "COMPLETED"
+    },
+    {
+      "time": "16:50",
+      "req_id": "REQ-1014",
+      "dest": "N0207",
+      "cargo_t": 12.0,
+      "deadline_h": 2.5,
+      "status": "PENDING_APPROVAL",
+      "reason": "도로 두절로 공중 수송 전환 검토"
+    }
+  ],
+  "kpi_benchmark_table": {
+    "metrics": [
+      {
+        "name": "톤km당 수송 비용 (원/톤km)",
+        "baseline": 1420,
+        "integrated": 1020,
+        "improvement": "28.2% 절감"
+      },
+      {
+        "name": "수송 정시 도착률 (%)",
+        "baseline": 78.5,
+        "integrated": 94.2,
+        "improvement": "15.7%p 향상"
+      },
+      {
+        "name": "위협 구역 피격 손실률 (%)",
+        "baseline": 14.2,
+        "integrated": 2.1,
+        "improvement": "85.2% 감소"
+      },
+      {
+        "name": "소요 차량 편제 대수 (대)",
+        "baseline": 8,
+        "integrated": 2,
+        "improvement": "75.0% 감축"
+      },
+      {
+        "name": "배차 및 실적 보고 소요시간 (분)",
+        "baseline": 395,
+        "integrated": 52,
+        "improvement": "86.8% 단축"
+      }
+    ]
+  },
+  "operations_manual_toc": [
+    "제1장 체계 개요 및 작전 배경",
+    "제2장 시스템 설치 및 가상환경 구성",
+    "제3장 도로망 및 자산 데이터 스키마 관리",
+    "제4장 전장 제약 조건 전처리 및 등록",
+    "제5장 다목적 경로 추천 및 자산 배정",
+    "제6장 관제 대시보드 운용 및 실시간 모니터링",
+    "제7장 수송통제관 2단계 HITL 결재 절차",
+    "제8장 AAR 운행 기록 분석 및 파라미터 재보정",
+    "제9장 장애 대처 및 비상 우회 표준운영절차(SOP)"
+  ]
+}

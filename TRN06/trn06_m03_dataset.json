@@ -1,0 +1,58 @@
+{
+  "project": "TRN06",
+  "mission": "TRN06_M03",
+  "title": "주관적 편향을 배제하고 사실 기반 피드백을 유도하는 관찰 가이드라인 작성",
+  "conflicting_pairs": [
+    {
+      "pair_id": "K1",
+      "observer_A": "10:12 지시 전달 40초 소요",
+      "observer_B": "10:12 접촉 선언, 10:14 지시 전달(약 2분 소요)",
+      "discrepancy_type": "시각 기준 불일치 (접촉 인지 시점 vs 명령 발령 시점)"
+    },
+    {
+      "pair_id": "K2",
+      "observer_A": "2소대 의사결정 '우수'",
+      "observer_B": "2소대 의사결정 '보통'",
+      "discrepancy_type": "척도 해석 차이 (결과 중심 vs 절차 준수 중심)"
+    },
+    {
+      "pair_id": "K3",
+      "observer_A": "3소대 보고 '완비'",
+      "observer_B": "3소대 보고 '2개 항목 누락' (측면 관찰)",
+      "discrepancy_type": "관측 시야 제한 (정면 vs 측면 위치 제약)"
+    },
+    {
+      "pair_id": "K4",
+      "observer_A": "1소대장 표정이 침착하여 신뢰감 있음",
+      "observer_B": "1소대장 분대별 지시 복명이 불분명함",
+      "discrepancy_type": "행동 해석 차이 (인상/태도 관찰 vs 물리적 행동 관찰)"
+    }
+  ],
+  "observation_gap_factors": [
+    {
+      "factor": "야간 및 악천후",
+      "impact": "높음",
+      "mitigation": "열상장비(TOD) 녹화 및 무전망 녹취 교차 대조"
+    },
+    {
+      "factor": "동시 다발 교전 상황",
+      "impact": "높음",
+      "mitigation": "관찰 구역 분담 및 1인 1부대 고정 배치"
+    },
+    {
+      "factor": "차폐 지형 시야 차단",
+      "impact": "중간",
+      "mitigation": "교전 전술 드론 및 정찰 카메라 백업"
+    },
+    {
+      "factor": "평가관 후광 효과(Halo Effect)",
+      "impact": "중간",
+      "mitigation": "과거 기록 열람 금지 및 블라인드 채점"
+    },
+    {
+      "factor": "평가관 최근 효과(Recency Effect)",
+      "impact": "중간",
+      "mitigation": "훈련 전 구간 타임스탬프 기반 균등 기록 강제"
+    }
+  ]
+}

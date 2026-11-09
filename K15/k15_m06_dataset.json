@@ -1,0 +1,97 @@
+{
+  "project": "K15",
+  "mission": "K15_M06",
+  "title": "반복 고장 찾기",
+  "recurring_failures": [
+    {
+      "equipment": "세미나실 B 빔프로젝터",
+      "occurrences": [
+        {
+          "id": "H01",
+          "date": "08-03",
+          "symptom": "화면 깜빡임",
+          "status": "완료",
+          "days": 2
+        },
+        {
+          "id": "H06",
+          "date": "09-02",
+          "symptom": "전원 꺼짐",
+          "status": "완료",
+          "days": 3
+        },
+        {
+          "id": "H16",
+          "date": "10-08",
+          "symptom": "화면 깜빡임",
+          "status": "완료",
+          "days": 4
+        }
+      ],
+      "intervals": [
+        30,
+        36
+      ]
+    },
+    {
+      "equipment": "체력단련실 러닝머신 1호 벨트",
+      "occurrences": [
+        {
+          "id": "H03",
+          "date": "08-17",
+          "symptom": "벨트 이탈",
+          "status": "완료",
+          "days": 4
+        },
+        {
+          "id": "H11",
+          "date": "09-21",
+          "symptom": "벨트 이탈",
+          "status": "완료",
+          "days": 6
+        },
+        {
+          "id": "H20",
+          "date": "10-21",
+          "symptom": "벨트 이탈",
+          "status": "처리 중",
+          "days": "-"
+        }
+      ],
+      "intervals": [
+        35,
+        30
+      ]
+    },
+    {
+      "equipment": "대대 강당 무선 마이크",
+      "occurrences": [
+        {
+          "id": "H05",
+          "date": "08-31",
+          "symptom": "수신 불량",
+          "status": "완료",
+          "days": 2
+        },
+        {
+          "id": "H13",
+          "date": "09-28",
+          "symptom": "수신 불량",
+          "status": "완료",
+          "days": 3
+        },
+        {
+          "id": "H21",
+          "date": "10-22",
+          "symptom": "수신 불량",
+          "status": "접수",
+          "days": "-"
+        }
+      ],
+      "intervals": [
+        28,
+        24
+      ]
+    }
+  ]
+}

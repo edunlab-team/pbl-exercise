@@ -1,0 +1,17 @@
+{
+  "title": "MNT10_M10 이동정비반 MLOps 통합 재학습 및 표준 운영 데이터",
+  "retrain_pipeline_spec": {
+    "champion_model_version": "v1.2.0",
+    "challenger_model_version": "v1.3.0",
+    "champion_mape_pct": 12.5,
+    "challenger_mape_pct": 11.2,
+    "retrain_tolerance_pct": 0.05,
+    "promotion_decision": "PROMOTED_CHALLENGER_TO_CHAMPION"
+  },
+  "fail_safe_checks": {
+    "model_error_fallback_to_standard_schedule": "PASSED (100%)",
+    "unauthorized_auto_approval_count": 0,
+    "audit_trail_integrity_verified": "PASSED",
+    "deliis_api_compatibility": "READY"
+  }
+}

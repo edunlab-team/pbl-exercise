@@ -1,0 +1,13 @@
+{
+  "recalibration_results": {
+    "mae_before": 1.69,
+    "mae_after": 0.54,
+    "improvement_rate": 68.0
+  },
+  "roi_analysis_targets": {
+    "annual_savings_won": "3.3억원(가정)",
+    "time_reduction_rate": 24.6,
+    "alert_recall_rate": 86.0,
+    "roi_percent": 64.9
+  }
+}

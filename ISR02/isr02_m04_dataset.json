@@ -1,0 +1,57 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M04",
+  "description": "생성형 AI 조작 흔적 및 10종 복합 기만 시나리오 평가 데이터셋",
+  "threat_scenarios_10": [
+    {
+      "id": 1,
+      "name": "수치 과장 (Quantity Exaggeration)",
+      "target_recall": 0.9
+    },
+    {
+      "id": 2,
+      "name": "지역 바꾸기 (Region Swap)",
+      "target_recall": 0.88
+    },
+    {
+      "id": 3,
+      "name": "기동 방향 뒤집기 (Directional Inversion)",
+      "target_recall": 0.86
+    },
+    {
+      "id": 4,
+      "name": "과거 전훈 이미지 재활용 (Past Image Reuse)",
+      "target_recall": 0.95
+    },
+    {
+      "id": 5,
+      "name": "이미지 합성 노이즈 (Image Splicing/Noise)",
+      "target_recall": 0.92
+    },
+    {
+      "id": 6,
+      "name": "생성형 AI 격자 무늬 (Generative Checkerboard)",
+      "target_recall": 0.94
+    },
+    {
+      "id": 7,
+      "name": "선동형 문체 패턴 (Propaganda Stylometry)",
+      "target_recall": 0.89
+    },
+    {
+      "id": 8,
+      "name": "조직적 동시 유포 (Coordinated Bot Blast)",
+      "target_recall": 0.97
+    },
+    {
+      "id": 9,
+      "name": "짜깁기 전황 조작 (Collage Manipulation)",
+      "target_recall": 0.85
+    },
+    {
+      "id": 10,
+      "name": "과거 게시물 재작성 (Historical Post Rewriting)",
+      "target_recall": 0.87
+    }
+  ]
+}

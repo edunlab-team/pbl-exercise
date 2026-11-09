@@ -1,0 +1,156 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M07",
+  "title": "수송통제관 HITL 2단계 승인 및 SHA-256 해시체인 감사 데이터셋",
+  "meta": {
+    "pending_routes_count": 6,
+    "bypass_attacks_count": 10,
+    "audit_chain_length": 25,
+    "tamper_detection_rate": 1.0
+  },
+  "ai_recommendations_6": [
+    {
+      "rec_id": "REC-01",
+      "dest": "N0007",
+      "is_threat_pass": false,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "rec_id": "REC-02",
+      "dest": "N0107",
+      "is_threat_pass": true,
+      "risk_zone": "TZ1",
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "rec_id": "REC-03",
+      "dest": "N0207",
+      "is_threat_pass": false,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "rec_id": "REC-04",
+      "dest": "N0307",
+      "is_threat_pass": true,
+      "risk_zone": "TZ2",
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "rec_id": "REC-05",
+      "dest": "N0407",
+      "is_threat_pass": false,
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "rec_id": "REC-06",
+      "dest": "N0507",
+      "is_threat_pass": true,
+      "risk_zone": "TZ3",
+      "status": "PENDING_REVIEW"
+    }
+  ],
+  "rbac_permissions_matrix": {
+    "CLERK": {
+      "can_draft": true,
+      "can_approve_l1": false,
+      "can_approve_l2": false,
+      "can_reject": false
+    },
+    "CONTROLLER": {
+      "can_draft": false,
+      "can_approve_l1": true,
+      "can_approve_l2": false,
+      "can_reject": true
+    },
+    "SENIOR_CONTROLLER": {
+      "can_draft": false,
+      "can_approve_l1": false,
+      "can_approve_l2": true,
+      "can_reject": true
+    }
+  },
+  "bypass_attack_cases_10": [
+    {
+      "id": "ATTACK-01",
+      "type": "self_approval",
+      "actor": "CLERK",
+      "action": "기안자의 1차 결재 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-02",
+      "type": "skip_level_1",
+      "actor": "SENIOR_CONTROLLER",
+      "action": "1차 결재 없이 최종 결재 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-03",
+      "type": "unauthorized_role",
+      "actor": "DRIVER",
+      "action": "운전병 계정의 결재 승인 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-04",
+      "type": "missing_reason",
+      "actor": "CONTROLLER",
+      "action": "위험 경로 강행 사유 미입력 승인",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-05",
+      "type": "expired_session",
+      "actor": "CONTROLLER",
+      "action": "세션 만료 후 결재 요청",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-06",
+      "type": "tampered_payload",
+      "actor": "ATTACKER",
+      "action": "결재 승인 후 목적지 노드 변조 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-07",
+      "type": "double_decision",
+      "actor": "CONTROLLER",
+      "action": "이미 승인 완료된 건 재결재",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-08",
+      "type": "rejection_no_reason",
+      "actor": "CONTROLLER",
+      "action": "반려 사유 미입력 반려 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-09",
+      "type": "cross_unit_approval",
+      "actor": "CONTROLLER_B",
+      "action": "타 부대 결재선 무단 승인 시도",
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "ATTACK-10",
+      "type": "bypass_threat_check",
+      "actor": "CLERK",
+      "action": "위험 구역 강행 플래그 누락 기안",
+      "expected": "BLOCKED"
+    }
+  ],
+  "sample_audit_chain_25": {
+    "genesis_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sample_block_5": {
+      "index": 5,
+      "timestamp": "2026-10-08T09:15:30Z",
+      "actor": "CONTROLLER-01",
+      "action": "REJECT",
+      "reason": "TZ2 적 위협 고조로 우회로 탐색 요망",
+      "prev_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "block_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0"
+    }
+  }
+}

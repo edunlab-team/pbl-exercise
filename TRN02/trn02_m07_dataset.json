@@ -1,0 +1,61 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M07",
+  "title": "이의 제기 문항 및 서술형 답변에 대한 교관 수동 채점(HITL) 검토 인터페이스 설계",
+  "pending_review_queue": [
+    {
+      "review_id": "REV_01",
+      "sid": "S012",
+      "qid": "Q21",
+      "type": "이의제기",
+      "raw_response": "아군적군 구분",
+      "ai_suggestion": 0,
+      "instructor_verdict": "인정(2점)",
+      "reason": "유의미한 동의어 인정"
+    },
+    {
+      "review_id": "REV_02",
+      "sid": "S045",
+      "qid": "Q24",
+      "type": "서술형",
+      "raw_response": "중대장(지휘관)",
+      "ai_suggestion": 2,
+      "instructor_verdict": "승인(2점)",
+      "reason": "지휘권자 정답 인정"
+    },
+    {
+      "review_id": "REV_03",
+      "sid": "S078",
+      "qid": "Q11",
+      "type": "이의제기",
+      "raw_response": "추정임을 밝힘",
+      "ai_suggestion": 0,
+      "instructor_verdict": "인정(3점)",
+      "reason": "교범 기준 정확 부합"
+    }
+  ],
+  "audit_chain_sample": [
+    {
+      "seq": 1,
+      "action": "SUBMIT",
+      "sid": "S001",
+      "prev_hash": "0000000000000000",
+      "hash": "a1b2c3d4..."
+    },
+    {
+      "seq": 2,
+      "action": "AUTO_GRADE",
+      "sid": "S001",
+      "prev_hash": "a1b2c3d4...",
+      "hash": "e5f6g7h8..."
+    },
+    {
+      "seq": 7,
+      "action": "INSTRUCTOR_OVERRIDE",
+      "sid": "S012",
+      "tamper_test": true,
+      "prev_hash": "...",
+      "hash": "TAMPERED_HASH"
+    }
+  ]
+}

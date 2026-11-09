@@ -1,0 +1,44 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M10",
+  "title": "오프라인 야전 재고 관리 SaaS 최종 패키징 및 공급망 재난 식별 데이터셋",
+  "meta": {
+    "suppliers": [
+      "가상업체1",
+      "가상업체2",
+      "가상업체3",
+      "가상업체4",
+      "가상업체5",
+      "가상업체6"
+    ],
+    "self_check_items": 11,
+    "e2e_scenarios": 4
+  },
+  "disruption_candidates": [
+    {
+      "supplier": "가상업체1",
+      "risk_type": "납품비율급감",
+      "supply_ratio_cut": 0.35,
+      "alert": true
+    },
+    {
+      "supplier": "가상업체3",
+      "risk_type": "리드타임지연",
+      "lead_time_days": 28,
+      "alert": true
+    }
+  ],
+  "self_check_checklist": [
+    "1. 전술 단말 오프라인 입력 검증 및 멱등성 보장",
+    "2. MAD 기반 동적 이상치 필터링",
+    "3. P2P 델타 동기화 모듈",
+    "4. PN-Counter CRDT 병합 엔진",
+    "5. 버전 벡터 기반 동시성 충돌 탐지",
+    "6. HMAC 및 해시 체인 무결성 검증",
+    "7. 실시간 상태 관제 대시보드",
+    "8. HITL 군수관 수동 병합 워크플로우",
+    "9. 과부하 회복력 및 기능 축소 정책",
+    "10. YAML 기반 룰셋 재튜닝 체계",
+    "11. 공급망 재난 징후 마이닝 파이프라인"
+  ]
+}

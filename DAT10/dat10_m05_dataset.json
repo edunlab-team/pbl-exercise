@@ -1,0 +1,77 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M05",
+  "title": "오프라인 위변조 방지 암호화 해시 및 데이터 무결성 검증 데이터셋",
+  "meta": {
+    "secret_key": "demo_secret_tactical_key_2026",
+    "algorithm": "HMAC-SHA256"
+  },
+  "mutations_test_suite": [
+    {
+      "type": "qty_modify",
+      "is_malicious": true,
+      "desc": "불출 수량 10 -> 100 변조",
+      "weight": 0.3
+    },
+    {
+      "type": "record_delete",
+      "is_malicious": true,
+      "desc": "중간 트랜잭션 레코드 무단 삭제",
+      "weight": 0.4
+    },
+    {
+      "type": "order_swap",
+      "is_malicious": true,
+      "desc": "체인 순서 앞뒤 교체",
+      "weight": 0.25
+    },
+    {
+      "type": "fake_insert",
+      "is_malicious": true,
+      "desc": "서명 없는 가짜 트랜잭션 끼워넣기",
+      "weight": 0.35
+    },
+    {
+      "type": "replay_attack",
+      "is_malicious": true,
+      "desc": "과거 정상 패킷 재전송 공격",
+      "weight": 0.3
+    },
+    {
+      "type": "tail_trunc",
+      "is_malicious": true,
+      "desc": "최신 트랜잭션 꼬리 절단",
+      "weight": 0.35
+    },
+    {
+      "type": "clock_skew",
+      "is_malicious": false,
+      "desc": "단말 하드웨어 시계 오차(+-15분)",
+      "weight": 0.05
+    },
+    {
+      "type": "safe_retry",
+      "is_malicious": false,
+      "desc": "동일 멱등 키 정상 재전송",
+      "weight": 0.0
+    },
+    {
+      "type": "admin_adjust",
+      "is_malicious": false,
+      "desc": "승인된 군수관 재고 실사 조정",
+      "weight": 0.05
+    }
+  ],
+  "sample_chain": [
+    {
+      "index": 0,
+      "hash": "0000000000000000",
+      "payload": "genesis_block"
+    },
+    {
+      "index": 1,
+      "hash": "a4f8c9d2e1b30567",
+      "payload": "보급소A-00001|I01|in|50"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "project": "K13",
+  "mission": "K13_M05",
+  "title": "추천 성능 평가하기",
+  "summary": "4대 추천 모델(인기도·CBF·User-CF·SVD) 종합 평가 및 계급별 성능 교차 분석 데이터",
+  "dataset": {
+    "eval_ground_truth_count": 120,
+    "overall_model_comparison": [
+      {
+        "model": "인기도 (Baseline)",
+        "precision_at_5": 0.057,
+        "recall_at_5": 0.142,
+        "coverage_pct": 20.0
+      },
+      {
+        "model": "유사 장병 협업 필터링 (User-CF)",
+        "precision_at_5": 0.133,
+        "recall_at_5": 0.333,
+        "coverage_pct": 78.0
+      },
+      {
+        "model": "잠재 요인 행렬 분해 (TruncatedSVD)",
+        "precision_at_5": 0.15,
+        "recall_at_5": 0.375,
+        "coverage_pct": 92.0
+      },
+      {
+        "model": "콘텐츠 기반 필터링 (CBF)",
+        "precision_at_5": 0.203,
+        "recall_at_5": 0.508,
+        "coverage_pct": 100.0
+      }
+    ],
+    "project_goal": {
+      "baseline_multiplier_target": 2.0,
+      "achieved_multiplier": 3.56,
+      "status": "PASS"
+    },
+    "rank_group_performance": {
+      "enlisted_soldiers": {
+        "sample_count": 40,
+        "best_precision_at_5": 0.21
+      },
+      "nco_officers": {
+        "sample_count": 12,
+        "best_precision_at_5": 0.192
+      },
+      "commissioned_officers": {
+        "sample_count": 8,
+        "best_precision_at_5": 0.188
+      }
+    }
+  }
+}

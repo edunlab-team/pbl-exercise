@@ -1,0 +1,514 @@
+{
+  "project_id": "WEL03",
+  "mission_id": "WEL03_M01",
+  "description": "야전 급수원 가상 수질 센서 15개 필드 스키마 검증용 데이터셋",
+  "sources": [
+    {
+      "id": "W01",
+      "type": "water_truck",
+      "x_km": 1.0,
+      "y_km": 2.0
+    },
+    {
+      "id": "W02",
+      "type": "water_truck",
+      "x_km": 3.5,
+      "y_km": 1.2
+    },
+    {
+      "id": "W03",
+      "type": "purification_unit",
+      "x_km": 2.2,
+      "y_km": 4.1
+    },
+    {
+      "id": "W04",
+      "type": "purification_unit",
+      "x_km": 5.0,
+      "y_km": 3.3
+    },
+    {
+      "id": "W05",
+      "type": "well",
+      "x_km": 0.8,
+      "y_km": 5.6
+    },
+    {
+      "id": "W06",
+      "type": "well",
+      "x_km": 4.4,
+      "y_km": 6.0
+    },
+    {
+      "id": "W07",
+      "type": "river_intake",
+      "x_km": 6.3,
+      "y_km": 1.8
+    },
+    {
+      "id": "W08",
+      "type": "river_intake",
+      "x_km": 6.9,
+      "y_km": 4.9
+    }
+  ],
+  "normal_samples_20": [
+    {
+      "source_id": "W01",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 7.21,
+        "turbidity_ntu": 0.26,
+        "residual_cl_ppm": 0.74,
+        "heavy_metal_ppm": 1.48,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 98,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.2,
+        "comm_delay_sec": 0.4
+      }
+    },
+    {
+      "source_id": "W01",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.19,
+        "turbidity_ntu": 0.28,
+        "residual_cl_ppm": 0.72,
+        "heavy_metal_ppm": 1.52,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 97,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.5,
+        "comm_delay_sec": 0.5
+      }
+    },
+    {
+      "source_id": "W02",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 7.18,
+        "turbidity_ntu": 0.31,
+        "residual_cl_ppm": 0.68,
+        "heavy_metal_ppm": 1.55,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 95,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "cloudy",
+        "loc_err_m": 2.1,
+        "comm_delay_sec": 0.8
+      }
+    },
+    {
+      "source_id": "W03",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 7.02,
+        "turbidity_ntu": 0.19,
+        "residual_cl_ppm": 0.86,
+        "heavy_metal_ppm": 1.18,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 99,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 0.8,
+        "comm_delay_sec": 0.3
+      }
+    },
+    {
+      "source_id": "W04",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 6.98,
+        "turbidity_ntu": 0.22,
+        "residual_cl_ppm": 0.82,
+        "heavy_metal_ppm": 1.25,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 92,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.0,
+        "comm_delay_sec": 0.4
+      }
+    },
+    {
+      "source_id": "W05",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 6.82,
+        "turbidity_ntu": 0.44,
+        "residual_cl_ppm": 0.48,
+        "heavy_metal_ppm": 2.95,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 88,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "rain",
+        "loc_err_m": 3.4,
+        "comm_delay_sec": 1.2
+      }
+    },
+    {
+      "source_id": "W06",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 6.78,
+        "turbidity_ntu": 0.48,
+        "residual_cl_ppm": 0.52,
+        "heavy_metal_ppm": 3.1,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 85,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "rain",
+        "loc_err_m": 2.8,
+        "comm_delay_sec": 1.1
+      }
+    },
+    {
+      "source_id": "W07",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 7.32,
+        "turbidity_ntu": 0.58,
+        "residual_cl_ppm": 0.61,
+        "heavy_metal_ppm": 2.05,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 91,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.9,
+        "comm_delay_sec": 0.6
+      }
+    },
+    {
+      "source_id": "W08",
+      "timestamp": "2026-10-01T08:00:00Z",
+      "quality": {
+        "ph": 7.28,
+        "turbidity_ntu": 0.54,
+        "residual_cl_ppm": 0.59,
+        "heavy_metal_ppm": 1.98,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 93,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.7,
+        "comm_delay_sec": 0.5
+      }
+    },
+    {
+      "source_id": "W01",
+      "timestamp": "2026-10-01T10:00:00Z",
+      "quality": {
+        "ph": 7.23,
+        "turbidity_ntu": 0.24,
+        "residual_cl_ppm": 0.76,
+        "heavy_metal_ppm": 1.45,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 96,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.1,
+        "comm_delay_sec": 0.3
+      }
+    },
+    {
+      "source_id": "W02",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.15,
+        "turbidity_ntu": 0.33,
+        "residual_cl_ppm": 0.65,
+        "heavy_metal_ppm": 1.58,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 94,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "cloudy",
+        "loc_err_m": 2.3,
+        "comm_delay_sec": 0.9
+      }
+    },
+    {
+      "source_id": "W03",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.05,
+        "turbidity_ntu": 0.18,
+        "residual_cl_ppm": 0.88,
+        "heavy_metal_ppm": 1.15,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 98,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 0.9,
+        "comm_delay_sec": 0.4
+      }
+    },
+    {
+      "source_id": "W04",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.0,
+        "turbidity_ntu": 0.21,
+        "residual_cl_ppm": 0.84,
+        "heavy_metal_ppm": 1.22,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 91,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.2,
+        "comm_delay_sec": 0.5
+      }
+    },
+    {
+      "source_id": "W05",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 6.8,
+        "turbidity_ntu": 0.46,
+        "residual_cl_ppm": 0.46,
+        "heavy_metal_ppm": 3.02,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 87,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "rain",
+        "loc_err_m": 3.6,
+        "comm_delay_sec": 1.4
+      }
+    },
+    {
+      "source_id": "W06",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 6.75,
+        "turbidity_ntu": 0.51,
+        "residual_cl_ppm": 0.49,
+        "heavy_metal_ppm": 3.15,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 84,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "rain",
+        "loc_err_m": 3.0,
+        "comm_delay_sec": 1.3
+      }
+    },
+    {
+      "source_id": "W07",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.3,
+        "turbidity_ntu": 0.6,
+        "residual_cl_ppm": 0.58,
+        "heavy_metal_ppm": 2.1,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 90,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 2.0,
+        "comm_delay_sec": 0.7
+      }
+    },
+    {
+      "source_id": "W08",
+      "timestamp": "2026-10-01T09:00:00Z",
+      "quality": {
+        "ph": 7.25,
+        "turbidity_ntu": 0.56,
+        "residual_cl_ppm": 0.57,
+        "heavy_metal_ppm": 2.02,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 92,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.8,
+        "comm_delay_sec": 0.6
+      }
+    },
+    {
+      "source_id": "W01",
+      "timestamp": "2026-10-01T11:00:00Z",
+      "quality": {
+        "ph": 7.2,
+        "turbidity_ntu": 0.25,
+        "residual_cl_ppm": 0.75,
+        "heavy_metal_ppm": 1.5,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 95,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 1.0,
+        "comm_delay_sec": 0.3
+      }
+    },
+    {
+      "source_id": "W02",
+      "timestamp": "2026-10-01T10:00:00Z",
+      "quality": {
+        "ph": 7.12,
+        "turbidity_ntu": 0.35,
+        "residual_cl_ppm": 0.62,
+        "heavy_metal_ppm": 1.62,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 93,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "cloudy",
+        "loc_err_m": 2.4,
+        "comm_delay_sec": 1.0
+      }
+    },
+    {
+      "source_id": "W03",
+      "timestamp": "2026-10-01T10:00:00Z",
+      "quality": {
+        "ph": 7.08,
+        "turbidity_ntu": 0.17,
+        "residual_cl_ppm": 0.9,
+        "heavy_metal_ppm": 1.12,
+        "ecoli_cfu": 0
+      },
+      "sensor_status": {
+        "battery_pct": 97,
+        "is_fault": false,
+        "fault_type": "none"
+      },
+      "tactical_env": {
+        "weather": "clear",
+        "loc_err_m": 0.8,
+        "comm_delay_sec": 0.4
+      }
+    }
+  ],
+  "fault_injection_tests_5": [
+    {
+      "test_id": "ERR_01_PH_RANGE",
+      "description": "pH 물리적 허용 범위(0~14) 초과 오류",
+      "data": {
+        "ph": 15.2
+      }
+    },
+    {
+      "test_id": "ERR_02_TYPE_MISMATCH",
+      "description": "탁도 NTU 필드에 문자열 입력 오류",
+      "data": {
+        "turbidity_ntu": "HIGH_TURBIDITY"
+      }
+    },
+    {
+      "test_id": "ERR_03_NEGATIVE_CHLORINE",
+      "description": "잔류염소 음수값 입력 오류",
+      "data": {
+        "residual_cl_ppm": -0.5
+      }
+    },
+    {
+      "test_id": "ERR_04_ISO_TIMESTAMP",
+      "description": "타임스탬프 ISO-8601 형식 위반",
+      "data": {
+        "timestamp": "2026/10/01 08:00"
+      }
+    },
+    {
+      "test_id": "ERR_05_MISSING_REQUIRED",
+      "description": "급수원 ID(source_id) 필수 필드 누락",
+      "data": {
+        "source_id": null
+      }
+    }
+  ]
+}

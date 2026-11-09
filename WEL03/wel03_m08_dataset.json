@@ -1,0 +1,83 @@
+{
+  "project_id": "WEL03",
+  "mission_id": "WEL03_M08",
+  "sequence": 8,
+  "description": "WEL03 미션 8 실습 및 검증을 위한 교육용 가상 데이터셋",
+  "metadata": {
+    "sources_count": 48,
+    "sample_period_hours": 72,
+    "sampling_interval_min": 60
+  },
+  "params": [
+    "ph",
+    "turbidity_ntu",
+    "residual_cl_ppm",
+    "heavy_metal_ppm",
+    "ecoli_cfu"
+  ],
+  "limits": {
+    "ph": {
+      "caution": [
+        6.5,
+        8.5
+      ],
+      "danger": [
+        5.8,
+        9.0
+      ]
+    },
+    "turbidity_ntu": {
+      "caution": 1.0,
+      "danger": 2.0
+    },
+    "residual_cl_ppm": {
+      "caution": 0.2,
+      "danger": 0.1
+    },
+    "heavy_metal_ppm": {
+      "caution": 5.0,
+      "danger": 10.0
+    },
+    "ecoli_cfu": {
+      "caution": 1,
+      "danger": 1
+    }
+  },
+  "benchmark_cases": [
+    {
+      "id": "CASE_08_01",
+      "type": "baseline",
+      "status": "SAFE",
+      "expected": "PASS"
+    },
+    {
+      "id": "CASE_08_02",
+      "type": "sewage_leak",
+      "status": "DANGER",
+      "expected": "ALARM"
+    },
+    {
+      "id": "CASE_08_03",
+      "type": "chemical_threat",
+      "status": "DANGER",
+      "expected": "ALARM"
+    },
+    {
+      "id": "CASE_08_04",
+      "type": "sensor_stuck",
+      "status": "FAULT",
+      "expected": "REPAIR"
+    },
+    {
+      "id": "CASE_08_05",
+      "type": "transient_spike",
+      "status": "NOISE",
+      "expected": "FILTERED"
+    }
+  ],
+  "stress_load": {
+    "target_sources": 48,
+    "concurrent_pollution": 30,
+    "target_throughput_eps": 5000
+  }
+}

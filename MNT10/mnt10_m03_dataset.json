@@ -1,0 +1,24 @@
+{
+  "title": "MNT10_M03 거리 기준 1차 이동정비반 배정 Baseline 및 30일 시뮬레이션 샘플",
+  "sim_days": 30,
+  "total_requests": 240,
+  "baseline_rule": "First-Come First-Served (접수 순서) + Nearest Team (최근접 거리)",
+  "summary_metrics": {
+    "avg_response_hours": 3.82,
+    "avg_downtime_hours": 9.45,
+    "tier1_avg_downtime_hours": 11.2,
+    "tier1_over_4h_delay_rate_pct": 28.5,
+    "team_load_rate_std": 0.365,
+    "gini_coefficient": 0.42
+  },
+  "eda_charts_spec": [
+    "도착 소요시간 분포 히스토그램",
+    "정비반별 일일 부하율 박스플롯",
+    "요청 위치 및 이동정비반 기지 공간 분포도",
+    "장비 중요도별 평균 대기시간 막대그래프",
+    "지연 요인(거리, 고장난이도, 대기시간) 상관관계 히트맵",
+    "장비-고장 유형별 파레토(ABC) 누적 지연 곡선",
+    "일자별 누적 가동중단 시간 추이선",
+    "정비반별 출동 횟수 편차 분포도"
+  ]
+}

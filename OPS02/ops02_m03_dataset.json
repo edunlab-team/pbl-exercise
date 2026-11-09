@@ -1,0 +1,56 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M03",
+  "description": "최단거리(유클리드·마할라노비스) 매칭 Baseline 1차 융합 및 게이트 민감도 데이터셋",
+  "gate_radii_test": [
+    0.5,
+    1.0,
+    2.0,
+    3.5,
+    5.0
+  ],
+  "scan_25s_data": {
+    "timestamp": "2026-11-03T09:00:25.000Z",
+    "alerts": [
+      {
+        "sensor_id": "RADAR_01",
+        "enu_x": 45.12,
+        "enu_y": 32.4,
+        "sigma_x": 0.08,
+        "sigma_y": 0.08
+      },
+      {
+        "sensor_id": "RADAR_02",
+        "enu_x": 45.28,
+        "enu_y": 32.31,
+        "sigma_x": 0.1,
+        "sigma_y": 0.1
+      },
+      {
+        "sensor_id": "EOIR_01",
+        "enu_x": 45.16,
+        "enu_y": 32.38,
+        "sigma_x": 0.03,
+        "sigma_y": 0.03
+      },
+      {
+        "sensor_id": "ACOUSTIC_01",
+        "enu_x": 45.6,
+        "enu_y": 32.85,
+        "sigma_x": 0.35,
+        "sigma_y": 0.35
+      }
+    ],
+    "expected_fused_track": {
+      "track_id": "TRK_FUSED_001",
+      "fused_x": 45.17,
+      "fused_y": 32.38,
+      "contributing_sensors": 4,
+      "mahalanobis_d": 1.82
+    }
+  },
+  "baseline_targets": {
+    "min_f1_score": 0.7,
+    "max_latency_ms": 50.0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M09",
+  "title": "개선 사항을 반영한 드론 침입 대응 재훈련(Re-run) 및 대응 시간 단축 검증",
+  "rerun_targets": {
+    "time_reduction_rate": "이전 대비 30% 이상 단축",
+    "error_reduction_rate": "이전 대비 50% 이상 감소",
+    "adherence_target": "95% 이상"
+  },
+  "comparison_metrics": [
+    "최초 탐지~보고 소요시간 (초)",
+    "통제실 접수~경보 발령 시간 (초)",
+    "대응조 출동 완료 시간 (초)",
+    "전파 누락 및 오보고 건수 (건)",
+    "SOP 절차 위반 건수 (건)"
+  ]
+}

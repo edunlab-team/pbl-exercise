@@ -1,0 +1,656 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M01",
+  "description": "전장 SNS 텍스트/이미지 게시물 수집 및 OSINT 17개 필드 스키마 유효성 검증용 데이터셋",
+  "schema_spec": {
+    "required_fields": [
+      "post_id",
+      "platform",
+      "account_id",
+      "posted_at",
+      "text",
+      "media",
+      "collection",
+      "claim",
+      "assessment"
+    ],
+    "total_field_count": 17,
+    "assess_status_enum": [
+      "unassessed"
+    ]
+  },
+  "normal_samples_20": [
+    {
+      "post_id": "P0000",
+      "platform": "telegram",
+      "account_id": "ACC_MED00",
+      "posted_at": "2026-05-01T14:30:00Z",
+      "text": "가상 전투 구역 B-1 인근에서 적 장갑차 2대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60000"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-00",
+        "delay_min": 15
+      },
+      "claim": {
+        "region_code": "B-1",
+        "geo_uncertainty_km": 1.5
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0001",
+      "platform": "x",
+      "account_id": "ACC_MED01",
+      "posted_at": "2026-05-02T14:30:00Z",
+      "text": "가상 전투 구역 B-2 인근에서 적 장갑차 3대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60001"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-01",
+        "delay_min": 17
+      },
+      "claim": {
+        "region_code": "B-2",
+        "geo_uncertainty_km": 1.7
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0002",
+      "platform": "telegram",
+      "account_id": "ACC_MED02",
+      "posted_at": "2026-05-03T14:30:00Z",
+      "text": "가상 전투 구역 B-3 인근에서 적 장갑차 4대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60002"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-02",
+        "delay_min": 19
+      },
+      "claim": {
+        "region_code": "B-3",
+        "geo_uncertainty_km": 1.9
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0003",
+      "platform": "x",
+      "account_id": "ACC_MED03",
+      "posted_at": "2026-05-04T14:30:00Z",
+      "text": "가상 전투 구역 B-4 인근에서 적 장갑차 5대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60003"
+        }
+      ],
+      "forwarded_from": "P0002",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-03",
+        "delay_min": 21
+      },
+      "claim": {
+        "region_code": "B-4",
+        "geo_uncertainty_km": 2.1
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0004",
+      "platform": "telegram",
+      "account_id": "ACC_MED04",
+      "posted_at": "2026-05-05T14:30:00Z",
+      "text": "가상 전투 구역 B-5 인근에서 적 장갑차 6대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60004"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-04",
+        "delay_min": 23
+      },
+      "claim": {
+        "region_code": "B-5",
+        "geo_uncertainty_km": 2.3
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0005",
+      "platform": "x",
+      "account_id": "ACC_MED05",
+      "posted_at": "2026-05-06T14:30:00Z",
+      "text": "가상 전투 구역 B-1 인근에서 적 장갑차 7대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60005"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-05",
+        "delay_min": 25
+      },
+      "claim": {
+        "region_code": "B-1",
+        "geo_uncertainty_km": 2.5
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0006",
+      "platform": "telegram",
+      "account_id": "ACC_MED06",
+      "posted_at": "2026-05-07T14:30:00Z",
+      "text": "가상 전투 구역 B-2 인근에서 적 장갑차 8대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60006"
+        }
+      ],
+      "forwarded_from": "P0005",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-06",
+        "delay_min": 27
+      },
+      "claim": {
+        "region_code": "B-2",
+        "geo_uncertainty_km": 2.7
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0007",
+      "platform": "x",
+      "account_id": "ACC_MED07",
+      "posted_at": "2026-05-08T14:30:00Z",
+      "text": "가상 전투 구역 B-3 인근에서 적 장갑차 9대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60007"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-07",
+        "delay_min": 29
+      },
+      "claim": {
+        "region_code": "B-3",
+        "geo_uncertainty_km": 2.9
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0008",
+      "platform": "telegram",
+      "account_id": "ACC_MED08",
+      "posted_at": "2026-05-09T14:30:00Z",
+      "text": "가상 전투 구역 B-4 인근에서 적 장갑차 10대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60008"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-08",
+        "delay_min": 31
+      },
+      "claim": {
+        "region_code": "B-4",
+        "geo_uncertainty_km": 3.1
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0009",
+      "platform": "x",
+      "account_id": "ACC_MED09",
+      "posted_at": "2026-05-01T14:30:00Z",
+      "text": "가상 전투 구역 B-5 인근에서 적 장갑차 11대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60009"
+        }
+      ],
+      "forwarded_from": "P0008",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-09",
+        "delay_min": 33
+      },
+      "claim": {
+        "region_code": "B-5",
+        "geo_uncertainty_km": 3.3
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0010",
+      "platform": "telegram",
+      "account_id": "ACC_MED10",
+      "posted_at": "2026-05-02T14:30:00Z",
+      "text": "가상 전투 구역 B-1 인근에서 적 장갑차 12대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000a"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-10",
+        "delay_min": 35
+      },
+      "claim": {
+        "region_code": "B-1",
+        "geo_uncertainty_km": 3.5
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0011",
+      "platform": "x",
+      "account_id": "ACC_MED11",
+      "posted_at": "2026-05-03T14:30:00Z",
+      "text": "가상 전투 구역 B-2 인근에서 적 장갑차 13대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000b"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-11",
+        "delay_min": 37
+      },
+      "claim": {
+        "region_code": "B-2",
+        "geo_uncertainty_km": 3.7
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0012",
+      "platform": "telegram",
+      "account_id": "ACC_MED12",
+      "posted_at": "2026-05-04T14:30:00Z",
+      "text": "가상 전투 구역 B-3 인근에서 적 장갑차 14대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000c"
+        }
+      ],
+      "forwarded_from": "P0011",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-12",
+        "delay_min": 39
+      },
+      "claim": {
+        "region_code": "B-3",
+        "geo_uncertainty_km": 3.9
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0013",
+      "platform": "x",
+      "account_id": "ACC_MED13",
+      "posted_at": "2026-05-05T14:30:00Z",
+      "text": "가상 전투 구역 B-4 인근에서 적 장갑차 15대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000d"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-13",
+        "delay_min": 41
+      },
+      "claim": {
+        "region_code": "B-4",
+        "geo_uncertainty_km": 4.1
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0014",
+      "platform": "telegram",
+      "account_id": "ACC_MED14",
+      "posted_at": "2026-05-06T14:30:00Z",
+      "text": "가상 전투 구역 B-5 인근에서 적 장갑차 16대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000e"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-14",
+        "delay_min": 43
+      },
+      "claim": {
+        "region_code": "B-5",
+        "geo_uncertainty_km": 4.3
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0015",
+      "platform": "x",
+      "account_id": "ACC_MED15",
+      "posted_at": "2026-05-07T14:30:00Z",
+      "text": "가상 전투 구역 B-1 인근에서 적 장갑차 17대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f6000f"
+        }
+      ],
+      "forwarded_from": "P0014",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-15",
+        "delay_min": 45
+      },
+      "claim": {
+        "region_code": "B-1",
+        "geo_uncertainty_km": 4.5
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0016",
+      "platform": "telegram",
+      "account_id": "ACC_MED16",
+      "posted_at": "2026-05-08T14:30:00Z",
+      "text": "가상 전투 구역 B-2 인근에서 적 장갑차 18대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60010"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-16",
+        "delay_min": 47
+      },
+      "claim": {
+        "region_code": "B-2",
+        "geo_uncertainty_km": 4.7
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0017",
+      "platform": "x",
+      "account_id": "ACC_MED17",
+      "posted_at": "2026-05-09T14:30:00Z",
+      "text": "가상 전투 구역 B-3 인근에서 적 장갑차 19대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60011"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-17",
+        "delay_min": 49
+      },
+      "claim": {
+        "region_code": "B-3",
+        "geo_uncertainty_km": 4.9
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0018",
+      "platform": "telegram",
+      "account_id": "ACC_MED18",
+      "posted_at": "2026-05-01T14:30:00Z",
+      "text": "가상 전투 구역 B-4 인근에서 적 장갑차 20대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60012"
+        }
+      ],
+      "forwarded_from": "P0017",
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-18",
+        "delay_min": 51
+      },
+      "claim": {
+        "region_code": "B-4",
+        "geo_uncertainty_km": 5.1
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    },
+    {
+      "post_id": "P0019",
+      "platform": "x",
+      "account_id": "ACC_MED19",
+      "posted_at": "2026-05-02T14:30:00Z",
+      "text": "가상 전투 구역 B-5 인근에서 적 장갑차 21대 기동 목격 제보.",
+      "lang": "ko",
+      "media": [
+        {
+          "type": "image",
+          "width": 32,
+          "height": 32,
+          "phash": "a1b2c3d4e5f60013"
+        }
+      ],
+      "forwarded_from": null,
+      "collection": {
+        "method": "public_api",
+        "collected_at": "2026-05-09T15:00:00Z",
+        "collector": "COL-19",
+        "delay_min": 53
+      },
+      "claim": {
+        "region_code": "B-5",
+        "geo_uncertainty_km": 5.3
+      },
+      "assessment": {
+        "status": "unassessed"
+      }
+    }
+  ],
+  "fault_injection_5": [
+    {
+      "case_id": "ERR_01",
+      "error_type": "disallowed_platform",
+      "field": "platform",
+      "invalid_value": "unknown_app"
+    },
+    {
+      "case_id": "ERR_02",
+      "error_type": "timestamp_format_mismatch",
+      "field": "posted_at",
+      "invalid_value": "2026/05/01 10:00"
+    },
+    {
+      "case_id": "ERR_03",
+      "error_type": "missing_required_key",
+      "field": "collection.method",
+      "invalid_value": null
+    },
+    {
+      "case_id": "ERR_04",
+      "error_type": "invalid_phash_format",
+      "field": "media[0].phash",
+      "invalid_value": "XYZ_NOT_HEX"
+    },
+    {
+      "case_id": "ERR_05",
+      "error_type": "empty_text_body",
+      "field": "text",
+      "invalid_value": ""
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M07",
+  "description": "HITL 2인 승인 워크플로우 및 해시 체인 감사 로그 무결성 데이터셋",
+  "high_threat_case_P0310": {
+    "post_id": "P0310",
+    "threat_impact": "HIGH",
+    "claim": "탄약고 폭파 주장 및 아군 퇴각 허위 선동",
+    "required_approval": "DUAL_OFFICER_CONSENSUS",
+    "timeout_escalation_min": 15
+  },
+  "sample_audit_chain_block": {
+    "index": 6,
+    "prev_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "action": "BLOCK",
+    "officer_a": "OFF_012",
+    "officer_b": "OFF_007",
+    "hash": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
+  }
+}

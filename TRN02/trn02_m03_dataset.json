@@ -1,0 +1,70 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M03",
+  "title": "선다형 및 단답형 방공 퀴즈 자동 채점 Baseline 로직 구현",
+  "grading_rules": {
+    "MC": "exact_match",
+    "ORDER": "exact_match",
+    "SA": "fuzzy_levenshtein_similarity >= 0.75"
+  },
+  "fuzzy_match_samples": [
+    {
+      "qid": "Q21",
+      "input": "피아식벌",
+      "target": "피아식별",
+      "similarity": 0.75,
+      "correct": true,
+      "note": "단순 오탈자 구제"
+    },
+    {
+      "qid": "Q22",
+      "input": "삼각잉",
+      "target": "삼각익",
+      "similarity": 0.67,
+      "correct": false,
+      "note": "임계값 미달"
+    },
+    {
+      "qid": "Q25",
+      "input": "오경보임",
+      "target": "오경보",
+      "similarity": 1.0,
+      "correct": true,
+      "note": "정제 후 완전 일치"
+    },
+    {
+      "qid": "Q27",
+      "input": "콰드콥터",
+      "target": "쿼드콥터",
+      "similarity": 0.75,
+      "correct": true,
+      "note": "단순 모음 오타 구제"
+    }
+  ],
+  "threshold_performance_benchmark": [
+    {
+      "threshold": 0.6,
+      "accuracy": 0.942,
+      "false_positives": 18,
+      "status": "오경보 과다"
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.978,
+      "false_positives": 6,
+      "status": "주의"
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.99,
+      "false_positives": 0,
+      "status": "최적"
+    },
+    {
+      "threshold": 0.85,
+      "accuracy": 0.925,
+      "false_positives": 0,
+      "status": "미탐 과다"
+    }
+  ]
+}

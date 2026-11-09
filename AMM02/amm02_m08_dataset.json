@@ -1,0 +1,59 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M08",
+  "stress_scenarios": [
+    {
+      "scenario_id": 1,
+      "name": "통신 지연 (12시간)",
+      "packet_loss": 0.0,
+      "delay_hrs": 12
+    },
+    {
+      "scenario_id": 2,
+      "name": "일일 보고 누락 (20%)",
+      "packet_loss": 0.2,
+      "delay_hrs": 0
+    },
+    {
+      "scenario_id": 3,
+      "name": "긴급 수요 서지 (300%)",
+      "demand_surge_factor": 3.0
+    },
+    {
+      "scenario_id": 4,
+      "name": "다발적 저장고 피격 불능",
+      "disabled_bays": [
+        "BAY-02"
+      ]
+    },
+    {
+      "scenario_id": 5,
+      "name": "복합 카오스 장애 (누락+지연+서지)",
+      "packet_loss": 0.25,
+      "delay_hrs": 18,
+      "demand_surge_factor": 2.5
+    }
+  ],
+  "scale_benchmark": {
+    "units_tested": 80,
+    "dashboard_render_time_sec": 1.18,
+    "benchmark_limit_sec": 1.5
+  },
+  "safety_factor_tradeoff": [
+    {
+      "factor": 1.0,
+      "shortage_recall": 0.91,
+      "false_alarm_rate": 0.04
+    },
+    {
+      "factor": 1.1,
+      "shortage_recall": 0.98,
+      "false_alarm_rate": 0.09
+    },
+    {
+      "factor": 1.2,
+      "shortage_recall": 1.0,
+      "false_alarm_rate": 0.18
+    }
+  ]
+}

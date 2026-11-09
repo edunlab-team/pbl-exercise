@@ -1,0 +1,39 @@
+{
+  "mission_id": "C204_M09",
+  "description": "AAR 사후검토 오판정 12건 원인 분석 로그 및 신규 운용 데이터셋 100건 회귀 시험 제원",
+  "failed_cases_12": [
+    {
+      "id": "ERR_01",
+      "type": "미탐(FN)",
+      "threat": "VC",
+      "cause": "고주파 포먼트 보존 및 화자 음문 임베딩 유사성(0.78)",
+      "solution": "화자 유사도 임계값 상향"
+    },
+    {
+      "id": "ERR_02",
+      "type": "오경보(FP)",
+      "threat": "진짜",
+      "cause": "기동 차량 공진으로 인한 저주파 비정상 돌출",
+      "solution": "스펙트럼 차감 배수 적응형 조정"
+    },
+    {
+      "id": "ERR_03",
+      "type": "오경보(FP)",
+      "threat": "진짜",
+      "cause": "인근 포성 충격 잡음으로 인한 프레임 불연속성 착오",
+      "solution": "충격 잡음 리미터 임계치 보정"
+    },
+    {
+      "id": "ERR_04",
+      "type": "미탐(FN)",
+      "threat": "Replay",
+      "cause": "고품질 녹음 장비 사용 및 스피커 왜곡 미미",
+      "solution": "배음 대 잡음비(HNR) 민감도 가중"
+    }
+  ],
+  "regression_dataset_spec": {
+    "total_new_clips": 100,
+    "target_metric_improvement": "Accuracy +3.0%p",
+    "previous_error_recurrence": 0
+  }
+}

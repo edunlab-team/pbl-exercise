@@ -1,0 +1,32 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M05",
+  "description": "센서 신뢰도 가중치 매트릭스 및 항적 융합 신뢰도 지수 엔진 검증 데이터셋",
+  "weather_weights": {
+    "CLEAR": {
+      "RADAR": 0.95,
+      "EO_IR": 0.95,
+      "ACOUSTIC": 0.8
+    },
+    "FOG": {
+      "RADAR": 0.92,
+      "EO_IR": 0.5,
+      "ACOUSTIC": 0.75
+    },
+    "HEAVY_RAIN": {
+      "RADAR": 0.8,
+      "EO_IR": 0.35,
+      "ACOUSTIC": 0.4
+    }
+  },
+  "confidence_levels": {
+    "HIGH": "score >= 80",
+    "MED": "50 <= score < 80",
+    "LOW": "score < 50"
+  },
+  "stress_test_conditions": {
+    "false_alarm_multiplier": 4.0,
+    "active_jamming": true,
+    "target_high_precision": 0.9
+  }
+}

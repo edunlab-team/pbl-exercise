@@ -1,0 +1,48 @@
+{
+  "title": "MNT04_M03 3-시그마 Baseline 및 파레토 부품 소모 데이터 샘플",
+  "baseline_thresholds": {
+    "vib_rms_threshold": 6.85,
+    "kurtosis_threshold": 4.5,
+    "temp_oil_threshold": 105.0,
+    "detection_rate_pct": 91.2,
+    "precision_pct": 74.5,
+    "high_load_false_alarm_rate_pct": 22.4
+  },
+  "pareto_parts_summary": [
+    {
+      "rank": 1,
+      "part_name": "메인 기어박스 베어링",
+      "grade": "A",
+      "cost_pct": 42.5,
+      "cum_pct": 42.5
+    },
+    {
+      "rank": 2,
+      "part_name": "엔진 고압 연료 펌프",
+      "grade": "A",
+      "cost_pct": 25.1,
+      "cum_pct": 67.6
+    },
+    {
+      "rank": 3,
+      "part_name": "유압 순환 모터",
+      "grade": "A",
+      "cost_pct": 14.8,
+      "cum_pct": 82.4
+    },
+    {
+      "rank": 4,
+      "part_name": "오일 쿨러 팬 어셈블리",
+      "grade": "B",
+      "cost_pct": 8.5,
+      "cum_pct": 90.9
+    },
+    {
+      "rank": 5,
+      "part_name": "온도 센서 하네스",
+      "grade": "C",
+      "cost_pct": 4.1,
+      "cum_pct": 95.0
+    }
+  ]
+}

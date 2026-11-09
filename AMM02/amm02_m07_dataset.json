@@ -1,0 +1,52 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M07",
+  "storage_bays_capacity": [
+    {
+      "bay_id": "BAY-01",
+      "capacity_pallets": 100,
+      "current_occupancy": 85,
+      "compatible_groups": [
+        "Group-A",
+        "Group-B"
+      ]
+    },
+    {
+      "bay_id": "BAY-02",
+      "capacity_pallets": 120,
+      "current_occupancy": 90,
+      "compatible_groups": [
+        "Group-A"
+      ]
+    },
+    {
+      "bay_id": "BAY-03",
+      "capacity_pallets": 80,
+      "current_occupancy": 40,
+      "compatible_groups": [
+        "Group-C",
+        "Group-D"
+      ]
+    }
+  ],
+  "optimization_comparison": {
+    "first_in_first_out": {
+      "movement_index": 100.0,
+      "space_waste_rate": 0.24,
+      "position_score": 62.0
+    },
+    "integer_programming_optimal": {
+      "movement_index": 68.5,
+      "space_waste_rate": 0.08,
+      "position_score": 91.5
+    }
+  },
+  "hitl_approval_log_sample": {
+    "request_id": "REQ-OPT-2026-088",
+    "commander": "군수참모 중령 홍길동",
+    "decision": "APPROVED",
+    "timestamp": "2026-11-01T17:45:00Z",
+    "prev_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "current_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+  }
+}

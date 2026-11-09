@@ -1,0 +1,64 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M01",
+  "title": "군사시설 대상 드론 침입 유형(정찰/자폭/투하) 분석 및 대응 시나리오 수립",
+  "case_cards": [
+    {
+      "card_id": "C1",
+      "time_weather": "05:40, 옅은 안개",
+      "situation": "기지 동문 초소 상공에서 프로펠러 소음 청음. 방향을 특정하지 못해 '소음 식별'만 통제실에 보고.",
+      "identified_problems": "방위 및 추정 고도 누락 보고로 통제실의 경보 발령 지연(약 2분 소요)",
+      "type_suspicion": "정찰 의심 (청음)"
+    },
+    {
+      "card_id": "C2",
+      "time_weather": "11:15, 맑음",
+      "situation": "유류저장소 상공에서 쿼드콥터 드론 1기가 선회 비행하며 하부에 물체 매달고 있는 것 목격.",
+      "identified_problems": "현장 경계병이 유류저장소 방호벽으로 즉각 대피 유도하지 못함",
+      "type_suspicion": "폭발물 투하 의심"
+    },
+    {
+      "card_id": "C3",
+      "time_weather": "14:20, 돌풍",
+      "situation": "지휘통제실 방면으로 고속 직진 접근하는 고정익 드론 관측. 경계조가 즉각 사격을 결심하지 못하고 승인만 대기.",
+      "identified_problems": "자폭 드론 접근 시 즉각 대피 모드 전환 미흡, 승인 대기로 표적 근접",
+      "type_suspicion": "자폭 공격 의심"
+    },
+    {
+      "card_id": "C4",
+      "time_weather": "18:50, 일몰 직후",
+      "situation": "통신 레이더 기지 상공에 미상 드론 호버링. 경계조가 대응조에 직통 전파했으나 통제실에 보고 누락.",
+      "identified_problems": "방호통제실 경유 없는 임의 전파로 기지 전체 경보 발령 누락",
+      "type_suspicion": "정찰 및 통신 교란 의심"
+    },
+    {
+      "card_id": "C5",
+      "time_weather": "22:10, 야간",
+      "situation": "탄약창 인근에서 드론 불빛 포착. 무전 채널이 타 보고로 점유되어 1분 30초간 통제실 보고 불가.",
+      "identified_problems": "비상 무전 통신망 미확보 및 우선순위 통신 규율 미비",
+      "type_suspicion": "야간 침투 및 폭발물 투하 의심"
+    },
+    {
+      "card_id": "C6",
+      "time_weather": "02:30, 심야",
+      "situation": "기지 본청 상공으로 급강하하는 소형 드론. 당직사령 부재로 대응 수단(재밍건) 사용 결심 지연.",
+      "identified_problems": "임무형 지휘(지휘권 승계) 부재로 핵심 시설 방호 골든타임 상실",
+      "type_suspicion": "자폭 공격 의심"
+    }
+  ],
+  "stages": [
+    "접수(Receipt)",
+    "식별(Identification)",
+    "경보 발령(Alert)",
+    "전파(Dissemination)",
+    "방호 조치(Protection)",
+    "대응·통제(Response)",
+    "해제·인계(Termination & Handover)"
+  ],
+  "departments": [
+    "경계조(Guard Team)",
+    "방호통제실(Control Center)",
+    "대응조(Response Team)",
+    "시설관리반(Facility Team)"
+  ]
+}

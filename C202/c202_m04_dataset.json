@@ -1,0 +1,86 @@
+{
+  "project": "C202",
+  "mission": "C202_M04",
+  "title": "전장 상황 및 전송 실패율에 따른 동적 패킷 스케줄링 및 지능형 재전송 알고리즘 구현",
+  "scenarios": [
+    {
+      "id": 1,
+      "name": "평시 정상 환경",
+      "loss_rate": 0.02,
+      "bandwidth_bps": 2400,
+      "jamming": false
+    },
+    {
+      "id": 2,
+      "name": "버스트 손실 환경",
+      "loss_rate": 0.15,
+      "bandwidth_bps": 2400,
+      "jamming": false
+    },
+    {
+      "id": 3,
+      "name": "국지적 전자전 재밍 60초",
+      "loss_rate": 0.4,
+      "bandwidth_bps": 2400,
+      "jamming": true
+    },
+    {
+      "id": 4,
+      "name": "대역폭 50% 급감",
+      "loss_rate": 0.05,
+      "bandwidth_bps": 1200,
+      "jamming": false
+    },
+    {
+      "id": 5,
+      "name": "중계 홉 지연 급증",
+      "loss_rate": 0.08,
+      "bandwidth_bps": 2400,
+      "extra_rtt_sec": 1.2
+    },
+    {
+      "id": 6,
+      "name": "전술 트래픽 폭증 300%",
+      "loss_rate": 0.05,
+      "bandwidth_bps": 2400,
+      "traffic_mult": 3.0
+    },
+    {
+      "id": 7,
+      "name": "재밍 + 대역폭 50% 급감 복합",
+      "loss_rate": 0.45,
+      "bandwidth_bps": 1200,
+      "jamming": true
+    },
+    {
+      "id": 8,
+      "name": "버스트 손실 + 중계 지연 복합",
+      "loss_rate": 0.25,
+      "bandwidth_bps": 2400,
+      "extra_rtt_sec": 1.5
+    },
+    {
+      "id": 9,
+      "name": "트래픽 폭증 + 재밍 복합",
+      "loss_rate": 0.4,
+      "bandwidth_bps": 2400,
+      "traffic_mult": 3.0,
+      "jamming": true
+    },
+    {
+      "id": 10,
+      "name": "최악 극한 전장 복합 환경",
+      "loss_rate": 0.5,
+      "bandwidth_bps": 1200,
+      "traffic_mult": 4.0,
+      "jamming": true
+    }
+  ],
+  "scheduler_tuning_knobs": {
+    "preemption_enabled": true,
+    "aging_factor": 0.05,
+    "adaptive_rto_min_sec": 0.8,
+    "adaptive_rto_max_sec": 8.0,
+    "degraded_mtu_bytes": 128
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M09",
+  "title": "AAR 기반 대체선 오추천 사례 분석 및 재보정",
+  "failure_cases": [
+    {
+      "case_id": "FAIL-01",
+      "part_no": "P-0012",
+      "pred_candidate": "DOM-005",
+      "true_candidate": "DOM-001",
+      "cause": "치수 허용 오차 과소 감점"
+    },
+    {
+      "case_id": "FAIL-02",
+      "part_no": "P-0034",
+      "pred_candidate": "DOM-012",
+      "true_candidate": "DOM-018",
+      "cause": "후보 중복 배정 충돌"
+    },
+    {
+      "case_id": "FAIL-03",
+      "part_no": "P-0056",
+      "pred_candidate": "DOM-022",
+      "true_candidate": "DOM-025",
+      "cause": "텍스트 유사도 과대평가"
+    }
+  ],
+  "recalibration_options": {
+    "F1": {
+      "name": "가중치 재보정 (규격 비중 상향)",
+      "aar_acc": 0.88,
+      "val_acc": 0.87,
+      "status": "채택"
+    },
+    "F2": {
+      "name": "정밀 치수 패널티 과대 부여",
+      "aar_acc": 0.91,
+      "val_acc": 0.81,
+      "status": "기각(과적합)"
+    },
+    "F3": {
+      "name": "후보 1:1 배정 알고리즘 적용",
+      "aar_acc": 0.89,
+      "val_acc": 0.88,
+      "status": "채택"
+    },
+    "F4": {
+      "name": "근소 차이(0.05 이내) 검토 플래그",
+      "aar_acc": 0.9,
+      "val_acc": 0.89,
+      "status": "채택"
+    }
+  },
+  "uat_checklist": [
+    "1. 고위험 부품 탐지율 85% 이상",
+    "2. 추천 사유 텍스트 가독성",
+    "3. 1:1 배정 충돌 방지",
+    "4. 권한 우회 차단율 100%",
+    "5. 에러 메시지 직관성",
+    "6. 대시보드 로딩 속도",
+    "7. 감사 로그 무결성",
+    "8. 배치 파이프라인 안정성",
+    "9. 설치 스크립트 무결성",
+    "10. 운영 매뉴얼 완성도"
+  ]
+}

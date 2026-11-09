@@ -1,0 +1,54 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M05",
+  "title": "개인별/부대별 방공 취약 영역 식별 및 맞춤형 보충 학습 추천 알고리즘 개발",
+  "difficulty_weights": {
+    "diff_1": 1.5,
+    "diff_2": 1.0,
+    "diff_3": 0.6
+  },
+  "confidence_thresholds": {
+    "HIGH": 0.7,
+    "MEDIUM": 0.5,
+    "LOW": 0.3
+  },
+  "comparison_metrics": {
+    "naive_rule_recommendations": 142,
+    "bayesian_recommendations": 81,
+    "false_alarm_reduction_rate": 0.426,
+    "decision_consistency": 0.912,
+    "roc_auc_score": 0.898
+  },
+  "unit_training_recommendations": [
+    {
+      "unit": "가상1중대",
+      "recommended_area": "형상식별",
+      "vulnerability_prob": 0.72,
+      "confidence": "HIGH"
+    },
+    {
+      "unit": "가상2중대",
+      "recommended_area": "교전통제",
+      "vulnerability_prob": 0.85,
+      "confidence": "HIGH"
+    },
+    {
+      "unit": "가상2중대",
+      "recommended_area": "피아식별",
+      "vulnerability_prob": 0.78,
+      "confidence": "HIGH"
+    },
+    {
+      "unit": "가상3중대",
+      "recommended_area": "경보보고",
+      "vulnerability_prob": 0.74,
+      "confidence": "HIGH"
+    },
+    {
+      "unit": "가상3중대",
+      "recommended_area": "대드론일반",
+      "vulnerability_prob": 0.68,
+      "confidence": "MEDIUM"
+    }
+  ]
+}

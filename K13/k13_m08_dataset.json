@@ -1,0 +1,29 @@
+{
+  "project": "K13",
+  "mission": "K13_M08",
+  "title": "추천 이유 설명하기",
+  "summary": "설명 가능한 AI(XAI) 4대 근거 템플릿 및 타 장병 식별정보(PII) 비식별화 보안 감사 데이터",
+  "dataset": {
+    "total_recommendations_evaluated": 300,
+    "reason_coverage_pct": 100.0,
+    "pii_leakage_count": 0,
+    "explanation_templates": [
+      {
+        "basis": "INTEREST_MATCH",
+        "template": "회원님의 관심 분야인 [{topic}] 핵심 역량을 배양할 수 있는 과정입니다."
+      },
+      {
+        "basis": "CONTENT_SIMILARITY",
+        "template": "과거 만족하신 [{prev_course}] 과정과 학습 맥락이 {sim_pct}% 유사합니다."
+      },
+      {
+        "basis": "PEER_COLLABORATION",
+        "template": "회원님과 유사한 직무 선호도를 가진 동료 장병 {peer_count}명이 높게 평가했습니다."
+      },
+      {
+        "basis": "RANK_FIT",
+        "template": "[{rank}] 복무 단계에서 이수하기 가장 적합한 [{level}] 난이도 교육입니다."
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "project": "LOG06",
+  "mission": "LOG06_M03",
+  "title": "전투 종료 후 사후 정산(Post-settlement)을 위한 표준 보고 양식(Template) 설계",
+  "conflicting_pairs": [
+    {
+      "pair_id": "K1",
+      "record_a": {
+        "doc": "U-2 임시 영수증",
+        "content": "인수 일시: 2026-10-15 14:10, 인수자: 박민우 중사"
+      },
+      "record_b": {
+        "doc": "상황보고 일지",
+        "content": "U-2 발견 보고 접수: 2026-10-15 14:40 (30분 지연 차이)"
+      },
+      "root_conflict": "인수 시각과 지휘계통 전파 시각 불일치 (인수 후 30분간 보고 지연 및 접촉 의혹 발생)",
+      "resolution_rule": "타임라인 교차검증표를 작성하고 지연 사유(통신음영/교전지속) 소명서 첨부"
+    },
+    {
+      "pair_id": "K2",
+      "record_a": {
+        "doc": "U-3 임시 영수증",
+        "content": "인수 수량: 1점 (동체 1세트)"
+      },
+      "record_b": {
+        "doc": "인계 확인서",
+        "content": "인계 수량: 2점 (동체 1점 + 분리 추진체 1점)"
+      },
+      "root_conflict": "회수 단위 기준 왜곡 (인수 시 단일체 분류 vs 인계 시 파편 분리 집계)",
+      "resolution_rule": "일련번호 체계(U-03-A, U-03-B) 세분화 및 파편 분리 확인서 병합"
+    },
+    {
+      "pair_id": "K3",
+      "record_a": {
+        "doc": "U-5 격리 확인서",
+        "content": "격리 위치: 대대 본부 B-1 격리소"
+      },
+      "record_b": {
+        "doc": "현장 사진 기록 카드",
+        "content": "촬영 배경: 정비고 뒤편 C-2 야적 구역"
+      },
+      "root_conflict": "격리 장소 임의 이동 및 기록 미갱신 (위험물 추적 실패 위험)",
+      "resolution_rule": "격리 위치 변경 이력 카드 작성 및 안전관리관 서명 의무화"
+    },
+    {
+      "pair_id": "K4",
+      "record_a": {
+        "doc": "L-3 소모 확인서",
+        "content": "교전 중 긴급 정비 소모: 12세트"
+      },
+      "record_b": {
+        "doc": "대대 불출 대장",
+        "content": "당일 출고 승인 수량: 10세트 (2세트 초과 소모)"
+      },
+      "root_conflict": "불출 수량 대비 소모 초과 (예비품 임의 전용 또는 수량 오기)",
+      "resolution_rule": "초과 2세트에 대한 전방 긴급 융통 내역 확인서 교차 대조"
+    }
+  ],
+  "standard_settlement_fields": [
+    {
+      "field": "doc_id",
+      "name": "정산 문서 고유 관리번호",
+      "required": true
+    },
+    {
+      "field": "item_category",
+      "name": "물자 분류 (L-일반물자 / U-출처불명장비)",
+      "required": true
+    },
+    {
+      "field": "item_code",
+      "name": "물자/장비 가상 식별 코드 (L-1~L-3, U-1~U-6)",
+      "required": true
+    },
+    {
+      "field": "action_timeline",
+      "name": "발견-인수-격리-인계 시각 타임라인",
+      "required": true
+    },
+    {
+      "field": "quantity",
+      "name": "수량 및 단위 (세트/묶음/상자/점)",
+      "required": true
+    },
+    {
+      "field": "isolation_location",
+      "name": "현장 격리 좌표 및 보관 시설 식별자",
+      "required": true
+    },
+    {
+      "field": "evidence_chain",
+      "name": "첨부 증빙 목록 및 신뢰도 등급 (G1~G6)",
+      "required": true
+    },
+    {
+      "field": "unconfirmed_gap",
+      "name": "미확인·기록 공백 사유 및 소명 진술",
+      "required": true
+    },
+    {
+      "field": "commander_signature",
+      "name": "지휘관 및 감사관 대면 날인",
+      "required": true
+    }
+  ]
+}

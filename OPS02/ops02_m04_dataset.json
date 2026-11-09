@@ -1,0 +1,52 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M04",
+  "description": "확장 칼만 필터(EKF) 추적기 및 GNN 할당 10종 복합 위협 시나리오 데이터셋",
+  "scenarios": [
+    {
+      "id": "SCN_01_CV_STRAIGHT",
+      "name": "등속 직선 비행 (정상 기준선)"
+    },
+    {
+      "id": "SCN_02_5G_TURN",
+      "name": "5G 고기동 급선회 (회피 기동)"
+    },
+    {
+      "id": "SCN_03_CROSSING",
+      "name": "동일 고도 2기 교차 비행 (표적 뒤바뀜 시험)"
+    },
+    {
+      "id": "SCN_04_FORMATION",
+      "name": "근접 편대 비행 (간격 300m 이내 밀집)"
+    },
+    {
+      "id": "SCN_05_SUPERSONIC",
+      "name": "초음속 급가속 침투 (마하 2.5)"
+    },
+    {
+      "id": "SCN_06_GHOST_TRACK",
+      "name": "허위 반사파 유령 항적 (단발성 경보)"
+    },
+    {
+      "id": "SCN_07_RADAR_JAMMING",
+      "name": "능동 전자전 기만 재밍 (RGPO 신호 쇄도)"
+    },
+    {
+      "id": "SCN_08_COMM_LOSS",
+      "name": "주 레이더 15초간 통신 단절 (코스팅 시험)"
+    },
+    {
+      "id": "SCN_09_RAIN_CLUTTER",
+      "name": "국지성 호우 클러터 노이즈 (오탐 3배)"
+    },
+    {
+      "id": "SCN_10_SWARM_ATTACK",
+      "name": "소형 드론 8기 동시 다방향 군집 기습"
+    }
+  ],
+  "ekf_target_metrics": {
+    "target_f1_score": 0.85,
+    "max_track_split_rate": 0.05,
+    "max_rmse_m": 50.0
+  }
+}

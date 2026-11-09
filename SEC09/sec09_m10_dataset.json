@@ -1,0 +1,38 @@
+{
+  "project": "SEC09",
+  "mission": "SEC09_M10",
+  "title": "대피소·출입구·환기구 방호 현장점검 표준 매뉴얼 최종 완성",
+  "manual_structure": [
+    {
+      "chapter": 1,
+      "title": "개요 및 전술적 방호 원칙",
+      "src": "M01 취약점 분석 및 부대 환경 변수"
+    },
+    {
+      "chapter": 2,
+      "title": "방호 등급별 현장점검 표준운영절차(SOP)",
+      "src": "M02 점검표, 안전수칙, Pocket Guide"
+    },
+    {
+      "chapter": 3,
+      "title": "실전 상황 주입 시나리오(MSEL) 및 훈련 지침",
+      "src": "M03 결함 진단표 및 6:4 MSEL"
+    },
+    {
+      "chapter": 4,
+      "title": "평가 루브릭 및 현장 검증 프로토콜",
+      "src": "M04/M05 타임로그, 교차검증, SBAR 인계"
+    },
+    {
+      "chapter": 5,
+      "title": "사후검토(AAR) 및 지속적 환류 거버넌스",
+      "src": "M08/M09 팩트체크, 성과비교, 개정 규정"
+    }
+  ],
+  "instructor_guide": {
+    "prerequisites": "실습용 방폭문/환기구 모형 또는 가상 실습장, 클립보드, 계측기 세트",
+    "safety_officer": "1명 필수 지정 및 즉시 중단 호루라기 휴대",
+    "time_schedule": "총 27시간 (이론 3h, 실습 18h, AAR/평가 6h)",
+    "update_cycle": "연 1회 정기 개정 및 작전계획 변경 시 수시 개정"
+  }
+}

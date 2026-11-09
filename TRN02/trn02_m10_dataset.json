@@ -1,0 +1,40 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M10",
+  "title": "방공 퀴즈 자동채점 및 오답분석 시스템 통합 최종 운영 패키지 완성",
+  "multi_round_runs": [
+    {
+      "round": 1,
+      "status": "SUCCESS",
+      "records": 3840,
+      "hitl_reviews": 12,
+      "pass_rate": 0.72
+    },
+    {
+      "round": 2,
+      "status": "SUCCESS",
+      "records": 4120,
+      "hitl_reviews": 15,
+      "pass_rate": 0.74
+    },
+    {
+      "round": 3,
+      "status": "SUCCESS",
+      "records": 3980,
+      "hitl_reviews": 11,
+      "pass_rate": 0.73
+    }
+  ],
+  "kpi_summary": {
+    "e2e_pipeline_success_rate": "100%",
+    "test_coverage": "87.4%",
+    "processing_speed": "180,000 items/sec",
+    "tamper_detection_rate": "100%"
+  },
+  "commander_briefing": {
+    "total_examined": 11940,
+    "avg_score": 68.2,
+    "pass_ratio": "73.0%",
+    "critical_warning": "가상2중대 교전통제 과목 긴급 집중 실습 필요"
+  }
+}

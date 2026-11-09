@@ -1,0 +1,48 @@
+{
+  "title": "MNT06_M10 전주기 통합 파이프라인 및 자동 재학습 시스템",
+  "retraining_pipeline_config": {
+    "champion_model_mape": 5.9,
+    "challenger_model_mape": 5.4,
+    "replacement_threshold_tolerance": 0.02,
+    "action": "CHALLENGER_PROMOTED_TO_CHAMPION"
+  },
+  "system_self_tests": [
+    {
+      "test_id": "T1",
+      "name": "손상 레코드 격리 및 전처리 무결성 테스트",
+      "passed": true
+    },
+    {
+      "test_id": "T2",
+      "name": "앙상블 신뢰도 채점 엔진 추론 안정성 테스트",
+      "passed": true
+    },
+    {
+      "test_id": "T3",
+      "name": "정비기술관 HITL 승인 대기열 및 해시 로그 테스트",
+      "passed": true
+    },
+    {
+      "test_id": "T4",
+      "name": "모델 장애 시 Fail-safe 간이 규칙 전환 테스트",
+      "passed": true
+    },
+    {
+      "test_id": "T5",
+      "name": "자동 승인 0건 통제 보안 검증 테스트",
+      "passed": true
+    }
+  ],
+  "operations_guide_chapters": [
+    "제1장: 시스템 개요 및 국방 3D 프린팅 운용 목적",
+    "제2장: 표준 데이터 스키마 및 피처 딕셔너리 규격",
+    "제3장: 3D CAD 메쉬 정제 및 슬라이싱 G-code 전처리 절차",
+    "제4장: 형상 기반 Baseline 판별 및 파레토 관리 지침",
+    "제5장: FEA 연계 인장강도·피로내구도 모델 운용법",
+    "제6장: 군사 규격(MIL-STD) 부합성 앙상블 신뢰도 평가 요령",
+    "제7장: 정비기술관 대시보드 인터페이스 및 XAI 설명문 활용",
+    "제8장: HITL 승인 워크플로우 및 해시 체인 감사 추적 매뉴얼",
+    "제9장: 시스템 장애 대응 및 Fail-safe 비상 조치 요령",
+    "제10장: MLOps 지속적 재학습 파이프라인 및 DELIIS 연동 가이드"
+  ]
+}

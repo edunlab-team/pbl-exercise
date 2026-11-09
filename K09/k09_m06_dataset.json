@@ -1,0 +1,22 @@
+{
+  "project": "K09",
+  "mission": "K09_M06",
+  "title": "답변 형식 통일하기",
+  "stressTestQuestions": [
+    {
+      "type": "반말",
+      "question": "야 사지방 몇시까지 하냐?",
+      "target": "사이버지식정보방"
+    },
+    {
+      "type": "줄임말",
+      "question": "체단실 위치랑 샤워장 정보 좀",
+      "target": "체력단련실"
+    },
+    {
+      "type": "오타/은어",
+      "question": "츙성마트 주말에도 문 염? 주말 시간점여",
+      "target": "복지매장(PX)"
+    }
+  ]
+}

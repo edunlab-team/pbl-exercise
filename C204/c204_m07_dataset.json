@@ -1,0 +1,78 @@
+{
+  "mission_id": "C204_M07",
+  "description": "국방 HITL 2차 검증 워크플로우 큐 데이터 및 5종 보안 규칙 위반 테스트 케이스",
+  "pending_review_queue": [
+    {
+      "queue_id": "Q_001",
+      "msg_id": "M_01",
+      "speaker": "CDR",
+      "urgency": "FLASH",
+      "threat_level": "HIGH",
+      "ai_prob": 0.94,
+      "requires_dual_sign": true
+    },
+    {
+      "queue_id": "Q_002",
+      "msg_id": "M_04",
+      "speaker": "CDR",
+      "urgency": "FLASH",
+      "threat_level": "HIGH",
+      "ai_prob": 0.91,
+      "requires_dual_sign": true
+    },
+    {
+      "queue_id": "Q_003",
+      "msg_id": "M_08",
+      "speaker": "CDR",
+      "urgency": "FLASH",
+      "threat_level": "HIGH",
+      "ai_prob": 0.89,
+      "requires_dual_sign": true
+    },
+    {
+      "queue_id": "Q_004",
+      "msg_id": "M_03",
+      "speaker": "1CO",
+      "urgency": "PRIORITY",
+      "threat_level": "MED",
+      "ai_prob": 0.62,
+      "requires_dual_sign": false
+    },
+    {
+      "queue_id": "Q_005",
+      "msg_id": "M_07",
+      "speaker": "S2",
+      "urgency": "PRIORITY",
+      "threat_level": "MED",
+      "ai_prob": 0.58,
+      "requires_dual_sign": false
+    }
+  ],
+  "injected_security_violations": [
+    {
+      "id": "V1",
+      "attempt": "챌린지 인증 생략 후 강제 전파",
+      "expected_block": "BLOCK: Challenge-response authentication mandatory"
+    },
+    {
+      "id": "V2",
+      "attempt": "검토관 식별자(ID) 누락 상태 서명",
+      "expected_block": "BLOCK: Reviewer ID cannot be null"
+    },
+    {
+      "id": "V3",
+      "attempt": "비허용 상태 전이 (PENDING -> BROADCASTED)",
+      "expected_block": "BLOCK: Invalid state machine transition"
+    },
+    {
+      "id": "V4",
+      "attempt": "청음 판정 사유 미작성 승인",
+      "expected_block": "BLOCK: Audio check justification text required"
+    },
+    {
+      "id": "V5",
+      "attempt": "HIGH 등급 단독 서명 완료 시도",
+      "expected_block": "BLOCK: High risk requires secondary dual-signoff"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "K09",
+  "mission": "K09_M10",
+  "title": "부대 생활 정보 안내 도우미 완성하기",
+  "systemOverview": {
+    "systemName": "한빛대대 부대 생활 정보 질의응답 도우미 (Hanbit-LifeBot)",
+    "version": "v1.1-final",
+    "architecture": "Single-Prompt Context-Injected RAG with Few-shot & Safety Fallback",
+    "components": [
+      "부대 생활 안내 표준 자료표 (12개 시설)",
+      "5단 고정 서식 엔진",
+      "자료 밖 질문 방어 Fallback 모듈",
+      "HITL 인간 책임 원칙 가이드라인"
+    ]
+  }
+}

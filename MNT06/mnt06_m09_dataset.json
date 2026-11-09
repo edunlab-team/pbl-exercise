@@ -1,0 +1,37 @@
+{
+  "title": "MNT06_M09 실물 파괴 시험 AAR 오차 분석 및 ROI 모델 데이터",
+  "destructive_test_sample_count": 420,
+  "dangerous_overestimation_cases": 110,
+  "failure_mechanisms": [
+    {
+      "mechanism": "금속 잔류응력에 의한 취성 파괴",
+      "count": 54,
+      "share_pct": 49.1
+    },
+    {
+      "mechanism": "얇은 벽 미충전 결함에 따른 응력 집중",
+      "count": 34,
+      "share_pct": 30.9
+    },
+    {
+      "mechanism": "소재 분말 로트 편차",
+      "count": 14,
+      "share_pct": 12.7
+    },
+    {
+      "mechanism": "시험 지그 체결 산포",
+      "count": 8,
+      "share_pct": 7.3
+    }
+  ],
+  "safety_factor_recalibration": {
+    "before_calibration_dangerous_rate_pct": 7.5,
+    "after_calibration_dangerous_rate_pct": 2.6,
+    "recalibrated_margin_threshold": 1.72
+  },
+  "annual_roi_impact": {
+    "annual_cost_savings_krw": 482000000,
+    "lead_time_reduction_rate_pct": 68.5,
+    "scrap_reduction_rate_pct": 42.0
+  }
+}

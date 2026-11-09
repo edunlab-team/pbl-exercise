@@ -1,0 +1,32 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M04",
+  "title": "모의 드론 침입 경보 발령 및 초동 대응조 현장 출동(Dry-run) 실습",
+  "dryrun_schedule": [
+    {
+      "time_min": "0~10분",
+      "activity": "역할 카드 배부, 안전 브리핑, 초시계 동기화",
+      "in_charge": "교관/통제관"
+    },
+    {
+      "time_min": "10~40분",
+      "activity": "MSEL 주입 카드 1~10번 실전 모의 대응",
+      "in_charge": "전 훈련조"
+    },
+    {
+      "time_min": "40~55분",
+      "activity": "타임스탬프 취합 및 SOP 준수율 계산",
+      "in_charge": "기록자/평가관"
+    },
+    {
+      "time_min": "55~70분",
+      "activity": "병목 구간 식별 및 1차 총평",
+      "in_charge": "전원"
+    }
+  ],
+  "benchmark_targets": {
+    "sop_adherence_rate": "80% 이상",
+    "report_lead_time": "3분(180초) 이내",
+    "bottleneck_identifications": "2건 이상"
+  }
+}

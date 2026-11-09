@@ -1,0 +1,38 @@
+{
+  "project": "K13",
+  "mission": "K13_M03",
+  "title": "설명 유사도로 콘텐츠 추천하기",
+  "summary": "과목 설명 텍스트 char n-gram TF-IDF 임베딩 및 코사인 유사도 행렬 데이터",
+  "dataset": {
+    "tfidf_params": {
+      "analyzer": "char",
+      "ngram_range": [
+        2,
+        3
+      ],
+      "min_df": 1
+    },
+    "sample_similarity_pairs": [
+      {
+        "course_a": "C26 (기초 체력 향상 프로그램)",
+        "course_b": "C27 (전투 체력 측정 대비)",
+        "cosine_similarity": 0.812
+      },
+      {
+        "course_a": "C26 (기초 체력 향상 프로그램)",
+        "course_b": "C28 (부상 예방 스트레칭)",
+        "cosine_similarity": 0.694
+      },
+      {
+        "course_a": "C01 (인공지능 첫걸음)",
+        "course_b": "C02 (생성형 AI 안전하게 쓰기)",
+        "cosine_similarity": 0.745
+      }
+    ],
+    "cbf_metrics": {
+      "precision_at_5": 0.203,
+      "recall_at_5": 0.508,
+      "catalog_coverage_pct": 100.0
+    }
+  }
+}

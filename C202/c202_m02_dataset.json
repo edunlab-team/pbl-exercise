@@ -1,0 +1,83 @@
+{
+  "project": "C202",
+  "mission": "C202_M02",
+  "title": "전술 메시지(전문) 패킷 파싱, 크기 압축 및 헤더 정보 전처리 모듈 구현",
+  "binary_header_spec": {
+    "total_bytes": 14,
+    "fields": [
+      {
+        "name": "magic",
+        "type": "uint16",
+        "bytes": 2,
+        "description": "전술 패킷 식별자 0xC202"
+      },
+      {
+        "name": "msg_id",
+        "type": "uint16",
+        "bytes": 2,
+        "description": "전문 일련번호 (0~65535)"
+      },
+      {
+        "name": "urgency",
+        "type": "uint8",
+        "bytes": 1,
+        "description": "1:FLASH, 2:IMMEDIATE, 3:PRIORITY, 4:ROUTINE"
+      },
+      {
+        "name": "sender_id",
+        "type": "uint16",
+        "bytes": 2,
+        "description": "인가 송신국 ID"
+      },
+      {
+        "name": "receiver_id",
+        "type": "uint16",
+        "bytes": 2,
+        "description": "수신국 ID"
+      },
+      {
+        "name": "timestamp_offset",
+        "type": "uint32",
+        "bytes": 4,
+        "description": "기준 작전시각 기준 초 단위"
+      },
+      {
+        "name": "flags",
+        "type": "uint8",
+        "bytes": 1,
+        "description": "압축 여부, 조각 여부 비트 플래그"
+      }
+    ]
+  },
+  "registered_senders": [
+    101,
+    102,
+    103,
+    104,
+    201,
+    202,
+    999
+  ],
+  "raw_packet_stream_summary": {
+    "total_packets": 100,
+    "clean_packets": 70,
+    "missing_timestamp_packets": 15,
+    "duplicate_packets": 8,
+    "crc_corrupted_packets": 4,
+    "spoofed_sender_packets": 3
+  },
+  "zlib_compression_policy": {
+    "rate_2400bps": {
+      "level": 9,
+      "expected_ratio_pct": 55.0
+    },
+    "rate_9600bps": {
+      "level": 6,
+      "expected_ratio_pct": 62.0
+    },
+    "rate_16000bps": {
+      "level": 1,
+      "expected_ratio_pct": 68.0
+    }
+  }
+}

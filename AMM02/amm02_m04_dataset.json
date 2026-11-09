@@ -1,0 +1,85 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M04",
+  "time_series_features_10": [
+    "lag_1_consumption_ratio",
+    "rolling_3d_mean_ratio",
+    "rolling_7d_mean_ratio",
+    "enemy_resistance_trend_3d",
+    "fire_mission_planned_count",
+    "artillery_support_hours",
+    "move_distance_planned_km",
+    "csr_base_coefficient",
+    "combat_surge_flag",
+    "defense_phase_weight"
+  ],
+  "cross_validation_results": [
+    {
+      "fold": 1,
+      "train_days": 30,
+      "val_days": 10,
+      "baseline_mape": 41.2,
+      "model_mape": 18.5
+    },
+    {
+      "fold": 2,
+      "train_days": 40,
+      "val_days": 10,
+      "baseline_mape": 39.8,
+      "model_mape": 16.9
+    },
+    {
+      "fold": 3,
+      "train_days": 50,
+      "val_days": 10,
+      "baseline_mape": 42.5,
+      "model_mape": 17.8
+    },
+    {
+      "fold": 4,
+      "train_days": 60,
+      "val_days": 10,
+      "baseline_mape": 38.4,
+      "model_mape": 15.6
+    },
+    {
+      "fold": 5,
+      "train_days": 70,
+      "val_days": 10,
+      "baseline_mape": 40.1,
+      "model_mape": 16.2
+    }
+  ],
+  "feature_importance_top6": [
+    {
+      "rank": 1,
+      "feature": "fire_mission_planned_count",
+      "importance": 0.28
+    },
+    {
+      "rank": 2,
+      "feature": "enemy_resistance_trend_3d",
+      "importance": 0.22
+    },
+    {
+      "rank": 3,
+      "feature": "lag_1_consumption_ratio",
+      "importance": 0.18
+    },
+    {
+      "rank": 4,
+      "feature": "move_distance_planned_km",
+      "importance": 0.14
+    },
+    {
+      "rank": 5,
+      "feature": "rolling_3d_mean_ratio",
+      "importance": 0.1
+    },
+    {
+      "rank": 6,
+      "feature": "defense_phase_weight",
+      "importance": 0.05
+    }
+  ]
+}

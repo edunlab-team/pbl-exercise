@@ -1,0 +1,56 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M09",
+  "title": "AAR 기반 동기화 누락 및 데이터 충돌 사례 분석 데이터셋",
+  "meta": {
+    "aar_cases_count": 1200,
+    "validation_set_count": 3000,
+    "regression_tests": 8
+  },
+  "cause_distribution": [
+    {
+      "code": "D1",
+      "name": "다른 거래를 중복으로 오판",
+      "pct": 21.3
+    },
+    {
+      "code": "D2",
+      "name": "재전송 중복 놓침",
+      "pct": 12.0
+    },
+    {
+      "code": "D3",
+      "name": "후속 수정의 승자 오판",
+      "pct": 27.1
+    },
+    {
+      "code": "D4",
+      "name": "동시 수정 놓침(조용한 덮어쓰기)",
+      "pct": 29.5
+    },
+    {
+      "code": "D5",
+      "name": "자동 병합 임계 부적절",
+      "pct": 6.5
+    },
+    {
+      "code": "D6",
+      "name": "재시도 부족 누락",
+      "pct": 3.6
+    }
+  ],
+  "sample_aar_records": [
+    {
+      "case_id": "AAR-001",
+      "error_type": "D4",
+      "desc": "노드간 동시 수정 발생했으나 LWW가 조용히 덮어씀",
+      "resolved": true
+    },
+    {
+      "case_id": "AAR-002",
+      "error_type": "D1",
+      "desc": "1분 간격 서로 다른 불출을 중복 전송으로 잘못 격리",
+      "resolved": true
+    }
+  ]
+}

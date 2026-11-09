@@ -1,0 +1,254 @@
+{
+  "title": "전술 장비 일일 가동률 및 정비 대기 16개 표준 스키마 데이터셋 샘플",
+  "sample_size": 100,
+  "units": [
+    "가상A부대",
+    "가상B부대",
+    "가상C부대",
+    "가상D부대",
+    "가상E부대",
+    "가상F부대"
+  ],
+  "equipment_types": [
+    "유형A (전차)",
+    "유형B (자주포)",
+    "유형C (장갑차)"
+  ],
+  "schema_fields": [
+    {
+      "name": "eq_id",
+      "type": "string",
+      "desc": "장비 고유 식별 번호 (예: EQ-A-001)"
+    },
+    {
+      "name": "unit",
+      "type": "string",
+      "desc": "소속 가상 부대명"
+    },
+    {
+      "name": "etype",
+      "type": "string",
+      "desc": "장비 유형 (유형A, 유형B, 유형C)"
+    },
+    {
+      "name": "age_years",
+      "type": "float",
+      "desc": "장비 연령 (년, 1.0~25.0)"
+    },
+    {
+      "name": "op_hours",
+      "type": "float",
+      "desc": "누적 운용 시간 (시간, 50~8000)"
+    },
+    {
+      "name": "maint_orders",
+      "type": "integer",
+      "desc": "최근 90일 정비 요청 건수 (1~20)"
+    },
+    {
+      "name": "parts_wait_days",
+      "type": "float",
+      "desc": "부품 대기 일수 (0.0~60.0)"
+    },
+    {
+      "name": "labor_wait_days",
+      "type": "float",
+      "desc": "정비병 부족 대기 일수 (0.0~45.0)"
+    },
+    {
+      "name": "outsource_days",
+      "type": "float",
+      "desc": "외주정비 소요 일수 (0.0~90.0)"
+    },
+    {
+      "name": "inspect_wait_days",
+      "type": "float",
+      "desc": "외주 품질검사 대기 일수 (0.0~45.0)"
+    },
+    {
+      "name": "rework_count",
+      "type": "integer",
+      "desc": "외주정비 재작업 횟수 (0~5)"
+    },
+    {
+      "name": "spec_mismatch",
+      "type": "integer",
+      "desc": "규격 및 제원 불일치 건수 (0~4)"
+    },
+    {
+      "name": "defect_reports",
+      "type": "integer",
+      "desc": "하자 및 품질불만 접수 건수 (0~6)"
+    },
+    {
+      "name": "parts_stock_pct",
+      "type": "float",
+      "desc": "수리부속 인가대비 재고율 (%, 20.0~100.0)"
+    },
+    {
+      "name": "mechanic_fill_pct",
+      "type": "float",
+      "desc": "정비병 편제대비 충원율 (%, 30.0~100.0)"
+    },
+    {
+      "name": "avail_pct",
+      "type": "float",
+      "desc": "최근 90일 장비 가동률 (%, 30.0~100.0)"
+    }
+  ],
+  "sample_records": [
+    {
+      "eq_id": "EQ-A-001",
+      "unit": "가상A부대",
+      "etype": "유형A",
+      "age_years": 8.5,
+      "op_hours": 2100.0,
+      "maint_orders": 4,
+      "parts_wait_days": 5.2,
+      "labor_wait_days": 2.1,
+      "outsource_days": 18.5,
+      "inspect_wait_days": 6.2,
+      "rework_count": 1,
+      "spec_mismatch": 0,
+      "defect_reports": 1,
+      "parts_stock_pct": 82.5,
+      "mechanic_fill_pct": 85.0,
+      "avail_pct": 78.4
+    },
+    {
+      "eq_id": "EQ-B-015",
+      "unit": "가상C부대",
+      "etype": "유형B",
+      "age_years": 14.2,
+      "op_hours": 4200.0,
+      "maint_orders": 9,
+      "parts_wait_days": 18.4,
+      "labor_wait_days": 8.5,
+      "outsource_days": 32.0,
+      "inspect_wait_days": 12.8,
+      "rework_count": 2,
+      "spec_mismatch": 1,
+      "defect_reports": 3,
+      "parts_stock_pct": 52.0,
+      "mechanic_fill_pct": 65.0,
+      "avail_pct": 54.2
+    },
+    {
+      "eq_id": "EQ-C-032",
+      "unit": "가상B부대",
+      "etype": "유형C",
+      "age_years": 4.1,
+      "op_hours": 1200.0,
+      "maint_orders": 2,
+      "parts_wait_days": 1.5,
+      "labor_wait_days": 0.5,
+      "outsource_days": 7.0,
+      "inspect_wait_days": 2.1,
+      "rework_count": 0,
+      "spec_mismatch": 0,
+      "defect_reports": 0,
+      "parts_stock_pct": 94.0,
+      "mechanic_fill_pct": 92.0,
+      "avail_pct": 89.6
+    }
+  ],
+  "as_is_lifecycle_12steps": [
+    {
+      "step": 1,
+      "name": "장비 고장 신고 및 입고 요청",
+      "work_days": 0.5,
+      "wait_days": 1.2,
+      "actor": "부대정비관",
+      "type": "현장접수"
+    },
+    {
+      "step": 2,
+      "name": "부대 1차 결함 진단 및 사유 분류",
+      "work_days": 1.0,
+      "wait_days": 2.0,
+      "actor": "정비반장",
+      "type": "자체진단"
+    },
+    {
+      "step": 3,
+      "name": "부품 청구 및 결품 확인",
+      "work_days": 0.8,
+      "wait_days": 7.5,
+      "actor": "수리부속관",
+      "type": "부품대기(병목1)"
+    },
+    {
+      "step": 4,
+      "name": "외주정비 심의 및 입고 승인",
+      "work_days": 1.2,
+      "wait_days": 3.4,
+      "actor": "군수참모처",
+      "type": "행정심의"
+    },
+    {
+      "step": 5,
+      "name": "외주업체 이송 및 수락 검사",
+      "work_days": 1.5,
+      "wait_days": 2.1,
+      "actor": "수송/외주업체",
+      "type": "이송"
+    },
+    {
+      "step": 6,
+      "name": "외주 공장 분해 및 정밀 정비",
+      "work_days": 12.0,
+      "wait_days": 4.2,
+      "actor": "외주정비업체",
+      "type": "실정비"
+    },
+    {
+      "step": 7,
+      "name": "외주 정비 품질검사관 검사 대기",
+      "work_days": 0.5,
+      "wait_days": 5.8,
+      "actor": "품질검사관",
+      "type": "검사대기(병목2)"
+    },
+    {
+      "step": 8,
+      "name": "정밀 품질검사 및 규격 적합성 판정",
+      "work_days": 2.0,
+      "wait_days": 0.5,
+      "actor": "품질검사관",
+      "type": "기술검사"
+    },
+    {
+      "step": 9,
+      "name": "규격 불일치 재작업 요구 및 수정",
+      "work_days": 3.5,
+      "wait_days": 4.2,
+      "actor": "외주업체",
+      "type": "재작업(병목3)"
+    },
+    {
+      "step": 10,
+      "name": "합격 판정 및 인수증 발급",
+      "work_days": 0.5,
+      "wait_days": 1.1,
+      "actor": "정밀검사관",
+      "type": "행정발급"
+    },
+    {
+      "step": 11,
+      "name": "부대 복귀 이송 및 인수",
+      "work_days": 1.5,
+      "wait_days": 1.8,
+      "actor": "수송부서",
+      "type": "복귀이송"
+    },
+    {
+      "step": 12,
+      "name": "가동 상태 전산 등록 및 임무 복귀",
+      "work_days": 0.3,
+      "wait_days": 0.7,
+      "actor": "부대정비관",
+      "type": "전산복귀"
+    }
+  ],
+  "summary": "현행 총 소요일: 48.9일 (순수 작업일 24.8일 + 대기일 24.1일, 병목 구간 3개소)"
+}

@@ -1,0 +1,13 @@
+{
+  "combinations_total": 120,
+  "classification_results": {
+    "disconnected": 3,
+    "demand_exceeded": 73,
+    "acceptable": 44
+  },
+  "stress_benchmarks": {
+    "max_latency_sec": 2.0,
+    "alert_precision_target": 95.0,
+    "actual_precision": 97.0
+  }
+}

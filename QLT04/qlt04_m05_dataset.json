@@ -1,0 +1,40 @@
+{
+  "title": "부대 간 정비 자원 재배치 후보 70건 시뮬레이션 평가셋",
+  "total_scenarios": 70,
+  "simulation_model_r2": 0.646,
+  "sample_candidates": [
+    {
+      "candidate_id": "CAND-01",
+      "src_unit": "가상A부대",
+      "dst_unit": "가상C부대",
+      "mechanics_moved": 4,
+      "parts_batch": 20,
+      "delta_avail_pct": 0.1,
+      "dst_gain_pct": 3.1,
+      "status": "승인대기",
+      "reason": "전체 가동률 상승 및 공출 부대 전력 유지"
+    },
+    {
+      "candidate_id": "CAND-02",
+      "src_unit": "가상B부대",
+      "dst_unit": "가상D부대",
+      "mechanics_moved": 2,
+      "parts_batch": 10,
+      "delta_avail_pct": 0.05,
+      "dst_gain_pct": 1.8,
+      "status": "승인대기",
+      "reason": "부대 간 균형 유지"
+    },
+    {
+      "candidate_id": "CAND-03",
+      "src_unit": "가상A부대",
+      "dst_unit": "가상F부대",
+      "mechanics_moved": 8,
+      "parts_batch": 50,
+      "delta_avail_pct": -0.04,
+      "dst_gain_pct": 4.2,
+      "status": "반려",
+      "reason": "누적 이동 한도(max_move=4) 초과 및 공출 부대 전비 태세 저해"
+    }
+  ]
+}

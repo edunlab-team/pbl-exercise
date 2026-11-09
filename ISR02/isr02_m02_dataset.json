@@ -1,0 +1,33 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M02",
+  "description": "불용어·특수문자 정제 및 64비트 pHash 기반 고속 중복 제거 데이터셋",
+  "sample_posts_raw": [
+    {
+      "post_id": "P0101",
+      "timestamp": "2026-05-09T10:00:00Z",
+      "raw_text": "【속보】 전선 구역 A-1에서 적 자주포 5문 집결 포착!! 👉 https://t.co/fake123 #전황보고 @mil_intel",
+      "image_raw_32x32_dct": "a8f0c2b4e6d8a1c3"
+    },
+    {
+      "post_id": "P0102",
+      "timestamp": "2026-05-09T10:02:15Z",
+      "raw_text": "[전재] 【속보】 전선 구역 A-1에서 적 자주포 5문 집결 포착!! https://t.co/fake123 #전황보고",
+      "image_raw_32x32_dct": "a8f0c2b4e6d8a1c3"
+    },
+    {
+      "post_id": "P0103",
+      "timestamp": "2026-05-09T10:05:00Z",
+      "raw_text": "A-1 지역 적 자주포 5문 집결 관련 추가 목격 사진 공유",
+      "image_raw_32x32_dct": "a8f0c2b4e6d8a1c7"
+    }
+  ],
+  "benchmark_metrics": {
+    "target_throughput_per_sec": 1000,
+    "max_error_rate_pct": 0.0,
+    "duplicate_reduction_test": {
+      "input_count": 573,
+      "expected_clean_count": 340
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M07",
+  "title": "포격 지속 및 야간 암흑 환경 모의 TCCC 처치 스트레스 훈련",
+  "stress_conditions": {
+    "lighting": "암전 (0 Lux) 및 비상 적색등(Red LED < 5 Lux) 간헐 점등",
+    "audio": "스피커 90dB 포격 폭음, 무전 잡음, 부상자 비명 음향 연속 재생",
+    "safety_rules": "실화기/화약/연막탄 전면 사용 금지, 안전통제관 호각 2회 시 전원 즉시 동작 정지"
+  },
+  "stress_events_6": [
+    {
+      "seq": 1,
+      "trigger": "포격 음향 급증 및 적 82mm 박격포 탄착 주입",
+      "expected_action": "1분 내 'Care Under Fire' 구두 복창 선언 및 사격선 재정렬"
+    },
+    {
+      "seq": 2,
+      "trigger": "조명 완전 소등 (칠흑 암흑)",
+      "expected_action": "라이트 통제 준수, 촉각으로 모의환자 지혈대 조임 상태 확인"
+    },
+    {
+      "seq": 3,
+      "trigger": "가상 파편 비산 경보 (안전지대 이탈)",
+      "expected_action": "환자를 즉시 폐기 엄폐호로 견인 이동 및 전신 엄폐"
+    },
+    {
+      "seq": 4,
+      "trigger": "사상자 처치 카드 바람/파편 비산 위협",
+      "expected_action": "처치 카드를 방수 파우치에 넣고 환자 방탄복 안쪽 결박"
+    },
+    {
+      "seq": 5,
+      "trigger": "조장(팀장) 가상 파편상으로 행동 불능",
+      "expected_action": "차상위자(부조장/처치자)가 1분 내 지휘권 인수 선언 및 임무 재부여"
+    },
+    {
+      "seq": 6,
+      "trigger": "적 사격 소강 및 후송 헬기 접근 신호",
+      "expected_action": "적색 조명 하에서 최종 MIST 인계 서식 확인 및 착륙 유도 준비"
+    }
+  ]
+}

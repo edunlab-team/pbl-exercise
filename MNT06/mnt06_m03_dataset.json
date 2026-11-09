@@ -1,0 +1,40 @@
+{
+  "title": "MNT06_M03 기하 형상 기반 Baseline 판별 및 EDA 샘플",
+  "fleet_parts_evaluated": 600,
+  "baseline_metrics": {
+    "accuracy": 0.91,
+    "precision": 0.898,
+    "recall": 0.922,
+    "f1_score": 0.91,
+    "confusion_matrix": {
+      "true_positive": 332,
+      "false_positive": 38,
+      "false_negative": 28,
+      "true_negative": 202
+    }
+  },
+  "failure_root_causes": [
+    {
+      "cause": "얇은 나사부(M4 이하) 강도 부족",
+      "count": 14
+    },
+    {
+      "cause": "소재별 최소 벽두께 미달(1.0mm 미만)",
+      "count": 8
+    },
+    {
+      "cause": "과도한 오버행(65도 초과) 지지대 붕괴",
+      "count": 6
+    }
+  ],
+  "pareto_abc_summary": {
+    "total_parts": 600,
+    "a_class_count": 120,
+    "a_class_loss_share_pct": 78.4,
+    "key_target_categories": [
+      "기갑 구동계 브래킷",
+      "항공 유압 밸브 커버",
+      "엔진 마운트 핀"
+    ]
+  }
+}

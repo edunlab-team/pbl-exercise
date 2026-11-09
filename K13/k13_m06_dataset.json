@@ -1,0 +1,48 @@
+{
+  "project": "K13",
+  "mission": "K13_M06",
+  "title": "하이브리드 추천 만들기",
+  "summary": "다중 추천 점수 Min-Max 정규화 및 탐색/검증 분할 하이브리드 가중치 최적화 데이터",
+  "dataset": {
+    "dev_soldiers_count": 30,
+    "test_soldiers_count": 30,
+    "grid_search_top_weights": [
+      {
+        "weights": [
+          0.0,
+          0.7,
+          0.3
+        ],
+        "labels": [
+          "인기도",
+          "CBF",
+          "User-CF"
+        ],
+        "dev_precision_at_5": 0.233,
+        "status": "SELECTED"
+      },
+      {
+        "weights": [
+          0.1,
+          0.6,
+          0.3
+        ],
+        "dev_precision_at_5": 0.225
+      },
+      {
+        "weights": [
+          0.0,
+          0.8,
+          0.2
+        ],
+        "dev_precision_at_5": 0.217
+      }
+    ],
+    "test_set_generalization_results": {
+      "single_best_cbf": 0.213,
+      "hybrid_ensemble": 0.227,
+      "performance_lift_pct": "+6.57%",
+      "status": "PASS"
+    }
+  }
+}

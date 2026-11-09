@@ -1,0 +1,21 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M08",
+  "title": "수십 개 예하 부대 월간 결산 보고서 원클릭 일괄 생성 배치 스트레스 테스트",
+  "batch_meta": {
+    "total_units": 40,
+    "total_months": 12,
+    "total_reports": 480,
+    "target_duration_sec": 300,
+    "target_success_rate": 0.99
+  },
+  "simulation_results": {
+    "generated": 477,
+    "quarantined": 3,
+    "retries": 9,
+    "success_rate": 0.99375,
+    "manual_time_min": 12000,
+    "auto_time_min": 1005,
+    "saving_rate": 0.91625
+  }
+}

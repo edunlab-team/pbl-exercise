@@ -1,0 +1,64 @@
+{
+  "project": "K11",
+  "mission": "K11_M05",
+  "title": "개인 목표 시간 배정하기",
+  "goals": [
+    {
+      "id": "G1",
+      "name": "자격증 공부",
+      "target": 720,
+      "lens": [
+        60,
+        90,
+        120
+      ],
+      "day_cap": 180,
+      "deadline": 10,
+      "priority": 3,
+      "pref": [
+        1110,
+        1260
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "체력단련",
+      "target": 300,
+      "lens": [
+        60,
+        90
+      ],
+      "day_cap": 90,
+      "deadline": 13,
+      "priority": 2,
+      "pref": null
+    },
+    {
+      "id": "G3",
+      "name": "영어 단어 학습",
+      "target": 240,
+      "lens": [
+        30,
+        60
+      ],
+      "day_cap": 60,
+      "deadline": 13,
+      "priority": 1,
+      "pref": null
+    }
+  ],
+  "comparison": {
+    "greedy": {
+      "blocks": 17,
+      "dinner_pref_minutes": 540,
+      "success": true,
+      "conflicts": 0
+    },
+    "milp": {
+      "blocks": 14,
+      "dinner_pref_minutes": 720,
+      "success": true,
+      "conflicts": 0
+    }
+  }
+}

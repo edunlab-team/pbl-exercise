@@ -1,0 +1,124 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M05",
+  "title": "다출처 의무 데이터 수집 및 정합성 교차검증 체계 구축",
+  "cross_verification_cases": [
+    {
+      "item_no": 1,
+      "field": "M-01 식별번호",
+      "card": "M-01",
+      "summary": "M-01",
+      "evacuation": "M-01",
+      "observer": "M-01",
+      "status": "정상"
+    },
+    {
+      "item_no": 2,
+      "field": "M-02 분류구분",
+      "card": "응급(황)",
+      "summary": "응급(황)",
+      "evacuation": "응급(황)",
+      "observer": "응급(황)",
+      "status": "정상"
+    },
+    {
+      "item_no": 3,
+      "field": "M-03 이동가능성",
+      "card": "가능(보행)",
+      "summary": "보행가능",
+      "evacuation": "자력대기",
+      "observer": "보행이동",
+      "status": "정상"
+    },
+    {
+      "item_no": 4,
+      "field": "M-04 식별표 유무",
+      "card": "TMP-01(재발급)",
+      "summary": "TMP-01",
+      "evacuation": "TMP-01",
+      "observer": "식별표 분실 후 재발급 관측",
+      "status": "정상(절차완료)"
+    },
+    {
+      "item_no": 5,
+      "field": "M-04 분류구분",
+      "card": "긴급(적)",
+      "summary": "긴급(적)",
+      "evacuation": "응급(황)",
+      "observer": "긴급 분류 관측",
+      "status": "불일치(오류)",
+      "note": "후송순서표에 응급으로 오기됨"
+    },
+    {
+      "item_no": 6,
+      "field": "M-05 발견구역",
+      "card": "B구역",
+      "summary": "B구역",
+      "evacuation": "B구역",
+      "observer": "B구역",
+      "status": "정상"
+    },
+    {
+      "item_no": 7,
+      "field": "M-06 지혈대 적용시각",
+      "card": "+03:10",
+      "summary": "+03:10",
+      "evacuation": "누락",
+      "observer": "+03:10 적용 확인",
+      "status": "불일치(누락)",
+      "note": "후송표에 적용시각 누락"
+    },
+    {
+      "item_no": 8,
+      "field": "M-07 분류구분",
+      "card": "지연(흑)",
+      "summary": "지연(흑)",
+      "evacuation": "대기제외",
+      "observer": "지연 판정",
+      "status": "정상"
+    },
+    {
+      "item_no": 9,
+      "field": "M-08 가명 표기",
+      "card": "가상 병사 아",
+      "summary": "가상 병사 아",
+      "evacuation": "병사 아",
+      "observer": "가상 병사 아",
+      "status": "정상"
+    },
+    {
+      "item_no": 10,
+      "field": "총 환자 수 집계",
+      "card": "8명",
+      "summary": "8명",
+      "evacuation": "7명",
+      "observer": "8명 접수",
+      "status": "불일치(집계오류)",
+      "note": "후송표에 지연환자 1명 누락 집계"
+    },
+    {
+      "item_no": 11,
+      "field": "구간 인계 서명",
+      "card": "처치반·접수반 서명 완비",
+      "summary": "해당없음",
+      "evacuation": "인수자 서명 누락",
+      "observer": "구두 인계만 진행",
+      "status": "불일치(절차미준수)",
+      "note": "후송반 인수 서명 누락"
+    },
+    {
+      "item_no": 12,
+      "field": "지휘 보고 시각",
+      "card": "+04:45",
+      "summary": "+04:50",
+      "evacuation": "+04:50",
+      "observer": "+04:48 지휘관 복창",
+      "status": "정상(허용오차내)"
+    }
+  ],
+  "reporting_protocol": {
+    "immediate_correction": "현장 처치/접수 간 5분 이내 단순 오기는 작성자 상호 대조 후 즉각 정정",
+    "command_escalation": "중증도 전도(긴급➔응급) 및 환자 수 불일치는 의무대장에게 30초 내 즉시 직보",
+    "dual_signature": "정정 사항 발생 시 정정자 및 확인관의 이중 서명(Dual Signature) 의무화"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "MNT04_M08 대용량 센서 스트림 벤치마크 및 격리 큐 샘플",
+  "benchmark_1k_packets": {
+    "total_injected": 1000,
+    "normal_processed": 945,
+    "isolated_packets": 55,
+    "packet_loss": 0,
+    "elapsed_time_sec": 0.08,
+    "accuracy_pct": 98.2
+  },
+  "stress_scale_metrics": [
+    {
+      "scale": 1000,
+      "throughput_pkt_per_sec": 12500,
+      "memory_mb": 42
+    },
+    {
+      "scale": 10000,
+      "throughput_pkt_per_sec": 14200,
+      "memory_mb": 58
+    },
+    {
+      "scale": 100000,
+      "throughput_pkt_per_sec": 13800,
+      "memory_mb": 85
+    }
+  ]
+}

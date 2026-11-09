@@ -1,0 +1,51 @@
+{
+  "title": "가상 장비 300대 통계 분석 요약 및 16종 품질검사 룰 명세",
+  "baseline_summary": {
+    "total_count": 300,
+    "low_avail_count": 78,
+    "normal_count": 222,
+    "top5_causes": [
+      {
+        "rank": 1,
+        "factor": "inspect_wait_days",
+        "name": "외주 검사 대기 일수",
+        "cohen_d": 1.42,
+        "corr": -0.68,
+        "loss_days_mean": 11.4
+      },
+      {
+        "rank": 2,
+        "factor": "parts_wait_days",
+        "name": "부품 대기 일수",
+        "cohen_d": 1.28,
+        "corr": -0.61,
+        "loss_days_mean": 9.8
+      },
+      {
+        "rank": 3,
+        "factor": "rework_count",
+        "name": "재작업 횟수",
+        "cohen_d": 1.15,
+        "corr": -0.55,
+        "loss_days_mean": 7.6
+      },
+      {
+        "rank": 4,
+        "factor": "mechanic_fill_pct",
+        "name": "정비병 충원율 부족",
+        "cohen_d": -0.98,
+        "corr": 0.49,
+        "loss_days_mean": 6.2
+      },
+      {
+        "rank": 5,
+        "factor": "spec_mismatch",
+        "name": "규격·제원 불일치",
+        "cohen_d": 0.89,
+        "corr": -0.44,
+        "loss_days_mean": 5.1
+      }
+    ]
+  },
+  "yaml_rule_sample": "rules:\n  - id: R01\n    name: 외주 검사 대기 극심\n    condition: inspect_wait_days >= 8.0\n    score: 30\n    clause: 제24조 (외주정비 인수검사 기한)\n  - id: R02\n    name: 부품 대기 장기화\n    condition: parts_wait_days >= 15.0\n    score: 25\n    clause: 제18조 (수리부속 조달 우선순위)\n  - id: R03\n    name: 재작업 다발 장비\n    condition: rework_count >= 2\n    score: 20\n    clause: 제31조 (외주 정비 하자 보증)"
+}

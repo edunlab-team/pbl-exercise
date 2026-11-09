@@ -1,0 +1,83 @@
+{
+  "project": "TRN06",
+  "mission": "TRN06_M01",
+  "title": "소부대 전술 훈련 AAR 관찰관(Observer Controller)의 평가 체계 분석",
+  "evaluation_elements": [
+    "평가 대상(무엇을 보는가)",
+    "평가 기준(척도)",
+    "근거 기록",
+    "피드백 전달 방식",
+    "기록 보관 및 후속 조치"
+  ],
+  "case_studies": [
+    {
+      "case_id": "C1",
+      "summary": "1소대 지휘 양호, 4점/5점",
+      "evidence": "없음",
+      "feedback_type": "구두 한 줄",
+      "flaws": "기준 불명, 4점 평점의 구체적 근거 부재"
+    },
+    {
+      "case_id": "C2",
+      "summary": "2소대 보고 지연, 팀워크 부족",
+      "evidence": "시각 기록 1건",
+      "feedback_type": "소대원 앞 구두 공개 질책",
+      "flaws": "'부족' 판정의 기준 부재, 감정적 공개 질책으로 사기 저하"
+    },
+    {
+      "case_id": "C3",
+      "summary": "3소대 분위기 좋음",
+      "evidence": "인상 위주 서술",
+      "feedback_type": "서면 평가지만 일방 전달",
+      "flaws": "구체적 행동 근거 없음, 상호 성찰 코칭 대화 누락"
+    },
+    {
+      "case_id": "C4",
+      "summary": "동일 훈련에 대해 O/C 1은 '우수', O/C 2는 '보통' 채점",
+      "evidence": "관찰관 각자 메모",
+      "feedback_type": "각자 상이한 내용으로 피드백",
+      "flaws": "관찰 위치와 기준 차이로 평가자 간 일관성 붕괴"
+    },
+    {
+      "case_id": "C5",
+      "summary": "지난번에도 늦더니 이번 훈련도 늦음",
+      "evidence": "과거 훈련 선입견",
+      "feedback_type": "구두 피드백",
+      "flaws": "과거 및 최근 인상이 현재 평가에 심각하게 개입(후광/최근 효과)"
+    }
+  ],
+  "framework_chapters": [
+    {
+      "chapter": 1,
+      "title": "총칙: 목적 및 적용 범위"
+    },
+    {
+      "chapter": 2,
+      "title": "용어 정의 및 평가 체계 원칙"
+    },
+    {
+      "chapter": 3,
+      "title": "관찰 가이드라인 (전·중·후 절차)"
+    },
+    {
+      "chapter": 4,
+      "title": "4단계 평가 루브릭 및 근거 6단계"
+    },
+    {
+      "chapter": 5,
+      "title": "점수 확정 산식 및 코칭 스크립트 SOP"
+    },
+    {
+      "chapter": 6,
+      "title": "지휘관 1-Page 성과 종합 분석표"
+    },
+    {
+      "chapter": 7,
+      "title": "신뢰도 스트레스 테스트 및 척도 보정"
+    },
+    {
+      "chapter": 8,
+      "title": "지침 개정 관리 및 인간 최종 책임(HITL)"
+    }
+  ]
+}

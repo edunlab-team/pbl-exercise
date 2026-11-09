@@ -1,0 +1,31 @@
+{
+  "project": "TRN04",
+  "mission": "TRN04_M10",
+  "title": "표준 교육과정 설계서 및 교재 패키지 통합",
+  "package_structure": [
+    "docs/trn04_doc_framework.md (8개 장 표준 설계서)",
+    "framework/trn04_source_reliability_matrix.md (출처 신뢰도 매트릭스)",
+    "analysis/trn04_uncertainty_assessment.md (불확실성 및 관측 공백 평가서)",
+    "matrix/trn04_attribution_matrix.xlsx(md) (근거 귀속 가중치 매트릭스)",
+    "sop/trn04_approval_thresholds_sop.md (훈련 승인 및 위험 통제 SOP)",
+    "templates/trn04_aar_fact_action_template.md (종합 제안서 및 기록 서식)",
+    "rubric/trn04_evaluation_rubric.md (다면 평가 루브릭)",
+    "reports/trn04_redteam_critique_report.md (레드팀 AAR 비판 검토 보고서)",
+    "briefing/trn04_commander_1page_brief.md (지휘관 결심 1-Page 브리프)",
+    "manual/trn04_standard_operational_manual.md (표준 운영 매뉴얼 최종본)"
+  ],
+  "standard_terms": [
+    {
+      "민간표현": "드론",
+      "국방표준": "소형 무인기 (sUAS)"
+    },
+    {
+      "민간표현": "드론 잡는 총",
+      "국방표준": "휴대용 안티드론건 / 재밍 지향기"
+    },
+    {
+      "민간표현": "폭탄 드론",
+      "국방표준": "배회 자폭 무인기 / FPV 공격기"
+    }
+  ]
+}

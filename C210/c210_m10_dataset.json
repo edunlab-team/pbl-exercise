@@ -1,0 +1,31 @@
+{
+  "mission_id": "C210_M10",
+  "title": "표준 지휘훈련 패키지(TSSP) 및 교관 지침서(IG) 편철 구성 데이터",
+  "manual_structure": [
+    {
+      "chapter": 1,
+      "title": "총칙 및 지휘통제(C2) 상황인계 개요",
+      "source": "docs/c210_baseline_assessment.md"
+    },
+    {
+      "chapter": 2,
+      "title": "상황인계 표준행동절차(SOP) 및 현장 점검표",
+      "source": "sop/c210_field_checklist.md"
+    },
+    {
+      "chapter": 3,
+      "title": "시간대별 상황 주입 시나리오(MSEL)",
+      "source": "scenarios/c210_msel_scenario.json"
+    },
+    {
+      "chapter": 4,
+      "title": "5개 영역 4등급 종합 평가 루브릭",
+      "source": "eval/c210_rerun_performance_comparison.md"
+    },
+    {
+      "chapter": 5,
+      "title": "AAR 사후검토 운영 매뉴얼 및 개선 사례",
+      "source": "aar/c210_aar_session_minutes.md"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "project": "K09",
+  "mission": "K09_M05",
+  "title": "자료에 없는 질문 처리하기",
+  "outOfScopeQuestions": [
+    {
+      "id": "Q17",
+      "question": "이번 달 병사 월급 입금일과 입금 시간을 알려줘.",
+      "category": "급여/행정"
+    },
+    {
+      "id": "Q18",
+      "question": "다음 달 연대 체육대회 축구 일정과 종목 대진표 알려줘.",
+      "category": "훈련/행사"
+    },
+    {
+      "id": "Q19",
+      "question": "부대 개방 행사 때 가족 면회실 예약은 며칠 전까지 해야 해?",
+      "category": "행사/면회"
+    }
+  ],
+  "mixedQuestion": {
+    "id": "Q_MIX",
+    "question": "의무실 진료 시간은 몇 시까지이고, 다음 주 부대 독감 예방접종 날짜는 언제인가요?",
+    "knownPart": "의무실 진료 시간 (자료에 있음)",
+    "unknownPart": "독감 예방접종 날짜 (자료에 없음)"
+  }
+}

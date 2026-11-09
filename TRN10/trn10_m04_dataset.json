@@ -1,0 +1,26 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M04",
+  "title": "모의환자 상태 평가 및 전술 사상자 처치 카드(DD Form 1380) 작성(Dry-run)",
+  "dd_1380_fields": [
+    "Evac Priority (Urgent/Priority/Routine)",
+    "Date (YY-MM-DD)",
+    "Time (HH:MM)",
+    "Mechanism of Injury (Artillery/Blast/Gunshot/Burn/Fall)",
+    "Injury Anatomy Body Mapping (Front/Back)",
+    "Signs & Symptoms (Pulse, BP, RR, SpO2, AVPU)",
+    "Treatments: Tourniquet (Site, Time)",
+    "Treatments: Dressing / Hemostatic",
+    "Treatments: Airway (NPA/CRIC/ET-Tube)",
+    "Treatments: Breathing (Chest Seal, Needle-D, Chest Tube)",
+    "Treatments: Circulation (IV/IO Access, TXA, Blood, Fluids)",
+    "Treatments: Medication (Pain, Antibiotics)",
+    "First Responder Name & Unit"
+  ],
+  "dryrun_parameters": {
+    "sop_compliance_pass_rate": 0.8,
+    "report_delay_limit_sec": 180,
+    "mandatory_field_missing_limit": 0,
+    "bottlenecks_to_identify": 2
+  }
+}

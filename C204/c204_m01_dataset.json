@@ -1,0 +1,284 @@
+{
+  "mission_id": "C204_M01",
+  "description": "전술 무전 음성 클립 메타데이터 샘플 20건 (정상 14건, 규칙 위반 결함 주입 6건)",
+  "schema_spec": {
+    "required_fields": [
+      "clip_id",
+      "network_id",
+      "speaker_id",
+      "label",
+      "snr_db",
+      "packet_loss_rate",
+      "urgency",
+      "tactical_params"
+    ],
+    "allowed_labels": [
+      "bonafide",
+      "tts_art",
+      "vc_art",
+      "replay"
+    ],
+    "urgency_levels": [
+      "FLASH",
+      "IMMEDIATE",
+      "PRIORITY",
+      "ROUTINE"
+    ]
+  },
+  "sample_clips": [
+    {
+      "clip_id": "C204_CLIP_001",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "CDR_01",
+      "label": "bonafide",
+      "snr_db": 18.5,
+      "packet_loss_rate": 0.02,
+      "urgency": "IMMEDIATE",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 4.2,
+        "latency_ms": 120,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_002",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "CDR_01",
+      "label": "tts_art",
+      "snr_db": 14.2,
+      "packet_loss_rate": 0.01,
+      "urgency": "FLASH",
+      "tactical_params": {
+        "weather": "FOG",
+        "pos_error_m": 12.5,
+        "latency_ms": 280,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_003",
+      "network_id": "NET_BDE_OPS_03",
+      "speaker_id": "S3_OPS_02",
+      "label": "vc_art",
+      "snr_db": 9.8,
+      "packet_loss_rate": 0.05,
+      "urgency": "FLASH",
+      "tactical_params": {
+        "weather": "RAIN",
+        "pos_error_m": 8.1,
+        "latency_ms": 410,
+        "ew_jamming": true
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_004",
+      "network_id": "NET_BDE_OPS_03",
+      "speaker_id": "CDR_01",
+      "label": "replay",
+      "snr_db": 12.0,
+      "packet_loss_rate": 0.03,
+      "urgency": "PRIORITY",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 5.0,
+        "latency_ms": 150,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_005",
+      "network_id": "NET_BN_TACTICAL_07",
+      "speaker_id": "CO_1CO_01",
+      "label": "bonafide",
+      "snr_db": 22.0,
+      "packet_loss_rate": 0.0,
+      "urgency": "ROUTINE",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 2.5,
+        "latency_ms": 95,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_006",
+      "network_id": "NET_BN_TACTICAL_07",
+      "speaker_id": "CO_2CO_02",
+      "label": "bonafide",
+      "snr_db": 16.0,
+      "packet_loss_rate": 0.02,
+      "urgency": "PRIORITY",
+      "tactical_params": {
+        "weather": "FOG",
+        "pos_error_m": 15.0,
+        "latency_ms": 210,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_007",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "S2_INTEL_01",
+      "label": "tts_art",
+      "snr_db": 11.5,
+      "packet_loss_rate": 0.04,
+      "urgency": "IMMEDIATE",
+      "tactical_params": {
+        "weather": "RAIN",
+        "pos_error_m": 22.0,
+        "latency_ms": 320,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_008",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "CDR_01",
+      "label": "bonafide",
+      "snr_db": 19.0,
+      "packet_loss_rate": 0.01,
+      "urgency": "FLASH",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 3.8,
+        "latency_ms": 110,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_009",
+      "network_id": "NET_BDE_OPS_03",
+      "speaker_id": "FS_COORD_01",
+      "label": "vc_art",
+      "snr_db": 8.0,
+      "packet_loss_rate": 0.08,
+      "urgency": "FLASH",
+      "tactical_params": {
+        "weather": "STORM",
+        "pos_error_m": 35.0,
+        "latency_ms": 550,
+        "ew_jamming": true
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_010",
+      "network_id": "NET_BN_TACTICAL_07",
+      "speaker_id": "CO_3CO_03",
+      "label": "bonafide",
+      "snr_db": 15.5,
+      "packet_loss_rate": 0.02,
+      "urgency": "ROUTINE",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 6.2,
+        "latency_ms": 130,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_011",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "CDR_01",
+      "label": "replay",
+      "snr_db": 13.0,
+      "packet_loss_rate": 0.03,
+      "urgency": "IMMEDIATE",
+      "tactical_params": {
+        "weather": "FOG",
+        "pos_error_m": 18.0,
+        "latency_ms": 240,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_012",
+      "network_id": "NET_BDE_OPS_03",
+      "speaker_id": "CO_1CO_01",
+      "label": "bonafide",
+      "snr_db": 17.0,
+      "packet_loss_rate": 0.01,
+      "urgency": "PRIORITY",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 4.5,
+        "latency_ms": 105,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_013",
+      "network_id": "NET_BN_TACTICAL_07",
+      "speaker_id": "S3_OPS_02",
+      "label": "bonafide",
+      "snr_db": 20.5,
+      "packet_loss_rate": 0.0,
+      "urgency": "ROUTINE",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 3.0,
+        "latency_ms": 85,
+        "ew_jamming": false
+      }
+    },
+    {
+      "clip_id": "C204_CLIP_014",
+      "network_id": "NET_DIV_CMD_01",
+      "speaker_id": "CDR_01",
+      "label": "bonafide",
+      "snr_db": 21.0,
+      "packet_loss_rate": 0.01,
+      "urgency": "FLASH",
+      "tactical_params": {
+        "weather": "CLEAR",
+        "pos_error_m": 2.1,
+        "latency_ms": 90,
+        "ew_jamming": false
+      }
+    }
+  ],
+  "injected_fault_cases": [
+    {
+      "case_id": "F1_SNR_OUT_OF_BOUNDS",
+      "clip_id": "C204_ERR_001",
+      "fault_field": "snr_db",
+      "injected_value": -45.0,
+      "expected_rule": "snr_db minimum is -20.0"
+    },
+    {
+      "case_id": "F2_NEGATIVE_PACKET_LOSS",
+      "clip_id": "C204_ERR_002",
+      "fault_field": "packet_loss_rate",
+      "injected_value": -0.15,
+      "expected_rule": "packet_loss_rate must be >= 0.0"
+    },
+    {
+      "case_id": "F3_INVALID_THREAT_LABEL",
+      "clip_id": "C204_ERR_003",
+      "fault_field": "label",
+      "injected_value": "unknown_spoof",
+      "expected_rule": "label must be enum [bonafide, tts_art, vc_art, replay]"
+    },
+    {
+      "case_id": "F4_MISSING_REQUIRED_KEY",
+      "clip_id": "C204_ERR_004",
+      "fault_field": "speaker_id",
+      "injected_value": null,
+      "expected_rule": "speaker_id is a required property"
+    },
+    {
+      "case_id": "F5_INVALID_TACTICAL_WEATHER",
+      "clip_id": "C204_ERR_005",
+      "fault_field": "tactical_params.weather",
+      "injected_value": "TSUNAMI",
+      "expected_rule": "weather must be enum [CLEAR, FOG, RAIN, STORM, SNOW]"
+    },
+    {
+      "case_id": "F6_EXTREME_LATENCY",
+      "clip_id": "C204_ERR_006",
+      "fault_field": "tactical_params.latency_ms",
+      "injected_value": 99999,
+      "expected_rule": "latency_ms maximum is 5000"
+    }
+  ]
+}

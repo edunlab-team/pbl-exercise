@@ -1,0 +1,123 @@
+{
+  "project": "OPS08",
+  "mission": "OPS08_M04",
+  "title": "드론 경보 1차 모의훈련(Dry-run) 및 성과 측정",
+  "timetable": [
+    {
+      "time_range": "0~10분",
+      "activity": "역할 분담 배정, 안전 브리핑, 초시계 동기화",
+      "in_charge": "교관"
+    },
+    {
+      "time_range": "10~15분",
+      "activity": "SOP 흐름도 및 요약 카드 개인 숙지",
+      "in_charge": "대원 전원"
+    },
+    {
+      "time_range": "15~45분",
+      "activity": "MSEL 1~10 주입 및 1차 Dry-run 실행",
+      "in_charge": "조별 실행"
+    },
+    {
+      "time_range": "45~60분",
+      "activity": "타임스탬프 집계 및 SOP 준수율 계산",
+      "in_charge": "기록자 및 평가관"
+    }
+  ],
+  "dryrun_benchmark_log": [
+    {
+      "event_id": "MSEL-01",
+      "detect_sec": 5,
+      "report_sec": 24,
+      "relay_sec": 48,
+      "action_sec": 78,
+      "sop_pass": true,
+      "note": "정상 초동조치"
+    },
+    {
+      "event_id": "MSEL-02",
+      "detect_sec": 12,
+      "report_sec": 45,
+      "relay_sec": 95,
+      "action_sec": 140,
+      "sop_pass": true,
+      "note": "조류 오인 식별 성공"
+    },
+    {
+      "event_id": "MSEL-03",
+      "detect_sec": 4,
+      "report_sec": 15,
+      "relay_sec": 32,
+      "action_sec": 55,
+      "sop_pass": true,
+      "note": "긴급 모드 전환 양호"
+    },
+    {
+      "event_id": "MSEL-04",
+      "detect_sec": 8,
+      "report_sec": 30,
+      "relay_sec": 70,
+      "action_sec": 110,
+      "sop_pass": true,
+      "note": "비행계획 대조 확인"
+    },
+    {
+      "event_id": "MSEL-05",
+      "detect_sec": 6,
+      "report_sec": 65,
+      "relay_sec": 120,
+      "action_sec": 185,
+      "sop_pass": false,
+      "note": "보고 지연 발생 (무전 혼잡)"
+    },
+    {
+      "event_id": "MSEL-06",
+      "detect_sec": 20,
+      "report_sec": 80,
+      "relay_sec": 140,
+      "action_sec": 210,
+      "sop_pass": false,
+      "note": "통신 두절로 전파 지연"
+    },
+    {
+      "event_id": "MSEL-07",
+      "detect_sec": 3,
+      "report_sec": 12,
+      "relay_sec": 28,
+      "action_sec": 49,
+      "sop_pass": true,
+      "note": "자폭 드론 즉시 은폐"
+    },
+    {
+      "event_id": "MSEL-08",
+      "detect_sec": 7,
+      "report_sec": 95,
+      "relay_sec": 160,
+      "action_sec": 240,
+      "sop_pass": false,
+      "note": "방위 오보고 혼선"
+    },
+    {
+      "event_id": "MSEL-09",
+      "detect_sec": 9,
+      "report_sec": 25,
+      "relay_sec": 52,
+      "action_sec": 88,
+      "sop_pass": true,
+      "note": "선회 감시 유지"
+    },
+    {
+      "event_id": "MSEL-10",
+      "detect_sec": 5,
+      "report_sec": 28,
+      "relay_sec": 65,
+      "action_sec": 105,
+      "sop_pass": true,
+      "note": "편대 드론 분산 관측"
+    }
+  ],
+  "target_metrics": {
+    "sop_adherence_rate_target": 80.0,
+    "average_lead_time_seconds_limit": 180.0
+  }
+}

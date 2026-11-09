@@ -1,0 +1,89 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M04",
+  "title": "적 위협 회피 및 차종 믹스 최적 경로 추천 데이터셋",
+  "meta": {
+    "optimal_risk_weight": 2.3,
+    "top1_accuracy": 0.9,
+    "cost_reduction_ratio": 0.282
+  },
+  "threat_zones": [
+    {
+      "id": "TZ1",
+      "x": 12.4,
+      "y": 8.6,
+      "r": 4.2,
+      "p": 0.15
+    },
+    {
+      "id": "TZ2",
+      "x": 22.1,
+      "y": 14.8,
+      "r": 3.8,
+      "p": 0.18
+    },
+    {
+      "id": "TZ3",
+      "x": 18.7,
+      "y": 19.5,
+      "r": 4.5,
+      "p": 0.12
+    }
+  ],
+  "historical_approvals": [
+    {
+      "case_id": 1,
+      "dest": "N0007",
+      "selected_route": "R2_BALANCED",
+      "officer_decision": "위협 1개소 우회 경로 선택"
+    },
+    {
+      "case_id": 2,
+      "dest": "N0107",
+      "selected_route": "R1_FASTEST",
+      "officer_decision": "기한 촉박으로 최단시간 경로 강행"
+    },
+    {
+      "case_id": 3,
+      "dest": "N0207",
+      "selected_route": "R3_SAFEST",
+      "officer_decision": "탄약 호송으로 안전 최우선 완전 우회"
+    },
+    {
+      "case_id": 4,
+      "dest": "N0307",
+      "selected_route": "R2_BALANCED",
+      "officer_decision": "우회 거리 10% 미만 균형 경로"
+    },
+    {
+      "case_id": 5,
+      "dest": "N0407",
+      "selected_route": "R2_BALANCED",
+      "officer_decision": "위협 회피 및 정시성 충족"
+    },
+    {
+      "case_id": 6,
+      "dest": "N0507",
+      "selected_route": "R3_SAFEST",
+      "officer_decision": "위험 구역 차단으로 우회로 채택"
+    }
+  ],
+  "fleet_mix_comparison": {
+    "requests_total_cargo_t": 35.0,
+    "truck_only": {
+      "vehicle_count": 8,
+      "cost_total": 480.0,
+      "ton_km_cost": 1.42
+    },
+    "trailer_mix": {
+      "vehicle_count": 2,
+      "composition": "대형 트레일러 1대 + 중형 트럭 1대",
+      "cost_total": 344.6,
+      "ton_km_cost": 1.02
+    },
+    "reduction_metrics": {
+      "cost_saved_ratio": 0.282,
+      "vehicles_saved": 6
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M02",
+  "description": "이종 센서 시계 오차(Time-sync) 추정 및 ENU 공간 좌표 변환 전처리 데이터셋",
+  "reference_origin": {
+    "name": "DEFENSE_HQ",
+    "lat_deg": 37.5665,
+    "lon_deg": 126.978,
+    "alt_m": 100.0
+  },
+  "sensor_clocks": [
+    {
+      "sensor_id": "RADAR_01",
+      "nominal_delay_ms": 25.0,
+      "clock_drift_sec": -0.32
+    },
+    {
+      "sensor_id": "RADAR_02",
+      "nominal_delay_ms": 40.0,
+      "clock_drift_sec": 0.15
+    },
+    {
+      "sensor_id": "EOIR_01",
+      "nominal_delay_ms": 15.0,
+      "clock_drift_sec": -0.05
+    },
+    {
+      "sensor_id": "ACOUSTIC_01",
+      "nominal_delay_ms": 120.0,
+      "clock_drift_sec": 0.48
+    }
+  ],
+  "high_speed_target": {
+    "id": "TGT_SUPERSONIC_01",
+    "speed_kmh": 900.0,
+    "flight_altitude_km": 5.0,
+    "heading_deg": 135.0
+  },
+  "preprocessing_test_suite_6": [
+    "DUPLICATE_MESSAGE_FILTERING",
+    "MISSING_FIELD_IMPUTATION",
+    "OUT_OF_COVERAGE_REJECTION",
+    "TIME_SYNC_MEDIAN_ALIGNMENT",
+    "POLAR_TO_ENU_ACCURACY",
+    "THROUGHPUT_1000_MSG_SEC"
+  ]
+}

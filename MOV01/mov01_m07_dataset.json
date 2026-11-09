@@ -1,0 +1,12 @@
+{
+  "lp_optimization_target": {
+    "scenario_savings_avg": 27.1,
+    "backtest_30days_avg": 16.0
+  },
+  "hitl_security_rules": {
+    "auto_approval_allowed": false,
+    "unauthorized_bypass_block_rate": 100.0,
+    "audit_log_hash_algorithm": "SHA-256",
+    "min_reason_length": 10
+  }
+}

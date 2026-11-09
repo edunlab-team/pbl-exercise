@@ -1,0 +1,129 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M02",
+  "title": "전장 제약 조건 다형식 파싱 및 그래프 토폴로지 전처리 데이터셋",
+  "meta": {
+    "formats_supported": [
+      "csv",
+      "excel_tsv",
+      "json",
+      "memo_text"
+    ],
+    "expected_record_count": 11,
+    "quarantined_record": "E999"
+  },
+  "csv_report": "edge_id,status,reason\nE017,파괴,포격으로 노면 유실\nE040,파괴,지뢰 의심 신고\nE058,정상,복구 완료\nE071,파괴,차량 잔해 적치",
+  "excel_tsv_report": "구간ID\t교량하중(t)\t비고\nE025\t15\t교각 손상\nE064\t20\t임시 가설 교량",
+  "json_control_zones": {
+    "control_zones": [
+      {
+        "zone": "CZ-1",
+        "x_km": 17.5,
+        "y_km": 12.0,
+        "r_km": 2.5,
+        "reason": "화생방 오염 의심"
+      },
+      {
+        "zone": "CZ-2",
+        "x_km": 30.0,
+        "y_km": 21.0,
+        "r_km": 1.8,
+        "reason": "민간인 대피 통로"
+      }
+    ]
+  },
+  "memo_military_doc": "[가상 공문] 제목: 도로 상황 변경 통보\n1. 교량 E046 붕괴로 통행 불가.\n2. E083 구간 교량 하중 제한 20톤으로 하향.\n3. E999 구간 파괴 보고(구간 번호 확인 필요).",
+  "alias_dictionary": {
+    "edge_id": [
+      "edge_id",
+      "구간ID",
+      "구간",
+      "링크ID",
+      "구간번호"
+    ],
+    "limit_t": [
+      "limit_t",
+      "교량하중(t)",
+      "하중",
+      "통과제한",
+      "제한하중"
+    ],
+    "status": [
+      "status",
+      "상태",
+      "소통상황",
+      "통행여부"
+    ]
+  },
+  "expected_parsed_records": [
+    {
+      "type": "close",
+      "edge_id": "E017",
+      "reason": "포격으로 노면 유실"
+    },
+    {
+      "type": "close",
+      "edge_id": "E040",
+      "reason": "지뢰 의심 신고"
+    },
+    {
+      "type": "reopen",
+      "edge_id": "E058",
+      "reason": "복구 완료"
+    },
+    {
+      "type": "close",
+      "edge_id": "E071",
+      "reason": "차량 잔해 적치"
+    },
+    {
+      "type": "limit",
+      "edge_id": "E025",
+      "value": 15.0,
+      "reason": "교각 손상"
+    },
+    {
+      "type": "limit",
+      "edge_id": "E064",
+      "value": 20.0,
+      "reason": "임시 가설 교량"
+    },
+    {
+      "type": "zone",
+      "zone": "CZ-1",
+      "value": [
+        17.5,
+        12.0,
+        2.5
+      ],
+      "reason": "화생방 오염 의심"
+    },
+    {
+      "type": "zone",
+      "zone": "CZ-2",
+      "value": [
+        30.0,
+        21.0,
+        1.8
+      ],
+      "reason": "민간인 대피 통로"
+    },
+    {
+      "type": "close",
+      "edge_id": "E046",
+      "reason": "1. 교량 E046 붕괴로 통행 불가."
+    },
+    {
+      "type": "limit",
+      "edge_id": "E083",
+      "value": 20.0,
+      "reason": "2. E083 구간 교량 하중 제한 20톤으로 하향."
+    },
+    {
+      "type": "close",
+      "edge_id": "E999",
+      "reason": "3. E999 구간 파괴 보고(구간 번호 확인 필요).",
+      "status": "QUARANTINED"
+    }
+  ]
+}

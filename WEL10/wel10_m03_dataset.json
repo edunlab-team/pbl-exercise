@@ -1,0 +1,45 @@
+{
+  "unit_rosters": {
+    "Unit_A": {
+      "type": "GOP 격오지",
+      "total": 8,
+      "violations_expected": 7
+    },
+    "Unit_B": {
+      "type": "해안 소초",
+      "total": 8,
+      "violations_expected": 9
+    },
+    "Unit_C": {
+      "type": "기지 경비대",
+      "total": 8,
+      "violations_expected": 8
+    }
+  },
+  "msel_inject_events": [
+    {
+      "id": "INJ-01",
+      "time": "D+1 02:00",
+      "type": "NORMAL",
+      "content": "정반야->후반야 정상 교대 및 지통실 인계 보고"
+    },
+    {
+      "id": "INJ-02",
+      "time": "D+2 03:30",
+      "type": "ABNORMAL",
+      "content": "초소 1번 근무자(S05) 발열 및 복통 발생 (결원)"
+    },
+    {
+      "id": "INJ-03",
+      "time": "D+3 14:00",
+      "type": "ABNORMAL",
+      "content": "사단 긴급 지시로 대대 인원 2명 긴급 파견 차출"
+    },
+    {
+      "id": "INJ-04",
+      "time": "D+4 23:00",
+      "type": "ABNORMAL",
+      "content": "기상 악화(폭우)로 전반야 근무자 철수 1시간 지연"
+    }
+  ]
+}

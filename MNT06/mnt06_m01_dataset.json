@@ -1,0 +1,169 @@
+{
+  "title": "MNT06_M01 3D 프린팅 부품 CAD 모델 및 소재 물성 데이터셋 샘플",
+  "total_samples": 20,
+  "target_features": 26,
+  "schema_fields": [
+    {
+      "name": "part_id",
+      "type": "string",
+      "desc": "부품 표준 식별코드 (가상 NIIN 모사)"
+    },
+    {
+      "name": "fsc_category",
+      "type": "string",
+      "desc": "군수 보급 분류군 (FSC 4자리)"
+    },
+    {
+      "name": "part_name",
+      "type": "string",
+      "desc": "부품 품명 (브래킷, 하우징, 커버류 등)"
+    },
+    {
+      "name": "material_code",
+      "type": "string",
+      "desc": "소재 식별코드 (AL6061, SUS316L, PLA, PEEK 등)"
+    },
+    {
+      "name": "material_type",
+      "type": "string",
+      "desc": "소재 분류 (METAL, POLYMER)"
+    },
+    {
+      "name": "tensile_strength_mpa",
+      "type": "float",
+      "desc": "소재 기준 인장강도 (MPa)"
+    },
+    {
+      "name": "yield_strength_mpa",
+      "type": "float",
+      "desc": "소재 기준 항복강도 (MPa)"
+    },
+    {
+      "name": "density_g_cm3",
+      "type": "float",
+      "desc": "소재 밀도 (g/cm³)"
+    },
+    {
+      "name": "max_dim_mm",
+      "type": "float",
+      "desc": "외곽 최대 치수 (mm)"
+    },
+    {
+      "name": "min_wall_thickness_mm",
+      "type": "float",
+      "desc": "CAD 형상 최소 벽두께 (mm)"
+    },
+    {
+      "name": "overhang_ratio",
+      "type": "float",
+      "desc": "45도 이상 돌출 형상 비율 (0.0~1.0)"
+    },
+    {
+      "name": "mesh_volume_cm3",
+      "type": "float",
+      "desc": "3D CAD 삼각 메쉬 기준 체적 (cm³)"
+    },
+    {
+      "name": "mesh_triangle_cnt",
+      "type": "integer",
+      "desc": "삼각형 메쉬 총 면수"
+    },
+    {
+      "name": "load_type",
+      "type": "string",
+      "desc": "사용 하중 유형 (STATIC, CYCLIC, VIBRATION)"
+    },
+    {
+      "name": "operating_load_n",
+      "type": "float",
+      "desc": "작전 운용 최대 하중 (N)"
+    },
+    {
+      "name": "operating_temp_c",
+      "type": "float",
+      "desc": "운용 환경 온도 (℃)"
+    },
+    {
+      "name": "annual_demand_qty",
+      "type": "integer",
+      "desc": "연간 부품 소요량"
+    },
+    {
+      "name": "monthly_scrap_rate",
+      "type": "float",
+      "desc": "월간 부품 폐기율 (0.0~1.0)"
+    },
+    {
+      "name": "procurement_lead_days",
+      "type": "integer",
+      "desc": "기존 조달 소요일수 (Lead Time)"
+    },
+    {
+      "name": "procurement_cost_krw",
+      "type": "integer",
+      "desc": "기존 조달 단가 (가정 단가, 원)"
+    },
+    {
+      "name": "print_success_hist",
+      "type": "integer",
+      "desc": "과거 시험 출력 성공 여부 (1: 성공, 0: 실패)"
+    },
+    {
+      "name": "true_tensile_strength",
+      "type": "float",
+      "desc": "실측 인장강도 (MPa)"
+    },
+    {
+      "name": "true_fatigue_life_cycles",
+      "type": "integer",
+      "desc": "실측 피로 수명 (사이클)"
+    },
+    {
+      "name": "mil_std_compliance_score",
+      "type": "float",
+      "desc": "군 규격 부합성 신뢰도 점수 (0~100)"
+    },
+    {
+      "name": "criticality_level",
+      "type": "string",
+      "desc": "부품 중요도 등급 (HIGH, MEDIUM, LOW)"
+    },
+    {
+      "name": "certified_material_flag",
+      "type": "integer",
+      "desc": "공인 소재 시험인증서 보유 여부 (1/0)"
+    }
+  ],
+  "injected_errors_sample": [
+    {
+      "case": 1,
+      "field": "min_wall_thickness_mm",
+      "value": -1.5,
+      "rule": "음수 불가 (두께 > 0)"
+    },
+    {
+      "case": 2,
+      "field": "tensile_strength_mpa",
+      "value": 9999.0,
+      "rule": "물리적 허용 범위 초과"
+    },
+    {
+      "case": 3,
+      "field": "part_id",
+      "value": "",
+      "rule": "필수 식별코드 누락"
+    },
+    {
+      "case": 4,
+      "field": "monthly_scrap_rate",
+      "value": 1.45,
+      "rule": "비율 범위 초과 (0.0~1.0)"
+    },
+    {
+      "case": 5,
+      "field": "fsc_category",
+      "value": 5305,
+      "rule": "자료형 오류 (문자열 요구)"
+    }
+  ]
+}

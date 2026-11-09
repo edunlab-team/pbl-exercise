@@ -1,0 +1,110 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M06",
+  "title": "2x2 수송 관제 대시보드 및 10종 예외 방어 데이터셋",
+  "meta": {
+    "fleet_utilization": 0.7,
+    "total_cost": 396.9,
+    "fault_cases_count": 10,
+    "crash_count": 0
+  },
+  "active_fleet_summary": {
+    "total_assets": 10,
+    "active_assets": 7,
+    "maintenance_assets": 2,
+    "idle_assets": 1,
+    "utilization_rate": 0.7,
+    "total_operating_cost": 396.9,
+    "delayed_warnings_count": 1
+  },
+  "fault_injection_10": [
+    {
+      "code": "ERR_001",
+      "name": "노드 좌표 결측",
+      "input": {
+        "x_km": null,
+        "y_km": 15.0
+      },
+      "action": "최근 GPS 기록 또는 기지국 위치로 보정 요망"
+    },
+    {
+      "code": "ERR_002",
+      "name": "적재 용량 초과",
+      "input": {
+        "cargo_t": 45.0,
+        "asset_cap": 20.0
+      },
+      "action": "화물 분할 또는 추가 트럭 배차 필요"
+    },
+    {
+      "code": "ERR_003",
+      "name": "비인가 특수문자",
+      "input": {
+        "asset_id": "TRK#001;DROP"
+      },
+      "action": "영숫자 및 하이픈 규격으로 재입력"
+    },
+    {
+      "code": "ERR_004",
+      "name": "음수 좌표 입력",
+      "input": {
+        "x_km": -999.0
+      },
+      "action": "작전 구역 경계(-100~100) 내 유효 좌표 입력"
+    },
+    {
+      "code": "ERR_005",
+      "name": "시간 역전 입력",
+      "input": {
+        "start_h": 5.0,
+        "end_h": 4.0
+      },
+      "action": "출발 및 도착 타임스탬프 순서 확인"
+    },
+    {
+      "code": "ERR_006",
+      "name": "미등록 목적지",
+      "input": {
+        "dest": "N9999"
+      },
+      "action": "도로망 토폴로지에 등록된 노드 번호 조회"
+    },
+    {
+      "code": "ERR_007",
+      "name": "미존재 자산 배정",
+      "input": {
+        "asset_id": "AIR-999"
+      },
+      "action": "편성 부대 가용 자산 목록 재조회"
+    },
+    {
+      "code": "ERR_008",
+      "name": "교량 하중 음수",
+      "input": {
+        "limit_t": -10.0
+      },
+      "action": "교량 제원표 재확인 및 양수 하중 입력"
+    },
+    {
+      "code": "ERR_009",
+      "name": "기한 초과 요청",
+      "input": {
+        "deadline_h": 999.0
+      },
+      "action": "작전 최대 허용 기한(72시간) 이내 재설정"
+    },
+    {
+      "code": "ERR_010",
+      "name": "빈 요청 페이로드",
+      "input": {},
+      "action": "필수 필드(도착지, 화물량, 기한) 입력 확인"
+    }
+  ],
+  "dashboard_layout_config": {
+    "grid": "2x2",
+    "panel_1": "전장 도로망 및 추천 경로 오버레이 지도",
+    "panel_2": "수송 자산별 가동률 및 정비 상태 막대그래프",
+    "panel_3": "시간대별 수송 운행 일정 타임라인 (Gantt)",
+    "panel_4": "수송 요청별 톤km당 누적 운행 비용 차트"
+  }
+}

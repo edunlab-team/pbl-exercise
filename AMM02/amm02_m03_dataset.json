@@ -1,0 +1,64 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M03",
+  "baseline_days": 90,
+  "baseline_summary": {
+    "ammo_mape_range": [
+      37.9,
+      43.8
+    ],
+    "fuel_mape_range": [
+      16.8,
+      25.9
+    ],
+    "zero_consumption_days": 12
+  },
+  "significant_correlation_features": [
+    {
+      "feature": "combat_intensity",
+      "corr": 0.78,
+      "p_value": 0.0001,
+      "significance": true
+    },
+    {
+      "feature": "enemy_resistance",
+      "corr": 0.69,
+      "p_value": 0.0004,
+      "significance": true
+    },
+    {
+      "feature": "fire_missions_count",
+      "corr": 0.84,
+      "p_value": 0.0,
+      "significance": true
+    },
+    {
+      "feature": "movement_distance_km",
+      "corr": 0.72,
+      "p_value": 0.0002,
+      "significance": true
+    },
+    {
+      "feature": "operation_defense_flag",
+      "corr": 0.61,
+      "p_value": 0.0018,
+      "significance": true
+    },
+    {
+      "feature": "troop_size_normalized",
+      "corr": 0.54,
+      "p_value": 0.0062,
+      "significance": true
+    }
+  ],
+  "abc_pareto_analysis": {
+    "total_unit_item_pairs": 48,
+    "tier_a_top_20_percent": 10,
+    "tier_a_consumption_share": 0.71,
+    "core_pairs": [
+      "UNIT-701 x AMMO-155-HE",
+      "UNIT-702 x POL-DIESEL-DF2",
+      "UNIT-703 x AMMO-120-M"
+    ]
+  }
+}

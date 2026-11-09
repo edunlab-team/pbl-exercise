@@ -1,0 +1,55 @@
+{
+  "mission_id": "C204_M08",
+  "description": "전자전 재밍 세기 단계별(J/S 0~25dB) 스트레스 시험 표본 및 평시 5배 부하 패킷 제원",
+  "stress_test_matrix": [
+    {
+      "js_ratio_db": 0,
+      "snr_db": 18.0,
+      "expected_acc": 93.5,
+      "expected_recall": 91.0,
+      "status": "STABLE"
+    },
+    {
+      "js_ratio_db": 5,
+      "snr_db": 14.0,
+      "expected_acc": 89.0,
+      "expected_recall": 87.5,
+      "status": "STABLE"
+    },
+    {
+      "js_ratio_db": 10,
+      "snr_db": 9.5,
+      "expected_acc": 84.5,
+      "expected_recall": 82.0,
+      "status": "WARNING"
+    },
+    {
+      "js_ratio_db": 15,
+      "snr_db": 5.0,
+      "expected_acc": 79.0,
+      "expected_recall": 74.0,
+      "status": "CLIFF_EDGE (판정 불가)"
+    },
+    {
+      "js_ratio_db": 20,
+      "snr_db": 1.0,
+      "expected_acc": 66.5,
+      "expected_recall": 58.0,
+      "status": "CRITICAL_COLLAPSE"
+    },
+    {
+      "js_ratio_db": 25,
+      "snr_db": -4.0,
+      "expected_acc": 51.0,
+      "expected_recall": 35.0,
+      "status": "CRITICAL_COLLAPSE"
+    }
+  ],
+  "traffic_surge_params": {
+    "baseline_tps": 20,
+    "stress_5x_tps": 100,
+    "corrupted_packet_injection_rate": 0.05,
+    "target_drop_rate": 0.0,
+    "degraded_mode_trigger_latency_ms": 1000
+  }
+}

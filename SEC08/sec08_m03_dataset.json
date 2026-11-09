@@ -1,0 +1,60 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M03",
+  "title": "경계조, 대공포대, 방호통제실 간 신속 전파 및 역할 분담 체계 수립",
+  "time_standards": [
+    {
+      "section": "구간 1: 경계조 최초 보고",
+      "limit_seconds": 30,
+      "responsible": "경계조"
+    },
+    {
+      "section": "구간 2: 통제실 접수 및 복창",
+      "limit_seconds": 15,
+      "responsible": "방호통제실"
+    },
+    {
+      "section": "구간 3: 기지 경보 방송 발령",
+      "limit_seconds": 15,
+      "responsible": "방호통제실"
+    },
+    {
+      "section": "구간 4: 대응조 출동 및 무전 전파",
+      "limit_seconds": 30,
+      "responsible": "방호통제실 → 대응조"
+    },
+    {
+      "section": "구간 5: 시설관리반 전파 및 차단",
+      "limit_seconds": 30,
+      "responsible": "방호통제실 → 시설관리반"
+    }
+  ],
+  "salute_template": [
+    {
+      "item": "Size(규모)",
+      "definition": "침입 드론 대수 (예: 1기, 2기 편대)"
+    },
+    {
+      "item": "Activity(행동)",
+      "definition": "호버링, 선회, 급강하, 투하 등 비행 양상"
+    },
+    {
+      "item": "Location(위치)",
+      "definition": "진지 정면 기준 방위각 및 핵심 시설물 명칭"
+    },
+    {
+      "item": "Unit/Type(기종)",
+      "definition": "쿼드콥터, 고정익, 미상 소형 회전익"
+    },
+    {
+      "item": "Time(시각)",
+      "definition": "최초 목격 시각 (분:초)"
+    },
+    {
+      "item": "Equipment(장비)",
+      "definition": "카메라, 배터리팩, 폭발물 의심 매달림 여부"
+    }
+  ],
+  "msel_events_count": 10,
+  "ratio": "정상 위협 6건 : 비정상(오보·교란·통신두절) 4건"
+}

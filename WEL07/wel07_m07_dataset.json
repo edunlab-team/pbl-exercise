@@ -1,0 +1,65 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M07",
+  "title": "극한 스트레스 및 자원 결핍 상황 대응 훈련 실시",
+  "stress_cards": [
+    {
+      "card_id": "SC-01",
+      "title": "의무 물자(지혈대·수액) 급격 고갈",
+      "condition": "지혈대 잔여 1개, 수액 잔여 0팩 상황 주입",
+      "protocol": "압박 붕대 대체 적용, Crisis Triage 선언, 상급 부대 긴급 물자 수송 요청"
+    },
+    {
+      "card_id": "SC-02",
+      "title": "전술 무전망 완전 단절 (Comms Blackout)",
+      "condition": "무전 교신 100% 두절, 안테나 피격 상황",
+      "protocol": "전령 러너 운용, 3대 핵심 정보(환자수/적색수/소요물자) 단문 메모 전달"
+    },
+    {
+      "card_id": "SC-03",
+      "title": "선임 의무부사관(처치반장) 부상 유고",
+      "condition": "처치반장 파편창으로 임무 수행 불가",
+      "protocol": "임무 위임 순서표에 따라 선임 의무병이 즉각 직무 인수(Fail-safe)"
+    },
+    {
+      "card_id": "SC-04",
+      "title": "후송 앰뷸런스 기계 고장으로 출발 지연",
+      "condition": "구급차 엔진 정지로 후송 불가",
+      "protocol": "일반 수송 트럭 긴급 차출 및 의무병 1명 동승 조치"
+    },
+    {
+      "card_id": "SC-05",
+      "title": "2차 파상 사상자(추가 6명) 급작 유입",
+      "condition": "분류소 수용 한계 초과",
+      "protocol": "경외 2차 대기소 신속 전개, 녹색 보행자 분류소 외곽 분리"
+    },
+    {
+      "card_id": "SC-06",
+      "title": "안전통제관 즉각 중지 (Safety Pause)",
+      "condition": "실제 장병 낙상 안전사고 발생 모의",
+      "protocol": "Knock-it-off 즉각 선언, 전 훈련 중단, 안전 점검 후 재개"
+    }
+  ],
+  "delegation_hierarchy": [
+    {
+      "rank": 1,
+      "role": "의무대장 (군의관)",
+      "authority": "전체 MASCAL 지휘, 최종 분류 승인, 상급 후송 지시"
+    },
+    {
+      "rank": 2,
+      "role": "의무부사관 (처치반장)",
+      "authority": "현장 처치 통제, 자원 분배, 지휘관 유고 시 현장 총괄"
+    },
+    {
+      "rank": 3,
+      "role": "선임 의무병 (기록/분류 담당)",
+      "authority": "분류소 운영, 인계 기록 검증, 부사관 유고 시 대행"
+    },
+    {
+      "rank": 4,
+      "role": "후송 통제병 (통신/후송 담당)",
+      "authority": "후송 수송 자산 배정, 통신 두절 시 전령 통제"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "project": "PRC01",
+  "mission": "PRC01_M06",
+  "title": "스트레스 테스트 20종 결함 주입 및 에러 코드 매핑 데이터",
+  "stress_test_cases_count": 20,
+  "sample_fault_cases": [
+    {
+      "case_id": "ERR-01",
+      "type": "열 누락",
+      "detail": "contract_id 컬럼 결측",
+      "code": "E101"
+    },
+    {
+      "case_id": "ERR-02",
+      "type": "자료형 오류",
+      "detail": "amount_krw에 문자열 '오억원' 삽입",
+      "code": "E102"
+    },
+    {
+      "case_id": "ERR-03",
+      "type": "특수문자",
+      "detail": "계약명에 제어문자 \\x00, \\r 삽입",
+      "code": "E103"
+    },
+    {
+      "case_id": "ERR-04",
+      "type": "비정상 크기",
+      "detail": "단일 조항 텍스트 크기 1MB 초과",
+      "code": "E104"
+    },
+    {
+      "case_id": "ERR-05",
+      "type": "대용량 입력",
+      "detail": "20,000행 일시 투입 메모리 부하",
+      "code": "E105"
+    },
+    {
+      "case_id": "ERR-06",
+      "type": "음수 비율",
+      "detail": "지체상금률: -1.0",
+      "code": "E106"
+    }
+  ],
+  "retry_config": {
+    "max_retries": 3,
+    "backoff_factor": 1.5,
+    "fallback_state": "LAST_VALID_SNAPSHOT"
+  }
+}

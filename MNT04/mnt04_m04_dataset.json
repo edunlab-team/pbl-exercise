@@ -1,0 +1,27 @@
+{
+  "title": "MNT04_M04 오토인코더 모델 규격 및 파생 피처 명세",
+  "model_architecture": {
+    "type": "MLP Autoencoder",
+    "input_dim": 20,
+    "encoder_layers": [
+      64,
+      32,
+      16
+    ],
+    "latent_dim": 8,
+    "decoder_layers": [
+      16,
+      32,
+      64
+    ],
+    "threshold_quantile": 0.99,
+    "consecutive_days_trigger": 2
+  },
+  "performance_comparison": {
+    "baseline_detection_rate": 91.2,
+    "baseline_false_alarm_rate": 22.4,
+    "autoencoder_detection_rate": 96.5,
+    "autoencoder_false_alarm_rate": 3.8,
+    "micro_degradation_detection_rate": 78.4
+  }
+}

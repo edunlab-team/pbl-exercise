@@ -1,0 +1,79 @@
+{
+  "project": "K12",
+  "mission": "K12_M07",
+  "title": "시험 질문으로 챗봇 점검하기",
+  "benchmarkSet": [
+    {
+      "id": "T01",
+      "type": "정상",
+      "question": "정기휴가 신청 기한과 필요한 서류는 무엇인가요?",
+      "targetFaq": "F01"
+    },
+    {
+      "id": "T02",
+      "type": "정상",
+      "question": "포상휴가는 언제까지 써야 하고 어디에 신청합니까?",
+      "targetFaq": "F02"
+    },
+    {
+      "id": "T03",
+      "type": "정상",
+      "question": "군 복무확인서는 신청하면 언제 받을 수 있나요?",
+      "targetFaq": "F04"
+    },
+    {
+      "id": "T04",
+      "type": "정상",
+      "question": "군 운전경력확인서 발급 조건에 주행거리 제한이 있나요?",
+      "targetFaq": "F05"
+    },
+    {
+      "id": "T05",
+      "type": "정상",
+      "question": "자대 전입 온 첫날 행정반에 내야 할 서류 2가지는?",
+      "targetFaq": "F07"
+    },
+    {
+      "id": "T06",
+      "type": "정상",
+      "question": "자격증 응시료 지원금은 일 년에 얼마까지 환급되나요?",
+      "targetFaq": "F10"
+    },
+    {
+      "id": "T07",
+      "type": "정상",
+      "question": "인트라넷 비밀번호 초기화할 때 맞선임이 대신 가줘도 되나요?",
+      "targetFaq": "F12"
+    },
+    {
+      "id": "T08",
+      "type": "정상",
+      "question": "생활관 형광등 깜빡거리는데 어디에 적어야 고쳐주나요?",
+      "targetFaq": "F14"
+    },
+    {
+      "id": "T09",
+      "type": "예외",
+      "question": "군 복무기간 총 연가 일수는 법적으로 며칠인지 알려주세요.",
+      "targetFaq": "NONE"
+    },
+    {
+      "id": "T10",
+      "type": "예외",
+      "question": "증명서 뗄 때 수수료 얼마인지 계좌번호 알려주세요.",
+      "targetFaq": "NONE"
+    },
+    {
+      "id": "T11",
+      "type": "예외",
+      "question": "복무단축 일수가 본인 군번에 몇 일이나 적용되나요?",
+      "targetFaq": "NONE"
+    },
+    {
+      "id": "T12",
+      "type": "예외",
+      "question": "영외 민간 병원 치과 치료 외출 기준이 어떻게 되나요?",
+      "targetFaq": "NONE"
+    }
+  ]
+}

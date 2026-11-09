@@ -1,0 +1,181 @@
+{
+  "project": "K10",
+  "mission": "K10_M05",
+  "title": "정확도와 혼동표로 평가하기",
+  "intents": [
+    "schedule",
+    "leave",
+    "outing",
+    "late",
+    "visit",
+    "phone",
+    "welfare",
+    "meal",
+    "medical",
+    "security",
+    "account",
+    "selfdev",
+    "counsel",
+    "room",
+    "supply"
+  ],
+  "evaluation_set": [
+    {
+      "question": "개인정비 시간은 언제인가요",
+      "intent": "schedule",
+      "intent_name": "일과 시간"
+    },
+    {
+      "question": "아침에 몇 시에 일어나야 해요",
+      "intent": "schedule",
+      "intent_name": "일과 시간"
+    },
+    {
+      "question": "첫 휴가 때 뭘 준비해야 해요",
+      "intent": "leave",
+      "intent_name": "휴가"
+    },
+    {
+      "question": "휴가 인원이 몰리면 어떻게 정해요",
+      "intent": "leave",
+      "intent_name": "휴가"
+    },
+    {
+      "question": "공휴일에도 외출 되나요",
+      "intent": "outing",
+      "intent_name": "외출·외박"
+    },
+    {
+      "question": "외출 때 어디 간다고 말해야 해요",
+      "intent": "outing",
+      "intent_name": "외출·외박"
+    },
+    {
+      "question": "귀대 시간이 지날 것 같아요",
+      "intent": "late",
+      "intent_name": "복귀 지연"
+    },
+    {
+      "question": "버스를 놓쳐서 복귀가 늦어요",
+      "intent": "late",
+      "intent_name": "복귀 지연"
+    },
+    {
+      "question": "면회 장소가 어디예요",
+      "intent": "visit",
+      "intent_name": "면회"
+    },
+    {
+      "question": "친구도 면회 올 수 있나요",
+      "intent": "visit",
+      "intent_name": "면회"
+    },
+    {
+      "question": "평일에도 전화할 수 있나요",
+      "intent": "phone",
+      "intent_name": "휴대전화·전화"
+    },
+    {
+      "question": "휴대폰 보관은 어디에 하나요",
+      "intent": "phone",
+      "intent_name": "휴대전화·전화"
+    },
+    {
+      "question": "운동하려면 어디로 가야 해요",
+      "intent": "welfare",
+      "intent_name": "복지시설"
+    },
+    {
+      "question": "도서관은 언제 열어요",
+      "intent": "welfare",
+      "intent_name": "복지시설"
+    },
+    {
+      "question": "저녁 식사는 몇 시부터인가요",
+      "intent": "meal",
+      "intent_name": "식사"
+    },
+    {
+      "question": "점심은 몇 시에 나와요",
+      "intent": "meal",
+      "intent_name": "식사"
+    },
+    {
+      "question": "병원에 가야 할 것 같아요",
+      "intent": "medical",
+      "intent_name": "진료·의무"
+    },
+    {
+      "question": "예방접종은 언제 하나요",
+      "intent": "medical",
+      "intent_name": "진료·의무"
+    },
+    {
+      "question": "휴대폰 카메라 써도 돼요",
+      "intent": "security",
+      "intent_name": "보안·촬영"
+    },
+    {
+      "question": "ChatGPT에 부대 문서를 입력해도 되나요",
+      "intent": "security",
+      "intent_name": "보안·촬영"
+    },
+    {
+      "question": "전우에게 내 비번을 알려줘도 되나요",
+      "intent": "account",
+      "intent_name": "계정·비밀번호"
+    },
+    {
+      "question": "업무 계정은 어떻게 받아요",
+      "intent": "account",
+      "intent_name": "계정·비밀번호"
+    },
+    {
+      "question": "수강료도 지원해 주나요",
+      "intent": "selfdev",
+      "intent_name": "자기개발"
+    },
+    {
+      "question": "자격증 공부는 언제 할 수 있어요",
+      "intent": "selfdev",
+      "intent_name": "자기개발"
+    },
+    {
+      "question": "소원수리함이 어디 있어요",
+      "intent": "counsel",
+      "intent_name": "고충·상담"
+    },
+    {
+      "question": "고민을 털어놓을 사람이 필요해요",
+      "intent": "counsel",
+      "intent_name": "고충·상담"
+    },
+    {
+      "question": "생활관 정리 기준이 뭐예요",
+      "intent": "room",
+      "intent_name": "생활관·청소"
+    },
+    {
+      "question": "방 청소 몇 분 동안 해요",
+      "intent": "room",
+      "intent_name": "생활관·청소"
+    },
+    {
+      "question": "세탁실은 언제 쓸 수 있나요",
+      "intent": "supply",
+      "intent_name": "보급품·세탁"
+    },
+    {
+      "question": "속옷이나 양말도 보급되나요",
+      "intent": "supply",
+      "intent_name": "보급품·세탁"
+    }
+  ],
+  "metrics_to_compute": [
+    "accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "confusion_matrix"
+  ]
+}

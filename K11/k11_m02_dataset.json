@@ -1,0 +1,39 @@
+{
+  "project": "K11",
+  "mission": "K11_M02",
+  "title": "일정 시간 겹침 찾기",
+  "total_overlaps": 36,
+  "categories": {
+    "actual_conflict": 2,
+    "meal_rollcall": 1,
+    "routine_replace": 14,
+    "routine_exclude": 19
+  },
+  "actual_conflicts": [
+    {
+      "id1": "D03",
+      "name1": "경계근무",
+      "id2": "T03",
+      "name2": "정신교육",
+      "day": 3,
+      "overlap_minutes": 60,
+      "time_range": "16:00~17:00"
+    },
+    {
+      "id1": "T07",
+      "name1": "체력검정",
+      "id2": "T08",
+      "name2": "신체검사(의무실)",
+      "day": 8,
+      "overlap_minutes": 60,
+      "time_range": "10:30~11:30"
+    }
+  ],
+  "boundary_test": {
+    "id1": "TEST_A",
+    "end": "10:00",
+    "id2": "TEST_B",
+    "start": "10:00",
+    "is_overlap": false
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "project": "PRC01",
+  "mission": "PRC01_M03",
+  "title": "방위사업 계약 16종 룰셋 및 단위 테스트 데이터",
+  "rules_yaml_content": "\nrules:\n  - id: R01\n    name: 지체상금률 하한 위반\n    threshold: 0.0015\n    operator: \"<\"\n    weight: 3\n    ref_clause: \"국가계약법 시행령 제74조\"\n  - id: R02\n    name: 선금지급 한도 초과\n    threshold: 0.7\n    operator: \">\"\n    weight: 2\n    ref_clause: \"정부 입찰·계약 집행기준 제34조\"\n  - id: R03\n    name: 선금보증 비율 미달\n    threshold: 1.0\n    operator: \"<\"\n    weight: 3\n    ref_clause: \"국가계약법 시행령 제37조\"\n  - id: R04\n    name: 수의계약 금액 한도 초과\n    threshold: 300000000\n    operator: \">\"\n    weight: 4\n    ref_clause: \"방위사업법 시행령 제61조\"\n  - id: R05\n    name: 이행보증금률 미달\n    threshold: 0.1\n    operator: \"<\"\n    weight: 3\n    ref_clause: \"국가계약법 제12조\"\n  - id: R06\n    name: 하자보증금률 미달\n    threshold: 0.02\n    operator: \"<\"\n    weight: 2\n    ref_clause: \"국가계약법 시행령 제62조\"\n  - id: R07\n    name: 보안관리 특수조건 누락\n    threshold: false\n    operator: \"==\"\n    weight: 3\n    ref_clause: \"군사보안업무훈령 제105조\"\n  - id: R08\n    name: 계약해지 조건 누락\n    threshold: false\n    operator: \"==\"\n    weight: 3\n    ref_clause: \"표준계약서 일반조건 제28조\"\n",
+  "boundary_test_cases_count": 32,
+  "sample_boundary_cases": [
+    {
+      "rule_id": "R01",
+      "val": 0.00149,
+      "expected": true,
+      "desc": "지체상금률 미만(적중)"
+    },
+    {
+      "rule_id": "R01",
+      "val": 0.0015,
+      "expected": false,
+      "desc": "지체상금률 기준값(미적중)"
+    },
+    {
+      "rule_id": "R02",
+      "val": 0.70001,
+      "expected": true,
+      "desc": "선금한도 초과(적중)"
+    },
+    {
+      "rule_id": "R02",
+      "val": 0.7,
+      "expected": false,
+      "desc": "선금한도 기준값(미적중)"
+    },
+    {
+      "rule_id": "R04",
+      "val": 299999999,
+      "expected": false,
+      "desc": "수의계약 한도 미만(미적중)"
+    },
+    {
+      "rule_id": "R04",
+      "val": 300000001,
+      "expected": true,
+      "desc": "수의계약 한도 초과(적중)"
+    }
+  ]
+}

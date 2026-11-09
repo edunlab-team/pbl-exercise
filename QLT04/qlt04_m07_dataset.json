@@ -1,0 +1,46 @@
+{
+  "title": "4단계 결재선 워크플로우 12건 및 13종 권한 우회 차단 시나리오",
+  "workflow_steps": [
+    "1:정비담당(상신)",
+    "2:정비관(1차검토)",
+    "3:품질검사관(기술심사)",
+    "4:군수참모(최종승인)"
+  ],
+  "total_proposals": 12,
+  "sample_proposals": [
+    {
+      "id": "PROP-01",
+      "eq_id": "EQ-B-015",
+      "action": "외주 검사원 현장 급파",
+      "current_step": "4:군수참모",
+      "status": "승인대기"
+    },
+    {
+      "id": "PROP-02",
+      "eq_id": "EQ-A-008",
+      "action": "부품 사단 간 긴급 공출",
+      "current_step": "3:품질검사관",
+      "status": "심사의결"
+    },
+    {
+      "id": "PROP-03",
+      "eq_id": "EQ-C-042",
+      "action": "외주업체 전면 재작업 청구",
+      "current_step": "2:정비관",
+      "status": "반려",
+      "reject_reason": "하자 판정 기술 소명서 미첨부"
+    }
+  ],
+  "rbac_bypass_tests": [
+    "정비담당이 직권으로 군수참모 최종 승인 시도",
+    "품질검사관 기술심사 건너뛰고 승인 시도",
+    "반려된 안건 사유 보완 없이 재기안 시도",
+    "타 부대 담당자가 타 부대 자원 공출 승인 시도"
+  ],
+  "hash_chain_sample": {
+    "block_index": 10,
+    "prev_hash": "a8f5c2d9e1...7b4a",
+    "data_hash": "3e9b1c7a8f...2d1e",
+    "chain_status": "VALID (위·변조 시 탐지율 100%)"
+  }
+}

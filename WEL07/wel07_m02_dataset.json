@@ -1,0 +1,88 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M02",
+  "title": "중증도 분류(Triage) 기준표 및 의무기록 양식 설계",
+  "triage_rules": [
+    {
+      "category": "긴급(Red)",
+      "condition": "기도 폐쇄 위협, 심한 호흡곤란, 대량 출혈(지혈 필요), 순환 장애",
+      "color_code": "적색",
+      "action": "즉각적 인명구조 처치 및 최우선 후송",
+      "tag_location": "사상자 우측 손목 또는 흉부 상단"
+    },
+    {
+      "category": "응급(Yellow)",
+      "condition": "다발성 골절, 심한 화상(광범위 제외), 안정적 활력징후의 개방창",
+      "color_code": "황색",
+      "action": "1~2시간 내 외과적 처치 및 모니터링",
+      "tag_location": "사상자 우측 손목 또는 의복 전면"
+    },
+    {
+      "category": "비응급(Green)",
+      "condition": "보행 가능한 경상자, 경미한 파편창, 단순 염좌",
+      "color_code": "녹색",
+      "action": "자가 처치 유도 및 지정 집결지 대기",
+      "tag_location": "상완부 태그 부착"
+    },
+    {
+      "category": "지연/기대(Black)",
+      "condition": "무호흡(기도개방 후에도 호흡 없음), 치명적 뇌손상, 광범위 외상성 심정지",
+      "color_code": "흑색",
+      "action": "고통 완화 간호 및 타 환자 처치 집중",
+      "tag_location": "손목 또는 식별표 덮개"
+    }
+  ],
+  "mandatory_fields": [
+    {
+      "no": 1,
+      "field_name": "카드 번호 및 환자 식별번호(ID)",
+      "type": "문자열 (고유키)",
+      "required": true
+    },
+    {
+      "no": 2,
+      "field_name": "성명 또는 가명 (신원미상 시 임시 가명)",
+      "type": "문자열",
+      "required": true
+    },
+    {
+      "no": 3,
+      "field_name": "발견 시각 및 발견 구역",
+      "type": "타임스탬프 (+00:00, 구역명)",
+      "required": true
+    },
+    {
+      "no": 4,
+      "field_name": "모의 분류 구분 (긴급/응급/비응급/지연)",
+      "type": "선택형 코드",
+      "required": true
+    },
+    {
+      "no": 5,
+      "field_name": "분류 시각 및 분류 담당자 서명",
+      "type": "타임스탬프, 서명",
+      "required": true
+    },
+    {
+      "no": 6,
+      "field_name": "구간별 인계 기록 (인계시각/인수자 성명)",
+      "type": "이력 매트릭스",
+      "required": true
+    },
+    {
+      "no": 7,
+      "field_name": "기록자 서명 및 확인 일자",
+      "type": "서명",
+      "required": true
+    }
+  ],
+  "pocket_guide_spec": {
+    "size": "가로 90mm x 세로 140mm (방수 코팅 포켓 규격)",
+    "read_time": "30초 이내 판독 가능",
+    "content_blocks": [
+      "4색 중증도 판정 플로우",
+      "필수 기재 7개 항목 점검표",
+      "비상 무전 호출 3대 키워드"
+    ]
+  }
+}

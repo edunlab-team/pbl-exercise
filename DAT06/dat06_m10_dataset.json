@@ -1,0 +1,63 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M10",
+  "title": "군수 월간 결산 및 보급 현황 보고서 원클릭 자동 생성 도구 최종 완성",
+  "pipeline_manifest": [
+    {
+      "stage": 1,
+      "name": "환경 점검 (Python, OS, 의존성)",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 2,
+      "name": "다형식 결산 원장 수집 및 파싱",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 3,
+      "name": "15종 룰 엔진 무결성 검증",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 4,
+      "name": "월간 결산 집계 및 통계 산출",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 5,
+      "name": "MAD 기반 이상치 탐지 및 원인 추천",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 6,
+      "name": "회계 일관성 및 부대 신뢰도 평가",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 7,
+      "name": "24개 부대 결산 보고서 생성",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 8,
+      "name": "3단계 결재선 PENDING 격리",
+      "status": "SUCCESS"
+    },
+    {
+      "stage": 9,
+      "name": "배포 패키지 빌드 및 매뉴얼 검수",
+      "status": "SUCCESS"
+    }
+  ],
+  "manual_index": [
+    "제1장. 시스템 개요 및 아키텍처",
+    "제2장. 설치 및 환경 구성 (Clean venv)",
+    "제3장. 데이터 입력 서식 및 ALIAS 매핑 설정",
+    "제4장. 검증 룰(15종) 커스터마이징 가이드",
+    "제5장. 이상치 탐지 파라미터 튜닝 (MAD)",
+    "제6장. 3단계 HITL 전자 결재선 운영 지침",
+    "제7장. 대량 배치 스케줄링 및 모니터링",
+    "제8장. 장애 복구 및 감사 로그 추적 요령",
+    "제9장. 정기 유지보수 및 UAT 체크리스트"
+  ]
+}

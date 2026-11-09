@@ -1,0 +1,30 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M09",
+  "title": "피드백을 반영한 TCCC 모의환자 재평가 및 인계 정확도 향상 검증",
+  "metrics_comparison": {
+    "1차_DryRun": {
+      "report_delay_sec": 230,
+      "handover_time_sec": 490,
+      "record_errors": 4,
+      "missing_fields": 2,
+      "sop_adherence_rate": 0.72
+    },
+    "2차_ReRun_목표": {
+      "report_delay_sec": 140,
+      "handover_time_sec": 300,
+      "record_errors": 0,
+      "missing_fields": 0,
+      "sop_adherence_rate": 0.95
+    },
+    "개선율_기준": {
+      "시간단축": "30% 이상 단축",
+      "오류감소": "50% 이상 감소 (목표: 0건)"
+    }
+  },
+  "refresher_training_spec": {
+    "cycle": "분기 1회 (3개월 주기)",
+    "duration": "1시간 압축 리프레시 코스",
+    "target": "전투 분대원 및 대대 의무요원"
+  }
+}

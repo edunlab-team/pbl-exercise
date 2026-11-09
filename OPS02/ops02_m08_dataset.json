@@ -1,0 +1,32 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M08",
+  "description": "통신 단절 및 전자전 재밍 환경 스트레스 부하 테스트 데이터셋",
+  "stress_scenarios": [
+    {
+      "radar_loss_pct": 0,
+      "jamming_intensity": "NONE"
+    },
+    {
+      "radar_loss_pct": 25,
+      "jamming_intensity": "LOW"
+    },
+    {
+      "radar_loss_pct": 50,
+      "jamming_intensity": "MEDIUM"
+    },
+    {
+      "radar_loss_pct": 75,
+      "jamming_intensity": "HIGH"
+    },
+    {
+      "radar_loss_pct": 100,
+      "jamming_intensity": "MAXIMUM"
+    }
+  ],
+  "burst_traffic": {
+    "multiplier": 5.0,
+    "corrupted_packet_rate": 0.05,
+    "max_allowed_drop_rate": 0.0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M07",
+  "title": "결산 보고서 최종 발간 전 군수과장/보급관 3단계 HITL 전자 결재선 연계 설계",
+  "rbac_roles": {
+    "DRACO": {
+      "role": "기안자",
+      "rank": "담당관(상사/군무원)"
+    },
+    "REVIEWER": {
+      "role": "검토자",
+      "rank": "보급관(원사/상무)"
+    },
+    "APPROVER": {
+      "role": "승인권자",
+      "rank": "군수과장(소령)"
+    }
+  },
+  "bypass_attacks_10": [
+    {
+      "attack_id": "ATK_01",
+      "name": "기안자가 보급관 검토 건너뛰고 과장 직행 승인 요청",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_02",
+      "name": "기안자가 본인 보고서 셀프 승인 시도",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_03",
+      "name": "보급관이 기안 절차 없이 임의 문서 승인",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_04",
+      "name": "미등록 비인가 계정의 승인 결재 호출",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_05",
+      "name": "반려된 문서를 재기안 없이 승인 강제 시도",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_06",
+      "name": "승인 완료 후 결재 의견 사후 변조",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_07",
+      "name": "결재 근거(사유) 미기재 상태 승인 시도",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_08",
+      "name": "타 부대 결재권자의 타 부대 문서 승인",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_09",
+      "name": "승인 완료 전 자동 발간 API 비인가 트리거",
+      "blocked": true
+    },
+    {
+      "attack_id": "ATK_10",
+      "name": "이력 해시 체인 타임스탬프 조작 시도",
+      "blocked": true
+    }
+  ],
+  "sample_audit_chain_count": 21
+}

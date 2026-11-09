@@ -1,0 +1,56 @@
+{
+  "project": "TRN06",
+  "mission": "TRN06_M09",
+  "title": "피드백을 반영한 모의 AAR 세션 재실행 및 코칭 효과 검증",
+  "re_evaluation_data": [
+    {
+      "id": "V1",
+      "item": "2소대 지시 전달 소요시간",
+      "first_round": "40초 (보통)",
+      "second_round": "25초 (우수)",
+      "improved": true
+    },
+    {
+      "id": "V2",
+      "item": "3소대 무전 보고 필수 항목",
+      "first_round": "2개 결측 (미흡)",
+      "second_round": "0개 결측 (탁월)",
+      "improved": true
+    },
+    {
+      "id": "V3",
+      "item": "1소대 분대 간 상호 소통",
+      "first_round": "일시 두절 (보통)",
+      "second_round": "무전망 유지 (우수)",
+      "improved": true
+    },
+    {
+      "id": "V4",
+      "item": "개선 과제 카드(K-1) 이행",
+      "first_round": "미흡",
+      "second_round": "완벽 이행",
+      "improved": true
+    },
+    {
+      "id": "V5",
+      "item": "코칭을 받지 않은 대조군 분대",
+      "first_round": "보통",
+      "second_round": "보통 (변화 없음)",
+      "improved": false
+    },
+    {
+      "id": "V6",
+      "item": "총기 및 화약 안전 수칙 준수",
+      "first_round": "우수",
+      "second_round": "탁월",
+      "improved": true
+    },
+    {
+      "id": "V7",
+      "item": "피드백 직후 반발했던 소대장",
+      "first_round": "소통 거부",
+      "second_round": "전술 토의 적극 참여",
+      "improved": true
+    }
+  ]
+}

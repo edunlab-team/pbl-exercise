@@ -1,0 +1,51 @@
+{
+  "project": "C202",
+  "mission": "C202_M06",
+  "title": "대역폭 사용률, 큐 대기 현황 및 패킷 유실률 실시간 모니터링 UI 구현",
+  "telemetry_stream_profile": {
+    "sampling_interval_sec": 1.0,
+    "total_records": 1200,
+    "jamming_intervals": [
+      [
+        300,
+        420
+      ],
+      [
+        800,
+        860
+      ]
+    ],
+    "bandwidth_throttle_intervals": [
+      [
+        500,
+        700
+      ]
+    ]
+  },
+  "alarm_hierarchy": [
+    {
+      "priority": 1,
+      "level": "CRITICAL",
+      "name": "기한 초과 (Deadline Missed)",
+      "color": "#FF2A2A"
+    },
+    {
+      "priority": 2,
+      "level": "WARNING",
+      "name": "링크 열화 (Link Degraded)",
+      "color": "#FFB020"
+    },
+    {
+      "priority": 3,
+      "level": "INFO",
+      "name": "기한 임박 (Deadline Approaching)",
+      "color": "#20B0FF"
+    }
+  ],
+  "ui_specs": {
+    "max_refresh_latency_ms": 100.0,
+    "theme": "TACTICAL_DARK_MODE",
+    "bg_color": "#121212",
+    "grid_color": "#2A2A2A"
+  }
+}

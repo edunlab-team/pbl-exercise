@@ -1,0 +1,42 @@
+{
+  "title": "MNT10_M08 동시 다발 긴급 정비 요청 스트레스 테스트 벤치마크",
+  "stress_scenarios": [
+    {
+      "scenario": "정상 부하 (동시 5개소)",
+      "latency_sec": 0.08,
+      "memory_mb": 45,
+      "drops": 0
+    },
+    {
+      "scenario": "작전 전환 (동시 20개소)",
+      "latency_sec": 0.24,
+      "memory_mb": 58,
+      "drops": 0
+    },
+    {
+      "scenario": "국지전 발발 (동시 40개소)",
+      "latency_sec": 0.62,
+      "memory_mb": 82,
+      "drops": 0
+    },
+    {
+      "scenario": "전면전 전환 (동시 60개소)",
+      "latency_sec": 1.45,
+      "memory_mb": 118,
+      "drops": 0
+    },
+    {
+      "scenario": "정비반 1개소 불가 + 손상 데이터 주입",
+      "latency_sec": 0.31,
+      "memory_mb": 62,
+      "drops": 0
+    }
+  ],
+  "benchmark_targets": {
+    "max_allowed_latency_sec": 2.0,
+    "actual_latency_sec": 0.24,
+    "alarm_accuracy_pct": 100.0,
+    "target_alarm_accuracy_pct": 95.0,
+    "data_loss_count": 0
+  }
+}

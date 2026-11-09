@@ -1,0 +1,48 @@
+{
+  "project": "K10",
+  "mission": "K10_M10",
+  "title": "생활 안내 챗봇 완성하기",
+  "chatbot_class_name": "MilitaryLifeChatbot",
+  "verification_checklist": [
+    {
+      "item": "시험셋 정확도",
+      "threshold": ">= 70.0%",
+      "expected": "76.7%"
+    },
+    {
+      "item": "Baseline 대비 우위",
+      "threshold": ">= +30.0%p",
+      "expected": "+33.4%p"
+    },
+    {
+      "item": "인사 발화 대응",
+      "threshold": "GREETING 정상 처리",
+      "expected": "PASS"
+    },
+    {
+      "item": "되묻기 분기",
+      "threshold": "점수차 미세 시 되묻기",
+      "expected": "PASS"
+    },
+    {
+      "item": "범위 밖 안전 거절율",
+      "threshold": ">= 60.0%",
+      "expected": "62.5%"
+    },
+    {
+      "item": "부서 안내 누락",
+      "threshold": "0건",
+      "expected": "0건"
+    },
+    {
+      "item": "평균 처리 지연",
+      "threshold": "< 50ms",
+      "expected": "< 5ms"
+    },
+    {
+      "item": "면책 고지문 포함",
+      "threshold": "최종 확인 부서 안내 포함",
+      "expected": "PASS"
+    }
+  ]
+}

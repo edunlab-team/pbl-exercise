@@ -1,0 +1,173 @@
+{
+  "project": "K14",
+  "mission": "K14_M04",
+  "title": "요약 수치 직접 확인하기",
+  "raw_records": [
+    {
+      "week": "1주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 112,
+      "cyber": 54,
+      "px": 140,
+      "sleep_satisfaction": 3.8,
+      "meal_satisfaction": 3.9,
+      "suggestions": 3
+    },
+    {
+      "week": "1주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 98,
+      "cyber": 31,
+      "px": 160,
+      "sleep_satisfaction": 3.6,
+      "meal_satisfaction": 3.5,
+      "suggestions": 4
+    },
+    {
+      "week": "1주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 104,
+      "cyber": 47,
+      "px": 118,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.2,
+      "suggestions": 5
+    },
+    {
+      "week": "2주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 118,
+      "cyber": 58,
+      "px": 138,
+      "sleep_satisfaction": 3.8,
+      "meal_satisfaction": 3.8,
+      "suggestions": 2
+    },
+    {
+      "week": "2주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 92,
+      "cyber": 29,
+      "px": 166,
+      "sleep_satisfaction": 3.4,
+      "meal_satisfaction": 3.4,
+      "suggestions": 5
+    },
+    {
+      "week": "2주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 106,
+      "cyber": 50,
+      "px": 121,
+      "sleep_satisfaction": 3.6,
+      "meal_satisfaction": 3.1,
+      "suggestions": 7
+    },
+    {
+      "week": "3주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 121,
+      "cyber": 61,
+      "px": 142,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 4.0,
+      "suggestions": 4
+    },
+    {
+      "week": "3주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 85,
+      "cyber": 26,
+      "px": 171,
+      "sleep_satisfaction": 3.2,
+      "meal_satisfaction": 3.4,
+      "suggestions": 7
+    },
+    {
+      "week": "3주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 103,
+      "cyber": 49,
+      "px": 117,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.3,
+      "suggestions": 9
+    },
+    {
+      "week": "4주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 125,
+      "cyber": 66,
+      "px": 135,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 4.1,
+      "suggestions": 3
+    },
+    {
+      "week": "4주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 80,
+      "cyber": 24,
+      "px": 178,
+      "sleep_satisfaction": 3.0,
+      "meal_satisfaction": 3.3,
+      "suggestions": 8
+    },
+    {
+      "week": "4주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 108,
+      "cyber": 52,
+      "px": 120,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.2,
+      "suggestions": 12
+    }
+  ],
+  "ground_truth_totals": {
+    "1중대": {
+      "gym_total": 476,
+      "cyber_total": 239,
+      "px_total": 555,
+      "sleep_avg": 3.75,
+      "meal_avg": 3.95,
+      "suggestions_total": 12
+    },
+    "2중대": {
+      "gym_total": 355,
+      "cyber_total": 110,
+      "px_total": 675,
+      "sleep_avg": 3.3,
+      "meal_avg": 3.4,
+      "suggestions_total": 24
+    },
+    "3중대": {
+      "gym_total": 421,
+      "cyber_total": 198,
+      "px_total": 476,
+      "sleep_avg": 3.68,
+      "meal_avg": 3.2,
+      "suggestions_total": 33
+    }
+  },
+  "simulation_ai_errors": [
+    {
+      "item": "2중대 PX 4주 합계",
+      "ai_error_output": 665,
+      "correct_value": 675,
+      "cause": "4주차 178을 168로 연산 착오"
+    }
+  ]
+}

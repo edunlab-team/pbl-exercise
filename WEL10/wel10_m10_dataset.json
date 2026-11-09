@@ -1,0 +1,29 @@
+{
+  "guidebook_structure_5chapters": [
+    {
+      "chapter": 1,
+      "title": "개요 및 교대근무 피로 메커니즘"
+    },
+    {
+      "chapter": 2,
+      "title": "점검 SOP 및 휴대용 체크리스트"
+    },
+    {
+      "chapter": 3,
+      "title": "검증 훈련 시나리오 및 MSEL"
+    },
+    {
+      "chapter": 4,
+      "title": "교관 평가 루브릭 및 채점표"
+    },
+    {
+      "chapter": 5,
+      "title": "AAR 사후검토 및 양식 모음"
+    }
+  ],
+  "governance_requirements": {
+    "annual_revision_cycle": "연 1회 정기 개정",
+    "medical_review": "사단 군의관 및 병영생활상담관 의무 감수",
+    "commander_approval": "연대장/대대장 최종 승인"
+  }
+}

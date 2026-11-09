@@ -1,0 +1,145 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M06",
+  "title": "군수 결산 보고서 생성 및 승인/반려 관리 대화형 웹 대시보드 구현",
+  "reports_12": [
+    {
+      "doc_id": "RPT-202608-01",
+      "unit": "가상01대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 450
+    },
+    {
+      "doc_id": "RPT-202608-02",
+      "unit": "가상02대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 380
+    },
+    {
+      "doc_id": "RPT-202608-03",
+      "unit": "가상03대대",
+      "status": "REJECTED",
+      "approver": "보급관",
+      "amount": 620,
+      "note": "탄약 수불식 불일치"
+    },
+    {
+      "doc_id": "RPT-202608-04",
+      "unit": "가상04대대",
+      "status": "SUBMITTED",
+      "approver": "-",
+      "amount": 290
+    },
+    {
+      "doc_id": "RPT-202608-05",
+      "unit": "가상05대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 510
+    },
+    {
+      "doc_id": "RPT-202608-06",
+      "unit": "가상06대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 430
+    },
+    {
+      "doc_id": "RPT-202608-07",
+      "unit": "가상07대대",
+      "status": "SUBMITTED",
+      "approver": "-",
+      "amount": 340
+    },
+    {
+      "doc_id": "RPT-202608-08",
+      "unit": "가상08대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 480
+    },
+    {
+      "doc_id": "RPT-202608-09",
+      "unit": "가상09대대",
+      "status": "REJECTED",
+      "approver": "보급관",
+      "amount": 550,
+      "note": "유류 소모량 이상 급증 소명 필요"
+    },
+    {
+      "doc_id": "RPT-202608-10",
+      "unit": "가상10대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 390
+    },
+    {
+      "doc_id": "RPT-202608-11",
+      "unit": "가상11대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 420
+    },
+    {
+      "doc_id": "RPT-202608-12",
+      "unit": "가상12대대",
+      "status": "APPROVED",
+      "approver": "군수과장",
+      "amount": 460
+    }
+  ],
+  "exceptions_10": [
+    {
+      "code": "ERR_EMPTY_UNIT",
+      "case": "부대명 빈값 입력",
+      "handled": true
+    },
+    {
+      "code": "ERR_NEGATIVE_QTY",
+      "case": "불출 수량 음수 입력",
+      "handled": true
+    },
+    {
+      "code": "ERR_INVALID_FORMAT",
+      "case": "날짜 서식 불일치",
+      "handled": true
+    },
+    {
+      "code": "ERR_STATE_TRANSITION",
+      "case": "DRAFT 상태에서 직접 승인 시도",
+      "handled": true
+    },
+    {
+      "code": "ERR_DUPLICATE_DOC",
+      "case": "동일 부대/월 보고서 중복 생성",
+      "handled": true
+    },
+    {
+      "code": "ERR_TYPE_MISMATCH",
+      "case": "수량 필드에 문자열 입력",
+      "handled": true
+    },
+    {
+      "code": "ERR_PERMISSION_DENIED",
+      "case": "비인가 사용자의 상태 변경",
+      "handled": true
+    },
+    {
+      "code": "ERR_REJECT_NO_NOTE",
+      "case": "반려 사유 미기재",
+      "handled": true
+    },
+    {
+      "code": "ERR_DATA_CORRUPTION",
+      "case": "손상된 JSON 파일 파싱 시도",
+      "handled": true
+    },
+    {
+      "code": "ERR_ASYNC_CONFLICT",
+      "case": "동시 수정 락 충돌",
+      "handled": true
+    }
+  ]
+}

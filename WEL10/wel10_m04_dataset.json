@@ -1,0 +1,36 @@
+{
+  "mission_id": "WEL10_M04",
+  "title": "1차 개선 휴식 편성표 작성 및 시뮬레이션 검증 실습(Dry-run)",
+  "draft_roster": {
+    "soldiers": [
+      "S01_김철수(상병)",
+      "S02_이영희(병장)",
+      "S03_박민수(일병)",
+      "S04_최동원(일병)",
+      "S05_정우성(상병)",
+      "S06_강호동(병장)",
+      "S07_유재석(상병)",
+      "S08_신동엽(일병)"
+    ],
+    "slots_per_day": [
+      "주간(08:00~16:00)",
+      "전반야(16:00~24:00)",
+      "후반야(00:00~08:00)"
+    ],
+    "required_per_slot": 2,
+    "target_total_slots": 21
+  },
+  "target_metrics": {
+    "sop_compliance_rate_min": 0.8,
+    "max_reporting_delay_min": 3.0,
+    "max_violations_allowed": 2
+  },
+  "roles_assigned": {
+    "scheduler": "편성 담당",
+    "inspector": "점검 담당",
+    "recorder": "기록 담당",
+    "reporter": "보고 담당",
+    "representative": "근무자 대표",
+    "observer": "관측자"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M08",
+  "description": "선전전 폭증 시뮬레이션 (1,000건/s -> 6,000건/s) 부하 스트레스 데이터셋",
+  "load_scenarios": {
+    "normal_load": {
+      "rate_per_sec": 1000,
+      "duration_sec": 10
+    },
+    "surge_load": {
+      "rate_per_sec": 6000,
+      "duration_sec": 10,
+      "surge_pct": 500
+    },
+    "corrupt_packets_count": 345,
+    "resource_restricted_mode": {
+      "cpu_cores": 1,
+      "degraded_mode_trigger_ms": 1000
+    }
+  }
+}

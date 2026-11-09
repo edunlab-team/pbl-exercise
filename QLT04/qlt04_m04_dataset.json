@@ -1,0 +1,36 @@
+{
+  "title": "1,500대 가상 장비 회귀 계수 안정성 및 과거 조치 사례 벡터",
+  "sample_size": 1500,
+  "ridge_metrics": {
+    "r2_test": 0.899,
+    "bootstrap_runs": 20,
+    "sign_consistency_pct": 100.0,
+    "coefficients": {
+      "inspect_wait_days": -0.384,
+      "parts_wait_days": -0.312,
+      "rework_count": -0.221,
+      "mechanic_fill_pct": 0.185,
+      "spec_mismatch": -0.142
+    }
+  },
+  "historical_solution_cases": [
+    {
+      "case_id": "CASE-101",
+      "cause": "inspect_wait_days",
+      "prescribed_action": "외주 검사원 현장 긴급 파견 및 비대면 사전 서류 검사 승인",
+      "success_rate": 0.94
+    },
+    {
+      "case_id": "CASE-102",
+      "cause": "parts_wait_days",
+      "prescribed_action": "인접 사단 정비대대 예비 부품 상호 전환 불출(공출) 승인",
+      "success_rate": 0.91
+    },
+    {
+      "case_id": "CASE-103",
+      "cause": "rework_count",
+      "prescribed_action": "외주업체 품질보증관 소환 기술지도 및 2단계 하자 보수 감독",
+      "success_rate": 0.88
+    }
+  ]
+}

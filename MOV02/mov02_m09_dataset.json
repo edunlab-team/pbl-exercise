@@ -1,0 +1,81 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M09",
+  "title": "사후검토(AAR) 120건 지연 분해 및 OLS/베이지안 파라미터 재보정 데이터셋",
+  "meta": {
+    "aar_count": 120,
+    "mae_improvement_pct": 72.4,
+    "delay_classification_accuracy": 0.88,
+    "uat_score": 100
+  },
+  "delay_factor_breakdown": {
+    "unpaved_slowing_pct": 42.5,
+    "bridge_waiting_pct": 31.0,
+    "checkpoint_inspection_pct": 26.5,
+    "top_delay_cases": [
+      {
+        "case_id": 14,
+        "planned_min": 65,
+        "actual_min": 102,
+        "delay_min": 37,
+        "main_cause": "비포장 진흙길 감속 및 교각 대기"
+      },
+      {
+        "case_id": 29,
+        "planned_min": 72,
+        "actual_min": 105,
+        "delay_min": 33,
+        "main_cause": "위협구역 검문소 정체"
+      },
+      {
+        "case_id": 58,
+        "planned_min": 80,
+        "actual_min": 110,
+        "delay_min": 30,
+        "main_cause": "임시 가설 교량 일방통행 대기"
+      }
+    ]
+  },
+  "ols_coefficients": {
+    "initial_model": {
+      "unpaved_factor": 1.0,
+      "bridge_delay_min": 0.0,
+      "checkpoint_delay_min": 0.0,
+      "mae_min": 18.1
+    },
+    "calibrated_model": {
+      "unpaved_factor": 1.62,
+      "bridge_delay_min": 4.8,
+      "checkpoint_delay_min": 8.5,
+      "mae_min": 5.0
+    },
+    "delay_prediction_accuracy_pct": 88.0
+  },
+  "bayesian_threat_weights": {
+    "TZ1": {
+      "prior": 0.15,
+      "incidents": 1,
+      "passes": 24,
+      "posterior": 0.162
+    },
+    "TZ2": {
+      "prior": 0.18,
+      "incidents": 6,
+      "passes": 18,
+      "posterior": 0.314
+    },
+    "TZ3": {
+      "prior": 0.12,
+      "incidents": 2,
+      "passes": 30,
+      "posterior": 0.128
+    }
+  },
+  "uat_improvements_5": [
+    "자주 쓰는 보급로 템플릿 저장 기능 추가",
+    "키보드 단축키(1: 승인, 2: 반려, 3: 보류) 지원",
+    "비상 우회로 1클릭 자동 재탐색 버튼 추가",
+    "지휘관 1페이지 요약 브리핑 내보내기 기능",
+    "상태별 색상 뱃지 및 대비비 향상"
+  ]
+}

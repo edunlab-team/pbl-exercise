@@ -1,0 +1,35 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M09",
+  "description": "AAR 일지 기반 항적 왜곡/분할 결함 로그 및 파라미터 튜닝 최적화 데이터셋",
+  "aar_incidents_4": [
+    {
+      "id": "INC_01",
+      "type": "TRACK_SPLIT",
+      "scenario": "5G High Turn",
+      "cause_hypothesis": "Gate radius too small"
+    },
+    {
+      "id": "INC_02",
+      "type": "GHOST_TRACK",
+      "scenario": "Heavy Rain Clutter",
+      "cause_hypothesis": "Acoustic sensor over-trusted"
+    },
+    {
+      "id": "INC_03",
+      "type": "OVER_MERGE",
+      "scenario": "Crossing Targets",
+      "cause_hypothesis": "Velocity weighting omitted"
+    },
+    {
+      "id": "INC_04",
+      "type": "TRACK_LOSS",
+      "scenario": "Intermittent Jamming",
+      "cause_hypothesis": "Coast limit too short"
+    }
+  ],
+  "tuning_goal": {
+    "accuracy_improvement_pct": 10.0,
+    "regression_errors": 0
+  }
+}

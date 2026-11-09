@@ -1,0 +1,51 @@
+{
+  "title": "MNT10_M02 이동정비반 상태 정보 전처리 및 군수 예외 정제 샘플",
+  "total_records": 120,
+  "cleansing_rules": [
+    {
+      "id": "R01",
+      "name": "중복 보고 레코드(Team_ID + Timestamp 중복) 12건 제거"
+    },
+    {
+      "id": "R02",
+      "name": "정비반 식별자(team_id) 대소문자 표준화"
+    },
+    {
+      "id": "R03",
+      "name": "정비 상태 코드(status) 4종 표준 분류 통일"
+    },
+    {
+      "id": "R04",
+      "name": "보고 시각(Timestamp) ISO-8601 및 경과시간(h) 통일"
+    },
+    {
+      "id": "R05",
+      "name": "연료 단위 통일 (리터/갤런 -> 잔여비율 0.0~1.0)"
+    },
+    {
+      "id": "R06",
+      "name": "물리적 불가능 음수 공구 수량 결측치 처리"
+    },
+    {
+      "id": "R07",
+      "name": "비현실적 인원수(0명 미만 또는 20명 초과) 결측 처리"
+    },
+    {
+      "id": "R08",
+      "name": "좌표 이상값 클리핑 및 최근접 기지 기반 공간 보간"
+    },
+    {
+      "id": "R09",
+      "name": "KNNImputer(k=5) 기반 상태 변수 다변량 결측치 보정"
+    },
+    {
+      "id": "R10",
+      "name": "작전상 긴급 불출(이상치 유사 군수 특수 소요) 15건 플래그화 보존"
+    }
+  ],
+  "cleansing_metrics": {
+    "duplicates_removed": 12,
+    "emergency_issues_preserved": 15,
+    "integrity_pass_rate_pct": 100
+  }
+}

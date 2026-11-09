@@ -1,0 +1,19 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M09",
+  "aar_ratio_analysis": {
+    "defense_phase_high_intensity": 1.34,
+    "counterattack_phase_high_intensity": 1.48,
+    "preparation_phase_all": 0.92
+  },
+  "recalibrated_shrinkage_csr": {
+    "ammo_155_defense_factor": 1.28,
+    "fuel_diesel_counterattack_factor": 1.39,
+    "next_exercise_mape_improvement_pct": 21.4
+  },
+  "roi_3_effects": {
+    "cost_index_reduction_pct": 14.8,
+    "storage_handling_time_reduction_pct": 31.5,
+    "emergency_resupply_reduction_count": 8
+  }
+}

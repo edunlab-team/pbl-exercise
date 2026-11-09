@@ -1,0 +1,148 @@
+{
+  "project": "K15",
+  "mission": "K15_M01",
+  "title": "시설 예약·점검 정보의 검색 문제 파악하기",
+  "description": "실습용 질문 카드 20개 원문 및 분류 속성 표본",
+  "question_cards": [
+    {
+      "id": 1,
+      "question": "수요일 저녁에 빈 강당 있어요?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "19-21시 빈 상태"
+    },
+    {
+      "id": 2,
+      "question": "목요일 오후에 세미나실 A, B 중 빈 곳은?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "세미나실 A(14-16, 16-18, 19-21), 세미나실 B(14-16)"
+    },
+    {
+      "id": 3,
+      "question": "금요일 오전에 강당 쓸 수 있나요?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "09-11 월례 조회, 11-13 음향 점검으로 오전 이용 불가"
+    },
+    {
+      "id": 4,
+      "question": "토요일에 하루 종일 비는 시설이 있나요?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "세미나실 B(11-13 외 빈), 체단실(14-18 외 빈)"
+    },
+    {
+      "id": 5,
+      "question": "월요일 오후 세미나실 A와 B가 둘 다 비는 시간은?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "16-18, 19-21"
+    },
+    {
+      "id": 6,
+      "question": "2중대가 이번 주 강당을 쓰는 시간은?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "화 09-11, 목 14-18"
+    },
+    {
+      "id": 7,
+      "question": "수요일에 체력단련실을 단체로 쓸 수 있는 시간은?",
+      "category": "예약 가능 여부",
+      "has_answer": true,
+      "answer_hint": "09-11 연습, 14-16 소독(이용 불가), 그 외 빈 상태"
+    },
+    {
+      "id": 8,
+      "question": "강당의 점검·고장 이력을 정리해 줘",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "정기점검 2건(H02, H18), 고장신고 3건(H05, H09, H13, H21)"
+    },
+    {
+      "id": 9,
+      "question": "세미나실 B 빔프로젝터는 몇 번 고장 났어요?",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "총 3회 (H01, H06, H16)"
+    },
+    {
+      "id": 10,
+      "question": "가장 고장 신고가 잦은 시설은 어디예요?",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "대대 강당, 세미나실 B, 체력단련실 각 4~5건"
+    },
+    {
+      "id": 11,
+      "question": "아직 수리가 끝나지 않은 건은?",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "3건 (H19 처리 중, H20 처리 중, H21 접수)"
+    },
+    {
+      "id": 12,
+      "question": "고장 신고 처리에 평균 며칠 걸렸어요?",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "완료 12건 총 39일, 평균 약 3.3일"
+    },
+    {
+      "id": 13,
+      "question": "강당 무선 마이크 고장 날짜를 알려 줘",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "08-31(H05), 09-28(H13), 10-22(H21)"
+    },
+    {
+      "id": 14,
+      "question": "정기점검을 가장 오래 안 한 시설은?",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "체력단련실(09-07), 사이버지식정보방(10-05)"
+    },
+    {
+      "id": 15,
+      "question": "반복해서 고장 나는 설비 목록을 알려 줘",
+      "category": "점검·고장 이력",
+      "has_answer": true,
+      "answer_hint": "빔프로젝터, 러닝머신 1호, 무선 마이크, 난방기"
+    },
+    {
+      "id": 16,
+      "question": "세미나실 C는 비어 있어요?",
+      "category": "자료 밖 질문",
+      "has_answer": false,
+      "answer_hint": "표에 없는 시설 -> 안내 및 행정과 문의"
+    },
+    {
+      "id": 17,
+      "question": "강당 최대 수용 인원이 몇 명이에요?",
+      "category": "자료 밖 질문",
+      "has_answer": false,
+      "answer_hint": "표에 없는 정보 -> 안내 및 행정과 문의"
+    },
+    {
+      "id": 18,
+      "question": "다음 주 월요일 강당 예약 현황은?",
+      "category": "자료 밖 질문",
+      "has_answer": false,
+      "answer_hint": "1주치 자료만 존재 -> 안내 및 행정과 문의"
+    },
+    {
+      "id": 19,
+      "question": "강당 예약 승인해 주는 담당자 이름은?",
+      "category": "자료 밖 질문",
+      "has_answer": false,
+      "answer_hint": "인적 정보 없음 -> 행정과(1101) 문의"
+    },
+    {
+      "id": 20,
+      "question": "빈 강당 있으면 지금 예약해 줘",
+      "category": "대행 불가 요청",
+      "has_answer": false,
+      "answer_hint": "도우미는 예약 대행 불가 -> 행정과(1101) 신청"
+    }
+  ]
+}

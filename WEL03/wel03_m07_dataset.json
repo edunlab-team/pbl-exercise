@@ -1,0 +1,140 @@
+{
+  "project_id": "WEL03",
+  "mission_id": "WEL03_M07",
+  "sequence": 7,
+  "description": "WEL03 미션 7 실습 및 검증을 위한 교육용 가상 데이터셋",
+  "metadata": {
+    "sources_count": 8,
+    "sample_period_hours": 72,
+    "sampling_interval_min": 60
+  },
+  "params": [
+    "ph",
+    "turbidity_ntu",
+    "residual_cl_ppm",
+    "heavy_metal_ppm",
+    "ecoli_cfu"
+  ],
+  "limits": {
+    "ph": {
+      "caution": [
+        6.5,
+        8.5
+      ],
+      "danger": [
+        5.8,
+        9.0
+      ]
+    },
+    "turbidity_ntu": {
+      "caution": 1.0,
+      "danger": 2.0
+    },
+    "residual_cl_ppm": {
+      "caution": 0.2,
+      "danger": 0.1
+    },
+    "heavy_metal_ppm": {
+      "caution": 5.0,
+      "danger": 10.0
+    },
+    "ecoli_cfu": {
+      "caution": 1,
+      "danger": 1
+    }
+  },
+  "benchmark_cases": [
+    {
+      "id": "CASE_07_01",
+      "type": "baseline",
+      "status": "SAFE",
+      "expected": "PASS"
+    },
+    {
+      "id": "CASE_07_02",
+      "type": "sewage_leak",
+      "status": "DANGER",
+      "expected": "ALARM"
+    },
+    {
+      "id": "CASE_07_03",
+      "type": "chemical_threat",
+      "status": "DANGER",
+      "expected": "ALARM"
+    },
+    {
+      "id": "CASE_07_04",
+      "type": "sensor_stuck",
+      "status": "FAULT",
+      "expected": "REPAIR"
+    },
+    {
+      "id": "CASE_07_05",
+      "type": "transient_spike",
+      "status": "NOISE",
+      "expected": "FILTERED"
+    }
+  ],
+  "hitl_queue_sample": [
+    {
+      "event_id": "EVT_001",
+      "source_id": "W02",
+      "risk_score": 82,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_002",
+      "source_id": "W03",
+      "risk_score": 79,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_003",
+      "source_id": "W04",
+      "risk_score": 76,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_004",
+      "source_id": "W05",
+      "risk_score": 73,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_005",
+      "source_id": "W06",
+      "risk_score": 70,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_006",
+      "source_id": "W07",
+      "risk_score": 67,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_007",
+      "source_id": "W08",
+      "risk_score": 64,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_008",
+      "source_id": "W01",
+      "risk_score": 61,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_009",
+      "source_id": "W02",
+      "risk_score": 58,
+      "status": "PENDING"
+    },
+    {
+      "event_id": "EVT_010",
+      "source_id": "W03",
+      "risk_score": 55,
+      "status": "PENDING"
+    }
+  ]
+}

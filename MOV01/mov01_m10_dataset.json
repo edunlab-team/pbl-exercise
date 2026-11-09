@@ -1,0 +1,14 @@
+{
+  "mlops_targets": {
+    "new_data_integrity_pass": true,
+    "drift_mape_threshold": 3.0,
+    "challenger_promotion_threshold": 3.0,
+    "forecast_days": 7
+  },
+  "deliverable_documents": [
+    "docs/mov01_operations_guide.md",
+    "pipeline/mov01_retrain.py",
+    "DELIIS_interface_spec",
+    "daily_checklist"
+  ]
+}

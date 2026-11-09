@@ -1,0 +1,70 @@
+{
+  "cleaning_rules": [
+    {
+      "id": "R01",
+      "name": "음수/초과 통과량 보정",
+      "target": "v",
+      "action": "clip(0, cap*1.5)"
+    },
+    {
+      "id": "R02",
+      "name": "결측 통과시간 대체",
+      "target": "travel_time",
+      "action": "자유주행시간(t0) 기반 재계산"
+    },
+    {
+      "id": "R03",
+      "name": "속도 단위 오류 정규화",
+      "target": "speed",
+      "action": "mph -> km/h 변환 (*1.609)"
+    },
+    {
+      "id": "R04",
+      "name": "특수문자/오기 표기 정제",
+      "target": "kind",
+      "action": "표준 명칭 매핑"
+    },
+    {
+      "id": "R05",
+      "name": "미등록 구간 코드 격리",
+      "target": "seg",
+      "action": "비정상 노선 격리 테이블 저장"
+    },
+    {
+      "id": "R06",
+      "name": "용량 0 오류 보정",
+      "target": "cap",
+      "action": "구간 마스터 기준치 병합"
+    },
+    {
+      "id": "R07",
+      "name": "중복 통과 기록 제거",
+      "target": "id",
+      "action": "최신 타임스탬프 기준 단일화"
+    },
+    {
+      "id": "R08",
+      "name": "비계획 정비 플래그 보존",
+      "target": "is_maintenance",
+      "action": "이상치 삭제 금지/보존"
+    },
+    {
+      "id": "R09",
+      "name": "긴급 불출 플래그 보존",
+      "target": "is_emergency",
+      "action": "이상치 삭제 금지/보존"
+    },
+    {
+      "id": "R10",
+      "name": "지체 시간(Delay) 재계산",
+      "target": "delay",
+      "action": "max(0, travel_time - t0)"
+    }
+  ],
+  "injected_errors_summary": {
+    "total_injected_errors": 55,
+    "maintenance_records": 95,
+    "emergency_records": 87,
+    "restoration_target_mae": 0.104
+  }
+}

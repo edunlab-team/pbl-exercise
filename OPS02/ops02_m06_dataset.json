@@ -1,0 +1,17 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M06",
+  "description": "전술 상황판(COP) 4개 패널 렌더링 및 방어 구역 침투 경보 시뮬레이션 데이터셋",
+  "defense_zone": {
+    "center_x": 0.0,
+    "center_y": 0.0,
+    "danger_radius_km": 10.0,
+    "warning_radius_km": 25.0
+  },
+  "timeline_seconds": 30,
+  "ui_benchmark": {
+    "max_refresh_time_ms": 100.0,
+    "max_select_response_ms": 50.0,
+    "min_item_reduction_rate": 0.6
+  }
+}

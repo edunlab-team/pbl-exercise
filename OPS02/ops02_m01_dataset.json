@@ -1,0 +1,423 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M01",
+  "description": "다종 센서(레이더·EO/IR·음향) 연동 규격 및 17개 필드 스키마 검증용 데이터셋",
+  "sensors": [
+    {
+      "id": "RADAR_01",
+      "type": "RADAR",
+      "x_km": 0.0,
+      "y_km": 0.0,
+      "max_range_km": 150.0,
+      "range_sigma_km": 0.08,
+      "azimuth_sigma_deg": 0.4,
+      "detection_prob": 0.95
+    },
+    {
+      "id": "RADAR_02",
+      "type": "RADAR",
+      "x_km": 30.0,
+      "y_km": 10.0,
+      "max_range_km": 120.0,
+      "range_sigma_km": 0.1,
+      "azimuth_sigma_deg": 0.5,
+      "detection_prob": 0.92
+    },
+    {
+      "id": "EOIR_01",
+      "type": "EO_IR",
+      "x_km": 15.0,
+      "y_km": 20.0,
+      "max_range_km": 40.0,
+      "range_sigma_km": 0.03,
+      "azimuth_sigma_deg": 0.05,
+      "detection_prob": 0.85
+    },
+    {
+      "id": "ACOUSTIC_01",
+      "type": "ACOUSTIC",
+      "x_km": 10.0,
+      "y_km": 5.0,
+      "max_range_km": 15.0,
+      "range_sigma_km": 0.3,
+      "azimuth_sigma_deg": 2.5,
+      "detection_prob": 0.75
+    }
+  ],
+  "normal_samples_20": [
+    {
+      "msg_id": "ALR_20261103_0000",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:00.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 45.2,
+      "azimuth_deg": 120.5,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0001",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:01.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 45.7,
+      "azimuth_deg": 121.7,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0002",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:02.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 46.2,
+      "azimuth_deg": 122.9,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0003",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:03.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 46.7,
+      "azimuth_deg": 124.1,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0004",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:04.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 47.2,
+      "azimuth_deg": 125.3,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0005",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:05.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 47.7,
+      "azimuth_deg": 126.5,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0006",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:06.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 48.2,
+      "azimuth_deg": 127.7,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0007",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:07.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 48.7,
+      "azimuth_deg": 128.9,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0008",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:08.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 49.2,
+      "azimuth_deg": 130.1,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0009",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:09.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 49.7,
+      "azimuth_deg": 131.3,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0010",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:10.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 50.2,
+      "azimuth_deg": 132.5,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0011",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:11.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 50.7,
+      "azimuth_deg": 133.7,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0012",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:12.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 51.2,
+      "azimuth_deg": 134.9,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0013",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:13.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 51.7,
+      "azimuth_deg": 136.1,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0014",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:14.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 52.2,
+      "azimuth_deg": 137.3,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0015",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:15.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 52.7,
+      "azimuth_deg": 138.5,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0016",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:16.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 53.2,
+      "azimuth_deg": 139.7,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0017",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:17.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 53.7,
+      "azimuth_deg": 140.9,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0018",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:18.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 54.2,
+      "azimuth_deg": 142.1,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    },
+    {
+      "msg_id": "ALR_20261103_0019",
+      "sensor_id": "RADAR_01",
+      "timestamp": "2026-11-03T09:00:19.100Z",
+      "sensor_type": "RADAR",
+      "range_km": 54.7,
+      "azimuth_deg": 143.3,
+      "elevation_deg": 2.5,
+      "snr_db": 18.5,
+      "tactical_params": {
+        "weather": "CLEAR",
+        "comm_delay_ms": 35.0,
+        "pos_error_km": 0.08
+      }
+    }
+  ],
+  "fault_injection_tests_6": [
+    {
+      "case": "NEGATIVE_RANGE",
+      "data": {
+        "msg_id": "ERR_01",
+        "sensor_id": "RADAR_01",
+        "sensor_type": "RADAR",
+        "range_km": -12.5,
+        "azimuth_deg": 45.0,
+        "timestamp": "2026-11-03T09:00:00Z"
+      },
+      "expected_error": "range_km must be >= 0"
+    },
+    {
+      "case": "AZIMUTH_OVERFLOW",
+      "data": {
+        "msg_id": "ERR_02",
+        "sensor_id": "RADAR_01",
+        "sensor_type": "RADAR",
+        "range_km": 30.0,
+        "azimuth_deg": 385.0,
+        "timestamp": "2026-11-03T09:00:00Z"
+      },
+      "expected_error": "azimuth_deg must be <= 360"
+    },
+    {
+      "case": "UNKNOWN_SENSOR_TYPE",
+      "data": {
+        "msg_id": "ERR_03",
+        "sensor_id": "SONAR_01",
+        "sensor_type": "SONAR_SUB",
+        "range_km": 20.0,
+        "azimuth_deg": 90.0,
+        "timestamp": "2026-11-03T09:00:00Z"
+      },
+      "expected_error": "unsupported sensor_type"
+    },
+    {
+      "case": "MISSING_REQUIRED_MSG_ID",
+      "data": {
+        "sensor_id": "RADAR_01",
+        "sensor_type": "RADAR",
+        "range_km": 20.0,
+        "azimuth_deg": 90.0,
+        "timestamp": "2026-11-03T09:00:00Z"
+      },
+      "expected_error": "msg_id is required"
+    },
+    {
+      "case": "INVALID_TIMESTAMP_FORMAT",
+      "data": {
+        "msg_id": "ERR_05",
+        "sensor_id": "RADAR_01",
+        "sensor_type": "RADAR",
+        "range_km": 20.0,
+        "azimuth_deg": 90.0,
+        "timestamp": "2026/11/03 09:00"
+      },
+      "expected_error": "timestamp must match ISO-8601"
+    },
+    {
+      "case": "CONFIDENCE_SCORE_OVERFLOW",
+      "data": {
+        "msg_id": "ERR_06",
+        "sensor_id": "RADAR_01",
+        "sensor_type": "RADAR",
+        "range_km": 20.0,
+        "azimuth_deg": 90.0,
+        "timestamp": "2026-11-03T09:00:00Z",
+        "confidence": 1.5
+      },
+      "expected_error": "confidence must be <= 1.0"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "project": "C202",
+  "mission": "C202_M09",
+  "title": "AAR 기반 중요 전문 전송 지연 사례 분석 및 큐 우선순위 가중치 재조정",
+  "delay_causes": [
+    {
+      "code": "CAUSE_QUEUE",
+      "name": "대기열 적체",
+      "description": "상위 또는 동급 긴급도 전문이 큐에 밀려 대기 시간 초과"
+    },
+    {
+      "code": "CAUSE_RTO",
+      "name": "재전송 타이머 대기",
+      "description": "패킷 손실 후 RTO 만료까지 재전송이 지연되어 기한 초과"
+    },
+    {
+      "code": "CAUSE_LINK",
+      "name": "링크 열화 및 채널 두절",
+      "description": "SNR 급감 또는 재밍으로 연속 N회 전송 실패"
+    }
+  ],
+  "sample_delayed_cases": [
+    {
+      "case_id": "D01",
+      "msg_id": "MSG_042",
+      "urgency": "FLASH",
+      "delay_sec": 14.2,
+      "deadline_sec": 10.0,
+      "classified_cause": "CAUSE_QUEUE"
+    },
+    {
+      "case_id": "D02",
+      "msg_id": "MSG_088",
+      "urgency": "IMMEDIATE",
+      "delay_sec": 41.5,
+      "deadline_sec": 30.0,
+      "classified_cause": "CAUSE_RTO"
+    },
+    {
+      "case_id": "D03",
+      "msg_id": "MSG_115",
+      "urgency": "FLASH",
+      "delay_sec": 22.0,
+      "deadline_sec": 10.0,
+      "classified_cause": "CAUSE_LINK"
+    }
+  ],
+  "grid_search_space": {
+    "preempt_candidates": [
+      false,
+      true
+    ],
+    "aging_factor_candidates": [
+      0.0,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "mtu_candidates": [
+      128,
+      256,
+      512
+    ],
+    "rto_mode_candidates": [
+      "FIXED",
+      "ADAPTIVE"
+    ]
+  },
+  "constraint": "FLASH_delivery_rate >= 0.95"
+}

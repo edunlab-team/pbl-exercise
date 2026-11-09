@@ -1,0 +1,148 @@
+{
+  "project": "K12",
+  "mission": "K12_M01",
+  "title": "자주 묻는 행정 질문 파악하기",
+  "description": "가상 한빛대대 장병들이 부대 행정 업무에 관해 자주 묻는 질문 카드 20선",
+  "questions": [
+    {
+      "id": "Q01",
+      "author": "일병 김철수",
+      "category_candidate": "휴가",
+      "question": "정기휴가 신청서는 출타 며칠 전까지 행정반에 제출해야 하나요?",
+      "scenario": "다음 달 정기휴가 출타 계획"
+    },
+    {
+      "id": "Q02",
+      "author": "상병 이영희",
+      "category_candidate": "휴가",
+      "question": "포상휴가는 최대 며칠까지 나누어 쓸 수 있고, 유효기간은 언제까지인가요?",
+      "scenario": "사격 우수로 받은 포상휴가 사용 문의"
+    },
+    {
+      "id": "Q03",
+      "author": "병장 박민우",
+      "category_candidate": "휴가",
+      "question": "위로휴가 신청 시 필요한 증빙 서류와 지휘관 결재 절차가 어떻게 되나요?",
+      "scenario": "작전 유공 위로휴가 처리"
+    },
+    {
+      "id": "Q04",
+      "author": "상병 최동현",
+      "category_candidate": "증명서",
+      "question": "군 복무확인서는 어디서 신청하고 발급받기까지 며칠 걸리나요?",
+      "scenario": "금융기관 제출용 복무확인서 필요"
+    },
+    {
+      "id": "Q05",
+      "author": "병장 정태영",
+      "category_candidate": "증명서",
+      "question": "군 운전경력확인서를 사회 보험료 감면용으로 떼려면 어디로 가야 하나요?",
+      "scenario": "전역 앞두고 자동차 보험료 할인 서류 발급"
+    },
+    {
+      "id": "Q06",
+      "author": "일병 조현수",
+      "category_candidate": "증명서",
+      "question": "군 복무 중 취득한 무도/자격증 취득 확인증을 병적기록표에 반영하는 절차가 궁금합니다.",
+      "scenario": "태권도 단증 자대 반영"
+    },
+    {
+      "id": "Q07",
+      "author": "이병 강민재",
+      "category_candidate": "전입전출",
+      "question": "신병 자대 배치 첫 주에 중대 행정반에 제출해야 하는 필수 서류가 무엇인가요?",
+      "scenario": "전입 후 신상명세서 및 가족관계증명서 제출"
+    },
+    {
+      "id": "Q08",
+      "author": "상병 한지훈",
+      "category_candidate": "전입전출",
+      "question": "타 부대로 전출 갈 때 피복 및 보급품 반납 절차와 행정 인수인계는 어떻게 하나요?",
+      "scenario": "사단 직할대 전출 행정 절차"
+    },
+    {
+      "id": "Q09",
+      "author": "이병 오세훈",
+      "category_candidate": "전입전출",
+      "question": "신규 전입 장병의 부대 인트라넷(국방망) 계정 등록 신청은 본인이 직접 하나요?",
+      "scenario": "인트라넷 아이디 발급 문의"
+    },
+    {
+      "id": "Q10",
+      "author": "일병 윤상원",
+      "category_candidate": "자기개발",
+      "question": "국가기술자격증 응시료 지원금은 1년에 얼마까지 신청할 수 있고 기한은 언제인가요?",
+      "scenario": "기사 자격증 필기시험 응시료 환급 신청"
+    },
+    {
+      "id": "Q11",
+      "author": "상병 배진우",
+      "category_candidate": "자기개발",
+      "question": "군 이러닝 원격강좌 학점인정 신청서 제출 시 영수증 첨부 기준이 궁금합니다.",
+      "scenario": "대학 원격수강 수강료 증빙 제출"
+    },
+    {
+      "id": "Q12",
+      "author": "일병 손흥민",
+      "category_candidate": "계정",
+      "question": "국방망 업무용 PC 비밀번호를 5회 오류로 분실했는데 초기화 절차가 어떻게 되나요?",
+      "scenario": "업무 PC 잠금 해제 요청"
+    },
+    {
+      "id": "Q13",
+      "author": "이병 황희찬",
+      "category_candidate": "계정",
+      "question": "사이버지식정보방(사지방) 회원가입 후 로그인이 안 되는데 누구에게 문의해야 하나요?",
+      "scenario": "사지방 단말기 인증 오류"
+    },
+    {
+      "id": "Q14",
+      "author": "이병 김민재",
+      "category_candidate": "시설수리",
+      "question": "생활관 형광등 깜빡임 및 콘센트 불량 시 시설 수리 접수는 어디에 하나요?",
+      "scenario": "생활관 전등 교체 요청"
+    },
+    {
+      "id": "Q15",
+      "author": "상병 이강인",
+      "category_candidate": "시설수리",
+      "question": "샤워장 온수가 나오지 않을 때 긴급 영내 수리 요청을 넣는 방법이 궁금합니다.",
+      "scenario": "샤워장 보일러 고장 접수"
+    },
+    {
+      "id": "Q16",
+      "author": "일병 정우영",
+      "category_candidate": "기타",
+      "question": "부대로 도착한 우체국 등기우편물과 택배는 평일 몇 시에 어디서 수령하나요?",
+      "scenario": "집에서 보낸 우편물 수령"
+    },
+    {
+      "id": "Q17",
+      "author": "이병 송범근",
+      "category_candidate": "기타",
+      "question": "육군 일반 병사의 18개월 복무 기간 중 주어지는 총 연가 일수는 법적으로 며칠인가요?",
+      "scenario": "연가 총일수 규정 질문 (FAQ 범위 밖)"
+    },
+    {
+      "id": "Q18",
+      "author": "상병 백승호",
+      "category_candidate": "기타",
+      "question": "군 복무 확인용 제증명서 발급 시 수수료가 발생하는지, 무료인지 궁금합니다.",
+      "scenario": "증명서 수수료 문의 (FAQ 범위 밖)"
+    },
+    {
+      "id": "Q19",
+      "author": "병장 권창훈",
+      "category_candidate": "기타",
+      "question": "과거 군 복무기간 단축 조치가 본인 군번에도 소급 적용되는지 계산해 줄 수 있나요?",
+      "scenario": "복무기간 단축 계산 질의 (FAQ 범위 밖)"
+    },
+    {
+      "id": "Q20",
+      "author": "일병 나상호",
+      "category_candidate": "기타",
+      "question": "부대 밖 민간 치과에서 임플란트 시술을 받기 위해 사적 진료 외출을 나가는 승인 기준은 무엇인가요?",
+      "scenario": "민간 진료 승인 절차 (FAQ 범위 밖)"
+    }
+  ]
+}

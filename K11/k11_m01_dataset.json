@@ -1,0 +1,1265 @@
+{
+  "project": "K11",
+  "mission": "K11_M01",
+  "title": "일정 데이터 구조화하기",
+  "total_events": 121,
+  "summary": {
+    "routine": 102,
+    "duty": 7,
+    "training": 11,
+    "leave": 1
+  },
+  "events": [
+    {
+      "id": "R000",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 0
+    },
+    {
+      "id": "R001",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 0
+    },
+    {
+      "id": "R002",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 0
+    },
+    {
+      "id": "R003",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 0,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 0
+    },
+    {
+      "id": "R004",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 0
+    },
+    {
+      "id": "R005",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 0,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 0
+    },
+    {
+      "id": "R006",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 0
+    },
+    {
+      "id": "R007",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 0,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 0
+    },
+    {
+      "id": "R010",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 1
+    },
+    {
+      "id": "R011",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 1
+    },
+    {
+      "id": "R012",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 1
+    },
+    {
+      "id": "R013",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 1,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 1
+    },
+    {
+      "id": "R014",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 1
+    },
+    {
+      "id": "R015",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 1,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 1
+    },
+    {
+      "id": "R016",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 1
+    },
+    {
+      "id": "R017",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 1,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 1
+    },
+    {
+      "id": "R020",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 2
+    },
+    {
+      "id": "R021",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 2
+    },
+    {
+      "id": "R022",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 2
+    },
+    {
+      "id": "R023",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 2,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 2
+    },
+    {
+      "id": "R024",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 2
+    },
+    {
+      "id": "R025",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 2,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 2
+    },
+    {
+      "id": "R026",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 2
+    },
+    {
+      "id": "R027",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 2,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 2
+    },
+    {
+      "id": "R030",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 3
+    },
+    {
+      "id": "R031",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 3
+    },
+    {
+      "id": "R032",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 3
+    },
+    {
+      "id": "R033",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 3,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 3
+    },
+    {
+      "id": "R034",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 3
+    },
+    {
+      "id": "R035",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 3,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 3
+    },
+    {
+      "id": "R036",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 3
+    },
+    {
+      "id": "R037",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 3,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 3
+    },
+    {
+      "id": "R040",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 4
+    },
+    {
+      "id": "R041",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 4
+    },
+    {
+      "id": "R042",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 4
+    },
+    {
+      "id": "R043",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 4,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 4
+    },
+    {
+      "id": "R044",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 4
+    },
+    {
+      "id": "R045",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 4,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 4
+    },
+    {
+      "id": "R046",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 4
+    },
+    {
+      "id": "R047",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 4,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 4
+    },
+    {
+      "id": "R050",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 5,
+      "start": "07:30",
+      "end": "08:00",
+      "end_day": 5
+    },
+    {
+      "id": "R051",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 5,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 5
+    },
+    {
+      "id": "R052",
+      "name": "주말 청소·정비",
+      "kind": "routine",
+      "sub": "work",
+      "day": 5,
+      "start": "09:00",
+      "end": "10:30",
+      "end_day": 5
+    },
+    {
+      "id": "R053",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 5,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 5
+    },
+    {
+      "id": "R054",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 5,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 5
+    },
+    {
+      "id": "R055",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 5,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 5
+    },
+    {
+      "id": "R060",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 6,
+      "start": "07:30",
+      "end": "08:00",
+      "end_day": 6
+    },
+    {
+      "id": "R061",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 6,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 6
+    },
+    {
+      "id": "R062",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 6,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 6
+    },
+    {
+      "id": "R063",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 6,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 6
+    },
+    {
+      "id": "R064",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 6,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 6
+    },
+    {
+      "id": "R070",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 7
+    },
+    {
+      "id": "R071",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 7
+    },
+    {
+      "id": "R072",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 7
+    },
+    {
+      "id": "R073",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 7,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 7
+    },
+    {
+      "id": "R074",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 7
+    },
+    {
+      "id": "R075",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 7,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 7
+    },
+    {
+      "id": "R076",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 7
+    },
+    {
+      "id": "R077",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 7,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 7
+    },
+    {
+      "id": "R080",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 8
+    },
+    {
+      "id": "R081",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 8
+    },
+    {
+      "id": "R082",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 8
+    },
+    {
+      "id": "R083",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 8,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 8
+    },
+    {
+      "id": "R084",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 8
+    },
+    {
+      "id": "R085",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 8,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 8
+    },
+    {
+      "id": "R086",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 8
+    },
+    {
+      "id": "R087",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 8,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 8
+    },
+    {
+      "id": "R090",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 9
+    },
+    {
+      "id": "R091",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 9
+    },
+    {
+      "id": "R092",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 9
+    },
+    {
+      "id": "R093",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 9,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 9
+    },
+    {
+      "id": "R094",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 9
+    },
+    {
+      "id": "R095",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 9,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 9
+    },
+    {
+      "id": "R096",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 9
+    },
+    {
+      "id": "R097",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 9,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 9
+    },
+    {
+      "id": "R100",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 10
+    },
+    {
+      "id": "R101",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 10
+    },
+    {
+      "id": "R102",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 10
+    },
+    {
+      "id": "R103",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 10,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 10
+    },
+    {
+      "id": "R104",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 10
+    },
+    {
+      "id": "R105",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 10,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 10
+    },
+    {
+      "id": "R106",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 10
+    },
+    {
+      "id": "R107",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 10,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 10
+    },
+    {
+      "id": "R110",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "06:30",
+      "end": "07:00",
+      "end_day": 11
+    },
+    {
+      "id": "R111",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "07:00",
+      "end": "08:00",
+      "end_day": 11
+    },
+    {
+      "id": "R112",
+      "name": "청소·정비",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 11
+    },
+    {
+      "id": "R113",
+      "name": "오전 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 11,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 11
+    },
+    {
+      "id": "R114",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 11
+    },
+    {
+      "id": "R115",
+      "name": "오후 일과",
+      "kind": "routine",
+      "sub": "work",
+      "day": 11,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 11
+    },
+    {
+      "id": "R116",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 11
+    },
+    {
+      "id": "R117",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 11,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 11
+    },
+    {
+      "id": "R120",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 12,
+      "start": "07:30",
+      "end": "08:00",
+      "end_day": 12
+    },
+    {
+      "id": "R121",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 12,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 12
+    },
+    {
+      "id": "R122",
+      "name": "주말 청소·정비",
+      "kind": "routine",
+      "sub": "work",
+      "day": 12,
+      "start": "09:00",
+      "end": "10:30",
+      "end_day": 12
+    },
+    {
+      "id": "R123",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 12,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 12
+    },
+    {
+      "id": "R124",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 12,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 12
+    },
+    {
+      "id": "R125",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 12,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 12
+    },
+    {
+      "id": "R130",
+      "name": "기상·점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 13,
+      "start": "07:30",
+      "end": "08:00",
+      "end_day": 13
+    },
+    {
+      "id": "R131",
+      "name": "조식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 13,
+      "start": "08:00",
+      "end": "09:00",
+      "end_day": 13
+    },
+    {
+      "id": "R132",
+      "name": "중식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 13,
+      "start": "12:00",
+      "end": "13:00",
+      "end_day": 13
+    },
+    {
+      "id": "R133",
+      "name": "석식",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 13,
+      "start": "17:30",
+      "end": "18:30",
+      "end_day": 13
+    },
+    {
+      "id": "R134",
+      "name": "저녁 점호",
+      "kind": "routine",
+      "sub": "fixed",
+      "day": 13,
+      "start": "21:00",
+      "end": "21:30",
+      "end_day": 13
+    },
+    {
+      "id": "D01",
+      "name": "불침번",
+      "kind": "duty",
+      "sub": "불침번",
+      "day": 0,
+      "start": "26:00",
+      "end": "28:00",
+      "end_day": 0
+    },
+    {
+      "id": "D02",
+      "name": "불침번",
+      "kind": "duty",
+      "sub": "불침번",
+      "day": 2,
+      "start": "22:00",
+      "end": "24:00",
+      "end_day": 2
+    },
+    {
+      "id": "D03",
+      "name": "경계근무",
+      "kind": "duty",
+      "sub": "경계근무",
+      "day": 3,
+      "start": "16:00",
+      "end": "18:00",
+      "end_day": 3
+    },
+    {
+      "id": "D04",
+      "name": "불침번",
+      "kind": "duty",
+      "sub": "불침번",
+      "day": 4,
+      "start": "26:00",
+      "end": "28:00",
+      "end_day": 4
+    },
+    {
+      "id": "D05",
+      "name": "당직 보조",
+      "kind": "duty",
+      "sub": "당직",
+      "day": 6,
+      "start": "08:00",
+      "end": "32:00",
+      "end_day": 6
+    },
+    {
+      "id": "D06",
+      "name": "불침번",
+      "kind": "duty",
+      "sub": "불침번",
+      "day": 8,
+      "start": "22:00",
+      "end": "24:00",
+      "end_day": 8
+    },
+    {
+      "id": "D07",
+      "name": "불침번",
+      "kind": "duty",
+      "sub": "불침번",
+      "day": 9,
+      "start": "22:00",
+      "end": "24:00",
+      "end_day": 9
+    },
+    {
+      "id": "T01",
+      "name": "정훈교육",
+      "kind": "training",
+      "sub": "",
+      "day": 1,
+      "start": "14:00",
+      "end": "16:00",
+      "end_day": 1
+    },
+    {
+      "id": "T02",
+      "name": "사이버 보안 교육",
+      "kind": "training",
+      "sub": "",
+      "day": 2,
+      "start": "20:30",
+      "end": "21:30",
+      "end_day": 2
+    },
+    {
+      "id": "T03",
+      "name": "정신교육",
+      "kind": "training",
+      "sub": "",
+      "day": 3,
+      "start": "15:00",
+      "end": "17:00",
+      "end_day": 3
+    },
+    {
+      "id": "T04",
+      "name": "사격 훈련",
+      "kind": "training",
+      "sub": "",
+      "day": 4,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 4
+    },
+    {
+      "id": "T05",
+      "name": "동계 피복 보급",
+      "kind": "training",
+      "sub": "",
+      "day": 4,
+      "start": "13:00",
+      "end": "17:00",
+      "end_day": 4
+    },
+    {
+      "id": "T06",
+      "name": "보안 점검 교육",
+      "kind": "training",
+      "sub": "",
+      "day": 7,
+      "start": "15:00",
+      "end": "17:00",
+      "end_day": 7
+    },
+    {
+      "id": "T07",
+      "name": "체력검정",
+      "kind": "training",
+      "sub": "",
+      "day": 8,
+      "start": "10:00",
+      "end": "12:00",
+      "end_day": 8
+    },
+    {
+      "id": "T08",
+      "name": "신체검사(의무실)",
+      "kind": "training",
+      "sub": "",
+      "day": 8,
+      "start": "10:30",
+      "end": "11:30",
+      "end_day": 8
+    },
+    {
+      "id": "T09",
+      "name": "독감 예방접종",
+      "kind": "training",
+      "sub": "",
+      "day": 9,
+      "start": "09:00",
+      "end": "10:30",
+      "end_day": 9
+    },
+    {
+      "id": "T10",
+      "name": "분대 전술훈련(오전)",
+      "kind": "training",
+      "sub": "",
+      "day": 10,
+      "start": "09:00",
+      "end": "12:00",
+      "end_day": 10
+    },
+    {
+      "id": "T11",
+      "name": "분대 전술훈련(오후)",
+      "kind": "training",
+      "sub": "",
+      "day": 10,
+      "start": "13:00",
+      "end": "17:30",
+      "end_day": 10
+    },
+    {
+      "id": "V01",
+      "name": "정기 휴가",
+      "kind": "leave",
+      "sub": "",
+      "day": 11,
+      "start": "09:00",
+      "end": "18:00",
+      "end_day": 13
+    }
+  ],
+  "error_injection_tests": [
+    {
+      "id": "ERR01",
+      "name": "필수키누락",
+      "kind": "duty",
+      "day": 1,
+      "start": "09:00"
+    },
+    {
+      "id": "ERR02",
+      "name": "잘못된종류",
+      "kind": "unknown_kind",
+      "day": 1,
+      "start": "09:00",
+      "end": "10:00"
+    },
+    {
+      "id": "ERR03",
+      "name": "시간형식오류",
+      "kind": "work",
+      "day": 1,
+      "start": "오전9시",
+      "end": "10:00"
+    },
+    {
+      "id": "ERR04",
+      "name": "시간역전문맥",
+      "kind": "training",
+      "day": 1,
+      "start": "14:00",
+      "end": "13:00"
+    },
+    {
+      "id": "ERR05",
+      "name": "잘못된분형식",
+      "kind": "routine",
+      "day": 1,
+      "start": "09:65",
+      "end": "10:00"
+    }
+  ]
+}

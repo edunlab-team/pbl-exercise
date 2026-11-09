@@ -1,0 +1,144 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M03",
+  "title": "표준 정산 규칙 기반 1차 월간 결산 집계 Baseline 엔진 구현",
+  "rules_15": [
+    {
+      "rule_id": "V01",
+      "name": "기본수불식",
+      "formula": "close == open + recv + ret - issue",
+      "msg": "기말재고 수불 불일치"
+    },
+    {
+      "rule_id": "V02",
+      "name": "기초음수불가",
+      "formula": "open >= 0",
+      "msg": "기초재고 음수"
+    },
+    {
+      "rule_id": "V03",
+      "name": "수령음수불가",
+      "formula": "recv >= 0",
+      "msg": "수령량 음수"
+    },
+    {
+      "rule_id": "V04",
+      "name": "불출음수불가",
+      "formula": "issue >= 0",
+      "msg": "불출량 음수"
+    },
+    {
+      "rule_id": "V05",
+      "name": "반납음수불가",
+      "formula": "ret >= 0",
+      "msg": "반납량 음수"
+    },
+    {
+      "rule_id": "V06",
+      "name": "기말음수불가",
+      "formula": "close >= 0",
+      "msg": "기말재고 음수"
+    },
+    {
+      "rule_id": "V07",
+      "name": "가용량초과불출불가",
+      "formula": "issue <= open + recv",
+      "msg": "가용재고 초과 불출"
+    },
+    {
+      "rule_id": "V08",
+      "name": "불출초과반납불가",
+      "formula": "ret <= issue",
+      "msg": "불출량 초과 반납"
+    },
+    {
+      "rule_id": "V09",
+      "name": "인가부대코드검증",
+      "formula": "unit in UNITS",
+      "msg": "미등록 부대 코드"
+    },
+    {
+      "rule_id": "V10",
+      "name": "인가품목코드검증",
+      "formula": "item in ALL_ITEMS",
+      "msg": "미인가 품목 코드"
+    },
+    {
+      "rule_id": "V11",
+      "name": "단위코드일치검증",
+      "formula": "unit_code == UNIT_CODE[item]",
+      "msg": "표준 단위 코드 불일치"
+    },
+    {
+      "rule_id": "V12",
+      "name": "월형식검증",
+      "formula": "re.match(r'^2026-(0[1-9]|1[0-2])$', month)",
+      "msg": "월 표기 서식 위반"
+    },
+    {
+      "rule_id": "V13",
+      "name": "탄약월간한도초과검증",
+      "formula": "if cat=='탄약정산': issue <= 3000",
+      "msg": "탄약 월간 불출 한도(3000) 초과"
+    },
+    {
+      "rule_id": "V14",
+      "name": "유류급증비정상검증",
+      "formula": "if item=='유류': issue <= (open+recv)*0.9",
+      "msg": "유류 과다 소모 경보"
+    },
+    {
+      "rule_id": "V15",
+      "name": "마감상태확인",
+      "formula": "status in ['정상', '확인필요']",
+      "msg": "비정상 마감 플래그"
+    }
+  ],
+  "boundary_tests": [
+    {
+      "test_id": "B01",
+      "desc": "불출량 == 가용재고 (잔고 0)",
+      "expected": true
+    },
+    {
+      "test_id": "B02",
+      "desc": "불출량 == 가용재고 + 1 (재고 초과)",
+      "expected": false
+    },
+    {
+      "test_id": "B03",
+      "desc": "반납량 == 불출량 (전량 반납)",
+      "expected": true
+    },
+    {
+      "test_id": "B04",
+      "desc": "반납량 == 불출량 + 1 (반납 초과)",
+      "expected": false
+    },
+    {
+      "test_id": "B05",
+      "desc": "탄약 불출량 == 3000 (한도 정확 일치)",
+      "expected": true
+    },
+    {
+      "test_id": "B06",
+      "desc": "탄약 불출량 == 3001 (한도 초과)",
+      "expected": false
+    },
+    {
+      "test_id": "B07",
+      "desc": "기초재고 == 0",
+      "expected": true
+    },
+    {
+      "test_id": "B08",
+      "desc": "기초재고 == -1",
+      "expected": false
+    },
+    {
+      "test_id": "B09",
+      "desc": "수령량 == 0",
+      "expected": true
+    }
+  ]
+}

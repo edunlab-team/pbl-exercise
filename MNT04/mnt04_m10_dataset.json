@@ -1,0 +1,42 @@
+{
+  "title": "MNT04_M10 PdM 통합 시스템 명세 및 챔피언-도전자 재학습 데이터",
+  "champion_challenger_metrics": {
+    "champion_f1": 0.868,
+    "challenger_f1": 0.892,
+    "replacement_decision": "DEPLOY_CHALLENGER (도전자 교체 승인)"
+  },
+  "health_checks": [
+    {
+      "check": "데이터 수집 스키마 검증",
+      "status": "PASS"
+    },
+    {
+      "check": "FFT 신호처리 및 특징량 추출",
+      "status": "PASS"
+    },
+    {
+      "check": "오토인코더 이상 탐지 엔진",
+      "status": "PASS"
+    },
+    {
+      "check": "RUL 앙상블 회귀 추론",
+      "status": "PASS"
+    },
+    {
+      "check": "XAI 인자 분해 및 부품 매핑",
+      "status": "PASS"
+    },
+    {
+      "check": "HITL 감사 로그 무결성",
+      "status": "PASS"
+    },
+    {
+      "check": "스트림 격리 큐 및 버퍼",
+      "status": "PASS"
+    },
+    {
+      "check": "장애 시 3-시그마 룰 Fallback",
+      "status": "PASS"
+    }
+  ]
+}

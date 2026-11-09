@@ -1,0 +1,32 @@
+{
+  "project": "K09",
+  "mission": "K09_M03",
+  "title": "질문에 답하는 프롬프트 작성하기",
+  "testQuestions": [
+    {
+      "id": "TQ01",
+      "targetFacility": "대대 의무실",
+      "question": "의무실 일반 진료 시간과 야간 진료 접수 방법 알려줘."
+    },
+    {
+      "id": "TQ02",
+      "targetFacility": "복지매장(PX)",
+      "question": "평일 일과 후 PX(충성마트) 이용 시간은 언제인가요?"
+    },
+    {
+      "id": "TQ03",
+      "targetFacility": "사이버지식정보방",
+      "question": "사지방 위치와 주말 이용 시간 알려줘."
+    },
+    {
+      "id": "TQ04",
+      "targetFacility": "체력단련실",
+      "question": "체단실 이용 가능 시간과 방역 소독 시간 알려줘."
+    },
+    {
+      "id": "TQ05",
+      "targetFacility": "병영도서관",
+      "question": "도서관 책 대출 권수와 대출 기간이 어떻게 되나요?"
+    }
+  ]
+}

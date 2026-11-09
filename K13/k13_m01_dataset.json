@@ -1,0 +1,64 @@
+{
+  "project": "K13",
+  "mission": "K13_M01",
+  "title": "교육 데이터 구조화하기",
+  "summary": "가상 교육 콘텐츠 40개, 장병 60명 프로필, 수강 이력 608건 원천 데이터셋 및 오류 주입 4건",
+  "dataset": {
+    "total_courses": 40,
+    "topics": [
+      "AI 기초",
+      "데이터",
+      "보안",
+      "안전",
+      "리더십",
+      "체력",
+      "자격증 대비",
+      "소통·정서"
+    ],
+    "levels": {
+      "1": "기초",
+      "2": "중급",
+      "3": "심화"
+    },
+    "total_soldiers": 60,
+    "ranks": [
+      "이병",
+      "일병",
+      "상병",
+      "병장",
+      "하사",
+      "중사",
+      "상사",
+      "소위",
+      "중위"
+    ],
+    "total_ratings": 608,
+    "matrix_sparsity": "74.67%",
+    "injected_errors": [
+      {
+        "case": 1,
+        "type": "INVALID_SOLDIER_ID",
+        "detail": "존재하지 않는 장병 S99 참조"
+      },
+      {
+        "case": 2,
+        "type": "INVALID_COURSE_ID",
+        "detail": "존재하지 않는 강좌 C99 참조"
+      },
+      {
+        "case": 3,
+        "type": "RATING_OUT_OF_BOUNDS",
+        "detail": "평점 6점 (허용 범위 1~5점 초과)"
+      },
+      {
+        "case": 4,
+        "type": "DUPLICATE_ENTRY",
+        "detail": "동일 장병 동일 강좌 중복 평점"
+      }
+    ],
+    "split_ratio": {
+      "train_count": 488,
+      "eval_count": 120
+    }
+  }
+}

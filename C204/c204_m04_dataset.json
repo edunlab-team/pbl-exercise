@@ -1,0 +1,93 @@
+{
+  "mission_id": "C204_M04",
+  "description": "35차원 음향 특징 정의 및 10종 복합 위협 시나리오 스트레스 평가 데이터셋",
+  "feature_dimension_spec": {
+    "mfcc_mean_std": 26,
+    "spectral_contrast": 4,
+    "hnr_flatness_boundary": 3,
+    "speaker_similarity_embeddings": 2,
+    "total_dimensions": 35
+  },
+  "complex_threat_scenarios_10": [
+    {
+      "id": "S01",
+      "name": "악천후_TTS_단일톤재밍",
+      "threat_type": "TTS",
+      "snr_db": 5.0,
+      "jamming": "single_tone",
+      "target_recall": 88.0
+    },
+    {
+      "id": "S02",
+      "name": "차량소음_VC_패킷단절",
+      "threat_type": "VC",
+      "snr_db": 8.0,
+      "loss_rate": 0.08,
+      "target_recall": 86.5
+    },
+    {
+      "id": "S03",
+      "name": "포격충격_재생_저SNR",
+      "threat_type": "Replay",
+      "snr_db": 3.0,
+      "impulse": true,
+      "target_recall": 85.0
+    },
+    {
+      "id": "S04",
+      "name": "평시_고음질VC_클리핑",
+      "threat_type": "VC",
+      "snr_db": 15.0,
+      "clipped": true,
+      "target_recall": 92.0
+    },
+    {
+      "id": "S05",
+      "name": "야간_TTS_광대역잡음",
+      "threat_type": "TTS",
+      "snr_db": 6.0,
+      "noise": "barrage",
+      "target_recall": 87.0
+    },
+    {
+      "id": "S06",
+      "name": "진지변환_재생_지연급증",
+      "threat_type": "Replay",
+      "snr_db": 10.0,
+      "latency_ms": 450,
+      "target_recall": 89.0
+    },
+    {
+      "id": "S07",
+      "name": "전자전_TTS_주파수도약혼선",
+      "threat_type": "TTS",
+      "snr_db": 4.0,
+      "freq_hop_glitch": true,
+      "target_recall": 85.5
+    },
+    {
+      "id": "S08",
+      "name": "복합잡음_VC_화자유사도경계",
+      "threat_type": "VC",
+      "snr_db": 7.0,
+      "spk_sim": 0.74,
+      "target_recall": 86.0
+    },
+    {
+      "id": "S09",
+      "name": "순간포성_TTS_채널포화",
+      "threat_type": "TTS",
+      "snr_db": 9.0,
+      "saturation": true,
+      "target_recall": 90.0
+    },
+    {
+      "id": "S10",
+      "name": "극저SNR_복합위협_총공세",
+      "threat_type": "Mixed",
+      "snr_db": 1.5,
+      "jamming": "mixed",
+      "target_recall": 84.0
+    }
+  ]
+}

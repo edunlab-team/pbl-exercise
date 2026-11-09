@@ -1,0 +1,158 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M01",
+  "title": "작전 단계별 탄약 및 유류 기준 소모율(CSR) 데이터 정의",
+  "process_steps_5": [
+    {
+      "step": 1,
+      "name": "일일 소모 보고 수집",
+      "description": "각 대대 군수과로부터 24시간 실소모량 및 교전 현황 보고 수집"
+    },
+    {
+      "step": 2,
+      "name": "환산 소모량 산출",
+      "description": "병력 100명당 환산 및 유류/탄종별 표준 단위 변환"
+    },
+    {
+      "step": 3,
+      "name": "보급 수준(DOS) 계산",
+      "description": "현 비축량 대비 일일 예측 소모율 기반 잔여 지속일수 산정"
+    },
+    {
+      "step": 4,
+      "name": "재보급 결재 대기",
+      "description": "긴급/주의 대상 부대에 대한 군수참모 HITL 승인 큐 등록"
+    },
+    {
+      "step": 5,
+      "name": "저장고 입고 및 배치",
+      "description": "보급소/저장창 입고 및 안전 혼적 제약 기반 적재 위치 확정"
+    }
+  ],
+  "schema_groups_7": {
+    "identification": [
+      "unit_id",
+      "record_id",
+      "report_date"
+    ],
+    "operation": [
+      "operation_phase",
+      "combat_intensity",
+      "enemy_resistance"
+    ],
+    "item": [
+      "item_code",
+      "item_name",
+      "category",
+      "unit_measure"
+    ],
+    "consumption": [
+      "daily_consumption",
+      "planned_csr",
+      "adjusted_factor"
+    ],
+    "inventory": [
+      "current_stock",
+      "dos_days",
+      "alert_level"
+    ],
+    "storage": [
+      "warehouse_id",
+      "bay_id",
+      "temp_state"
+    ],
+    "management": [
+      "commander_approval",
+      "audit_hash",
+      "updated_at"
+    ]
+  },
+  "sample_records": [
+    {
+      "unit_id": "UNIT-701",
+      "record_id": "LOG-2026-001",
+      "report_date": "2026-11-01",
+      "operation_phase": "DEFENSE",
+      "combat_intensity": 0.85,
+      "enemy_resistance": 0.78,
+      "item_code": "AMMO-155-HE",
+      "item_name": "155mm 고폭탄",
+      "category": "탄약",
+      "unit_measure": "EA",
+      "daily_consumption": 420,
+      "planned_csr": 350,
+      "adjusted_factor": 1.2,
+      "current_stock": 1260,
+      "dos_days": 3.0,
+      "alert_level": "WARNING",
+      "warehouse_id": "WH-03",
+      "bay_id": "BAY-A1",
+      "temp_state": "normal",
+      "commander_approval": true,
+      "audit_hash": "a1b2c3d4e5f6...",
+      "updated_at": "2026-11-01T18:00:00Z"
+    },
+    {
+      "unit_id": "UNIT-702",
+      "record_id": "LOG-2026-002",
+      "report_date": "2026-11-01",
+      "operation_phase": "COUNTER_ATTACK",
+      "combat_intensity": 0.92,
+      "enemy_resistance": 0.65,
+      "item_code": "POL-DIESEL-DF2",
+      "item_name": "기동용 경유",
+      "category": "유류",
+      "unit_measure": "L",
+      "daily_consumption": 8500,
+      "planned_csr": 6000,
+      "adjusted_factor": 1.41,
+      "current_stock": 14500,
+      "dos_days": 1.7,
+      "alert_level": "CRITICAL",
+      "warehouse_id": "WH-01",
+      "bay_id": "TANK-02",
+      "temp_state": "normal",
+      "commander_approval": true,
+      "audit_hash": "f6e5d4c3b2a1...",
+      "updated_at": "2026-11-01T18:00:00Z"
+    }
+  ],
+  "injected_faults": [
+    {
+      "case": "허용값 오류",
+      "field": "temp_state",
+      "value": "critical_hot",
+      "expected_rule": "R01_ALLOWED_VALUE"
+    },
+    {
+      "case": "자료형 불일치",
+      "field": "daily_consumption",
+      "value": "four_hundred",
+      "expected_rule": "R02_DATA_TYPE"
+    },
+    {
+      "case": "범위 초과",
+      "field": "combat_intensity",
+      "value": 1.85,
+      "expected_rule": "R03_RANGE_CHECK"
+    },
+    {
+      "case": "필수값 누락",
+      "field": "unit_id",
+      "value": null,
+      "expected_rule": "R04_NOT_NULL"
+    },
+    {
+      "case": "군수코드 형식 오류",
+      "field": "item_code",
+      "value": "INVALID#CODE#99",
+      "expected_rule": "R05_FORMAT_REGEX"
+    },
+    {
+      "case": "분류 불일치",
+      "field": "category",
+      "value": "의무물자",
+      "expected_rule": "R06_CATEGORY_MISMATCH"
+    }
+  ]
+}

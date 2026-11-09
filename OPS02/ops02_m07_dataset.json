@@ -1,0 +1,23 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M07",
+  "description": "조작관 HITL 검토/승인 워크플로우 및 해시 체인 감사 추적 데이터셋",
+  "conflict_types": [
+    "DUP_SUSPECT",
+    "MERGE_SUSPECT",
+    "SINGLE_SENSOR"
+  ],
+  "prohibited_violations_5": [
+    "OPERATOR_ID_MISSING",
+    "UNAUTHORIZED_ACTION_CODE",
+    "RATIONALE_LENGTH_TOO_SHORT",
+    "DISTANCE_EXCEEDED_MERGE",
+    "SINGLE_SENSOR_SPLIT_ATTEMPT"
+  ],
+  "hash_chain_genesis": {
+    "block_idx": 0,
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "timestamp": "2026-11-03T00:00:00Z",
+    "action": "GENESIS"
+  }
+}

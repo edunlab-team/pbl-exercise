@@ -1,0 +1,54 @@
+{
+  "project": "ADM05",
+  "mission": "ADM05_M07",
+  "title": "대량 전투 일지 유입 시 정보 분류 누락 방지 고부하 스트레스 검증",
+  "stress_test_batches": [
+    {
+      "batch": "W1",
+      "cards_count": 5,
+      "condition": "정상 주간 상황 (통신 양호)"
+    },
+    {
+      "batch": "W2",
+      "cards_count": 10,
+      "condition": "야간 전환기 (근무 교대 혼선)"
+    },
+    {
+      "batch": "W3",
+      "cards_count": 20,
+      "condition": "적 포격 도발 (통신망 간헐 두절)"
+    },
+    {
+      "batch": "W4",
+      "cards_count": 30,
+      "condition": "전면전 개시 및 다발 교전 유입"
+    },
+    {
+      "batch": "W5",
+      "cards_count": 50,
+      "condition": "주 통신망 완전 두절 및 전령 수기 메모 폭증"
+    }
+  ],
+  "rubric_5_domains": [
+    {
+      "domain": "분류 정확성",
+      "desc": "사실, 조치, 미확인 분류의 무오류성"
+    },
+    {
+      "domain": "시각·출처 기재",
+      "desc": "타임스탬프 및 출처 표기의 완전성"
+    },
+    {
+      "domain": "중복 처리",
+      "desc": "예하 부대 간 동일 사건 이중 계상 필터링"
+    },
+    {
+      "domain": "미확인 관리",
+      "desc": "미확인 사항에 대한 책임자 및 기한 명시율"
+    },
+    {
+      "domain": "보고 적시성",
+      "desc": "제한 시간(배치당 10분) 내 작성 및 상신 완료"
+    }
+  ]
+}

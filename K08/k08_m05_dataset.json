@@ -1,0 +1,147 @@
+{
+  "project": "K08",
+  "mission": "K08_M05",
+  "title": "검색 품질 평가하기",
+  "description": "Hit@1, Hit@3, MRR 산출 및 모델 비교 평가를 위한 랭킹 데이터셋",
+  "baseline_ranks": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "tfidf_ranks": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "query": "휴가는 언제까지 신청해야 하나요?",
+      "target_no": 7,
+      "target_article": "제7조(휴가 신청)",
+      "type": "시간·기한"
+    },
+    {
+      "id": "Q02",
+      "query": "휴가 인원이 많으면 어떻게 정하나요?",
+      "target_no": 8,
+      "target_article": "제8조(휴가 조정)",
+      "type": "기준·조건"
+    },
+    {
+      "id": "Q03",
+      "query": "주말 외출 시간은 몇 시까지인가요?",
+      "target_no": 9,
+      "target_article": "제9조(외출)",
+      "type": "시간·기한"
+    },
+    {
+      "id": "Q04",
+      "query": "복귀가 늦어질 것 같으면 누구에게 연락하나요?",
+      "target_no": 10,
+      "target_article": "제10조(복귀 지연)",
+      "type": "절차·담당"
+    },
+    {
+      "id": "Q05",
+      "query": "비밀번호는 몇 자리 이상이어야 하나요?",
+      "target_no": 11,
+      "target_article": "제11조(정보통신 보안)",
+      "type": "기준·조건"
+    },
+    {
+      "id": "Q06",
+      "query": "부대 안에서 휴대전화로 사진 찍어도 되나요?",
+      "target_no": 12,
+      "target_article": "제12조(촬영 금지)",
+      "type": "허용 여부"
+    },
+    {
+      "id": "Q07",
+      "query": "ChatGPT 같은 AI에 부대 자료를 넣어도 되나요?",
+      "target_no": 13,
+      "target_article": "제13조(외부 AI 서비스)",
+      "type": "허용 여부"
+    },
+    {
+      "id": "Q08",
+      "query": "겨울철 야외 활동 때 지켜야 할 것은?",
+      "target_no": 14,
+      "target_article": "제14조(동절기 안전)",
+      "type": "절차·담당"
+    },
+    {
+      "id": "Q09",
+      "query": "다친 사람이 생기면 어떻게 하나요?",
+      "target_no": 15,
+      "target_article": "제15조(환자 발생)",
+      "type": "절차·담당"
+    },
+    {
+      "id": "Q10",
+      "query": "예방접종을 못 받으면 어떻게 하나요?",
+      "target_no": 16,
+      "target_article": "제16조(예방접종)",
+      "type": "절차·담당"
+    },
+    {
+      "id": "Q11",
+      "query": "체력단련실을 못 쓰는 시간이 있나요?",
+      "target_no": 17,
+      "target_article": "제17조(복지시설 이용)",
+      "type": "허용 여부"
+    },
+    {
+      "id": "Q12",
+      "query": "자격증 응시료를 지원받을 수 있나요?",
+      "target_no": 18,
+      "target_article": "제18조(자기개발 지원)",
+      "type": "허용 여부"
+    },
+    {
+      "id": "Q13",
+      "query": "고충이 있으면 어디에 말하나요?",
+      "target_no": 19,
+      "target_article": "제19조(건의 및 고충)",
+      "type": "절차·담당"
+    },
+    {
+      "id": "Q14",
+      "query": "점호는 몇 시에 하나요?",
+      "target_no": 3,
+      "target_article": "제3조(일과 시간)",
+      "type": "시간·기한"
+    },
+    {
+      "id": "Q15",
+      "query": "생활관에서 전기난로를 써도 되나요?",
+      "target_no": 5,
+      "target_article": "제5조(전열기 사용)",
+      "type": "허용 여부"
+    }
+  ]
+}

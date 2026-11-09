@@ -1,0 +1,18 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M08",
+  "title": "AAR 회의를 통한 대응 시간 지연 및 보고 체계 혼선 원인 분석",
+  "aar_steps": [
+    "1단계: 당초 무엇을 계획했는가? (What was planned?)",
+    "2단계: 실제 현장에서 무슨 일이 일어났는가? (What actually happened?)",
+    "3단계: 계획과 실제의 차이 원인은 무엇인가? (Why did it happen?)",
+    "4단계: 다음 훈련/실전에서 무엇을 개선할 것인가? (What can we improve?)"
+  ],
+  "cause_categories": [
+    "절차(Method)",
+    "도구/장비(Machine)",
+    "환경(Environment)",
+    "숙련/인적(Man)"
+  ],
+  "fact_check_excerpts": 7
+}

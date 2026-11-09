@@ -1,0 +1,38 @@
+{
+  "project": "SEC09",
+  "mission": "SEC09_M09",
+  "title": "피드백을 반영한 재점검(Re-run) 및 긴급 방호 보강 조치 수행",
+  "controlled_variables": {
+    "facility": "가상 기지 102호 대피소 및 동일 환기탑",
+    "evaluator_rubric": "동일 10개 평가 기준표 적용",
+    "personnel": "동일 4인 1조 역할 편성 유지",
+    "equipment": "개정 SOP, 포켓 가이드, 정밀 계측기 완비"
+  },
+  "performance_comparison_data": {
+    "metric_1_time": {
+      "dryrun": "34분 20초",
+      "rerun": "22분 10초",
+      "improvement": "35.4% 단축(목표 30% 달성)"
+    },
+    "metric_2_errors": {
+      "dryrun": "6건 (누락 3, 오판 2, 지연 1)",
+      "rerun": "2건 (경미 오기록 2)",
+      "improvement": "66.7% 감소(목표 50% 달성)"
+    },
+    "metric_3_compliance": {
+      "dryrun": "78.5%",
+      "rerun": "96.2%",
+      "improvement": "17.7%p 상승"
+    },
+    "metric_4_handover": {
+      "dryrun": "14분 30초",
+      "rerun": "8분 15초",
+      "improvement": "43.1% 단축"
+    }
+  },
+  "maintenance_training_plan": {
+    "cycle": "분기 1회 (3개월 주기)",
+    "duration": "2시간 집중 실습",
+    "target": "부대 전 시설 점검관 및 당직사령 요원"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M04",
+  "title": "데이터 이상치 자동 감지 및 이상 원인 요약 추천 모듈 고도화",
+  "causes_5": [
+    "훈련 증가",
+    "정비 집중",
+    "입력 자릿수 오류",
+    "일회성 특별 지급",
+    "원인 불명"
+  ],
+  "spikes_dataset": [
+    {
+      "unit": "가상01대대",
+      "item": "훈련탄A",
+      "prev_qty": 150,
+      "curr_qty": 920,
+      "z_score": 3.8,
+      "actual_cause": "훈련 증가",
+      "context": "야외 종합 전술 훈련 5일 시행"
+    },
+    {
+      "unit": "가상05대대",
+      "item": "베어링류",
+      "prev_qty": 30,
+      "curr_qty": 240,
+      "z_score": 4.1,
+      "actual_cause": "정비 집중",
+      "context": "궤도 장비 예방 정비 주간 운영"
+    },
+    {
+      "unit": "가상12대대",
+      "item": "피복류",
+      "prev_qty": 20,
+      "curr_qty": 2000,
+      "z_score": 7.5,
+      "actual_cause": "입력 자릿수 오류",
+      "context": "통상 불출 수준 대비 100배(0 두 개 추가 오기입)"
+    },
+    {
+      "unit": "가상18대대",
+      "item": "급식류",
+      "prev_qty": 80,
+      "curr_qty": 350,
+      "z_score": 3.2,
+      "actual_cause": "일회성 특별 지급",
+      "context": "대대 창설 기념 특식 지원"
+    },
+    {
+      "unit": "가상22대대",
+      "item": "유류",
+      "prev_qty": 500,
+      "curr_qty": 1400,
+      "z_score": 3.4,
+      "actual_cause": "원인 불명",
+      "context": "기록된 훈련/정비 이벤트 없음"
+    }
+  ],
+  "sample_spike_counts": {
+    "total_spikes": 36,
+    "target_recall": 0.85
+  }
+}

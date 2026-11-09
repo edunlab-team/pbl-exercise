@@ -1,0 +1,62 @@
+{
+  "mission_id": "C204_M03",
+  "description": "정상 음성 200건 단서 분포 통계 및 400개 클립 1차 Baseline 추론 테스트셋 제원",
+  "baseline_feature_quantiles": {
+    "high_freq_ratio": {
+      "mean": 0.12,
+      "std": 0.03,
+      "lower_3pct": 0.05,
+      "upper_3pct": 0.22
+    },
+    "frame_boundary_discontinuity": {
+      "mean": 0.08,
+      "std": 0.02,
+      "upper_3pct": 0.15
+    },
+    "harmonics_to_noise_ratio_hnr": {
+      "mean": 14.5,
+      "std": 2.8,
+      "lower_3pct": 8.2
+    },
+    "spectral_flatness": {
+      "mean": 0.25,
+      "std": 0.06,
+      "upper_3pct": 0.42
+    },
+    "low_freq_energy_ratio": {
+      "mean": 0.55,
+      "std": 0.08,
+      "lower_3pct": 0.35
+    },
+    "speaker_voice_similarity": {
+      "mean": 0.88,
+      "std": 0.05,
+      "lower_3pct": 0.72
+    }
+  },
+  "evaluation_split": {
+    "total_clips": 400,
+    "bonafide_count": 250,
+    "spoof_count": 150,
+    "snr_brackets": [
+      {
+        "bracket": "0_to_5dB",
+        "count": 100,
+        "expected_accuracy": 74.5,
+        "expected_far": 18.2
+      },
+      {
+        "bracket": "5_to_10dB",
+        "count": 150,
+        "expected_accuracy": 82.0,
+        "expected_far": 9.5
+      },
+      {
+        "bracket": "above_10dB",
+        "count": 150,
+        "expected_accuracy": 91.5,
+        "expected_far": 4.1
+      }
+    ]
+  }
+}

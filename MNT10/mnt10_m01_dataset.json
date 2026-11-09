@@ -1,0 +1,218 @@
+{
+  "title": "MNT10_M01 야전 긴급 정비 요청 및 이동정비반 데이터셋 스키마 샘플",
+  "total_samples": 20,
+  "target_features": 24,
+  "feature_groups": {
+    "request": [
+      {
+        "name": "req_id",
+        "type": "string",
+        "pattern": "^R\\d{4}$",
+        "desc": "요청 식별 ID"
+      },
+      {
+        "name": "t_req",
+        "type": "float",
+        "min": 0,
+        "desc": "접수 시각 (모의 경과 시간, h)"
+      },
+      {
+        "name": "unit_code",
+        "type": "string",
+        "pattern": "^VU-\\d{2}$",
+        "desc": "요청 부대 코드"
+      },
+      {
+        "name": "grid_x",
+        "type": "float",
+        "min": 0,
+        "max": 60,
+        "desc": "고장 위치 X좌표 (km)"
+      },
+      {
+        "name": "grid_y",
+        "type": "float",
+        "min": 0,
+        "max": 60,
+        "desc": "고장 위치 Y좌표 (km)"
+      },
+      {
+        "name": "equip_type",
+        "type": "string",
+        "enum": [
+          "mobility",
+          "fires",
+          "comms",
+          "power"
+        ],
+        "desc": "장비 분류"
+      },
+      {
+        "name": "equip_code",
+        "type": "string",
+        "pattern": "^VX-\\d{4}-\\d{4}$",
+        "desc": "장비 식별 표준코드"
+      },
+      {
+        "name": "fsc_group",
+        "type": "string",
+        "pattern": "^\\d{4}$",
+        "desc": "군수 보급 분류군 (FSC)"
+      },
+      {
+        "name": "crit",
+        "type": "int",
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "desc": "작전 중요도 (1:일반, 2:중요, 3:핵심)"
+      },
+      {
+        "name": "fault_type",
+        "type": "string",
+        "enum": [
+          "engine",
+          "drivetrain",
+          "hydraulic",
+          "electric",
+          "comm_module",
+          "cooling"
+        ],
+        "desc": "고장 유형"
+      },
+      {
+        "name": "parts_ready",
+        "type": "bool",
+        "desc": "수리부속 확보 여부"
+      },
+      {
+        "name": "weather",
+        "type": "string",
+        "enum": [
+          "clear",
+          "rain",
+          "snow"
+        ],
+        "desc": "기상 상태"
+      },
+      {
+        "name": "road",
+        "type": "string",
+        "enum": [
+          "paved",
+          "unpaved"
+        ],
+        "desc": "접근 도로 상태"
+      }
+    ],
+    "team": [
+      {
+        "name": "team_id",
+        "type": "string",
+        "pattern": "^MT\\d$",
+        "desc": "이동정비반 식별 ID"
+      },
+      {
+        "name": "base_x",
+        "type": "float",
+        "min": 0,
+        "max": 60,
+        "desc": "정비반 대기 위치 X좌표"
+      },
+      {
+        "name": "base_y",
+        "type": "float",
+        "min": 0,
+        "max": 60,
+        "desc": "정비반 대기 위치 Y좌표"
+      },
+      {
+        "name": "crew",
+        "type": "int",
+        "min": 2,
+        "max": 8,
+        "desc": "가용 정비 인력(명)"
+      },
+      {
+        "name": "skills",
+        "type": "list",
+        "desc": "정비 가능 장비 특기 목록"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "enum": [
+          "ready",
+          "moving",
+          "repairing",
+          "returning"
+        ],
+        "desc": "출동 가능 상태"
+      }
+    ],
+    "result": [
+      {
+        "name": "std_repair_h",
+        "type": "float",
+        "min": 0,
+        "max": 48,
+        "desc": "표준 정비 소요시간(h)"
+      },
+      {
+        "name": "response_h",
+        "type": "float",
+        "min": 0,
+        "max": 72,
+        "desc": "접수~도착 시간(h)"
+      },
+      {
+        "name": "downtime_h",
+        "type": "float",
+        "min": 0,
+        "max": 240,
+        "desc": "장비 가동중단 시간(h)"
+      },
+      {
+        "name": "field_ok",
+        "type": "bool",
+        "desc": "현장 수리 가능 여부"
+      },
+      {
+        "name": "load_rate",
+        "type": "float",
+        "min": 0,
+        "max": 3.0,
+        "desc": "정비반 일일 부하율"
+      }
+    ]
+  },
+  "injected_errors_sample": [
+    {
+      "field": "request.grid_x",
+      "value": 75.2,
+      "error_type": "최대값(60) 초과"
+    },
+    {
+      "field": "request.crit",
+      "value": 5,
+      "error_type": "허용되지 않은 값(enum: 1,2,3)"
+    },
+    {
+      "field": "request.t_req",
+      "value": -2.5,
+      "error_type": "최소값(0) 미만"
+    },
+    {
+      "field": "request.req_id",
+      "value": "REQ999",
+      "error_type": "패턴 형식 불일치"
+    },
+    {
+      "field": "team.crew",
+      "value": "four",
+      "error_type": "자료형 오류 (정수형 기대)"
+    }
+  ]
+}

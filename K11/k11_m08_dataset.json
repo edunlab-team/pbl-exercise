@@ -1,0 +1,13 @@
+{
+  "project": "K11",
+  "mission": "K11_M08",
+  "title": "주간 일정표·알림 만들기",
+  "weekly_stats": {
+    "total_days": 14,
+    "notifications_generated": 14,
+    "rest_warnings": 3,
+    "conflict_alerts": 2,
+    "hitl_notices": 14
+  },
+  "hitl_standard_text": "AI 제안 일정이며, 근무 편성과 일정 확정은 분대장·행정반이 합니다."
+}

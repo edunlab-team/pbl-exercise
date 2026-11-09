@@ -1,0 +1,55 @@
+{
+  "project": "K11",
+  "mission": "K11_M07",
+  "title": "일정 변경 공지 반영하기",
+  "changes": [
+    {
+      "id": "S01",
+      "type": "UPDATE",
+      "target": "T04",
+      "day": 5,
+      "start": "10:00",
+      "end": "12:00",
+      "desc": "사격훈련 토요일로 이동"
+    },
+    {
+      "id": "S02",
+      "type": "UPDATE",
+      "target": "D05",
+      "day": 7,
+      "desc": "당직보조 일요일로 하루 연기"
+    },
+    {
+      "id": "S03",
+      "type": "CANCEL",
+      "target": "T09",
+      "desc": "독감 예방접종 취소"
+    },
+    {
+      "id": "S04",
+      "type": "UPDATE",
+      "target": "V01",
+      "day": 10,
+      "desc": "정기휴가 목요일로 하루 당김"
+    },
+    {
+      "id": "S99",
+      "type": "UPDATE",
+      "target": "NO_SUCH_EVENT",
+      "day": 99,
+      "desc": "시험용 미등록 공지"
+    }
+  ],
+  "impact": {
+    "resolved_conflicts": [
+      "D03-T03",
+      "T07-T08"
+    ],
+    "new_conflicts": [
+      "T04-V01 사격/휴가",
+      "T07-T09 접종/체력검정"
+    ],
+    "maintained_blocks_recalc": 11,
+    "maintained_blocks_bonus": 12
+  }
+}

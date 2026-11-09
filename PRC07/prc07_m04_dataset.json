@@ -1,0 +1,94 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M04",
+  "title": "NLP 및 지식 그래프 기반 대체 가능 호환 부품 자동 추천",
+  "target_overseas_parts": [
+    {
+      "part_no": "P-0012",
+      "cat": "전원모듈",
+      "desc": "전원모듈 DC-DC 컨버터 절연형 전원 28V 50W -40~85C MIL-STD-704",
+      "v": 28,
+      "w": 50,
+      "tmin": -40,
+      "tmax": 85,
+      "size_mm": 45.0,
+      "std": "MIL-STD-704"
+    },
+    {
+      "part_no": "P-0045",
+      "cat": "RF증폭기",
+      "desc": "RF증폭기 RF 전력증폭기 광대역 모듈 24V 100W -55~125C MIL-STD-461",
+      "v": 24,
+      "w": 100,
+      "tmin": -55,
+      "tmax": 125,
+      "size_mm": 60.0,
+      "std": "MIL-STD-461"
+    }
+  ],
+  "domestic_catalog": [
+    {
+      "part_no": "DOM-001",
+      "cat": "전원모듈",
+      "desc": "전원모듈 절연형 DC-DC 변환장치 28V 50W -40~85C MIL-STD-704",
+      "v": 28,
+      "w": 50,
+      "tmin": -40,
+      "tmax": 85,
+      "size_mm": 46.0,
+      "std": "MIL-STD-704",
+      "vendor": "가상정밀(주)"
+    },
+    {
+      "part_no": "DOM-002",
+      "cat": "전원모듈",
+      "desc": "전원모듈 비절연형 전원 안정화 24V 25W -20~70C 상용규격",
+      "v": 24,
+      "w": 25,
+      "tmin": -20,
+      "tmax": 70,
+      "size_mm": 35.0,
+      "std": "COMMERCIAL",
+      "vendor": "가상전자(주)"
+    },
+    {
+      "part_no": "DOM-003",
+      "cat": "RF증폭기",
+      "desc": "RF증폭기 광대역 파워앰프 모듈 송신 24V 100W -55~125C MIL-STD-461",
+      "v": 24,
+      "w": 100,
+      "tmin": -55,
+      "tmax": 125,
+      "size_mm": 61.5,
+      "std": "MIL-STD-461",
+      "vendor": "가상시스템(주)"
+    }
+  ],
+  "weights": {
+    "text_similarity": 0.3,
+    "spec_match": 0.45,
+    "graph_neighbors": 0.25
+  },
+  "knowledge_graph_edges": [
+    [
+      "P-0012",
+      "DOM-001",
+      "공통규격_MIL-STD-704"
+    ],
+    [
+      "P-0012",
+      "DOM-001",
+      "동일계통_전원모듈"
+    ],
+    [
+      "P-0045",
+      "DOM-003",
+      "공통규격_MIL-STD-461"
+    ],
+    [
+      "P-0045",
+      "DOM-003",
+      "동일계통_RF송수신"
+    ]
+  ]
+}

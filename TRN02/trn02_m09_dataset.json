@@ -1,0 +1,46 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M09",
+  "title": "AAR 기반 문항 변별력 분석 및 난이도별 가중치 파라미터 재보정",
+  "flagged_items": [
+    {
+      "qid": "Q11",
+      "issue": "정답 키 입력 오류 의심",
+      "r_pbis": -0.24,
+      "action": "정답 키 2번으로 정정"
+    },
+    {
+      "qid": "Q08",
+      "issue": "문항 변별력 부족 (물문항)",
+      "r_pbis": 0.08,
+      "action": "평가 채점 제외"
+    }
+  ],
+  "recalibration_stages": [
+    {
+      "stage": "AS-IS",
+      "accuracy": 0.833,
+      "note": "초기 채점 기준"
+    },
+    {
+      "stage": "Q11 키 수정",
+      "accuracy": 0.854,
+      "note": "정답표 오류 교정"
+    },
+    {
+      "stage": "Q08 제외",
+      "accuracy": 0.865,
+      "note": "변별력 미달 문항 배제"
+    },
+    {
+      "stage": "가중치 재보정 (TO-BE)",
+      "accuracy": 0.875,
+      "note": "그리드 탐색 최적화"
+    }
+  ],
+  "group_b_validation": {
+    "sample_size": 80,
+    "recurrent_errors": 0,
+    "new_alert_items": 3
+  }
+}

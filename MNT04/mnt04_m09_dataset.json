@@ -1,0 +1,33 @@
+{
+  "title": "MNT04_M09 AAR 오경보 분석 및 임계 파라미터 재보정 데이터",
+  "aar_false_alarm_causes": [
+    {
+      "cause": "고부하 기동 훈련일 일시적 진동 상승",
+      "count": 2,
+      "pct": 22.2
+    },
+    {
+      "cause": "혹한기 기온 급변(-15°C) 센서 드리프트",
+      "count": 3,
+      "pct": 33.3
+    },
+    {
+      "cause": "전기적 단발 스파이크 미세 누출",
+      "count": 2,
+      "pct": 22.2
+    },
+    {
+      "cause": "초기 열화 경계 회색 구간 변동",
+      "count": 2,
+      "pct": 22.2
+    }
+  ],
+  "recalibration_results": {
+    "before_aar_alarms": 9,
+    "after_aar_alarms": 4,
+    "before_val_alarms": 16,
+    "after_val_alarms": 10,
+    "false_negative_count": 0,
+    "annual_roi_savings_krw": 420000000
+  }
+}

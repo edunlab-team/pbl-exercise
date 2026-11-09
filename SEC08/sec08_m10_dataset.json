@@ -1,0 +1,33 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M10",
+  "title": "군사시설 드론 침입 경보 대응 훈련 표준 지침서(SOP) 최종 완성",
+  "chapters": [
+    {
+      "chapter": "제1장",
+      "title": "총칙 및 개요 (목적, 적용 범위, 위협 분석)"
+    },
+    {
+      "chapter": "제2장",
+      "title": "표준운용절차 (7단계 RACI 및 3단계 방호 행동 요령)"
+    },
+    {
+      "chapter": "제3장",
+      "title": "훈련 시나리오 (MSEL 10종 및 스트레스 훈련 가이드)"
+    },
+    {
+      "chapter": "제4장",
+      "title": "평가 및 피드백 (타임라인 계측법, 평가 루브릭, 체크리스트)"
+    },
+    {
+      "chapter": "제5장",
+      "title": "사후검토 및 지속개선 (AAR 4단계 및 SOP 갱신 주기)"
+    }
+  ],
+  "handover_components": [
+    "표준 지침서 본안",
+    "교관 지침서",
+    "휴대용 Pocket Guide",
+    "MSEL 시나리오북"
+  ]
+}

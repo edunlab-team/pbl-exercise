@@ -1,0 +1,33 @@
+{
+  "inspection_criteria_4rules": [
+    {
+      "rule_id": "R1",
+      "name": "연속 야간 한도",
+      "threshold": "연속 2회(일) 이하",
+      "formula": "COUNT_CONSECUTIVE(NIGHT_SHIFT) <= 2"
+    },
+    {
+      "rule_id": "R2",
+      "name": "근무 간 최소 휴식",
+      "threshold": "최소 12시간 연속 휴식",
+      "formula": "TIME_DIFF(NEXT_START, PREV_END) >= 12h"
+    },
+    {
+      "rule_id": "R3",
+      "name": "주간 휴무 보장",
+      "threshold": "주당 최소 1일(24h) 완전 휴무",
+      "formula": "COUNT(OFF_DAY_IN_7DAYS) >= 1"
+    },
+    {
+      "rule_id": "R4",
+      "name": "근무조 최소 인원",
+      "threshold": "지통실 2명, 초소당 2명",
+      "formula": "SHIFT_WORKERS >= 4"
+    }
+  ],
+  "pocket_card_template": {
+    "size": "Pocket 100x150mm",
+    "target_time": "30초 이내 판정",
+    "checkpoint_count": 6
+  }
+}

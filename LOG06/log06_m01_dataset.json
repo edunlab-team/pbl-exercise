@@ -1,0 +1,149 @@
+{
+  "project": "LOG06",
+  "mission": "LOG06_M01",
+  "title": "야전 긴급 상황에서의 임시 물자 취급, 전투 소모, 현장 폐기 실태 분석",
+  "six_stages": [
+    "발견(Discovery)",
+    "인수(Receipt)",
+    "격리(Isolation)",
+    "보고(Reporting)",
+    "인계(Handover)",
+    "처리결과기록(Disposal/Logging)"
+  ],
+  "virtual_materials": {
+    "supplies": [
+      {
+        "id": "L-1",
+        "name": "야전투입 비상식량 상자 (24인분/상자)",
+        "unit": "상자",
+        "type": "일반 소모성 물자"
+      },
+      {
+        "id": "L-2",
+        "name": "진지강화용 방호자재 묶음 (철조망/토사낭)",
+        "unit": "묶음",
+        "type": "작전 방호 물자"
+      },
+      {
+        "id": "L-3",
+        "name": "기동장비 소모성 수리부속 세트 (필터/패킹)",
+        "unit": "세트",
+        "type": "정비 소모 물자"
+      }
+    ],
+    "unknown_equipment": [
+      {
+        "id": "U-1",
+        "name": "미상 드론 잔해 및 구동 모듈",
+        "threat": "위치추적 비콘 및 자폭 뇌관 내장 위험",
+        "principle": "접촉금지 / 전자파 차폐"
+      },
+      {
+        "id": "U-2",
+        "name": "소형 전술 단말 형태 기기",
+        "threat": "원격 활성화 및 통신 도청 장치 의심",
+        "principle": "전원인가 금지 / 격리보관"
+      },
+      {
+        "id": "U-3",
+        "name": "소형 비행체 추진체 및 배터리 하우징",
+        "threat": "화학물질 누출 및 추진체 폭발 위험",
+        "principle": "비접촉 / 격리구역 통제"
+      },
+      {
+        "id": "U-4",
+        "name": "외형 팽창된 리튬 배터리 팩 형태",
+        "threat": "열폭주 및 유독가스 분출 화재 위험",
+        "principle": "모래주머니 격리 / 방화수 확보"
+      },
+      {
+        "id": "U-5",
+        "name": "미상 원격제어 안테나 및 수신 모듈",
+        "threat": "역탐지 유인 신호 방출 위험",
+        "principle": "차폐백 보관 / 접근금지"
+      },
+      {
+        "id": "U-6",
+        "name": "출처불명 광학 관측 렌즈 모듈",
+        "threat": "광학 부비트랩 및 센서 역추적 위험",
+        "principle": "차광 커버 격리 / 단독 인계"
+      }
+    ]
+  },
+  "case_records": [
+    {
+      "case_id": "C1",
+      "target": "U-2",
+      "summary": "U-2를 발견한 수색병사가 호기심에 전원 버튼을 눌러 부팅 화면이 켜짐.",
+      "existing_record": "구두 보고 1건 (상황실 무전 메모)",
+      "critical_defect": "현장 비접촉 및 전원 조작 금지 기본 수칙 미전파, 보안 신호 노출 위험 초래",
+      "failed_stage": "발견(Discovery) / 인수(Receipt)"
+    },
+    {
+      "case_id": "C2",
+      "target": "U-5",
+      "summary": "U-5를 회수 후 막사 옆 공터에 식별 표지판 없이 방치하여 타 부대원이 접촉함.",
+      "existing_record": "인수 메모 1장 (수량 1개 수기 기록)",
+      "critical_defect": "격리 구역 표지 미설치, 위험 경고 및 출입 통제선 부재",
+      "failed_stage": "격리(Isolation)"
+    },
+    {
+      "case_id": "C3",
+      "target": "U-4",
+      "summary": "U-4 배터리 팩 외형 팽창 및 이상 발열을 인지했으나 4시간 경과 후 보고함.",
+      "existing_record": "상황보고 메모 (보고 시각 미기재)",
+      "critical_defect": "위험 징후 발생 시 즉각 보고 기준 부재 및 보고 지연(화재/폭발 위험 방치)",
+      "failed_stage": "보고(Reporting)"
+    },
+    {
+      "case_id": "C4",
+      "target": "L-3",
+      "summary": "야간 철야 긴급 정비 중 L-3 12세트를 소모하였으나 소모 확인서 미발행.",
+      "existing_record": "교대 시 행정보급관 대상 구두 전언",
+      "critical_defect": "정규 소모 증빙 누락, 수량·소모 시각·정비 확인자 불명으로 군수 감사 지적 불가피",
+      "failed_stage": "처리결과기록(Disposal/Logging)"
+    },
+    {
+      "case_id": "C5",
+      "target": "U-1",
+      "summary": "U-1을 정보합동조사팀에 인계하였으나 인계 확인서에 인수관 서명 누락.",
+      "existing_record": "단독 날인된 간이 인계증 1부",
+      "critical_defect": "인수·인계자 쌍방 서명 원칙 위반, 공식 관할권 이전 증빙 무효화",
+      "failed_stage": "인계(Handover)"
+    }
+  ],
+  "doc_framework": [
+    {
+      "chapter": 1,
+      "title": "총칙 및 적용 범위 (접촉·작동 금지 원칙)"
+    },
+    {
+      "chapter": 2,
+      "title": "용어의 정의 및 물자/장비 분류 체계"
+    },
+    {
+      "chapter": 3,
+      "title": "야전 임시 취급 및 격리·보고·인계 6단계 절차"
+    },
+    {
+      "chapter": 4,
+      "title": "필수 증빙 항목 및 신뢰도 6단계(G1~G6) 평가 기준"
+    },
+    {
+      "chapter": 5,
+      "title": "사후 정산 표준 보고서 및 기록 공백 처리 지침"
+    },
+    {
+      "chapter": 6,
+      "title": "지휘관 확인 서명 및 군수 감사 통제 체크리스트"
+    },
+    {
+      "chapter": 7,
+      "title": "대량 유실 대비 스트레스 훈련 및 AAR 평가 체계"
+    },
+    {
+      "chapter": 8,
+      "title": "지침 개정 관리 및 인간 최종 책임(HITL) 원칙"
+    }
+  ]
+}

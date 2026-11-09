@@ -1,0 +1,40 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M03",
+  "description": "문자 n-gram TF-IDF 유사도 및 1차 출처 식별 Baseline 평가 데이터셋",
+  "post_pairs_test": [
+    {
+      "pair_id": "PAIR_01",
+      "post_a": "P0010",
+      "post_b": "P0011",
+      "expected_relation": "duplicate",
+      "label_id": 0
+    },
+    {
+      "pair_id": "PAIR_02",
+      "post_a": "P0010",
+      "post_b": "P0015",
+      "expected_relation": "paraphrase",
+      "label_id": 1
+    },
+    {
+      "pair_id": "PAIR_03",
+      "post_a": "P0010",
+      "post_b": "P0042",
+      "expected_relation": "unrelated",
+      "label_id": 2
+    }
+  ],
+  "propagation_chains": [
+    {
+      "story_id": "STORY_101",
+      "origin_post_id": "P0010",
+      "repost_ids": [
+        "P0011",
+        "P0012",
+        "P0015",
+        "P0020"
+      ]
+    }
+  ]
+}

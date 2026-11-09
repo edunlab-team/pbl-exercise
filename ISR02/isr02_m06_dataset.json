@@ -1,0 +1,19 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M06",
+  "description": "실시간 스트림 유입 및 4분할 전술 모니터링 대시보드 렌더링 데이터셋",
+  "streaming_config": {
+    "batch_interval_sec": 1.0,
+    "target_aggregation_latency_ms": 100,
+    "target_render_latency_sec": 1.0
+  },
+  "urgent_stories_sample": [
+    {
+      "story_id": "ALERT_20260509_01",
+      "post_count": 48,
+      "coordinated_bots": 12,
+      "grade": "E",
+      "alert_level": "CRITICAL"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "project": "SEC09",
+  "mission": "SEC09_M02",
+  "title": "시설 방호 등급별 현장점검 체크리스트(방폭문, 필터, 차폐막, 감시센서) 작성",
+  "protection_levels": {
+    "Level_A": {
+      "blast_pressure": "3.0 bar 이상",
+      "overpressure": "100 Pa 이상",
+      "purpose": "지휘통제소 및 탄약고"
+    },
+    "Level_B": {
+      "blast_pressure": "1.5 bar 이상",
+      "overpressure": "50 Pa 이상",
+      "purpose": "중대급 대피소"
+    },
+    "Level_C": {
+      "blast_pressure": "0.5 bar 이상",
+      "overpressure": "자연 환기",
+      "purpose": "일반 야전 대피호"
+    }
+  },
+  "inspection_criteria": {
+    "blast_door": {
+      "good": "힌지 유격 2mm 미만, 가스켓 탄성 유지 및 밀폐 양호",
+      "caution": "유격 2~5mm, 가스켓 부분 경화(밀폐 유지 가능)",
+      "bad": "유격 5mm 초과 또는 가스켓 찢어짐(개폐 불량)"
+    },
+    "vent_filter": {
+      "good": "차압 150Pa 미만, 필터 표면 청결",
+      "caution": "차압 150~250Pa, 경미한 먼지 침적",
+      "bad": "차압 250Pa 초과 또는 필터 훼손"
+    },
+    "shielding_mesh": {
+      "good": "망 손상 없음, 차폐막 체결 견고",
+      "caution": "10mm 이하 미세 찢김, 체결 볼트 1개 이완",
+      "bad": "10mm 초과 관통 파손, 차폐막 탈락"
+    },
+    "surveillance_sensor": {
+      "good": "탐지율 100%, 오경보 없음",
+      "caution": "주간 감도 저하, 오경보 시간당 1회 미만",
+      "bad": "센서 전원 차단 또는 상시 오경보"
+    }
+  },
+  "safety_security_rules": [
+    "S1: 밀폐 공간 진입 전 산소/유해가스 농도 측정",
+    "S2: 중량 방폭문 개폐 시 2인 1조 협업 및 손 끼임 방지",
+    "S3: 환기탑 고소 점검 시 안전벨트 및 헬멧 착용",
+    "S4: 정전 대비 비상 조명(방폭 랜턴) 사전 휴대",
+    "S5: 비인가 부대 시설 사진 촬영 및 음성 녹음 금지",
+    "S6: 위험 결함 발견 시 즉시 '비상 중단' 선언 후 대피",
+    "S7: 통신 장비 주기적 교신 확인(10분 간격)",
+    "S8: 점검 완료 후 시건장치 원상 복구 및 보안 서명"
+  ]
+}

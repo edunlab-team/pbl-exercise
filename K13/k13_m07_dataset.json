@@ -1,0 +1,44 @@
+{
+  "project": "K13",
+  "mission": "K13_M07",
+  "title": "신규 전입 장병 대응하기",
+  "summary": "수강 이력 0건 신규 전입 장병 콜드 스타트 프로필 및 동적 전이(Transition) 스케줄 데이터",
+  "dataset": {
+    "cold_start_weights": {
+      "interest_topic": 0.6,
+      "popularity": 0.2,
+      "rank_difficulty_fit": 0.2
+    },
+    "cold_start_vs_baseline": {
+      "popularity_only_precision_at_5": 0.057,
+      "cold_start_precision_at_5": 0.313,
+      "improvement_factor": "5.49배"
+    },
+    "transition_decay_schedule": [
+      {
+        "history_count": 0,
+        "rule_weight": 1.0,
+        "hybrid_weight": 0.0,
+        "description": "신규 전입 직후 100% 프로필 기반 추천"
+      },
+      {
+        "history_count": 1,
+        "rule_weight": 0.5,
+        "hybrid_weight": 0.5,
+        "description": "1개 강좌 이수 후 절반 개인화 반영"
+      },
+      {
+        "history_count": 2,
+        "rule_weight": 0.25,
+        "hybrid_weight": 0.75,
+        "description": "2개 강좌 이수 후 개인화 우위 전이"
+      },
+      {
+        "history_count": 3,
+        "rule_weight": 0.0,
+        "hybrid_weight": 1.0,
+        "description": "3개 이상 이수 완료 시 완전 하이브리드 추천"
+      }
+    ]
+  }
+}

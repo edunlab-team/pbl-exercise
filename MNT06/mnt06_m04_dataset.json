@@ -1,0 +1,29 @@
+{
+  "title": "MNT06_M04 FEA 연계 인장강도·피로내구도 머신러닝 데이터셋",
+  "derived_features_count": 16,
+  "derived_feature_names": [
+    "notch_stress_conc_factor_kt",
+    "infill_density_ratio",
+    "build_z_anisotropy_coeff",
+    "operating_stress_nominal_mpa",
+    "effective_cross_section_mm2",
+    "thermal_gradient_factor",
+    "fatigue_sn_slope",
+    "dynamic_load_ratio",
+    "surface_roughness_ra",
+    "layer_adhesion_index",
+    "yield_to_tensile_ratio",
+    "cyclic_frequency_hz",
+    "strain_energy_density",
+    "critical_flaw_size_mm",
+    "thermal_stress_residual",
+    "operating_safety_margin"
+  ],
+  "cv_evaluation": {
+    "splits": 5,
+    "baseline_mean_mape_pct": 10.7,
+    "gbm_mean_mape_pct": 5.9,
+    "mape_target_pct": 25.0,
+    "dangerous_false_positives": 0
+  }
+}

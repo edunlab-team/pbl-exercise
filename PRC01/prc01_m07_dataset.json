@@ -1,0 +1,69 @@
+{
+  "project": "PRC01",
+  "mission": "PRC01_M07",
+  "title": "HITL 결재 시뮬레이션 및 RBAC 보안 매트릭스 데이터셋",
+  "workflow_states": [
+    "PROPOSED",
+    "SUBMITTED",
+    "REVIEWED",
+    "LEGAL_CHECKED",
+    "APPROVED",
+    "REJECTED"
+  ],
+  "rbac_matrix": {
+    "계약담당": [
+      "SUBMIT",
+      "REDRAFT"
+    ],
+    "계약관": [
+      "REVIEW",
+      "REQUEST_CHANGE"
+    ],
+    "법무담당": [
+      "LEGAL_CHECK",
+      "LEGAL_REJECT"
+    ],
+    "승인권자": [
+      "FINAL_APPROVE",
+      "FINAL_REJECT"
+    ]
+  },
+  "bypass_attack_cases_count": 13,
+  "sample_bypass_cases": [
+    {
+      "attack_id": "ATK-01",
+      "desc": "상신자가 스스로 계약을 최종 승인 시도",
+      "expected_block": true
+    },
+    {
+      "attack_id": "ATK-02",
+      "desc": "법무 검토 없이 바로 승인권자 결재 시도",
+      "expected_block": true
+    },
+    {
+      "attack_id": "ATK-03",
+      "desc": "반려 사유 입력 없이 반려 버튼 클릭",
+      "expected_block": true
+    },
+    {
+      "attack_id": "ATK-04",
+      "desc": "재기안 2회 초과(3회차) 재기안 시도",
+      "expected_block": true
+    },
+    {
+      "attack_id": "ATK-05",
+      "desc": "과거 승인 감사 로그 파일 임의 수정 시도",
+      "expected_block": true
+    }
+  ],
+  "hash_chain_sample": {
+    "block_0": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prev": "GENESIS"
+    },
+    "block_1": {
+      "hash": "a1b2c3d4e5f6...",
+      "prev": "e3b0c44298fc..."
+    }
+  }
+}

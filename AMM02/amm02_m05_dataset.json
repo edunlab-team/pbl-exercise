@@ -1,0 +1,52 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M05",
+  "ensemble_weights": {
+    "gbr": 0.6,
+    "rf": 0.4
+  },
+  "holdout_evaluation": {
+    "overall_r2": 0.86,
+    "normal_consumption_r2": 0.93,
+    "emergency_subset_r2": 0.54,
+    "mae_reduction_vs_baseline_pct": 58.4
+  },
+  "day_75_resupply_orders": [
+    {
+      "unit_id": "UNIT-701",
+      "item": "155mm 고폭탄",
+      "stock": 580,
+      "pred_daily": 390,
+      "dos": 1.49,
+      "status": "CRITICAL",
+      "resupply_req": 1370
+    },
+    {
+      "unit_id": "UNIT-702",
+      "item": "기동용 경유",
+      "stock": 9200,
+      "pred_daily": 5100,
+      "dos": 1.8,
+      "status": "CRITICAL",
+      "resupply_req": 16300
+    },
+    {
+      "unit_id": "UNIT-703",
+      "item": "120mm 박격포탄",
+      "stock": 420,
+      "pred_daily": 150,
+      "dos": 2.8,
+      "status": "WARNING",
+      "resupply_req": 330
+    },
+    {
+      "unit_id": "UNIT-704",
+      "item": "항공유(JP-8)",
+      "stock": 48000,
+      "pred_daily": 9200,
+      "dos": 5.22,
+      "status": "NORMAL",
+      "resupply_req": 0
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M01",
+  "title": "전시 대량 사상자(MASCAL) 발생 상황 시나리오 및 의무 체계 분석",
+  "lessons_learned_cards": [
+    {
+      "id": "L1",
+      "trend": "포격·드론 공격으로 짧은 시간에 다수 부상자가 한곳에 몰림",
+      "implication": "분류소 개설, 역할 분담, 현황 일원화"
+    },
+    {
+      "id": "L2",
+      "trend": "식별표나 기록이 분실되어 환자 정보가 단계 사이에서 끊김",
+      "implication": "카드 이중 부착, 인계 때 식별번호 복창"
+    },
+    {
+      "id": "L3",
+      "trend": "후송 수단이 모자라 순서 조정이 수시로 필요",
+      "implication": "후송 순서표 갱신 시각 기록"
+    },
+    {
+      "id": "L4",
+      "trend": "의무 인력·물자가 한정되어 요청과 보고가 몰림",
+      "implication": "보고 경로 단일화, 요청 사항 정리 서식"
+    },
+    {
+      "id": "L5",
+      "trend": "통신 두절로 상급 보고와 인계가 늦어짐",
+      "implication": "대체 보고 수단, 우선 전달 항목"
+    }
+  ],
+  "mock_casualties": [
+    {
+      "id": "M-01",
+      "alias": "가상 병사 가",
+      "time": "+00:00",
+      "zone": "A",
+      "triage": "긴급",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-02",
+      "alias": "가상 병사 나",
+      "time": "+00:30",
+      "zone": "A",
+      "triage": "응급",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-03",
+      "alias": "가상 병사 다",
+      "time": "+01:10",
+      "zone": "A",
+      "triage": "비응급",
+      "mobile": true,
+      "tag": true
+    },
+    {
+      "id": "M-04",
+      "alias": "가상 병사 라",
+      "time": "+01:40",
+      "zone": "B",
+      "triage": "긴급",
+      "mobile": false,
+      "tag": false
+    },
+    {
+      "id": "M-05",
+      "alias": "가상 병사 마",
+      "time": "+02:20",
+      "zone": "B",
+      "triage": "비응급",
+      "mobile": true,
+      "tag": true
+    },
+    {
+      "id": "M-06",
+      "alias": "가상 병사 바",
+      "time": "+03:00",
+      "zone": "B",
+      "triage": "응급",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-07",
+      "alias": "가상 병사 사",
+      "time": "+03:40",
+      "zone": "A",
+      "triage": "지연",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-08",
+      "alias": "가상 병사 아",
+      "time": "+04:10",
+      "zone": "B",
+      "triage": "비응급",
+      "mobile": true,
+      "tag": true
+    },
+    {
+      "id": "M-09",
+      "alias": "가상 병사 자",
+      "time": "+06:00",
+      "zone": "A",
+      "triage": "응급",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-10",
+      "alias": "가상 병사 차",
+      "time": "+06:30",
+      "zone": "B",
+      "triage": "비응급",
+      "mobile": true,
+      "tag": false
+    },
+    {
+      "id": "M-11",
+      "alias": "가상 병사 카",
+      "time": "+08:00",
+      "zone": "B",
+      "triage": "긴급",
+      "mobile": false,
+      "tag": true
+    },
+    {
+      "id": "M-12",
+      "alias": "가상 병사 타",
+      "time": "+09:00",
+      "zone": "A",
+      "triage": "비응급",
+      "mobile": true,
+      "tag": true
+    }
+  ],
+  "stages": [
+    {
+      "stage": "현장 처치",
+      "department": "현장 처치반",
+      "input_record": "부상자 발견·위치",
+      "output_record": "식별표 부착, 발견 시각",
+      "next_stage": "분류소로 이동"
+    },
+    {
+      "stage": "분류",
+      "department": "분류소(분류·기록 담당)",
+      "input_record": "식별표, 카드의 분류 표시",
+      "output_record": "의무기록 카드, 분류 일람표",
+      "next_stage": "후송 순서 확정(의무대장)"
+    },
+    {
+      "stage": "후송",
+      "department": "후송반",
+      "input_record": "후송 순서표, 카드",
+      "output_record": "후송 시각, 인수 서명",
+      "next_stage": "가상 의무대·상급 치료시설"
+    }
+  ],
+  "raci_roles": [
+    "처치반",
+    "분류",
+    "기록",
+    "후송반",
+    "통신",
+    "관측"
+  ],
+  "field_check_items": [
+    "식별표 부착 확인",
+    "발견 시각·구역 기록",
+    "분류 구분 읽기·알림",
+    "의무기록 카드 작성",
+    "분류 일람표 갱신",
+    "후송 순서표 갱신",
+    "의무대장 현황 보고",
+    "구간 인계·상호 서명",
+    "환자 수 재확인",
+    "안전 수칙 관찰",
+    "지혈대 적용 시각 표기",
+    "구급낭 물자 잔여량 점검",
+    "무전 호출 부호 정합성 확인",
+    "사상자 프라이버시 및 보온 조치",
+    "위험 지역 이탈 통제"
+  ],
+  "unit_environments": {
+    "야전": {
+      "zone_size": "광범위 (야지/참호)",
+      "travel_dist": "300~500m",
+      "comms": "전술 무전기 (간헐적 두절)",
+      "support": "분대 단위 지원",
+      "extra": "악천후 및 야간 위장"
+    },
+    "기지": {
+      "zone_size": "집중형 (피격 건물 인근)",
+      "travel_dist": "50~100m",
+      "comms": "기지 유선/무전 복합",
+      "support": "본부 중대 지원",
+      "extra": "파편 및 2차 붕괴 위험"
+    },
+    "의무": {
+      "zone_size": "구획형 (대대 응급처치소)",
+      "travel_dist": "10~20m (구역 간)",
+      "comms": "구두 및 인터콤",
+      "support": "의무병 전원",
+      "extra": "소독/오염 구역 분리"
+    }
+  }
+}

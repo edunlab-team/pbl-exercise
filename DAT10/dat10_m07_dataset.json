@@ -1,0 +1,194 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M07",
+  "title": "군수관 수동 병합 HITL 워크플로우 시뮬레이션 데이터셋",
+  "meta": {
+    "total_conflicts": 12,
+    "high_risk_count": 5,
+    "bypass_attempts": 14
+  },
+  "conflict_cases": [
+    {
+      "conflict_id": "CONF-001",
+      "item": "I01",
+      "node": "보급소A",
+      "delta_qty": 88,
+      "risk_level": "HIGH",
+      "desc": "품목 I01 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-002",
+      "item": "I02",
+      "node": "보급소B",
+      "delta_qty": 78,
+      "risk_level": "HIGH",
+      "desc": "품목 I02 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-003",
+      "item": "I03",
+      "node": "보급소C",
+      "delta_qty": 75,
+      "risk_level": "HIGH",
+      "desc": "품목 I03 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-004",
+      "item": "I04",
+      "node": "보급소D",
+      "delta_qty": 49,
+      "risk_level": "HIGH",
+      "desc": "품목 I04 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-005",
+      "item": "I05",
+      "node": "보급소E",
+      "delta_qty": 77,
+      "risk_level": "HIGH",
+      "desc": "품목 I05 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-006",
+      "item": "I06",
+      "node": "보급소A",
+      "delta_qty": 72,
+      "risk_level": "MED",
+      "desc": "품목 I06 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-007",
+      "item": "I07",
+      "node": "보급소B",
+      "delta_qty": 158,
+      "risk_level": "MED",
+      "desc": "품목 I07 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-008",
+      "item": "I08",
+      "node": "보급소C",
+      "delta_qty": 66,
+      "risk_level": "MED",
+      "desc": "품목 I08 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-009",
+      "item": "I09",
+      "node": "보급소D",
+      "delta_qty": 58,
+      "risk_level": "MED",
+      "desc": "품목 I09 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-010",
+      "item": "I10",
+      "node": "보급소E",
+      "delta_qty": 154,
+      "risk_level": "MED",
+      "desc": "품목 I10 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-011",
+      "item": "I11",
+      "node": "보급소A",
+      "delta_qty": 121,
+      "risk_level": "MED",
+      "desc": "품목 I11 동시 수정 수량 불일치"
+    },
+    {
+      "conflict_id": "CONF-012",
+      "item": "I12",
+      "node": "보급소B",
+      "delta_qty": 66,
+      "risk_level": "MED",
+      "desc": "품목 I12 동시 수정 수량 불일치"
+    }
+  ],
+  "bypass_test_cases": [
+    {
+      "attempt_id": "BYP-001",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-002",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-003",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-004",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-005",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-006",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-007",
+      "actor": "보급병",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-008",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-009",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-010",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-011",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-012",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-013",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    },
+    {
+      "attempt_id": "BYP-014",
+      "actor": "외부단말",
+      "action": "direct_merge",
+      "blocked": true
+    }
+  ]
+}

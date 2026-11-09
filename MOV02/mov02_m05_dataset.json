@@ -1,0 +1,95 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M05",
+  "title": "수송선단 생존확률 및 몬테카를로 정시도착 신뢰도 점수 데이터셋",
+  "meta": {
+    "monte_carlo_iterations": 1000,
+    "sample_operations_count": 60,
+    "target_brier_score": 0.1,
+    "achieved_brier_score": 0.086
+  },
+  "candidate_routes_eval": [
+    {
+      "route_id": "R1_FASTEST",
+      "name": "최단시간 경로",
+      "time_min": 68.2,
+      "threat_passes": 2,
+      "survival_prob": 0.812,
+      "ontime_prob": 0.94,
+      "score": 85.1,
+      "grade": "주의"
+    },
+    {
+      "route_id": "R2_RECOMMENDED",
+      "name": "추천 균형 경로",
+      "time_min": 74.5,
+      "threat_passes": 0,
+      "survival_prob": 1.0,
+      "ontime_prob": 0.912,
+      "score": 95.1,
+      "grade": "신뢰"
+    },
+    {
+      "route_id": "R3_SAFEST",
+      "name": "최대 우회 경로",
+      "time_min": 89.0,
+      "threat_passes": 0,
+      "survival_prob": 1.0,
+      "ontime_prob": 0.72,
+      "score": 83.2,
+      "grade": "주의"
+    },
+    {
+      "route_id": "R4_RISKY",
+      "name": "고위험 경로",
+      "time_min": 62.0,
+      "threat_passes": 3,
+      "survival_prob": 0.65,
+      "ontime_prob": 0.96,
+      "score": 71.4,
+      "grade": "위험"
+    }
+  ],
+  "ui_steps_definition": [
+    {
+      "screen_id": 1,
+      "name": "입력 화면",
+      "desc": "수송 요청 화물량, 도착지, 기한 입력"
+    },
+    {
+      "screen_id": 2,
+      "name": "분석 화면",
+      "desc": "경로별 생존확률 및 정시도착 시뮬레이션 지표 가시화"
+    },
+    {
+      "screen_id": 3,
+      "name": "검토 화면",
+      "desc": "상태별 뱃지(승인대기, 반려, 완료) 필터링 및 통제관 검토"
+    },
+    {
+      "screen_id": 4,
+      "name": "결과 화면",
+      "desc": "최종 배차 승인 내역 및 배차 지시서 출력"
+    }
+  ],
+  "deadline_sensitivity_samples": [
+    {
+      "deadline_min": 70,
+      "route_r2_ontime": 0.42,
+      "score": 68.0,
+      "grade": "위험"
+    },
+    {
+      "deadline_min": 85,
+      "route_r2_ontime": 0.91,
+      "score": 95.1,
+      "grade": "신뢰"
+    },
+    {
+      "deadline_min": 100,
+      "route_r2_ontime": 0.99,
+      "score": 99.2,
+      "grade": "신뢰"
+    }
+  ]
+}

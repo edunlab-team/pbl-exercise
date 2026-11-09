@@ -1,0 +1,25 @@
+{
+  "project": "PRC01",
+  "mission": "PRC01_M08",
+  "title": "대규모 연간 계약 배치 파이프라인 시뮬레이션 데이터셋",
+  "batch_summary": {
+    "total_months": 12,
+    "contracts_per_month": 1000,
+    "total_contracts": 12000,
+    "injected_corrupt_records": 60,
+    "transient_error_rate": 0.02,
+    "execution_time_seconds": 1.85,
+    "automated_success_rate": 0.995,
+    "manual_hours_saved_pct": 0.92
+  },
+  "scale_test_levels": [
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "degradation_rules": {
+    "timeout_threshold_ms": 3000,
+    "action": "SKIP_NLP_CLASSIFIER_AND_EXECUTE_RULE_SCREENING_ONLY"
+  }
+}

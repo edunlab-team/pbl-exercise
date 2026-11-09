@@ -1,0 +1,25 @@
+{
+  "project": "TRN04",
+  "mission": "TRN04_M08",
+  "title": "AAR 비판적 검토 및 결함 수정",
+  "redteam_agendas": [
+    {
+      "issue_id": "ISSUE_01",
+      "critique": "일반 보병 소총으로 시속 120km FPV 드론을 격추하라는 과목은 현실성 없는 탄약 낭비임.",
+      "counter_defense": "정면 돌입 시 최후의 방어 수단으로 최소한의 산탄/집중 사격 절차는 유지 필요.",
+      "final_compromise": "개인 조준 사격 삭제, 분대 산탄 집중 차단 사격(3초간)으로 축소 개편"
+    },
+    {
+      "issue_id": "ISSUE_02",
+      "critique": "고급 과정의 전파 방해 장비 세부 운용 교육은 보안 규정상 부적절하며 야전 실효성 없음.",
+      "counter_defense": "방공망과의 협조 통신을 위해 전파 차단 개념은 이해해야 함.",
+      "final_compromise": "장비 조작법 전면 삭제, '전파 방해 시 아군 통신 영향 및 보고 절차'로 전면 수정"
+    },
+    {
+      "issue_id": "ISSUE_03",
+      "critique": "3일차 야전 기동 시간이 4시간으로 과도하여 교육생 체력 고갈로 후반 집중력 저하.",
+      "counter_defense": "실제 전장 피로도를 경험해야 야전 생존성이 체득됨.",
+      "final_compromise": "기동 시간을 2.5시간으로 줄이고 중간 30분 차폐 그늘 휴식 및 AAR 시간 배정"
+    }
+  ]
+}

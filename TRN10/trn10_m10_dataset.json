@@ -1,0 +1,37 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M10",
+  "title": "TCCC 모의환자 평가 및 의무 인계 훈련 표준 실무 지침서 완성",
+  "standard_package_chapters": [
+    {
+      "chapter": 1,
+      "title": "개요 및 훈련 프로파일",
+      "contents": "TCCC 훈련 배경, 러-우 전훈 지연 후송 분석, 훈련 대상 페르소나 및 목표"
+    },
+    {
+      "chapter": 2,
+      "title": "현장 표준운영절차(SOP) 및 체크리스트",
+      "contents": "CUF/TFC 단계별 SOP 흐름도, 15종 행동 체크리스트, 휴대용 30초 퀵 포켓 가이드"
+    },
+    {
+      "chapter": 3,
+      "title": "모의환자 프로파일 및 MSEL 시나리오",
+      "contents": "모의환자 3종 임상 카드, 10건 MSEL 시나리오 타임라인, 돌발 변수 카드 및 스트레스 환경 조성 지침"
+    },
+    {
+      "chapter": 4,
+      "title": "평가 루브릭 및 성과 검증 도구",
+      "contents": "PASS/FAIL 판정 기준, 12개 대조 오류 교차검증표, 9-Line MIST 인계 평가표, 전후 성과 분석 양식"
+    },
+    {
+      "chapter": 5,
+      "title": "사후검토(AAR) 및 교관 운영 매뉴얼",
+      "contents": "4단계 AAR 진행 서식, 오류 분석 매트릭스, 교관 준비물 체크리스트, 군의관 감수 및 개정 관리표"
+    }
+  ],
+  "governance": {
+    "revision_cycle": "연 1회 정기 개정 (전훈 반영 시 수시 개정)",
+    "medical_signoff": "사단/여단 의무대장 및 군의관 의학 감수 필수",
+    "distribution": "예하 대대 교육훈련계 및 의무중대 배포"
+  }
+}

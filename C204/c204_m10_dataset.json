@@ -1,0 +1,63 @@
+{
+  "mission_id": "C204_M10",
+  "description": "엔드투엔드 파이프라인 10대 자체 점검 항목 및 지휘관 5줄 브리핑 팩트체크 데이터",
+  "self_test_checklist_10": [
+    {
+      "item": 1,
+      "module": "InputValidator",
+      "target": "스키마 필드 100% 무결성 검증"
+    },
+    {
+      "item": 2,
+      "module": "Preprocessor",
+      "target": "300~3400Hz BPF 및 스펙트럼 정규화"
+    },
+    {
+      "item": 3,
+      "module": "FeatureExtractor",
+      "target": "35차원 음향 통계 벡터 추출"
+    },
+    {
+      "item": 4,
+      "module": "BaselineFilter",
+      "target": "1차 분위수 규칙 판별"
+    },
+    {
+      "item": 5,
+      "module": "DeepDetector",
+      "target": "MLP 신경망 위조 확률 추론"
+    },
+    {
+      "item": 6,
+      "module": "ConfidenceEngine",
+      "target": "채널 품질 결합 3단계 등급화"
+    },
+    {
+      "item": 7,
+      "module": "DashboardUI",
+      "target": "실시간 상황판 렌더링 및 XAI 근거 표출"
+    },
+    {
+      "item": 8,
+      "module": "HITLQueue",
+      "target": "긴급 명령 격리 및 가상 챌린지 검증"
+    },
+    {
+      "item": 9,
+      "module": "HashAuditLog",
+      "target": "SHA-256 해시 체인 무결성 기록"
+    },
+    {
+      "item": 10,
+      "module": "FailSafeHandler",
+      "target": "과부하 시 기능 축소 및 결함 격리"
+    }
+  ],
+  "briefing_5lines": [
+    "1. 성과 요약: 전술 무전 환경 딥페이크 탐지 정확도 94.2% 달성 및 오경보율 6.8%로 획기적 감축",
+    "2. 처리 성능: 실시간 무전 패킷 단일 추론 65ms 이내 달성 및 C2 상황판 실시간 연동 보장",
+    "3. HITL 보안: 모든 지휘관 긴급 명령의 자동 전파 0건, 통신보안관 이중 확인 및 해시 체인 감사 추적 완비",
+    "4. 운용 한계: 적 전자전 재밍 세기 J/S 15dB 이상 시 판정 불가 경계선 선포 및 수동 음어 인증 모드 전환",
+    "5. 향후 연동: 한국형 합동지휘통제체계(KJCCS) 및 차세대 다기능전술단말기(TMMR) 보안 플러그인 탑재 권고"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M08",
+  "title": "7일간 통신 단절 후 대량 일괄 동기화 스트레스 테스트 데이터셋",
+  "meta": {
+    "load_tiers": [
+      "100%",
+      "200%",
+      "500%"
+    ],
+    "workers": 4,
+    "queue_high_water": 8
+  },
+  "load_profiles": {
+    "100%": {
+      "txns": 3000,
+      "injected_dups": 150,
+      "injected_forgeries": 30
+    },
+    "200%": {
+      "txns": 6000,
+      "injected_dups": 300,
+      "injected_forgeries": 60
+    },
+    "500%": {
+      "txns": 15000,
+      "injected_dups": 750,
+      "injected_forgeries": 150
+    }
+  },
+  "degradation_rules": {
+    "trigger_queue_length": 8,
+    "action": "비필수 즉시검증 지연, 핵심 수불 우선 적재 후 백그라운드 사후 검증"
+  }
+}

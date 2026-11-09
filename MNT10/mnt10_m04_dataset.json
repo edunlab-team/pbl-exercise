@@ -1,0 +1,33 @@
+{
+  "title": "MNT10_M04 다기준 출동 우선순위 추천 엔진 및 파생 피처 명세",
+  "derived_features_count": 18,
+  "sample_derived_features": [
+    {
+      "name": "req_backlog_hours",
+      "desc": "접수 시점 동일 부대 누적 정비 백로그 시간"
+    },
+    {
+      "name": "team_current_load",
+      "desc": "정비반 현재 당일 누적 투입 시간"
+    },
+    {
+      "name": "est_distance_km",
+      "desc": "정비반 기지-요청지 간 유클리드/도로 환산 거리"
+    },
+    {
+      "name": "crit_weight_norm",
+      "desc": "작전 중요도 정규화 가중치 (Tier 1: 3.0, Tier 2: 1.5, Tier 3: 1.0)"
+    },
+    {
+      "name": "rolling_avg_repair_h",
+      "desc": "동일 장비/고장 유형 최근 7일 롤링 평균 소요시간"
+    }
+  ],
+  "validation_metrics": {
+    "cv_strategy": "TimeSeriesSplit(n_splits=5)",
+    "mean_mape_pct": 12.5,
+    "target_mape_pct": 25.0,
+    "tier1_downtime_reduction_pct": 38.7,
+    "team_load_std_improvement": "0.365 -> 0.143"
+  }
+}

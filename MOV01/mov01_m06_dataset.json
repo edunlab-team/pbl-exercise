@@ -1,0 +1,18 @@
+{
+  "xai_target": {
+    "success_rate": 100.0,
+    "total_cases": 300,
+    "top_factors_count": 3
+  },
+  "dashboard_layout": [
+    "이용률_히트맵",
+    "지체_경보_상태판",
+    "우회_배분_비교표",
+    "SHAP_워터폴_차트"
+  ],
+  "bypass_effectiveness": {
+    "fixed_min": 91.4,
+    "bypass_min": 44.9,
+    "reduction_rate": 51.0
+  }
+}

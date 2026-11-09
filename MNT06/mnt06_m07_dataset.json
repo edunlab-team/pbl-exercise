@@ -1,0 +1,35 @@
+{
+  "title": "MNT06_M07 정비기술관 HITL 승인 시뮬레이터 및 감사 로그 샘플",
+  "monthly_proposals": 96,
+  "hitl_simulation_results": {
+    "approved_count": 72,
+    "rejected_count": 15,
+    "no_response_count": 9,
+    "auto_approved_count": 0,
+    "cost_savings_pct": 15.4,
+    "target_cost_savings_pct": 15.0
+  },
+  "rejection_reasons": [
+    {
+      "reason": "비인증 소재 적용 부품 (인증서 미비)",
+      "count": 8
+    },
+    {
+      "reason": "장비 점유율 90% 초과에 따른 출력 대기 지연",
+      "count": 4
+    },
+    {
+      "reason": "치명도 HIGH 부품의 야전 장착 규정 미부합",
+      "count": 3
+    }
+  ],
+  "hash_chain_sample": {
+    "block_index": 48,
+    "timestamp": "2026-10-15T14:32:00Z",
+    "part_id": "P104",
+    "decision": "APPROVED",
+    "inspector_id": "CHIEF_ENG_KIM",
+    "prev_hash": "a8f3b2...c1",
+    "current_hash": "e7c4d9...f0"
+  }
+}

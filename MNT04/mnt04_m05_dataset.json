@@ -1,0 +1,31 @@
+{
+  "title": "MNT04_M05 RUL 앙상블 모델 예측 및 신뢰도 점수 샘플",
+  "model_evaluation": {
+    "linear_baseline_mae": 14.8,
+    "lightgbm_mae": 8.2,
+    "random_forest_mae": 8.6,
+    "ridge_mae": 10.4,
+    "weighted_ensemble_mae": 7.4,
+    "target_mae_limit": 8.0
+  },
+  "inspection_cards_sample": [
+    {
+      "unit_id": "MNT-HEL-014",
+      "pred_rul_days": 18,
+      "confidence_score": 88,
+      "action": "긴급 정비 권고 (조기 입고)"
+    },
+    {
+      "unit_id": "MNT-HEL-029",
+      "pred_rul_days": 42,
+      "confidence_score": 72,
+      "action": "추가 관찰 및 부품 조달 준비"
+    },
+    {
+      "unit_id": "MNT-HEL-007",
+      "pred_rul_days": 115,
+      "confidence_score": 25,
+      "action": "정상 운용 지속"
+    }
+  ]
+}

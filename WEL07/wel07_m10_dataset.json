@@ -1,0 +1,64 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M10",
+  "title": "대량전상자 의무지원 및 환자인계 표준 교육훈련 패키지 제작",
+  "tssp_architecture": [
+    {
+      "chapter": "제1장",
+      "title": "훈련 개요 및 교리적 배경",
+      "pages": "1~5",
+      "content": "MASCAL 정의, 골든아워 원칙, 편제 및 책임(RACI)"
+    },
+    {
+      "chapter": "제2장",
+      "title": "표준작전절차(SOP) 본문",
+      "pages": "6~20",
+      "content": "단계별 행동 수칙, Triage 판정 트리, 서식 작성 규정"
+    },
+    {
+      "chapter": "제3장",
+      "title": "실전 모의 시나리오 및 MSEL",
+      "pages": "21~35",
+      "content": "10대 주입 사건, 6종 스트레스 카드, 돌발 대처 지침"
+    },
+    {
+      "chapter": "제4장",
+      "title": "평가 체크리스트 및 관측 서식",
+      "pages": "36~45",
+      "content": "15종 현장 점검표, 타임로그 기록지, 교차검증표"
+    },
+    {
+      "chapter": "제5장",
+      "title": "교관 및 안전통제관 지침서",
+      "pages": "46~60",
+      "content": "훈련 운영 가이드, FAQ, 감수 확인서, 비상 중지 규정"
+    }
+  ],
+  "rubric_5levels": [
+    {
+      "level": "Level 5 (탁월)",
+      "criteria": "인계 시간 2분 이내, 기록 누락 0건, 돌발 상황 즉각 대체 대행 완벽 수행"
+    },
+    {
+      "level": "Level 4 (우수)",
+      "criteria": "인계 시간 3분 이내, 기록 누락 0건, SOP 단계 95% 이상 준수"
+    },
+    {
+      "level": "Level 3 (보통)",
+      "criteria": "인계 시간 4분 이내, 경미한 오기 1~2건 즉시 정정, 전반적 절차 수행"
+    },
+    {
+      "level": "Level 2 (미흡)",
+      "criteria": "인계 시간 5분 초과, 필수 항목 누락 3건 이상, 지휘 보고 지연"
+    },
+    {
+      "level": "Level 1 (재훈련)",
+      "criteria": "중증도 오분류, 식별표 분실 방치, 안전 수칙 위반으로 훈련 중지"
+    }
+  ],
+  "governance_approval": {
+    "medical_director": "대대 의무대장 (군의관)",
+    "tccc_compliance": "TCCC 최신 가이드라인 및 국방부 훈령 부합 확인",
+    "security_clearance": "가상 데이터셋 적용 및 군사 보안 저촉 사항 없음 확인"
+  }
+}

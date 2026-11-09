@@ -1,0 +1,37 @@
+{
+  "modified_roster_items": [
+    {
+      "item_no": 1,
+      "category": "연속야간",
+      "target": "S03",
+      "desc": "3일 연속 후반야 투입",
+      "truth": "ERROR",
+      "reason": "R1 위반"
+    },
+    {
+      "item_no": 2,
+      "category": "최소휴식",
+      "target": "S01",
+      "desc": "전반야 종료 후 주간 4시간 교육 투입",
+      "truth": "ERROR",
+      "reason": "R2 위반"
+    },
+    {
+      "item_no": 3,
+      "category": "정상대직",
+      "target": "S07",
+      "desc": "24시간 휴무 후 전반야 대직 투입",
+      "truth": "NORMAL",
+      "reason": "충분한 휴식 후 투입으로 정상"
+    },
+    {
+      "item_no": 4,
+      "category": "경계공백",
+      "target": "초소2",
+      "desc": "02:00~04:00 1명 단독 경계",
+      "truth": "ERROR",
+      "reason": "2인 1조 원칙 위반"
+    }
+  ],
+  "total_items_count": 12
+}

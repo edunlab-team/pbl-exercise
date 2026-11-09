@@ -1,0 +1,32 @@
+{
+  "mission_id": "C210_M09",
+  "title": "1차 훈련 vs 2차 재실행 성능 비교 기준 데이터셋",
+  "baseline_comparison": {
+    "metrics": [
+      {
+        "name": "총 인계 소요 시간 (분)",
+        "first_run": 17.5,
+        "target_second_run": 14.0,
+        "reduction_target_pct": 20.0
+      },
+      {
+        "name": "비상 전환 소요 시간 (초)",
+        "first_run": 95,
+        "target_second_run": 50,
+        "reduction_target_pct": 47.4
+      },
+      {
+        "name": "정보 결손/오류 발생 건수",
+        "first_run": 6,
+        "target_second_run": 2,
+        "reduction_target_pct": 66.7
+      },
+      {
+        "name": "SOP 단계 준수율 (%)",
+        "first_run": 78.0,
+        "target_second_run": 95.0,
+        "reduction_target_pct": -21.8
+      }
+    ]
+  }
+}

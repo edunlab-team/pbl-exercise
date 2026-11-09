@@ -1,0 +1,25 @@
+{
+  "project": "K13",
+  "mission": "K13_M09",
+  "title": "편향·다양성 점검하기",
+  "summary": "추천 편향 및 필터 버블 진단 지표와 동일 주제 상한(Max Topics=2) 리랭킹 데이터",
+  "dataset": {
+    "filter_bubble_diagnosis": {
+      "initial_avg_topics_per_user": 3.03,
+      "extreme_concentration_users": [
+        "S07",
+        "S22",
+        "S49"
+      ],
+      "single_topic_monopoly_count": 3
+    },
+    "reranking_policy": {
+      "max_allowed_courses_per_topic": 2,
+      "post_rerank_avg_topics_per_user": 3.72,
+      "post_rerank_monopoly_users": 0,
+      "post_rerank_precision_at_5": 0.203,
+      "diversity_improvement": "+22.77%",
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "project": "K13",
+  "mission": "K13_M10",
+  "title": "추천 도우미 완성하기",
+  "summary": "엔드투엔드 추천 도우미(Assistant) 통합 파이프라인 구성 및 5대 자체점검 체크리스트 데이터",
+  "dataset": {
+    "pipeline_stages": [
+      "1. Data Integrity Check (check_ratings)",
+      "2. User Profiling & Cold-Start Routing",
+      "3. Multi-Model Scoring (Popularity, CBF, User-CF)",
+      "4. Min-Max Normalization & Hybrid Ensemble",
+      "5. Diversity Re-ranking (Max Topic Constraint)",
+      "6. XAI Reasoning Card Generation",
+      "7. HITL Notice Attachment"
+    ],
+    "self_check_results": [
+      {
+        "item": "오류 데이터(비정상 ID/범위 초과) 차단율",
+        "target": "100%",
+        "achieved": "100%",
+        "status": "PASS"
+      },
+      {
+        "item": "기수강 과정 추천 제외율",
+        "target": "100%",
+        "achieved": "100%",
+        "status": "PASS"
+      },
+      {
+        "item": "추천 사유(XAI) 누락률",
+        "target": "0%",
+        "achieved": "0%",
+        "status": "PASS"
+      },
+      {
+        "item": "장병 1인당 추천 처리 응답 속도",
+        "target": "< 1.0초",
+        "achieved": "0.082초",
+        "status": "PASS"
+      },
+      {
+        "item": "목표 정밀도(Precision@5) 유지",
+        "target": ">= 0.200",
+        "achieved": "0.203",
+        "status": "PASS"
+      }
+    ],
+    "hitl_statement": "본 시스템의 추천 결과는 의사결정 보조 자료이며, 최종 교육 이수 여부 및 승인은 장병 본인과 지휘관의 권한입니다."
+  }
+}

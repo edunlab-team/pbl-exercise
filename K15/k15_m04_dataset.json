@@ -1,0 +1,28 @@
+{
+  "project": "K15",
+  "mission": "K15_M04",
+  "title": "검색 결과를 예약표와 대조하기",
+  "verification_checkpoints": [
+    {
+      "facility": "대대 강당",
+      "day": "금",
+      "time": "11-13",
+      "content": "점검(음향)",
+      "trap": "빈 칸으로 오인하기 쉬움"
+    },
+    {
+      "facility": "체력단련실",
+      "day": "수",
+      "time": "14-16",
+      "content": "소독(이용 불가)",
+      "trap": "빈 칸으로 오인하기 쉬움"
+    },
+    {
+      "facility": "세미나실 B",
+      "day": "화",
+      "time": "09-16",
+      "content": "점검(빔프로젝터)",
+      "trap": "연속 점검 누락 주의"
+    }
+  ]
+}

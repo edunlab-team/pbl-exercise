@@ -1,0 +1,193 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M03",
+  "title": "다익스트라 최단경로 Baseline 및 15종 규칙 엔진 데이터셋",
+  "meta": {
+    "rule_count": 15,
+    "boundary_cases_count": 9,
+    "target_latency_ms": 50.0
+  },
+  "rules_config": {
+    "max_unpaved_ratio": 0.5,
+    "detour_factor": 2.5,
+    "max_threat_edges": 1,
+    "truck_count": 3
+  },
+  "rule_catalog": [
+    {
+      "id": "R01",
+      "name": "출발지=보급소",
+      "type": "mandatory",
+      "desc": "경로의 첫 번째 노드가 보급소(N0000)인가"
+    },
+    {
+      "id": "R02",
+      "name": "도착지=요청 부대",
+      "type": "mandatory",
+      "desc": "경로의 마지막 노드가 요청 목적지와 일치하는가"
+    },
+    {
+      "id": "R03",
+      "name": "연속 노드 간 도로 존재",
+      "type": "mandatory",
+      "desc": "경로 상 인접 노드 간 유효한 간선이 존재하는가"
+    },
+    {
+      "id": "R04",
+      "name": "폐쇄 구간 미포함",
+      "type": "mandatory",
+      "desc": "통행 차단(open=False) 구간이 배제되었는가"
+    },
+    {
+      "id": "R05",
+      "name": "교량 하중 이내",
+      "type": "mandatory",
+      "desc": "차량 총중량이 통과 교량의 통과 하중 한계 이내인가"
+    },
+    {
+      "id": "R06",
+      "name": "통제 구역 미통과",
+      "type": "mandatory",
+      "desc": "설정된 통제 구역(CZ)을 침범하지 않는가"
+    },
+    {
+      "id": "R07",
+      "name": "노드 중복 방문 없음",
+      "type": "quality",
+      "desc": "경로에 불필요한 루프/순환 노드가 없는가"
+    },
+    {
+      "id": "R08",
+      "name": "거리 합계 정합",
+      "type": "integrity",
+      "desc": "구간별 거리 합계와 총 이동 거리가 일치하는가"
+    },
+    {
+      "id": "R09",
+      "name": "소요시간 기한 이내",
+      "type": "mandatory",
+      "desc": "예상 소요시간이 수송 기한(deadline) 이내인가"
+    },
+    {
+      "id": "R10",
+      "name": "적재량 수송능력 이내",
+      "type": "mandatory",
+      "desc": "요청 화물량이 투입 차량의 최대 적재용량 합계 이내인가"
+    },
+    {
+      "id": "R11",
+      "name": "자산 상태 가용",
+      "type": "mandatory",
+      "desc": "배정된 수송 자산의 상태가 '가용'인가"
+    },
+    {
+      "id": "R12",
+      "name": "비포장 비율 기준 이내",
+      "type": "quality",
+      "desc": "비포장 도로 구간 비율이 50% 이하인가"
+    },
+    {
+      "id": "R13",
+      "name": "우회 과다 없음",
+      "type": "quality",
+      "desc": "직선거리 대비 우회 계수가 2.5배 이하인가"
+    },
+    {
+      "id": "R14",
+      "name": "경로 구간 1개 이상",
+      "type": "integrity",
+      "desc": "출발지와 목적지가 동일하지 않고 유효 간선이 1개 이상인가"
+    },
+    {
+      "id": "R15",
+      "name": "위협 구역 통과 기준 이내",
+      "type": "warning",
+      "desc": "적 위협 통과 간선이 허용치(1개) 이하인가 (초과 시 WARN)"
+    }
+  ],
+  "test_requests": [
+    {
+      "req": "REQ-0000",
+      "dest": "N0007",
+      "cargo_t": 8.5,
+      "deadline_h": 1.5
+    },
+    {
+      "req": "REQ-0001",
+      "dest": "N0107",
+      "cargo_t": 6.2,
+      "deadline_h": 1.5
+    },
+    {
+      "req": "REQ-0002",
+      "dest": "N0207",
+      "cargo_t": 11.0,
+      "deadline_h": 1.5
+    },
+    {
+      "req": "REQ-0003",
+      "dest": "N0307",
+      "cargo_t": 5.4,
+      "deadline_h": 1.5
+    },
+    {
+      "req": "REQ-0004",
+      "dest": "N0407",
+      "cargo_t": 12.8,
+      "deadline_h": 1.5
+    },
+    {
+      "req": "REQ-0005",
+      "dest": "N0507",
+      "cargo_t": 9.1,
+      "deadline_h": 1.5
+    }
+  ],
+  "boundary_test_cases": [
+    {
+      "case": "B01",
+      "desc": "적재량 한계 정확히 일치 (화물 15t = 트럭 3대 cap 15t)",
+      "expected": "PASS"
+    },
+    {
+      "case": "B02",
+      "desc": "적재량 0.1t 초과 (화물 15.1t > cap 15t)",
+      "expected": "FAIL"
+    },
+    {
+      "case": "B03",
+      "desc": "기한 정확히 일치 (소요 90분 = 기한 1.5h)",
+      "expected": "PASS"
+    },
+    {
+      "case": "B04",
+      "desc": "기한 1분 초과 (소요 91분 > 기한 1.5h)",
+      "expected": "FAIL"
+    },
+    {
+      "case": "B05",
+      "desc": "고립 노드(도달 불가) 입력",
+      "expected": "FAIL"
+    },
+    {
+      "case": "B06",
+      "desc": "비포장 도로 비율 정확히 50%",
+      "expected": "PASS"
+    },
+    {
+      "case": "B07",
+      "desc": "비포장 도로 비율 50.1%",
+      "expected": "FAIL"
+    },
+    {
+      "case": "B08",
+      "desc": "교량 하중 제한 경계치 일치 (중량 15.0t = limit 15.0t)",
+      "expected": "PASS"
+    },
+    {
+      "case": "B09",
+      "desc": "교량 하중 0.1t 초과 진입 (중량 15.1t > limit 15.0t)",
+      "expected": "FAIL"
+    }
+  ]
+}

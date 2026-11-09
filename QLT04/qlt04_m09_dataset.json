@@ -1,0 +1,48 @@
+{
+  "title": "AAR 예측 대비 실측 편차 분해표 및 5종 재보정 패치 성능표",
+  "aar_deviation_summary": {
+    "predicted_avail_pct": 78.5,
+    "actual_avail_pct": 71.2,
+    "total_gap_pct": -7.3,
+    "cause_breakdown": {
+      "외주 검사 대기 급증": -4.92,
+      "부품 수급난": -1.45,
+      "정비병 부족": -0.68,
+      "기타 오차": -0.25
+    }
+  },
+  "calibration_patches": [
+    {
+      "patch_id": "P1",
+      "name": "단순 편향 보정",
+      "accuracy_pct": 52.0,
+      "mae": 4.8
+    },
+    {
+      "patch_id": "P2",
+      "name": "외주 검사 병목 변수 추가",
+      "accuracy_pct": 68.5,
+      "mae": 3.2
+    },
+    {
+      "patch_id": "P3",
+      "name": "지수 가중 최신 데이터 재학습",
+      "accuracy_pct": 74.0,
+      "mae": 2.7
+    },
+    {
+      "patch_id": "P4",
+      "name": "정규화 강도 및 최적 패치 결합",
+      "accuracy_pct": 83.0,
+      "mae": 2.1,
+      "selected": true
+    },
+    {
+      "patch_id": "P5",
+      "name": "90% 예측 구간 확장",
+      "accuracy_pct": 81.5,
+      "mae": 2.3
+    }
+  ],
+  "uat_checklist_score": 90
+}

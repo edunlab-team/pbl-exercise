@@ -1,0 +1,194 @@
+{
+  "project": "K14",
+  "mission": "K14_M10",
+  "title": "생활관 개선 과제 보고서 완성하기",
+  "report_metadata": {
+    "title": "가상 한빛대대 생활관 생활 데이터 분석을 통한 병영생활 개선 과제 보고서",
+    "author": "복지담당 장병",
+    "approver": "중대장 / 행정보급관",
+    "data_source": "가상 한빛대대 3개 중대 4주간 생활관 생활 데이터"
+  },
+  "full_weekly_dataset": [
+    {
+      "week": "1주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 112,
+      "cyber": 54,
+      "px": 140,
+      "sleep_satisfaction": 3.8,
+      "meal_satisfaction": 3.9,
+      "suggestions": 3
+    },
+    {
+      "week": "1주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 98,
+      "cyber": 31,
+      "px": 160,
+      "sleep_satisfaction": 3.6,
+      "meal_satisfaction": 3.5,
+      "suggestions": 4
+    },
+    {
+      "week": "1주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 104,
+      "cyber": 47,
+      "px": 118,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.2,
+      "suggestions": 5
+    },
+    {
+      "week": "2주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 118,
+      "cyber": 58,
+      "px": 138,
+      "sleep_satisfaction": 3.8,
+      "meal_satisfaction": 3.8,
+      "suggestions": 2
+    },
+    {
+      "week": "2주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 92,
+      "cyber": 29,
+      "px": 166,
+      "sleep_satisfaction": 3.4,
+      "meal_satisfaction": 3.4,
+      "suggestions": 5
+    },
+    {
+      "week": "2주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 106,
+      "cyber": 50,
+      "px": 121,
+      "sleep_satisfaction": 3.6,
+      "meal_satisfaction": 3.1,
+      "suggestions": 7
+    },
+    {
+      "week": "3주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 121,
+      "cyber": 61,
+      "px": 142,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 4.0,
+      "suggestions": 4
+    },
+    {
+      "week": "3주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 85,
+      "cyber": 26,
+      "px": 171,
+      "sleep_satisfaction": 3.2,
+      "meal_satisfaction": 3.4,
+      "suggestions": 7
+    },
+    {
+      "week": "3주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 103,
+      "cyber": 49,
+      "px": 117,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.3,
+      "suggestions": 9
+    },
+    {
+      "week": "4주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 125,
+      "cyber": 66,
+      "px": 135,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 4.1,
+      "suggestions": 3
+    },
+    {
+      "week": "4주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 80,
+      "cyber": 24,
+      "px": 178,
+      "sleep_satisfaction": 3.0,
+      "meal_satisfaction": 3.3,
+      "suggestions": 8
+    },
+    {
+      "week": "4주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 108,
+      "cyber": 52,
+      "px": 120,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.2,
+      "suggestions": 12
+    }
+  ],
+  "suggestions_breakdown": [
+    {
+      "company": "1중대",
+      "facility_env": 4,
+      "meal": 3,
+      "schedule_time": 3,
+      "other": 2,
+      "total": 12
+    },
+    {
+      "company": "2중대",
+      "facility_env": 6,
+      "meal": 4,
+      "schedule_time": 10,
+      "other": 4,
+      "total": 24
+    },
+    {
+      "company": "3중대",
+      "facility_env": 17,
+      "meal": 9,
+      "schedule_time": 3,
+      "other": 4,
+      "total": 33
+    }
+  ],
+  "memo_notes": [
+    {
+      "week": "1주차",
+      "target": "3중대",
+      "note": "난방기 이상 소음 건의가 접수됨(점검 전)"
+    },
+    {
+      "week": "2주차",
+      "target": "2중대",
+      "note": "야간 경계 근무 교대 시간이 조정됨"
+    },
+    {
+      "week": "3주차",
+      "target": "전 중대",
+      "note": "사격 훈련 준비로 개인정비 시간이 줄어듦"
+    },
+    {
+      "week": "4주차",
+      "target": "전 중대",
+      "note": "동계 피복 보급 완료, 3중대 난방기 점검 예정 공지"
+    }
+  ],
+  "governance_notice": "본 보고서는 교육용 가상 데이터를 바탕으로 작성된 분석 결과이며 실제 조치 결정은 정식 지휘계통의 승인을 받아야 합니다."
+}

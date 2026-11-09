@@ -1,0 +1,63 @@
+{
+  "project": "K14",
+  "mission": "K14_M08",
+  "title": "원인 가설과 개선 제안 만들기",
+  "suggestions_by_type": [
+    {
+      "company": "1중대",
+      "facility_env": 4,
+      "meal": 3,
+      "schedule_time": 3,
+      "other": 2,
+      "total": 12
+    },
+    {
+      "company": "2중대",
+      "facility_env": 6,
+      "meal": 4,
+      "schedule_time": 10,
+      "other": 4,
+      "total": 24
+    },
+    {
+      "company": "3중대",
+      "facility_env": 17,
+      "meal": 9,
+      "schedule_time": 3,
+      "other": 4,
+      "total": 33
+    }
+  ],
+  "memo_notes": [
+    {
+      "week": "1주차",
+      "target": "3중대",
+      "note": "난방기 이상 소음 건의가 접수됨(점검 전)"
+    },
+    {
+      "week": "2주차",
+      "target": "2중대",
+      "note": "야간 경계 근무 교대 시간이 조정됨"
+    },
+    {
+      "week": "3주차",
+      "target": "전 중대",
+      "note": "사격 훈련 준비로 개인정비 시간이 줄어듦"
+    },
+    {
+      "week": "4주차",
+      "target": "전 중대",
+      "note": "동계 피복 보급 완료, 3중대 난방기 점검 예정 공지"
+    }
+  ],
+  "hypotheses_context": [
+    {
+      "issue": "3중대 시설 건의 17건 집중",
+      "clue": "1주차 난방기 이상 소음 접수 및 4주차 점검 예정 공지"
+    },
+    {
+      "issue": "2중대 수면만족 하락 및 체련실 감소",
+      "clue": "2주차 야간 경계 근무 교대 시간 조정 및 일과·시간 건의 10건"
+    }
+  ]
+}

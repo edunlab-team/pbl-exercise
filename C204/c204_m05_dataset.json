@@ -1,0 +1,32 @@
+{
+  "mission_id": "C204_M05",
+  "description": "채널 품질 지표 연동 로지스틱 신뢰도 보정 파라미터 및 5회 연속 잡음 주입 표본",
+  "calibration_model_params": {
+    "intercept": -1.45,
+    "weights": {
+      "raw_model_logit": 2.15,
+      "est_snr_db": -0.12,
+      "jamming_index": 1.85,
+      "packet_loss_rate": 2.4
+    }
+  },
+  "confidence_thresholds": {
+    "HIGH_RISK": {
+      "min_prob": 0.85,
+      "action": "즉각 경보 및 교차 청음 강제"
+    },
+    "MED_SUSPECT": {
+      "min_prob": 0.5,
+      "action": "인간 통신보안관 2차 챌린지 검증"
+    },
+    "LOW_BENIGN": {
+      "min_prob": 0.0,
+      "action": "일반 무전망 정상 전파 허용"
+    }
+  },
+  "noise_consistency_test_5runs": {
+    "source_clip_id": "CLIP_CDR_ORDER_77",
+    "iterations": 5,
+    "target_kappa_consistency": 0.92
+  }
+}

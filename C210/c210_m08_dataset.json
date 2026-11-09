@@ -1,0 +1,36 @@
+{
+  "mission_id": "C210_M08",
+  "title": "AAR 사후검토 회의 분석용 타임로그 및 관측 기록",
+  "aar_observations": [
+    {
+      "obs_id": "R1",
+      "time": "T+04:20",
+      "fact": "전임자가 미확인 항적 브리핑 시 확인 계획을 누락함",
+      "cause_area": "Method(서식 결함)"
+    },
+    {
+      "obs_id": "R2",
+      "time": "T+07:15",
+      "fact": "후임자가 통신망 두절 여부를 질문하지 않고 넘어감",
+      "cause_area": "Man(인지 과부하)"
+    },
+    {
+      "obs_id": "R3",
+      "time": "T+11:00",
+      "fact": "무전기 배터리 방전으로 상급 보고가 2분 30초 지연됨",
+      "cause_area": "Machine(장비 점검 미흡)"
+    },
+    {
+      "obs_id": "R4",
+      "time": "T+13:40",
+      "fact": "야간 경보 시 1쪽 점검표의 글씨가 작아 랜턴 조명 하 판독 지연",
+      "cause_area": "Material(가독성 결함)"
+    },
+    {
+      "obs_id": "R5",
+      "time": "T+16:00",
+      "fact": "복창 확인 시 좌표 2자리 오독 발생했으나 교차 검증으로 수정됨",
+      "cause_area": "Man(구두 소통 마찰)"
+    }
+  ]
+}

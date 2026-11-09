@@ -1,0 +1,80 @@
+{
+  "project": "TRN02",
+  "mission": "TRN02_M02",
+  "title": "장병 응답 텍스트/선택지 정제 및 시험 답안 파싱 전처리 모듈 구현",
+  "raw_response_samples": [
+    {
+      "raw": "①",
+      "type": "MC",
+      "expected": "1",
+      "case": "원문자 번호"
+    },
+    {
+      "raw": "２번",
+      "type": "MC",
+      "expected": "2",
+      "case": "전각 숫자 + '번'"
+    },
+    {
+      "raw": "피아식별입니다",
+      "type": "SA",
+      "expected": "피아식별",
+      "case": "종결어미 제거"
+    },
+    {
+      "raw": "열 추 적 미 사 일 요",
+      "type": "SA",
+      "expected": "열추적미사일",
+      "case": "공백 분절 + 어미"
+    },
+    {
+      "raw": "Ａ-Ｂ-Ｃ-Ｄ",
+      "type": "ORDER",
+      "expected": "ABCD",
+      "case": "전각 영문 및 하이픈 파싱"
+    },
+    {
+      "raw": "   ",
+      "type": "SA",
+      "expected": null,
+      "case": "공백 미응답 분리"
+    }
+  ],
+  "duplicate_submission_stats": {
+    "total_submitted": 3955,
+    "duplicated_records": 115,
+    "cleaned_records": 3840
+  },
+  "unit_test_cases": [
+    {
+      "id": "TC_01",
+      "name": "Unicode NFKC 정규화",
+      "input": "①２３",
+      "expected": "123"
+    },
+    {
+      "id": "TC_02",
+      "name": "국문 종결어미 제거",
+      "input": "델타익이다.",
+      "expected": "델타익"
+    },
+    {
+      "id": "TC_03",
+      "name": "순서형 구분자 제거",
+      "input": "A, B, C, D",
+      "expected": "ABCD"
+    },
+    {
+      "id": "TC_04",
+      "name": "중복 제출 멱등성 필터",
+      "input": "S001 Q01 timestamp overlap",
+      "expected": "1건 유지"
+    },
+    {
+      "id": "TC_05",
+      "name": "결측치 분리 격리",
+      "input": "",
+      "expected": "MISSING_FLAG"
+    }
+  ]
+}

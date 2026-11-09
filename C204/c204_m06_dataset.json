@@ -1,0 +1,117 @@
+{
+  "mission_id": "C204_M06",
+  "description": "실시간 무전 보안 상황판 4분할 컴포넌트 스트림 모의 데이터 및 최근 송신 8건",
+  "active_stream_8clips": [
+    {
+      "time": "14:02:11",
+      "msg_id": "M_01",
+      "net": "NET_DIV",
+      "spk": "CDR",
+      "urgency": "FLASH",
+      "prob": 0.94,
+      "level": "HIGH",
+      "top_clues": [
+        "FrameBoundary (88%)",
+        "HighFreqArtifact (81%)",
+        "VoiceDivergence (65%)"
+      ]
+    },
+    {
+      "time": "14:02:19",
+      "msg_id": "M_02",
+      "net": "NET_BDE",
+      "spk": "S3",
+      "urgency": "ROUTINE",
+      "prob": 0.08,
+      "level": "LOW",
+      "top_clues": [
+        "HNR_Normal",
+        "Flatness_OK",
+        "SpeakerMatched"
+      ]
+    },
+    {
+      "time": "14:02:35",
+      "msg_id": "M_03",
+      "net": "NET_BN",
+      "spk": "1CO",
+      "urgency": "PRIORITY",
+      "prob": 0.62,
+      "level": "MED",
+      "top_clues": [
+        "LowSNR_Masking",
+        "SlightBoundaryDiscontinuity"
+      ]
+    },
+    {
+      "time": "14:02:44",
+      "msg_id": "M_04",
+      "net": "NET_DIV",
+      "spk": "CDR",
+      "urgency": "IMMEDIATE",
+      "prob": 0.91,
+      "level": "HIGH",
+      "top_clues": [
+        "PhaseDistortion",
+        "VocoderArtifact (79%)"
+      ]
+    },
+    {
+      "time": "14:03:02",
+      "msg_id": "M_05",
+      "net": "NET_BDE",
+      "spk": "FS",
+      "urgency": "FLASH",
+      "prob": 0.12,
+      "level": "LOW",
+      "top_clues": [
+        "HNR_Clear",
+        "NaturalPitchTremor"
+      ]
+    },
+    {
+      "time": "14:03:15",
+      "msg_id": "M_06",
+      "net": "NET_BN",
+      "spk": "2CO",
+      "urgency": "ROUTINE",
+      "prob": 0.05,
+      "level": "LOW",
+      "top_clues": [
+        "NormalHarmonics",
+        "PitchConsistent"
+      ]
+    },
+    {
+      "time": "14:03:28",
+      "msg_id": "M_07",
+      "net": "NET_DIV",
+      "spk": "S2",
+      "urgency": "PRIORITY",
+      "prob": 0.58,
+      "level": "MED",
+      "top_clues": [
+        "ReplayAcousticResonance",
+        "ElevatedLowFreq"
+      ]
+    },
+    {
+      "time": "14:03:41",
+      "msg_id": "M_08",
+      "net": "NET_DIV",
+      "spk": "CDR",
+      "urgency": "FLASH",
+      "prob": 0.89,
+      "level": "HIGH",
+      "top_clues": [
+        "VoiceMismatch (76%)",
+        "HighFreqUnnatural"
+      ]
+    }
+  ],
+  "ui_specs": {
+    "refresh_target_ms": 350,
+    "theme": "TACTICAL_DARK",
+    "alert_highlight": "RED_PULSE_BORDER"
+  }
+}

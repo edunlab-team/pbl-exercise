@@ -1,0 +1,15 @@
+{
+  "max_flow_target": 290,
+  "min_cut_bottlenecks": [
+    "A2",
+    "B1",
+    "C1",
+    "X1"
+  ],
+  "a2_closure_scenario": {
+    "travel_time_increase_min": 4.0,
+    "new_bottleneck": "B2"
+  },
+  "time_series_cv_folds": 4,
+  "feature_pipeline_target_mape": 3.06
+}

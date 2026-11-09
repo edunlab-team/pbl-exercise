@@ -1,0 +1,59 @@
+{
+  "project": "SEC09",
+  "mission": "SEC09_M04",
+  "title": "1차 현장점검 수행 및 취약점 식별 보고서 작성(Dry-run)",
+  "dryrun_parameters": {
+    "total_allowed_time_min": 35,
+    "target_sop_compliance_rate": "90% 이상",
+    "max_report_delay_sec": 120
+  },
+  "sample_timelog": [
+    {
+      "step": "사전브리핑",
+      "start": "09:00:00",
+      "end": "09:05:00",
+      "elapsed_sec": 300,
+      "status": "정상"
+    },
+    {
+      "step": "구역1 외관점검(방폭문)",
+      "start": "09:05:00",
+      "end": "09:12:30",
+      "elapsed_sec": 450,
+      "status": "지연(가스켓 판정 혼선)"
+    },
+    {
+      "step": "구역2 기능점검(환기구)",
+      "start": "09:12:30",
+      "end": "09:21:00",
+      "elapsed_sec": 510,
+      "status": "지연(차압계 재측정)"
+    },
+    {
+      "step": "구역3 비상탈출구 점검",
+      "start": "09:21:00",
+      "end": "09:27:00",
+      "elapsed_sec": 360,
+      "status": "정상"
+    },
+    {
+      "step": "결함 보고서 작성",
+      "start": "09:27:00",
+      "end": "09:34:00",
+      "elapsed_sec": 420,
+      "status": "정상"
+    }
+  ],
+  "bottlenecks_identified": [
+    {
+      "location": "방폭문 힌지 판정 구간",
+      "cause": "유격 측정 시 줄자 눈금 판독 시각차 및 조명 부족",
+      "delay_sec": 180
+    },
+    {
+      "location": "환기탑 차압 보고 구간",
+      "cause": "무전 음영으로 기록관이 직접 이동하여 구두 보고",
+      "delay_sec": 210
+    }
+  ]
+}

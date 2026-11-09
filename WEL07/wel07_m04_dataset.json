@@ -1,0 +1,82 @@
+{
+  "project": "WEL07",
+  "mission": "WEL07_M04",
+  "title": "대량전상자 처치 및 환자인계 실전 모의훈련(Dry-run) 수행",
+  "dryrun_casualties": [
+    {
+      "id": "M-01",
+      "alias": "가상 병사 가",
+      "triage": "긴급",
+      "zone": "A"
+    },
+    {
+      "id": "M-02",
+      "alias": "가상 병사 나",
+      "triage": "응급",
+      "zone": "A"
+    },
+    {
+      "id": "M-03",
+      "alias": "가상 병사 다",
+      "triage": "비응급",
+      "zone": "A"
+    },
+    {
+      "id": "M-04",
+      "alias": "가상 병사 라",
+      "triage": "긴급",
+      "zone": "B"
+    },
+    {
+      "id": "M-05",
+      "alias": "가상 병사 마",
+      "triage": "비응급",
+      "zone": "B"
+    },
+    {
+      "id": "M-06",
+      "alias": "가상 병사 바",
+      "triage": "응급",
+      "zone": "B"
+    },
+    {
+      "id": "M-07",
+      "alias": "가상 병사 사",
+      "triage": "지연",
+      "zone": "A"
+    },
+    {
+      "id": "M-08",
+      "alias": "가상 병사 아",
+      "triage": "비응급",
+      "zone": "B"
+    }
+  ],
+  "target_metrics": {
+    "report_delay_time": "1차 분류 완료 선언 후 지휘관 보고 완료까지 3분 이내",
+    "sop_compliance_rate": "전체 순차 단계 준수율 95% 이상",
+    "mandatory_field_omission_rate": "8명 x 7필수항목 (총 56칸) 누락률 0% (누락 0건)"
+  },
+  "bottleneck_checkpoints": [
+    {
+      "area": "분류소 입구 접수대",
+      "risk": "사상자 동시 집중으로 접수 병목",
+      "countermeasure": "보행자/비보행자 분리 레인 운영"
+    },
+    {
+      "area": "의무기록 카드 작성대",
+      "risk": "처치병이 수기 작성 시 시간 지체",
+      "countermeasure": "기록 전담 러너(Runner) 투입"
+    },
+    {
+      "area": "후송 대기 구역",
+      "risk": "후송 순서표 불일치 및 대기자 전도",
+      "countermeasure": "바닥 색상 라인 표시 및 5분 단위 재확인"
+    },
+    {
+      "area": "지휘 보고 통신망",
+      "risk": "구두 보고 혼선 및 보고 지연",
+      "countermeasure": "BLUF 표준 30초 브리핑 카드 사용"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "project": "K11",
+  "mission": "K11_M09",
+  "title": "과부하 상황 시험하기",
+  "scenarios": [
+    {
+      "name": "상황 1: 기본",
+      "free_time": 1800,
+      "req_time": 1260,
+      "load_ratio": 82,
+      "status": "빠듯함"
+    },
+    {
+      "name": "상황 2: 근무 6회 추가",
+      "free_time": 960,
+      "req_time": 1260,
+      "load_ratio": 156,
+      "status": "부하"
+    },
+    {
+      "name": "상황 3: 목표 2배",
+      "free_time": 1800,
+      "req_time": 2520,
+      "load_ratio": 165,
+      "status": "부하"
+    },
+    {
+      "name": "상황 4: 둘 다 추가",
+      "free_time": 960,
+      "req_time": 2520,
+      "load_ratio": 311,
+      "status": "극단적 과부하"
+    }
+  ],
+  "adjustment_plan": {
+    "adjusted_allocatable": 810,
+    "conflicts": 0,
+    "recommendation": "마감일 연장 및 주당 목표 시간 절충안 적용"
+  }
+}

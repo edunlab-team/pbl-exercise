@@ -1,0 +1,73 @@
+{
+  "project": "ADM05",
+  "mission": "ADM05_M03",
+  "title": "추측과 사실을 구분하는 일일보고서 서식 설계",
+  "conflicting_pairs": [
+    {
+      "pair_id": "K1",
+      "source_a": "06:10 소대 보고: 적 8명 사살, 소총 5정 노획.",
+      "source_b": "06:30 대대 상황실: 적 3명 사살, 5명 도주 추정.",
+      "discrepancy_type": "수치 및 결과 불일치"
+    },
+    {
+      "pair_id": "K2",
+      "source_a": "07:00 전포대장: 아군 155mm 20발 전량 목표 탄착 완료.",
+      "source_b": "07:15 전방 관측소: 12발 착탄, 8발은 능선 후방 불발 오발.",
+      "discrepancy_type": "수치 및 효과 불일치"
+    },
+    {
+      "pair_id": "K3",
+      "source_a": "08:00 보급과: 유류 수송 트럭 3대 전방 보급소 도착 완료.",
+      "source_b": "08:10 정비대: 1대 타이어 파손으로 국도 3호선에 낙오 정차 중.",
+      "discrepancy_type": "상태 및 주체 불일치"
+    },
+    {
+      "pair_id": "K4",
+      "source_a": "09:00 정찰조: 적 지휘소 완전 파괴된 것으로 확신함.",
+      "source_b": "09:20 위성 영상: 지붕 일부 파손 확인, 통신 안테나 여전히 정상 작동 중.",
+      "discrepancy_type": "표현 과장 및 사실 왜곡"
+    }
+  ],
+  "observation_gaps": [
+    {
+      "gap_id": "G1",
+      "factor": "근무 교대 시간 인수인계 공백 (15분간 기록 단절)",
+      "impact": "High"
+    },
+    {
+      "gap_id": "G2",
+      "factor": "악천후(폭우/안개)로 인한 감시 레이더 및 영상 식별 불가",
+      "impact": "High"
+    },
+    {
+      "gap_id": "G3",
+      "factor": "적 전자전 재밍으로 인한 전술 무전망 단절",
+      "impact": "High"
+    },
+    {
+      "gap_id": "G4",
+      "factor": "음성 구두 보고 시 작성자 임의 요약 및 누락",
+      "impact": "Medium"
+    },
+    {
+      "gap_id": "G5",
+      "factor": "단일 관측병의 주관적 야간 불빛 오인",
+      "impact": "Medium"
+    },
+    {
+      "gap_id": "G6",
+      "factor": "부대 이동 중 GPS 수신 장애로 인한 좌표 오차",
+      "impact": "Medium"
+    },
+    {
+      "gap_id": "G7",
+      "factor": "탄약 소모량 수기 집계 시 이월 누락",
+      "impact": "Low"
+    },
+    {
+      "gap_id": "G8",
+      "factor": "타 부대 무선망 간섭으로 인한 신호 청취 오류",
+      "impact": "Low"
+    }
+  ]
+}

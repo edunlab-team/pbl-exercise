@@ -1,0 +1,97 @@
+{
+  "project": "K14",
+  "mission": "K14_M01",
+  "title": "생활관 데이터 항목 이해하기",
+  "data_info": {
+    "unit": "가상 한빛대대",
+    "period": "4주간 (1주차~4주차)",
+    "companies": [
+      {
+        "company": "1중대",
+        "personnel": 48
+      },
+      {
+        "company": "2중대",
+        "personnel": 52
+      },
+      {
+        "company": "3중대",
+        "personnel": 45
+      }
+    ],
+    "security_status": "완전 비식별 집계 데이터 (개인식별정보 없음, 교육용 가상 수치)"
+  },
+  "indicators": [
+    {
+      "name": "체력단련실 이용",
+      "unit": "회",
+      "type": "주간 합계",
+      "description": "해당 주차에 중대 장병들이 체력단련실을 이용한 총 횟수"
+    },
+    {
+      "name": "사이버지식정보방 이용",
+      "unit": "회",
+      "type": "주간 합계",
+      "description": "해당 주차에 중대 장병들이 싸지방을 이용한 총 횟수"
+    },
+    {
+      "name": "PX 이용",
+      "unit": "회",
+      "type": "주간 합계",
+      "description": "해당 주차에 중대 장병들이 복지매장을 이용한 총 횟수"
+    },
+    {
+      "name": "수면 만족",
+      "unit": "점수 (1.0~5.0)",
+      "type": "중대 평균",
+      "description": "생활관 수면 환경 및 피로도 설문 중대 평균 점수"
+    },
+    {
+      "name": "식단 만족",
+      "unit": "점수 (1.0~5.0)",
+      "type": "중대 평균",
+      "description": "병영 식당 급식 만족도 설문 중대 평균 점수"
+    },
+    {
+      "name": "건의",
+      "unit": "건",
+      "type": "주간 합계",
+      "description": "생활관 건의함 및 온오프라인 소통 채널로 접수된 총 건수"
+    }
+  ],
+  "sample_rows": [
+    {
+      "week": "1주차",
+      "company": "1중대",
+      "personnel": 48,
+      "gym": 112,
+      "cyber": 54,
+      "px": 140,
+      "sleep_satisfaction": 3.8,
+      "meal_satisfaction": 3.9,
+      "suggestions": 3
+    },
+    {
+      "week": "1주차",
+      "company": "2중대",
+      "personnel": 52,
+      "gym": 98,
+      "cyber": 31,
+      "px": 160,
+      "sleep_satisfaction": 3.6,
+      "meal_satisfaction": 3.5,
+      "suggestions": 4
+    },
+    {
+      "week": "1주차",
+      "company": "3중대",
+      "personnel": 45,
+      "gym": 104,
+      "cyber": 47,
+      "px": 118,
+      "sleep_satisfaction": 3.7,
+      "meal_satisfaction": 3.2,
+      "suggestions": 5
+    }
+  ]
+}

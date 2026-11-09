@@ -1,0 +1,55 @@
+{
+  "title": "최종 통합 솔루션 5단계 설치 검증 및 4종 시드 E2E 실행 결과표",
+  "install_check_steps": [
+    {
+      "step": 1,
+      "item": "파이썬 가상환경 및 의존성 패키지 검사",
+      "status": "PASS"
+    },
+    {
+      "step": 2,
+      "item": "가상 데이터 디렉토리 및 입출력 권한 확인",
+      "status": "PASS"
+    },
+    {
+      "step": 3,
+      "item": "YAML 룰 엔진 및 모델 가중치 무결성 검증",
+      "status": "PASS"
+    },
+    {
+      "step": 4,
+      "item": "RBAC 결재선 및 해시체인 로거 초기화",
+      "status": "PASS"
+    },
+    {
+      "step": 5,
+      "item": "대시보드 UI 및 배치 스케줄러 시동 테스트",
+      "status": "PASS"
+    }
+  ],
+  "seed_e2e_scenarios": [
+    {
+      "seed": 42,
+      "name": "평시 정상 가동 시나리오",
+      "status": "SUCCESS"
+    },
+    {
+      "seed": 101,
+      "name": "외주 검사 병목 집중 시나리오",
+      "status": "SUCCESS"
+    },
+    {
+      "seed": 777,
+      "name": "부품 대량 결품 시나리오",
+      "status": "SUCCESS"
+    },
+    {
+      "seed": 999,
+      "name": "복합 재작업 다발 시나리오",
+      "status": "SUCCESS"
+    }
+  ],
+  "self_check_score": "9/9 통과",
+  "manual_chapters": 7,
+  "manual_completion_rate": 1.0
+}

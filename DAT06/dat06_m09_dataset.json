@@ -1,0 +1,139 @@
+{
+  "project": "DAT06",
+  "mission": "DAT06_M09",
+  "title": "AAR 기반 결산 수치 오집계 사례 분석 및 집계 룰셋/템플릿 보정",
+  "aar_5_types": [
+    {
+      "type_id": "T01",
+      "name": "중복 제출",
+      "v1_error_count": 8,
+      "v2_patch": "타임스탬프 최신본 식별 및 중복 행 자동 제거"
+    },
+    {
+      "type_id": "T02",
+      "name": "단위 혼용(kL vs L)",
+      "v1_error_count": 5,
+      "v2_patch": "품목별 표준 단위 환산 계수표(kL=1000L) 자동 연산"
+    },
+    {
+      "type_id": "T03",
+      "name": "정정 문서 누락",
+      "v1_error_count": 4,
+      "v2_patch": "정정 공문 플래그 인식 및 원본 대체 반영"
+    },
+    {
+      "type_id": "T04",
+      "name": "박스·발 포장단위 혼용",
+      "v1_error_count": 4,
+      "v2_patch": "소모 단위(EA/RD) 기준 단위 분해 모듈 적용"
+    },
+    {
+      "type_id": "T05",
+      "name": "품목 별칭 누락",
+      "v1_error_count": 3,
+      "v2_patch": "동의어 사전(ALIAS) 갱신 및 미등록 품목 격리"
+    }
+  ],
+  "uat_checklist_20": [
+    {
+      "item_no": 1,
+      "desc": "중복 제출 데이터 자동 필터링",
+      "result": "PASS"
+    },
+    {
+      "item_no": 2,
+      "desc": "kL 단위 입력 시 리터(L) 자동 환산",
+      "result": "PASS"
+    },
+    {
+      "item_no": 3,
+      "desc": "정정 문서 인입 시 원본 데이터 덮어쓰기",
+      "result": "PASS"
+    },
+    {
+      "item_no": 4,
+      "desc": "포장단위(박스) 자동 분해 연산",
+      "result": "PASS"
+    },
+    {
+      "item_no": 5,
+      "desc": "신규 품목 별칭 사전 반영",
+      "result": "PASS"
+    },
+    {
+      "item_no": 6,
+      "desc": "오류 레코드 위치 하이라이트 표시",
+      "result": "PASS"
+    },
+    {
+      "item_no": 7,
+      "desc": "반려 사유 표준 템플릿 선택 기능",
+      "result": "PASS"
+    },
+    {
+      "item_no": 8,
+      "desc": "주요 결산 단축키 지원",
+      "result": "PASS"
+    },
+    {
+      "item_no": 9,
+      "desc": "부대별 집계표 엑셀 다운로드",
+      "result": "PASS"
+    },
+    {
+      "item_no": 10,
+      "desc": "재고 산식 불일치 사전 경고",
+      "result": "PASS"
+    },
+    {
+      "item_no": 11,
+      "desc": "전월 대비 3배 이상 급증 경보",
+      "result": "PASS"
+    },
+    {
+      "item_no": 12,
+      "desc": "3단계 전자결재 순서 통제",
+      "result": "PASS"
+    },
+    {
+      "item_no": 13,
+      "desc": "해시체인 무결성 검증 로그 출력",
+      "result": "PASS"
+    },
+    {
+      "item_no": 14,
+      "desc": "수동 발간 전용 버튼 분리",
+      "result": "PASS"
+    },
+    {
+      "item_no": 15,
+      "desc": "대량 배치 실행 시 진행률 바 표시",
+      "result": "PASS"
+    },
+    {
+      "item_no": 16,
+      "desc": "손상 데이터 에러 큐 격리",
+      "result": "PASS"
+    },
+    {
+      "item_no": 17,
+      "desc": "부대 신뢰도 점수 및 등급 자동 산출",
+      "result": "PASS"
+    },
+    {
+      "item_no": 18,
+      "desc": "다형식(공문, TSV) 파싱 호환성",
+      "result": "PASS"
+    },
+    {
+      "item_no": 19,
+      "desc": "환경 사전 점검(Health check) 통과",
+      "result": "PASS"
+    },
+    {
+      "item_no": 20,
+      "desc": "지휘관 1페이지 브리핑 요약 출력",
+      "result": "PASS"
+    }
+  ]
+}

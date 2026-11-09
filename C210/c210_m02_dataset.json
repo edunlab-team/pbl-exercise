@@ -1,0 +1,41 @@
+{
+  "mission_id": "C210_M02",
+  "title": "인계 항목 표준 점검표(Checklist) 및 SOP 흐름도",
+  "sop_framework": [
+    {
+      "step": 1,
+      "name": "준비 (Preparation)",
+      "duration_min": 3,
+      "security": "지휘소 경계 태세 점검, 비밀문서 열람 권한 확인"
+    },
+    {
+      "step": 2,
+      "name": "브리핑 (Briefing)",
+      "duration_min": 5,
+      "security": "도청 방지 음어 사용, 전술 상황판 최신화"
+    },
+    {
+      "step": 3,
+      "name": "질의 및 교차확인 (Cross-check)",
+      "duration_min": 4,
+      "security": "통신망 시험 호출, 비밀 지도 대조"
+    },
+    {
+      "step": 4,
+      "name": "서명 (Signature)",
+      "duration_min": 1,
+      "security": "지휘권 공식 이양 서명 날인, 법적 책임 명시"
+    },
+    {
+      "step": 5,
+      "name": "상급 보고 (Reporting)",
+      "duration_min": 2,
+      "security": "비화 통신망 활용 상급 지휘소 완료 전문 전송"
+    }
+  ],
+  "priority_rules": {
+    "normal_mode": "15분 소요, 20개 점검 항목 전수 대조",
+    "expedited_mode": "5분 소요, Tier 1(위협/통신) 및 Tier 2(아군배치) 우선 점검",
+    "emergency_mode": "3분 소요, Tier 1 4대 필수 요소만 압축 구두 인계"
+  }
+}

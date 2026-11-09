@@ -1,0 +1,119 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M05",
+  "title": "잘못된 약물 투여 및 활력 징후 오기재 등 처치 오류 식별 훈련",
+  "test_cases_12": [
+    {
+      "id": "TC-01",
+      "item": "지혈대 체결 시각",
+      "card_record": "09:40",
+      "handover_record": "10:10",
+      "true_status": "오류",
+      "error_type": "시각 불일치(30분 왜곡)",
+      "reason": "인계서 이기 과정에서 시간 왜곡 발생, 허혈 시간 과소평가 위험"
+    },
+    {
+      "id": "TC-02",
+      "item": "활력징후 혈압",
+      "card_record": "80/50",
+      "handover_record": "80/50",
+      "true_status": "정상",
+      "error_type": "없음",
+      "reason": "출혈성 쇼크 징후로 일치하게 정상 기재됨"
+    },
+    {
+      "id": "TC-03",
+      "item": "맥박/호흡 전도",
+      "card_record": "HR 120 / RR 28",
+      "handover_record": "HR 28 / RR 120",
+      "true_status": "오류",
+      "error_type": "항목 전도(뒤바뀜)",
+      "reason": "맥박수와 호흡수 칸이 바뀌어 기재되어 극단적 서맥으로 오인 유발"
+    },
+    {
+      "id": "TC-04",
+      "item": "항생제 투약",
+      "card_record": "목시플록사신 400mg PO 09:50",
+      "handover_record": "미투약(공란)",
+      "true_status": "오류",
+      "error_type": "기록 누락",
+      "reason": "처치 카드에 기록된 구강 항생제 투약 내역이 인계서에서 완전 누락"
+    },
+    {
+      "id": "TC-05",
+      "item": "약물 알레르기",
+      "card_record": "페니실린 알레르기(Red Tag)",
+      "handover_record": "알레르기 없음",
+      "true_status": "오류",
+      "error_type": "치명적 정보 왜곡",
+      "reason": "후속 의무대에서 페니실린계 항생제 투여 시 아나필락시스 쇼크 유발 위험"
+    },
+    {
+      "id": "TC-06",
+      "item": "가슴밀봉패치 부착",
+      "card_record": "우측 흉부 Vent Seal 부착",
+      "handover_record": "우측 흉부 Vent Seal 부착",
+      "true_status": "정상",
+      "error_type": "없음",
+      "reason": "부상 부위 및 처치 장비 규격 일치"
+    },
+    {
+      "id": "TC-07",
+      "item": "트라넥삼산(TXA) 투약",
+      "card_record": "TXA 2g IV 10:05 체결",
+      "handover_record": "TXA 2g IV 10:05 체결",
+      "true_status": "정상",
+      "error_type": "없음",
+      "reason": "최신 TCCC 가이드라인(2g IV 단일 투여) 용량 및 시각 일치"
+    },
+    {
+      "id": "TC-08",
+      "item": "진통제 투약자 서명",
+      "card_record": "펜타닐 로젠지 800mcg (서명 누락)",
+      "handover_record": "펜타닐 투여 (서명 누락)",
+      "true_status": "오류",
+      "error_type": "마약류 관리 필수 서명 누락",
+      "reason": "마약류 진통제는 투약 요원의 성명/서명이 필수이나 양측 모두 누락"
+    },
+    {
+      "id": "TC-09",
+      "item": "바늘 감압술 시행 위치",
+      "card_record": "우측 2번째 늑간",
+      "handover_record": "좌측 2번째 늑간",
+      "true_status": "오류",
+      "error_type": "좌우 부위 반대 표기",
+      "reason": "처치 부위의 좌우가 뒤바뀌어 정상 폐 천자 사고 위험 유발"
+    },
+    {
+      "id": "TC-10",
+      "item": "의식 상태(AVPU)",
+      "card_record": "Voice (말에 반응)",
+      "handover_record": "Alert (명료)",
+      "true_status": "오류",
+      "error_type": "중증도 과소평가",
+      "reason": "의식 저하 환자를 명료한 것으로 오인 기재"
+    },
+    {
+      "id": "TC-11",
+      "item": "저체온증 예방",
+      "card_record": "HPMK 보온 포낭 적용 완료",
+      "handover_record": "HPMK 보온 포낭 적용 완료",
+      "true_status": "정상",
+      "error_type": "없음",
+      "reason": "저체온증 방지 처치 내역 및 상태 일치"
+    },
+    {
+      "id": "TC-12",
+      "item": "후송 우선순위",
+      "card_record": "Urgent (긴급)",
+      "handover_record": "Priority (응급)",
+      "true_status": "오류",
+      "error_type": "후송 등급 격하",
+      "reason": "긴급 후송 환자의 등급을 낮추어 헬기 배정 지연 초래"
+    }
+  ],
+  "pass_criteria": {
+    "min_error_detected": 7,
+    "max_false_alarms": 1
+  }
+}

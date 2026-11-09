@@ -1,0 +1,19 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M09",
+  "description": "AAR 기만 변조 패턴(Homoglyph, Zero-width space) 및 파라미터 튜닝 데이터셋",
+  "homoglyph_rules": {
+    "а": "a",
+    "е": "e",
+    "о": "o",
+    "р": "p",
+    "с": "c",
+    "у": "y",
+    "х": "x"
+  },
+  "initial_vs_tuned_benchmark": {
+    "initial_accuracy": 0.809,
+    "tuned_accuracy_target": 0.911,
+    "regression_test_target": 0.901
+  }
+}

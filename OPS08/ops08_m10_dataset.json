@@ -1,0 +1,50 @@
+{
+  "project": "OPS08",
+  "mission": "OPS08_M10",
+  "title": "소부대 드론 경보 협업 표준운용절차(SOP) 및 훈련 패키지 완성",
+  "package_manifest": [
+    {
+      "chapter": "제1장 개요",
+      "source": "M01 역할 분담 매트릭스 및 부대별 환경 변수표",
+      "pages": 4
+    },
+    {
+      "chapter": "제2장 SOP",
+      "source": "M02 신호-행동-보고 SOP, 흐름도, 포켓 요약 카드",
+      "pages": 6
+    },
+    {
+      "chapter": "제3장 MSEL",
+      "source": "M03 SALUTE 템플릿, 무전 약어표, 10대 시나리오",
+      "pages": 5
+    },
+    {
+      "chapter": "제4장 루브릭",
+      "source": "M04·M06 채점표, SBAR 점검표, 퀴즈 뱅크",
+      "pages": 5
+    },
+    {
+      "chapter": "제5장 AAR",
+      "source": "M08 팩트체크 대조표, 4M 원인 분석표, 재훈련 가이드",
+      "pages": 4
+    }
+  ],
+  "instructor_guide_essentials": {
+    "supplies": [
+      "초시계 3개",
+      "주입 상황 카드 10장",
+      "포켓 가이드 10부",
+      "채점표 5부"
+    ],
+    "safety_officer_duties": [
+      "실탄 배제 확인",
+      "통제선 이탈 감시",
+      "비상 중지 호루라기 소지"
+    ],
+    "pass_criteria": [
+      "SOP 준수율 85% 이상",
+      "조치 시간 2분 이내",
+      "위협 미탐 0건"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "MNT10_M09 AAR 지연 원인 분석 및 ROI 정량 산출 데이터",
+  "aar_delay_cases_count": 8,
+  "root_cause_distribution": {
+    "정비반 부하 집중 (특정 정비반 과다 배정)": 8,
+    "원거리 이동 지연": 0,
+    "도로/기상 돌발 악화": 0,
+    "수리부속 결품": 0
+  },
+  "retuning_comparison": {
+    "baseline": {
+      "avg_arrival_h": 4.12,
+      "over_4h_count": 24,
+      "load_std": 0.365
+    },
+    "current": {
+      "avg_arrival_h": 2.53,
+      "over_4h_count": 8,
+      "load_std": 0.143
+    },
+    "retuned": {
+      "avg_arrival_h": 2.46,
+      "over_4h_count": 3,
+      "load_std": 0.118
+    }
+  },
+  "roi_summary": {
+    "downtime_cost_saved_krw": 153170000,
+    "tier1_arrival_time_reduction_pct": 40.2,
+    "overtime_hours_saved_person_h": 146
+  }
+}

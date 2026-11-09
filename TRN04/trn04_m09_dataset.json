@@ -1,0 +1,26 @@
+{
+  "project": "TRN04",
+  "mission": "TRN04_M09",
+  "title": "피드백 반영 시간표 및 1-Page 브리프",
+  "total_required_hours": 27.0,
+  "hours_distribution": {
+    "1일차 (이론/전훈)": 4.0,
+    "2일차 (식별/보고)": 5.0,
+    "3일차 (대피/기동)": 6.0,
+    "4일차 (전자전/SOP)": 6.0,
+    "5일차 (종합평가/AAR)": 6.0
+  },
+  "bluf_structure": {
+    "first_line_conclusion": "러우 전훈 기반 대드론 27시간 표준 교육과정 개정안 승인 건의",
+    "key_alternatives": [
+      "원안 강행(위험도 높음)",
+      "이론 위주 축소안(숙련도 미달)",
+      "실습·안전 중심 보정보완안(최적안)"
+    ],
+    "commander_decision_points": [
+      "27시간 개정 시간표 확정",
+      "야전 사격장 안전 SOP 승인",
+      "타 부대 배포 승인"
+    ]
+  }
+}

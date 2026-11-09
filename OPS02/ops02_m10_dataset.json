@@ -1,0 +1,23 @@
+{
+  "project_id": "OPS02",
+  "mission_id": "OPS02_M10",
+  "description": "시뮬레이터 End-to-End 최종 통합 빌드 및 작전 브리핑 패키지 데이터셋",
+  "self_check_10_items": [
+    "INPUT_SCHEMA_VALIDATION",
+    "TIME_SYNC_DRIFT_COMPENSATION",
+    "ENU_COORD_TRANSFORMATION",
+    "BASELINE_DISTANCE_GATING",
+    "EKF_TRAJECTORY_TRACKING",
+    "CONFIDENCE_INDEX_SCORING",
+    "COP_DASHBOARD_RENDER",
+    "HITL_CONFLICT_QUEUE",
+    "AUDIT_HASH_CHAIN_INTEGRITY",
+    "FAIL_SAFE_DEGRADED_MODE"
+  ],
+  "briefing_metrics": {
+    "throughput_msg_sec": 1250,
+    "compression_rate_pct": 65.5,
+    "decision_delay_reduction_ms": 350,
+    "hitl_approved_count": 4
+  }
+}

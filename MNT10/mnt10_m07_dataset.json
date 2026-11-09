@@ -1,0 +1,23 @@
+{
+  "title": "MNT10_M07 정비대대장 HITL 승인 및 해시 체인 감사 시뮬레이션 샘플",
+  "optimization_engine": "MIP (Mixed Integer Programming) Assignment Optimization",
+  "simulation_metrics": {
+    "cost_reduction_pct": 18.2,
+    "target_cost_reduction_pct": 15.0,
+    "hitl_approval_rate_pct": 91.5,
+    "auto_maintain_on_timeout_pct": 8.5,
+    "tamper_injection_detected_pct": 100
+  },
+  "audit_chain_sample": {
+    "block_index": 42,
+    "timestamp": "2026-10-15T14:30:00Z",
+    "commander_id": "CMD-0824",
+    "action": "APPROVED_OVERRIDE",
+    "original_team": "MT2",
+    "reassigned_team": "MT5",
+    "reason": "Tier 1 K-계열 자주포 긴급 화력 지원 대기",
+    "expected_gain_hours": 3.2,
+    "prev_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "current_hash": "a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e"
+  }
+}

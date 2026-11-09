@@ -1,0 +1,60 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M07",
+  "title": "HITL 워크플로우 및 감사 로그 무결성",
+  "states": [
+    "PROPOSED",
+    "SUBMITTED",
+    "TECH_REVIEWED",
+    "SEC_REVIEWED",
+    "APPROVED",
+    "REJECTED",
+    "PENDING"
+  ],
+  "roles": {
+    "PROPOSER": "조달담당",
+    "TECH_REVIEWER": "기술검토관",
+    "SEC_OFFICER": "보안담당",
+    "APPROVER": "승인권자"
+  },
+  "bypass_test_scenarios": [
+    {
+      "test_id": "BYPASS-01",
+      "desc": "조달담당 본인이 최종 승인 시도 (Self-approval)",
+      "expected": "BLOCKED"
+    },
+    {
+      "test_id": "BYPASS-02",
+      "desc": "기술검토 생략하고 보안검토로 직행 (Skip step)",
+      "expected": "BLOCKED"
+    },
+    {
+      "test_id": "BYPASS-03",
+      "desc": "필수 사유 미입력 상태에서 승인 상신 (Empty reason)",
+      "expected": "BLOCKED"
+    },
+    {
+      "test_id": "BYPASS-04",
+      "desc": "반려된 건에 대해 권한 없는 사용자의 승인 전이",
+      "expected": "BLOCKED"
+    }
+  ],
+  "sample_audit_chain": [
+    {
+      "index": 0,
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "timestamp": "2026-03-20T09:00:00",
+      "actor": "proc_user",
+      "action": "SUBMIT",
+      "hash": "a1b2c3d4e5f600112233445566778899aabbccddeeff00112233445566778899"
+    },
+    {
+      "index": 1,
+      "prev_hash": "a1b2c3d4e5f600112233445566778899aabbccddeeff00112233445566778899",
+      "timestamp": "2026-03-21T14:30:00",
+      "actor": "tech_officer",
+      "action": "TECH_PASS",
+      "hash": "e5f6g7h800112233445566778899aabbccddeeff00112233445566778899aabb"
+    }
+  ]
+}

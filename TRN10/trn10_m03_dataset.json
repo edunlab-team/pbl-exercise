@@ -1,0 +1,107 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M03",
+  "title": "모의 지혈대 적용, 기도 확보, 긴장성 기흉 처치 실습 및 MSEL 시나리오",
+  "stations": [
+    {
+      "id": "ST-1",
+      "name": "지혈대(Tourniquet) 적용 스테이션",
+      "target_time_sec": 60,
+      "gear": "마네킹 대퇴부/상완부 출혈 시뮬레이터, CAT Gen7 2기, 시간 마킹펜"
+    },
+    {
+      "id": "ST-2",
+      "name": "기도 확보(Airway) 스테이션",
+      "target_time_sec": 90,
+      "gear": "기도 관리 마네킹, 윤활제, NPA 28Fr, 흡인기 모형"
+    },
+    {
+      "id": "ST-3",
+      "name": "긴장성 기흉(Needle Decompression) 스테이션",
+      "target_time_sec": 120,
+      "gear": "기흉 흉벽 마네킹, 14G/10G 3.25인치 감압 바늘 카테터, 가슴밀봉패치"
+    }
+  ],
+  "msel_events": [
+    {
+      "event_id": "INJ-01",
+      "time": "T+05",
+      "type": "정상",
+      "recipient": "처치자",
+      "inject": "모의환자 A 우측 대퇴부 박편 창상에서 분출성 출혈 식별",
+      "expected": "CAT 지혈대 즉각 상단 체결 및 체결 시각 윈드라스 띠에 기재"
+    },
+    {
+      "event_id": "INJ-02",
+      "time": "T+10",
+      "type": "정상",
+      "recipient": "기록자",
+      "inject": "환자 A 지혈대 체결 완료 보고 수신",
+      "expected": "DD-1380 카드 지혈대(TQ)란에 적용 부위 및 시각 기록"
+    },
+    {
+      "event_id": "INJ-03",
+      "time": "T+15",
+      "type": "비정상(돌발)",
+      "recipient": "통신자",
+      "inject": "[돌발] 무전기 주파수 혼선 및 잡음 발생으로 상급망 교신 두절",
+      "expected": "예비 주파수 전환 또는 전령 파견 준비 비상 프로토콜 가동"
+    },
+    {
+      "event_id": "INJ-04",
+      "time": "T+22",
+      "type": "정상",
+      "recipient": "처치자",
+      "inject": "모의환자 B 호흡수 34회, 우측 가슴 쌕쌕거림 및 흉통 호소",
+      "expected": "가슴밀봉패치 부착 및 청진/타진으로 긴장성 기흉 의심 확인"
+    },
+    {
+      "event_id": "INJ-05",
+      "time": "T+28",
+      "type": "비정상(돌발)",
+      "recipient": "처치자",
+      "inject": "[돌발] 준비된 비강인두기도기(NPA) 포장 파손 및 오염 확인",
+      "expected": "예비 응급낭 NPA 교체 요청 및 구강 회복자세로 기도 확보"
+    },
+    {
+      "event_id": "INJ-06",
+      "time": "T+35",
+      "type": "정상",
+      "recipient": "처치자",
+      "inject": "모의환자 B 호흡음 소실 및 혈압 저하, 경정맥 팽대",
+      "expected": "우측 제2늑간 쇄골중앙선 14G 감압 바늘 천자 수행"
+    },
+    {
+      "event_id": "INJ-07",
+      "time": "T+40",
+      "type": "정상",
+      "recipient": "통신자",
+      "inject": "무전망 복구 완료, 상급 지휘소에서 상황 보고 요구",
+      "expected": "9-Line MEDEVAC Line 1~5 우선 전파"
+    },
+    {
+      "event_id": "INJ-08",
+      "time": "T+46",
+      "type": "비정상(돌발)",
+      "recipient": "전원",
+      "inject": "[돌발] LZ 착륙 예상 헬기가 적 방공 위협으로 대기 시간 30분 연장 통보",
+      "expected": "지연 후송 모드 전환, 환자 저체온증 방지 보온 덮개 2중 보강"
+    },
+    {
+      "event_id": "INJ-09",
+      "time": "T+52",
+      "type": "정상",
+      "recipient": "기록자",
+      "inject": "모의환자 A 30분 경과 후 혈압/맥박 재측정치 접수",
+      "expected": "처치 카드 활력징후 경과 기록란에 2차 측정값 기재"
+    },
+    {
+      "event_id": "INJ-10",
+      "time": "T+58",
+      "type": "비정상(돌발)",
+      "recipient": "관측자",
+      "inject": "[돌발] 모의환자 A 체결된 지혈대 고정끈 풀림 징후 식별",
+      "expected": "처치자에게 즉시 경고 전파하여 지혈대 윈드라스 재조임 및 2차 지혈대 체결"
+    }
+  ]
+}

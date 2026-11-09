@@ -1,0 +1,27 @@
+{
+  "project": "K10",
+  "mission": "K10_M07",
+  "title": "답변 템플릿 만들기",
+  "templates": {
+    "ANSWER": "[{name}] {answer}\n(추가 문의: {dept})",
+    "ASK_AGAIN": "'{cand1}' 또는 '{cand2}' 중 어떤 내용이 궁금하신가요?",
+    "UNKNOWN": "정확한 안내를 위해 소대장, 당직사관 또는 중대 행정반에 문의하시기 바랍니다."
+  },
+  "department_directory": {
+    "schedule": "중대 행정반",
+    "leave": "중대 행정반",
+    "outing": "당직 계통",
+    "late": "당직사관",
+    "visit": "중대 행정반",
+    "phone": "중대 행정반",
+    "welfare": "복지 담당",
+    "meal": "취사 담당",
+    "medical": "의무실",
+    "security": "보안 담당",
+    "account": "정보보호 담당",
+    "selfdev": "정훈교육 담당",
+    "counsel": "병영생활상담관",
+    "room": "분대장",
+    "supply": "군수 담당"
+  }
+}

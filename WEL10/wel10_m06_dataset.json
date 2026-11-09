@@ -1,0 +1,12 @@
+{
+  "briefing_protocol": {
+    "format": "SBAR (Situation, Background, Assessment, Recommendation)",
+    "time_limit_sec": 300,
+    "target_audience": "지휘관 및 차기 당직사관"
+  },
+  "unexpected_questions": [
+    "Q1: 야간 02시 갑작스러운 환자 발생 시 대체 인원 투입 우선순위는?",
+    "Q2: 연속 야간 한도 2회를 넘길 수밖에 없는 초과근무 발생 시 조치 방침은?",
+    "Q3: 심한 피로를 호소하는 장병 발생 시 의무 연계 절차는 어떻게 보장되는가?"
+  ]
+}

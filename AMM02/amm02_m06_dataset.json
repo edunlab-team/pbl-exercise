@@ -1,0 +1,37 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M06",
+  "grid_map_units": [
+    {
+      "unit_id": "UNIT-701",
+      "grid": "D-04",
+      "status": "CRITICAL",
+      "top3_factors": [
+        "화력지원 임무 (+28%)",
+        "전일 적 저항 수준 (+19%)",
+        "방어 작전 국면 (+12%)"
+      ]
+    },
+    {
+      "unit_id": "UNIT-702",
+      "grid": "E-07",
+      "status": "CRITICAL",
+      "top3_factors": [
+        "기동 거리 증가 (+35%)",
+        "우회 침투 기동 (+21%)",
+        "전일 소모 비율 (+11%)"
+      ]
+    },
+    {
+      "unit_id": "UNIT-703",
+      "grid": "C-02",
+      "status": "WARNING",
+      "top3_factors": [
+        "전일 적 저항 감소 (-14%)",
+        "화력 준비 사격 (+18%)",
+        "진지 변환 (+8%)"
+      ]
+    }
+  ],
+  "natural_language_briefing_sample": "제701포병대대는 계획 대비 화력 지원 임무 급증(+28%) 및 적 반격 저항 심화(+19%)로 일일 155mm 탄약 소모량이 기준 CSR 대비 1.48배로 예측되며, 현 잔여 재고 1.49 DOS로 긴급 재보급 1,370발 승인이 시급합니다."
+}

@@ -1,0 +1,73 @@
+{
+  "project": "MOV02",
+  "mission": "MOV02_M08",
+  "title": "도로 50곳 동시 차단 연간 2,920건 대규모 재탐색 스트레스 테스트 데이터셋",
+  "meta": {
+    "nodes_count": 192,
+    "daily_block_count": 50,
+    "annual_requests_total": 2920,
+    "runtime_seconds": 2.1,
+    "automation_success_rate": 1.0
+  },
+  "expanded_network_192": {
+    "rows": 12,
+    "cols": 16,
+    "nodes_total": 192,
+    "edges_total": 344,
+    "depot_node": "N0000",
+    "front_unit_nodes": [
+      "N0015",
+      "N0215",
+      "N0415",
+      "N0615",
+      "N0815",
+      "N1015"
+    ]
+  },
+  "percolation_sweep_results": [
+    {
+      "blocked_edges": 10,
+      "success_rate": 1.0,
+      "avg_detour_ratio": 1.02,
+      "unreachable_rate": 0.0
+    },
+    {
+      "blocked_edges": 30,
+      "success_rate": 0.998,
+      "avg_detour_ratio": 1.08,
+      "unreachable_rate": 0.002
+    },
+    {
+      "blocked_edges": 50,
+      "success_rate": 0.985,
+      "avg_detour_ratio": 1.15,
+      "unreachable_rate": 0.015
+    },
+    {
+      "blocked_edges": 70,
+      "success_rate": 0.942,
+      "avg_detour_ratio": 1.28,
+      "unreachable_rate": 0.058
+    },
+    {
+      "blocked_edges": 100,
+      "success_rate": 0.846,
+      "avg_detour_ratio": 1.45,
+      "unreachable_rate": 0.154,
+      "threshold_note": "전술적 임계 마비 지점"
+    },
+    {
+      "blocked_edges": 150,
+      "success_rate": 0.521,
+      "avg_detour_ratio": 1.82,
+      "unreachable_rate": 0.479
+    }
+  ],
+  "labor_saving_analysis": {
+    "manual_time_per_request_min": 5.0,
+    "manual_annual_total_hours": 243.3,
+    "automated_annual_total_seconds": 2.1,
+    "automated_labor_hours": 20.2,
+    "time_saving_percentage": 91.7
+  }
+}

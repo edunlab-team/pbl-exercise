@@ -1,0 +1,45 @@
+{
+  "project": "K14",
+  "mission": "K14_M06",
+  "title": "중대별 비교하기",
+  "companies": [
+    {
+      "company": "1중대",
+      "personnel": 48
+    },
+    {
+      "company": "2중대",
+      "personnel": 52
+    },
+    {
+      "company": "3중대",
+      "personnel": 45
+    }
+  ],
+  "per_capita_metrics": [
+    {
+      "company": "1중대",
+      "personnel": 48,
+      "gym_per_capita": 9.92,
+      "cyber_per_capita": 4.98,
+      "px_per_capita": 11.56,
+      "suggestions_per_capita": 0.25
+    },
+    {
+      "company": "2중대",
+      "personnel": 52,
+      "gym_per_capita": 6.83,
+      "cyber_per_capita": 2.12,
+      "px_per_capita": 12.98,
+      "suggestions_per_capita": 0.46
+    },
+    {
+      "company": "3중대",
+      "personnel": 45,
+      "gym_per_capita": 9.36,
+      "cyber_per_capita": 4.4,
+      "px_per_capita": 10.58,
+      "suggestions_per_capita": 0.73
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "MNT04_M02 센서 신호 정제 규칙 및 FFT 특징량 추출 샘플",
+  "cleansing_rules": [
+    {
+      "id": "R1",
+      "name": "온도 단위 화씨(°F) -> 섭씨(°C) 단일 표준화"
+    },
+    {
+      "id": "R2",
+      "name": "압력 단위 psi -> kPa 표준화 변환"
+    },
+    {
+      "id": "R3",
+      "name": "중복 수집 레코드(Timestamp + Unit 중복) 자동 제거"
+    },
+    {
+      "id": "R4",
+      "name": "센서 통신 결측치 KNN 보간 (k=5)"
+    },
+    {
+      "id": "R5",
+      "name": "물리적 불가능 범위 마스킹 (-50°C 이하 등)"
+    },
+    {
+      "id": "R6",
+      "name": "통신 지연으로 인한 타임스탬프 역전 정렬"
+    },
+    {
+      "id": "R7",
+      "name": "단발성 전기 스파이크 중앙값(Median) 필터 제거"
+    },
+    {
+      "id": "R8",
+      "name": "간섭 잡음 차단 Butterworth 저역통과 필터 (fc=50Hz)"
+    },
+    {
+      "id": "R9",
+      "name": "센서 신호 드리프트 기저선 보정"
+    },
+    {
+      "id": "R10",
+      "name": "긴급 점검 및 고부하 운용 실측치 군수 예외 보존"
+    }
+  ],
+  "sample_fft_metrics": {
+    "sampling_rate_hz": 1000,
+    "fft_peak_freq_hz": 120.5,
+    "raw_rms": 4.52,
+    "cleaned_rms": 4.48,
+    "rms_error_rate_pct": 0.88,
+    "raw_kurtosis": 3.82,
+    "cleaned_kurtosis": 3.75,
+    "kurtosis_error_rate_pct": 1.83
+  }
+}

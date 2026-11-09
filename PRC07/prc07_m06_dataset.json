@@ -1,0 +1,53 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M06",
+  "title": "부품 조달 위험 공급망 지도 및 에러 핸들러",
+  "risk_by_country": {
+    "가상국가A": 68.4,
+    "가상국가B": 54.2,
+    "가상국가C": 71.0,
+    "국내": 18.5
+  },
+  "risk_by_cat": {
+    "전원모듈": 62.1,
+    "커넥터": 38.5,
+    "유압밸브": 55.4,
+    "베어링": 41.2,
+    "광학렌즈": 67.8,
+    "자이로센서": 74.0,
+    "RF증폭기": 69.5,
+    "제어보드": 58.2
+  },
+  "stress_test_cases": [
+    {
+      "case_id": "ERR-01",
+      "type": "Empty CSV",
+      "input": "",
+      "expected_code": "EMPTY_INPUT",
+      "expected_msg": "입력 파일이 비어 있습니다."
+    },
+    {
+      "case_id": "ERR-02",
+      "type": "Missing Key",
+      "input": {
+        "part_no": "P-001"
+      },
+      "expected_code": "MISSING_FIELD",
+      "expected_msg": "필수 필드(lead_time_days)가 누락되었습니다."
+    },
+    {
+      "case_id": "ERR-03",
+      "type": "Negative LeadTime",
+      "input": "P-002,전원,-10일",
+      "expected_code": "INVALID_VALUE",
+      "expected_msg": "리드타임은 음수가 될 수 없습니다."
+    },
+    {
+      "case_id": "ERR-04",
+      "type": "Corrupted JSON",
+      "input": "{part_no: P-003, invalid}",
+      "expected_code": "JSON_PARSE_ERROR",
+      "expected_msg": "JSON 형식이 올바르지 않습니다."
+    }
+  ]
+}

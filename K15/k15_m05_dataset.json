@@ -1,0 +1,236 @@
+{
+  "project": "K15",
+  "mission": "K15_M05",
+  "title": "점검 이력 요약하기",
+  "total_records": 22,
+  "summary_stats": {
+    "regular_inspections": 7,
+    "trouble_reports": 15,
+    "completed_count": 19,
+    "in_progress_or_received": 3,
+    "completed_trouble_days_sum": 39,
+    "completed_trouble_avg_days": 3.25
+  },
+  "maintenance_data": [
+    {
+      "id": "H01",
+      "date": "08-03",
+      "facility": "세미나실 B",
+      "type": "고장신고",
+      "content": "빔프로젝터 화면 깜빡임",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 2
+    },
+    {
+      "id": "H02",
+      "date": "08-10",
+      "facility": "대대 강당",
+      "type": "정기점검",
+      "content": "음향 설비 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H03",
+      "date": "08-17",
+      "facility": "체력단련실",
+      "type": "고장신고",
+      "content": "러닝머신 1호 벨트 이탈",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 4
+    },
+    {
+      "id": "H04",
+      "date": "08-24",
+      "facility": "세미나실 A",
+      "type": "고장신고",
+      "content": "난방기 소음",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 3
+    },
+    {
+      "id": "H05",
+      "date": "08-31",
+      "facility": "대대 강당",
+      "type": "고장신고",
+      "content": "무선 마이크 수신 불량",
+      "dept": "정보통신실",
+      "status": "완료",
+      "days": 2
+    },
+    {
+      "id": "H06",
+      "date": "09-02",
+      "facility": "세미나실 B",
+      "type": "고장신고",
+      "content": "빔프로젝터 전원 꺼짐",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 3
+    },
+    {
+      "id": "H07",
+      "date": "09-07",
+      "facility": "체력단련실",
+      "type": "정기점검",
+      "content": "운동 기구 안전 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H08",
+      "date": "09-09",
+      "facility": "사이버지식정보방",
+      "type": "고장신고",
+      "content": "PC 3대 부팅 불가",
+      "dept": "정보통신실",
+      "status": "완료",
+      "days": 2
+    },
+    {
+      "id": "H09",
+      "date": "09-14",
+      "facility": "대대 강당",
+      "type": "고장신고",
+      "content": "출입문 잠금장치 불량",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 5
+    },
+    {
+      "id": "H10",
+      "date": "09-16",
+      "facility": "세미나실 A",
+      "type": "정기점검",
+      "content": "환기 설비 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H11",
+      "date": "09-21",
+      "facility": "체력단련실",
+      "type": "고장신고",
+      "content": "러닝머신 1호 벨트 이탈",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 6
+    },
+    {
+      "id": "H12",
+      "date": "09-23",
+      "facility": "세미나실 B",
+      "type": "정기점검",
+      "content": "영상 장비 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H13",
+      "date": "09-28",
+      "facility": "대대 강당",
+      "type": "고장신고",
+      "content": "무선 마이크 수신 불량",
+      "dept": "정보통신실",
+      "status": "완료",
+      "days": 3
+    },
+    {
+      "id": "H14",
+      "date": "10-01",
+      "facility": "세미나실 A",
+      "type": "고장신고",
+      "content": "난방기 소음",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 4
+    },
+    {
+      "id": "H15",
+      "date": "10-05",
+      "facility": "사이버지식정보방",
+      "type": "정기점검",
+      "content": "PC·네트워크 점검",
+      "dept": "정보통신실",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H16",
+      "date": "10-08",
+      "facility": "세미나실 B",
+      "type": "고장신고",
+      "content": "빔프로젝터 화면 깜빡임",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 4
+    },
+    {
+      "id": "H17",
+      "date": "10-13",
+      "facility": "체력단련실",
+      "type": "고장신고",
+      "content": "샤워실 배수 불량",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 2
+    },
+    {
+      "id": "H18",
+      "date": "10-15",
+      "facility": "대대 강당",
+      "type": "정기점검",
+      "content": "조명·음향 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    },
+    {
+      "id": "H19",
+      "date": "10-19",
+      "facility": "세미나실 B",
+      "type": "고장신고",
+      "content": "에어컨 냉기 약함",
+      "dept": "군수과",
+      "status": "처리 중",
+      "days": "-"
+    },
+    {
+      "id": "H20",
+      "date": "10-21",
+      "facility": "체력단련실",
+      "type": "고장신고",
+      "content": "러닝머신 1호 벨트 이탈",
+      "dept": "군수과",
+      "status": "처리 중",
+      "days": "-"
+    },
+    {
+      "id": "H21",
+      "date": "10-22",
+      "facility": "대대 강당",
+      "type": "고장신고",
+      "content": "무선 마이크 수신 불량",
+      "dept": "정보통신실",
+      "status": "접수",
+      "days": "-"
+    },
+    {
+      "id": "H22",
+      "date": "10-23",
+      "facility": "세미나실 A",
+      "type": "정기점검",
+      "content": "난방기 점검",
+      "dept": "군수과",
+      "status": "완료",
+      "days": 1
+    }
+  ]
+}

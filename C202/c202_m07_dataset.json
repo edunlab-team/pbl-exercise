@@ -1,0 +1,42 @@
+{
+  "project": "C202",
+  "mission": "C202_M07",
+  "title": "최우선 순위 전문 강제 전송 및 큐 순서 수동 조정을 위한 통신관 HITL 통제 기능 설계",
+  "authorization_roles": [
+    "OPERATOR",
+    "DUTY_OFFICER",
+    "COMMANDER"
+  ],
+  "rule_violation_test_cases": [
+    {
+      "test_id": "V1",
+      "name": "사유 미입력 강제 전송 시도",
+      "expected_action": "BLOCK"
+    },
+    {
+      "test_id": "V2",
+      "name": "미등록 통신관 ID 조작 요청",
+      "expected_action": "BLOCK"
+    },
+    {
+      "test_id": "V3",
+      "name": "존재하지 않는 패킷 ID 지정",
+      "expected_action": "BLOCK"
+    },
+    {
+      "test_id": "V4",
+      "name": "FLASH 선점 강제 전송 시 단독 승인(요청자==승인자)",
+      "expected_action": "BLOCK"
+    },
+    {
+      "test_id": "V5",
+      "name": "FLASH 전문 보류 요청 시 상급자 승인 누락",
+      "expected_action": "BLOCK"
+    }
+  ],
+  "hash_chain_genesis": {
+    "index": 0,
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "payload": "GENESIS_C202_AUDIT_LOG_INITIALIZED"
+  }
+}

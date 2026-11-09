@@ -1,0 +1,52 @@
+{
+  "project": "C202",
+  "mission": "C202_M10",
+  "title": "대역폭 제한 환경 메시지 큐·재전송 시스템 통합 및 전술통신 브리핑 패키지 완성",
+  "optimal_integrated_config": {
+    "bandwidth_bps": 2400,
+    "default_mtu_bytes": 256,
+    "degraded_mtu_bytes": 128,
+    "preempt_enabled": true,
+    "aging_factor": 0.05,
+    "rto_mode": "ADAPTIVE",
+    "hitl_approval_required": true,
+    "audit_hash_chain": true
+  },
+  "self_check_criteria": [
+    {
+      "id": 1,
+      "item": "전문 유실 0건 보장 (무결성 회계 검증)",
+      "target": "100% 일치"
+    },
+    {
+      "id": 2,
+      "item": "FLASH 긴급 전문 기한 내 전달률",
+      "target": ">= 95%"
+    },
+    {
+      "id": 3,
+      "item": "IMMEDIATE 전문 기한 내 전달률",
+      "target": ">= 90%"
+    },
+    {
+      "id": 4,
+      "item": "비인가 및 스푸핑 패킷 격리율",
+      "target": "100%"
+    },
+    {
+      "id": 5,
+      "item": "HITL 자동 순서 변경 차단 및 추천 전용 검증",
+      "target": "통과"
+    },
+    {
+      "id": 6,
+      "item": "감사 추적 로그 위변조 검출 검증",
+      "target": "100% 탐지"
+    },
+    {
+      "id": 7,
+      "item": "전체 통합 모듈 함수 테스트 커버리지",
+      "target": "100%"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M03",
+  "title": "공급선 단일화 및 납기 지연 이력 기반 1차 조달 위험 스크리닝",
+  "rules": [
+    {
+      "id": "R01",
+      "name": "단일 공급선 의존",
+      "condition": "n_suppliers == 1",
+      "weight": 15,
+      "ref": "군수품 조달훈령 제12조(공급선 다변화)"
+    },
+    {
+      "id": "R02",
+      "name": "해외 조달 의존",
+      "condition": "overseas == True",
+      "weight": 10,
+      "ref": "방위사업청 국산화촉진규정 제4조"
+    },
+    {
+      "id": "R03",
+      "name": "리드타임 180일 초과",
+      "condition": "lead_time_days > 180",
+      "weight": 12,
+      "ref": "군수품 적기조달지침 제7조"
+    },
+    {
+      "id": "R04",
+      "name": "납기 지연률 25% 초과",
+      "condition": "(late_orders / orders_12m) > 0.25",
+      "weight": 15,
+      "ref": "계약이행 성실도 평가지침 제9조"
+    },
+    {
+      "id": "R05",
+      "name": "단종 확정",
+      "condition": "eol_status == '단종'",
+      "weight": 25,
+      "ref": "DMSMS 관리업무훈령 제15조"
+    },
+    {
+      "id": "R06",
+      "name": "단종 예고",
+      "condition": "eol_status == '단종예고'",
+      "weight": 15,
+      "ref": "DMSMS 관리업무훈령 제14조"
+    },
+    {
+      "id": "R07",
+      "name": "최종구매(LTB) 6개월 미만",
+      "condition": "ltb_months is not None and ltb_months < 6",
+      "weight": 20,
+      "ref": "긴급소요 확보지침 제8조"
+    },
+    {
+      "id": "R08",
+      "name": "단가 급등(20% 이상)",
+      "condition": "price_change_pct >= 20.0",
+      "weight": 10,
+      "ref": "조달물가 모니터링 규정 제5조"
+    },
+    {
+      "id": "R09",
+      "name": "재고 가용기간 90일 미만",
+      "condition": "(stock_qty / annual_demand) * 365 < 90",
+      "weight": 18,
+      "ref": "안전재고 유지기준 제3조"
+    },
+    {
+      "id": "R10",
+      "name": "A등급 핵심 무기체계 부품",
+      "condition": "criticality == 'A'",
+      "weight": 12,
+      "ref": "무기체계 중점관리품목 고시 제2조"
+    }
+  ],
+  "thresholds": {
+    "HIGH_RISK": 50,
+    "MEDIUM_RISK": 30,
+    "LOW_RISK": 0
+  },
+  "sample_screening_results": [
+    {
+      "part_no": "P-0012",
+      "score": 77,
+      "grade": "고위험",
+      "triggered_rules": [
+        "R01",
+        "R02",
+        "R05",
+        "R07",
+        "R10"
+      ]
+    },
+    {
+      "part_no": "P-0045",
+      "score": 62,
+      "grade": "고위험",
+      "triggered_rules": [
+        "R02",
+        "R04",
+        "R06",
+        "R09"
+      ]
+    },
+    {
+      "part_no": "P-0003",
+      "score": 37,
+      "grade": "주의",
+      "triggered_rules": [
+        "R01",
+        "R03",
+        "R08"
+      ]
+    },
+    {
+      "part_no": "P-0004",
+      "score": 12,
+      "grade": "관심",
+      "triggered_rules": [
+        "R10"
+      ]
+    }
+  ]
+}

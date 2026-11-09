@@ -1,0 +1,41 @@
+{
+  "title": "MNT06_M08 대규모 일괄 부하 테스트 및 회복탄력성 벤치마크",
+  "batch_load_benchmarks": [
+    {
+      "batch_size": 50,
+      "damaged_records": 4,
+      "elapsed_time_sec": 0.37,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 100,
+      "damaged_records": 7,
+      "elapsed_time_sec": 0.68,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 200,
+      "damaged_records": 12,
+      "elapsed_time_sec": 1.25,
+      "status": "PASS"
+    },
+    {
+      "batch_size": 500,
+      "damaged_records": 25,
+      "elapsed_time_sec": 1.89,
+      "status": "PASS"
+    }
+  ],
+  "trichotomy_classification": {
+    "alarm_count_score_under_65": 142,
+    "pending_count_score_65_74": 48,
+    "normal_count_score_75_plus": 310,
+    "confirmed_alarm_accuracy_pct": 98.6
+  },
+  "fail_safe_fallback": {
+    "injected_model_exception": "RuntimeError: GPU out of memory",
+    "fallback_engine": "HEURISTIC_BASELINE_RULES",
+    "service_downtime_sec": 0.0,
+    "fallback_tag_applied": true
+  }
+}

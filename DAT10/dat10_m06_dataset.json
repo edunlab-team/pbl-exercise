@@ -1,0 +1,379 @@
+{
+  "project": "DAT10",
+  "mission": "DAT10_M06",
+  "title": "오프라인/온라인 전환 상태 및 재고 변동 내역 실시간 대시보드 데이터셋",
+  "meta": {
+    "duration_hours": 168,
+    "nodes": [
+      "보급소A",
+      "보급소B",
+      "보급소C",
+      "보급소D",
+      "보급소E"
+    ],
+    "items": [
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I06",
+      "I07",
+      "I08",
+      "I09",
+      "I10",
+      "I11",
+      "I12"
+    ]
+  },
+  "timeline_stream": [
+    {
+      "hour": 1,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 2,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 3,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 4,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 5,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 6,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 7,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 8,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 9,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 10,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 11,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 12,
+      "online_nodes": 5,
+      "offline_nodes": 0,
+      "unsynced_txns": 0,
+      "network_status": "ONLINE"
+    },
+    {
+      "hour": 13,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 43,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 14,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 25,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 15,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 23,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 16,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 9,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 17,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 21,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 18,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 22,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 19,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 13,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 20,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 31,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 21,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 11,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 22,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 15,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 23,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 30,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 24,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 17,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 25,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 33,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 26,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 36,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 27,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 18,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 28,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 8,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 29,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 27,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 30,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 9,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 31,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 28,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 32,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 37,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 33,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 32,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 34,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 25,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 35,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 47,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 36,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 9,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 37,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 44,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 38,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 41,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 39,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 23,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 40,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 11,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 41,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 12,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 42,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 46,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 43,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 15,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 44,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 44,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 45,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 27,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 46,
+      "online_nodes": 0,
+      "offline_nodes": 5,
+      "unsynced_txns": 25,
+      "network_status": "OFFLINE"
+    },
+    {
+      "hour": 47,
+      "online_nodes": 2,
+      "offline_nodes": 3,
+      "unsynced_txns": 32,
+      "network_status": "DIL"
+    },
+    {
+      "hour": 48,
+      "online_nodes": 1,
+      "offline_nodes": 4,
+      "unsynced_txns": 14,
+      "network_status": "DIL"
+    }
+  ],
+  "ui_specs": {
+    "panels": [
+      "상태판(Status Card)",
+      "재고 게이지(Stock Gauge)",
+      "변동 내역(Txn Table)",
+      "긴급 경보(Alert Panel)"
+    ],
+    "theme": [
+      "주간 모드 (Light)",
+      "야간 모드 (Dark Tactical)"
+    ]
+  }
+}

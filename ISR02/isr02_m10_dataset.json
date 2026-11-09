@@ -1,0 +1,22 @@
+{
+  "project_id": "ISR02",
+  "mission_id": "ISR02_M10",
+  "description": "End-to-End 통합 파이프라인 검증 및 지휘관 브리핑 요약 데이터셋",
+  "self_check_10_items": [
+    "1. 원천 스키마 유효성 검증",
+    "2. 텍스트 정제 및 pHash 중복 제거",
+    "3. 문자 n-gram 1차 출처 식별",
+    "4. 10종 복합 기만 및 AI 합성 탐지",
+    "5. A~E 복합 신뢰도 등급화",
+    "6. 실시간 스트림 모니터링 대시보드",
+    "7. 정보관 2인 상호 승인 HITL",
+    "8. 해시 체인 감사 로그 무결성",
+    "9. 6,000건/초 부하 복원력(Fail-safe)",
+    "10. AAR 재보정 파라미터 연동"
+  ],
+  "target_metrics": {
+    "end_to_end_success_rate": 1.0,
+    "test_coverage_pct": 85.0,
+    "corrupt_data_isolation_pct": 100.0
+  }
+}

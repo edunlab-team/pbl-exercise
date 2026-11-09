@@ -1,0 +1,31 @@
+{
+  "mission_id": "C210_M04",
+  "title": "교대 지휘관 1차 모의 인계 브리핑(Dry-run) 실행 데이터",
+  "timeline_schedule": [
+    {
+      "time_offset": "T+00",
+      "event": "전·후임 지휘관 및 참모 지휘소 입실 및 상황판 대좌"
+    },
+    {
+      "time_offset": "T+03",
+      "event": "전임 지휘관 현황 브리핑 개시 (작전경과 ➔ 아군배치 ➔ 적위협)"
+    },
+    {
+      "time_offset": "T+08",
+      "event": "후임 지휘관 점검표 기반 교차 질의 (통신망 및 미확인 항적)"
+    },
+    {
+      "time_offset": "T+12",
+      "event": "인계 확인서 서명 및 지휘권 공식 인수"
+    },
+    {
+      "time_offset": "T+14",
+      "event": "상급 사령부 무전 교대 완료 전문 보고"
+    }
+  ],
+  "target_metrics": {
+    "sop_compliance_rate_min": 85.0,
+    "max_total_duration_min": 15.0,
+    "max_reporting_delay_min": 2.0
+  }
+}

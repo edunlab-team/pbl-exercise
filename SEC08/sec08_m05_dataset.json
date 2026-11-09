@@ -1,0 +1,39 @@
+{
+  "project": "SEC08",
+  "mission": "SEC08_M05",
+  "title": "재밍건 운용, 대피 유도, 지휘소 방호 조치 중 발생 가능한 오류 상황 식별",
+  "verification_rules": [
+    {
+      "rule_id": "R1",
+      "name": "복창 확인",
+      "description": "방위, 고도, 기종 숫자를 2회 복창하여 청취 오류 배제"
+    },
+    {
+      "rule_id": "R2",
+      "name": "2차 관측자 확인",
+      "description": "인접 초소 또는 타 관측소와 육안 교차 대조"
+    },
+    {
+      "rule_id": "R3",
+      "name": "승인 기록 확인",
+      "description": "재밍건 사격 전 통제실장의 공식 사격 허가 코드 확인"
+    },
+    {
+      "rule_id": "R4",
+      "name": "시각 대조",
+      "description": "보고된 시각과 레이더/센서 감지 타임스탬프 일치 확인"
+    },
+    {
+      "rule_id": "R5",
+      "name": "비행 궤적 확인",
+      "description": "직선 급강하(자폭)와 불규칙 비행(조류) 패턴 구분"
+    },
+    {
+      "rule_id": "R6",
+      "name": "아군 비행 계획 대조",
+      "description": "기지 인근 아군 무인기 비행 스케줄 사전 확인"
+    }
+  ],
+  "error_cards_count": 12,
+  "target_success_rate": "85% 이상"
+}

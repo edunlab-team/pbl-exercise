@@ -1,0 +1,45 @@
+{
+  "title": "MNT10_M05 출동 지연 위험도 및 현장 수리 가능성 앙상블 모델 데이터",
+  "ensemble_model": "HistGradientBoostingRegressor + RandomForestRegressor Voting",
+  "regression_metrics": {
+    "baseline_mae": 2.85,
+    "ensemble_mae": 0.46,
+    "mae_improvement_pct": 83.9,
+    "baseline_rmse": 3.72,
+    "ensemble_rmse": 0.65,
+    "rmse_improvement_pct": 82.4,
+    "r2_score": 0.975
+  },
+  "risk_levels": {
+    "low": {
+      "range": "0~2h",
+      "actual_delay_rate": 0.02
+    },
+    "medium": {
+      "range": "2~4h",
+      "actual_delay_rate": 0.18
+    },
+    "high": {
+      "range": ">4h",
+      "actual_delay_rate": 0.86
+    }
+  },
+  "field_repair_classification": {
+    "roc_auc": 0.762,
+    "brier_score": 0.142,
+    "calibration_bins": [
+      {
+        "bin": "0.0~0.4",
+        "actual_rate": 0.34
+      },
+      {
+        "bin": "0.4~0.7",
+        "actual_rate": 0.63
+      },
+      {
+        "bin": "0.7~1.0",
+        "actual_rate": 0.83
+      }
+    ]
+  }
+}

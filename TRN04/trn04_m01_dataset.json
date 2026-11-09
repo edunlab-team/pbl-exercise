@@ -1,0 +1,81 @@
+{
+  "project": "TRN04",
+  "mission": "TRN04_M01",
+  "title": "러시아-우크라이나 및 중동 분쟁 드론 전훈 자료 분석",
+  "virtual_lessons_learned_cards": [
+    {
+      "card_id": "CARD_01",
+      "category": "소형 상용 드론 (Mavic 계열)",
+      "threat_profile": "고도 100~300m 체공 중 30~40mm 유탄 투하, 주·야간 참호선 및 보병 은폐 진지 기습 타격",
+      "vulnerability": "소부대 상공 시·청각 감시 미흡, 두부(Head) 보호 장구 및 엄폐 차폐망 부재 시 대량 사상",
+      "education_implication": "분대 단위 8방위 대공 감시조 순환 편성 및 지형지물 수직 차폐 행동 숙달",
+      "evidence_reliability": "Level-A (다수 실전 영상 및 교전 일지 교차 검증)"
+    },
+    {
+      "card_id": "CARD_02",
+      "category": "FPV 자폭 드론 (Racing형 수동조종)",
+      "threat_profile": "시속 100~140km 초저고도 침투, 조종사 1인칭 시점 유도로 기갑 해치, 참호 입구 정밀 돌입",
+      "vulnerability": "고속 돌입으로 반응 시간(5~8초) 극단적 부족, 소총 대공사격 명중률 저조",
+      "education_implication": "초기 접근 소음 청취 즉시 분대 전원 지면 밀착 대피(Drop) 및 엄폐호 진입 훈련 필수",
+      "evidence_reliability": "Level-A (전선 교전 녹화 기록 및 소부대 피격 통계)"
+    },
+    {
+      "card_id": "CARD_03",
+      "category": "중거리 배회 자폭 드론 (Shahed-136형)",
+      "threat_profile": "삼각익 고정익형 저고도(100~500m) 장거리 비행, 40~50kg 탄두 탑재, 후방 지휘소·탄약고 타격",
+      "vulnerability": "특유의 잔디깎이 모터 소음 식별 후에도 지휘통제실 신속 전파 체계 부재 시 피해 가중",
+      "education_implication": "특유의 소음 식별 요령 및 지휘통제망 30초 내 즉시 경보 보고 절차화",
+      "evidence_reliability": "Level-B (오픈소스 잔해 분석 및 공식 방공 보고)"
+    },
+    {
+      "card_id": "CARD_04",
+      "category": "전술 전자전 (EW / GPS Jamming)",
+      "threat_profile": "전선 10~15km 일대 GPS L1/L2 신호 스푸핑 및 전술 무전 VHF 주파수 교란",
+      "vulnerability": "상용 통신 및 상용 드론 조종 통제권 상실, 아군 위치 보고 혼선",
+      "education_implication": "전자전 발생 시 관성/나침반 수동 항법 전환 및 예비 유선통신 절차 훈련",
+      "evidence_reliability": "Level-B (전파관리 분석 보고 및 야전 전술통신 단절 일지)"
+    },
+    {
+      "card_id": "CARD_05",
+      "category": "광학/적외선(EO/IR) 정찰 드론",
+      "threat_profile": "고도 1~2km 상공에서 아군 포병 진지 및 병력 집결지 정밀 좌표 획득 후 3분 내 포격 유도",
+      "vulnerability": "육안 식별 불능, 열상 위장망 미설치 장비의 노출로 인한 연쇄 포격 피해",
+      "education_implication": "대적외선 차폐 위장망 전개 절차 숙달 및 단일 진지 30분 이상 체류 금지 기동 훈련",
+      "evidence_reliability": "Level-A (포병 연계 타격 전훈 및 위성 관측 데이터)"
+    },
+    {
+      "card_id": "CARD_06",
+      "category": "소화기 대공사격 한계 전훈",
+      "threat_profile": "보병 1개 분대가 소총으로 시속 80km 쿼드콥터 사격 시 탄약 600발 소모에도 격추율 3% 미만",
+      "vulnerability": "무리한 대공사격으로 아군 진지 위치 자진 폭로 및 상공 도비탄 낙하 아군 피해",
+      "education_implication": "무분별한 소총 난사 엄금, 산탄총/안티드론건 지정 사수 집중 통제 사격 원칙 확립",
+      "evidence_reliability": "Level-B (전술 사격 평가 통계 및 소부대 실사격 보고서)"
+    },
+    {
+      "card_id": "CARD_07",
+      "category": "지형지물 수직·수평 차폐 방호",
+      "threat_profile": "FPV 드론 돌입 시 차폐망(Wire Mesh) 및 콘크리트 엄폐벽 설치 진지는 장갑 관통 저지",
+      "vulnerability": "개활지 및 개방형 참호에 위치한 병력의 파편 피해율 85% 이상",
+      "education_implication": "야전 진지 구축 시 상부 그물망 및 간이 차폐벽 설치를 방어 훈련 필수 과목화",
+      "evidence_reliability": "Level-A (진지 방호 공학 시험 및 전장 피해 복구 보고)"
+    },
+    {
+      "card_id": "CARD_08",
+      "category": "민간 드론 오인 및 ROE 혼선",
+      "threat_profile": "작전 지역 인근 농업용·취재용 민간 드론 출현 시 무단 격추로 인한 법적 분쟁 및 아군기 오인",
+      "vulnerability": "피아식별(IFF) 절차 부재 및 사격 승인 지휘 계통 혼선으로 인한 우발 사고",
+      "education_implication": "비상 교전수칙(ROE) 기반 3단계 경고·확인·격추 승인 절차 교육 필수",
+      "evidence_reliability": "Level-B (군사 법무 사례 연구 및 비행금지구역 침범 일지)"
+    }
+  ],
+  "standard_framework_chapters": [
+    "제1장 총칙 및 교육 개요",
+    "제2장 전훈 분석 및 정보 신뢰도 평가",
+    "제3장 단계별 교육과정 아키텍처",
+    "제4장 차시별 교수학습 지도안 및 교관 지침",
+    "제5장 훈련 연계 계획 및 위험 통제 SOP",
+    "제6장 지휘관 승인 제안서 및 기록 규칙",
+    "제7장 운영 스트레스 분석 및 평가 루브릭",
+    "제8장 레드팀 사후검토(AAR) 및 규범 개정"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "mission_id": "C204_M02",
+  "description": "전술 무전 주파수 감쇄 및 전장 복합 소음 모델링 파라미터와 5종 단위 테스트 신호 제원",
+  "channel_model": {
+    "bandpass_freq_hz": [
+      300,
+      3400
+    ],
+    "sampling_rate_hz": 8000,
+    "filter_order": 6,
+    "environmental_noise_profiles": {
+      "normal": {
+        "snr_target_db": 18.0,
+        "spectral_alpha": 1.2,
+        "floor_beta": 0.05
+      },
+      "night": {
+        "snr_target_db": 10.0,
+        "spectral_alpha": 1.8,
+        "floor_beta": 0.08
+      },
+      "adverse_weather": {
+        "snr_target_db": 4.0,
+        "spectral_alpha": 2.5,
+        "floor_beta": 0.12
+      }
+    }
+  },
+  "test_signals_5types": [
+    {
+      "test_id": "T1_SILENCE",
+      "signal_type": "all_zeros",
+      "duration_sec": 3.0,
+      "expected_behavior": "safe fallback without division by zero"
+    },
+    {
+      "test_id": "T2_SATURATED_CLIPPING",
+      "signal_type": "square_clipped",
+      "amplitude": 1.5,
+      "expected_behavior": "soft clipping normalization to [-1.0, 1.0]"
+    },
+    {
+      "test_id": "T3_EXTREME_LOW_SNR",
+      "signal_type": "sub_zero_snr",
+      "snr_db": -5.0,
+      "expected_behavior": "spectral floor thresholding active"
+    },
+    {
+      "test_id": "T4_BURST_PACKET_LOSS",
+      "signal_type": "zero_gap_interval",
+      "gap_ms": 300,
+      "expected_behavior": "packet loss interpolation / silence padding"
+    },
+    {
+      "test_id": "T5_IMPULSE_ARTILLERY",
+      "signal_type": "high_peak_spike",
+      "peak_ratio": 8.0,
+      "expected_behavior": "clipper limiter suppression"
+    }
+  ]
+}

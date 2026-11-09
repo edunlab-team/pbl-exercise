@@ -1,0 +1,66 @@
+{
+  "title": "MNT06_M02 CAD 메쉬 정제 및 슬라이싱 G-code 파싱 샘플",
+  "cleansing_rules": [
+    {
+      "id": "R01",
+      "name": "삼각 메쉬 NaN/Inf 정점 좌표 마스킹 및 제거"
+    },
+    {
+      "id": "R02",
+      "name": "면적 0인 퇴화 삼각형(Degenerate Triangle) 제거"
+    },
+    {
+      "id": "R03",
+      "name": "기하학적 중복 삼각형 면 병합"
+    },
+    {
+      "id": "R04",
+      "name": "뒤집힌 법선 벡터(Inverted Normal) 재계산 및 정렬"
+    },
+    {
+      "id": "R05",
+      "name": "소재 코드 대소문자 및 표준 식별자 통일"
+    },
+    {
+      "id": "R06",
+      "name": "치수 단위 인치(inch) -> 밀리미터(mm) 변환"
+    },
+    {
+      "id": "R07",
+      "name": "날짜 포맷 ISO-8601 (YYYY-MM-DD) 단일화"
+    },
+    {
+      "id": "R08",
+      "name": "결측 물성치 KNN 보정 (k=5)"
+    },
+    {
+      "id": "R09",
+      "name": "물리적 불가능 음수 치수 결측 처리"
+    },
+    {
+      "id": "R10",
+      "name": "중복 레코드(Part_ID + Date 중복) 10건 제거"
+    },
+    {
+      "id": "R11",
+      "name": "G-code 비정상 노즐 제어 명령 라인 격리"
+    },
+    {
+      "id": "R12",
+      "name": "작전상 긴급 제작 요청(이상치 유사 군수 예외) 11건 보존"
+    }
+  ],
+  "sample_mesh_stats": {
+    "before_triangles": 12540,
+    "after_triangles": 12488,
+    "volume_before_cm3": 85.42,
+    "volume_after_cm3": 85.39,
+    "volume_error_rate_pct": 0.035
+  },
+  "sample_gcode_metrics": {
+    "total_layers": 320,
+    "filament_extrusion_mm": 18450.2,
+    "estimated_travel_time_sec": 4210,
+    "isolated_abnormal_lines": 3
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "project": "K11",
+  "mission": "K11_M06",
+  "title": "우선순위·마감 반영하기",
+  "experiment1_bottleneck": {
+    "no_priority": {
+      "G1": 720,
+      "G2": 270,
+      "G3": 180
+    },
+    "with_priority": {
+      "G1": 720,
+      "G2": 300,
+      "G3": 150
+    }
+  },
+  "experiment2_deadline": {
+    "target": 720,
+    "max_allocatable": 630,
+    "deficit": 90
+  }
+}

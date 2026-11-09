@@ -1,0 +1,25 @@
+{
+  "project": "K15",
+  "mission": "K15_M09",
+  "title": "여러 조건을 합쳐 시설 추천하기",
+  "scenario_condition": {
+    "day": "목요일",
+    "time": "14시 이후 2시간 연속 (14-16)",
+    "scale": "15명 분대장 토의",
+    "equipment": "빔프로젝터 필수 투사"
+  },
+  "candidate_comparison": [
+    {
+      "facility": "세미나실 A",
+      "schedule": "14-16 빈, 16-18 빈",
+      "issue": "점검이력 안정적",
+      "rank": 1
+    },
+    {
+      "facility": "세미나실 B",
+      "schedule": "14-16 빈 (16-18 예약)",
+      "issue": "빔프로젝터 3회 고장 이력 있음",
+      "rank": 2
+    }
+  ]
+}

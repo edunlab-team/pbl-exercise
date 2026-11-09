@@ -1,0 +1,20 @@
+{
+  "a2_closure_metrics": {
+    "delay_increase_min": 3.96,
+    "extra_fuel_per_truck_l": 0.81,
+    "daily_fuel_l": 485.7
+  },
+  "fuel_coefficients": {
+    "km_per_l": 3.2,
+    "l_idle_per_min": 0.08
+  },
+  "ensemble_weights": {
+    "gbr": 0.5,
+    "rf": 0.5
+  },
+  "target_metrics": {
+    "ensemble_mae": 0.475,
+    "r2_score": 0.983,
+    "improvement_rate": 73.0
+  }
+}

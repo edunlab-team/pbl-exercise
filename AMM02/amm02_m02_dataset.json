@@ -1,0 +1,75 @@
+{
+  "project": "AMM02",
+  "mission": "AMM02_M02",
+  "raw_records_count": 732,
+  "cleansed_records_count": 720,
+  "emergency_issues_preserved": 13,
+  "cleansing_rules_10": [
+    {
+      "id": "R01",
+      "name": "중복 레코드 제거",
+      "action": "기록식별자 및 보고시간 기준 완전 중복 행 제거"
+    },
+    {
+      "id": "R02",
+      "name": "날짜 표기 통일",
+      "action": "YYYY-MM-DD ISO 포맷 표준화"
+    },
+    {
+      "id": "R03",
+      "name": "단위 오기입 환산",
+      "action": "발(EA), 드럼(Drum) -> 표준 EA 및 L 통일"
+    },
+    {
+      "id": "R04",
+      "name": "음수 소모량 보정",
+      "action": "반납 처리가 아닌 단순 음수 오기입을 절대값 또는 결측 처리"
+    },
+    {
+      "id": "R05",
+      "name": "자릿수 오기 보정",
+      "action": "10배 오기입(예: 4200 -> 420) 교전 강도 대조 정규화"
+    },
+    {
+      "id": "R06",
+      "name": "부대 코드 매핑",
+      "action": "구형 부대 코드의 신형 표준 코드 자동 변환"
+    },
+    {
+      "id": "R07",
+      "name": "이동 거리 상한 필터",
+      "action": "일일 150km 초과 이상치 결측 처리"
+    },
+    {
+      "id": "R08",
+      "name": "KNN 결측치 보정",
+      "action": "교전강도·부대규모 기반 KNN(k=5) 유사도 보간"
+    },
+    {
+      "id": "R09",
+      "name": "긴급 불출 예외 보존",
+      "action": "is_emergency==True 13건에 대해 이상치 필터 면제 태깅"
+    },
+    {
+      "id": "R10",
+      "name": "병력 100명당 정규화",
+      "action": "환산 소모율 = (소모량 / 병력) * 100 산출"
+    }
+  ],
+  "emergency_samples": [
+    {
+      "unit_id": "UNIT-701",
+      "item_code": "AMMO-155-HE",
+      "consumption": 1250,
+      "reason": "적 역포병 사격 대응 긴급 사격",
+      "is_emergency": true
+    },
+    {
+      "unit_id": "UNIT-704",
+      "item_code": "POL-DIESEL-DF2",
+      "consumption": 18200,
+      "reason": "야간 급속 우회 기동 긴급 급유",
+      "is_emergency": true
+    }
+  ]
+}

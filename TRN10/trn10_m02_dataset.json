@@ -1,0 +1,100 @@
+{
+  "project": "TRN10",
+  "mission": "TRN10_M02",
+  "title": "Care Under Fire / Tactical Field Care 단계별 처치 체크리스트 작성",
+  "stages": [
+    "Care Under Fire (CUF)",
+    "Tactical Field Care (TFC)",
+    "Tactical Evacuation Care (TACEVAC)"
+  ],
+  "action_verbs": [
+    "확인한다(Verify)",
+    "요청한다(Request)",
+    "기록한다(Record)",
+    "보고한다(Report)"
+  ],
+  "standard_checklist_items": [
+    {
+      "id": "CHK-01",
+      "stage": "CUF",
+      "action": "적 사격 지속 여부를 육안 및 청음으로 확인한다.",
+      "safety_opsec": "엄폐 우선"
+    },
+    {
+      "id": "CHK-02",
+      "stage": "CUF",
+      "action": "부상자에게 자체 대응 사격 또는 엄폐 이동을 지시한다.",
+      "safety_opsec": "아군 사격선 준수"
+    },
+    {
+      "id": "CHK-03",
+      "stage": "CUF",
+      "action": "사지 대량 출혈 부위에 지혈대(CAT)를 옷 위에 즉시 체결한다.",
+      "safety_opsec": "노출 최소화"
+    },
+    {
+      "id": "CHK-04",
+      "stage": "CUF",
+      "action": "부상자를 엄폐물 뒤 안전지대로 신속 견인 이동한다.",
+      "safety_opsec": "연막 지원 확인"
+    },
+    {
+      "id": "CHK-05",
+      "stage": "TFC",
+      "action": "지혈대 체결 부위 출혈 정지 여부와 원위부 맥박을 재확인한다.",
+      "safety_opsec": "피부 직접 노출 확인"
+    },
+    {
+      "id": "CHK-06",
+      "stage": "TFC",
+      "action": "기도 개방 상태를 확인하고 필요시 비강인두기도기(NPA)를 삽입한다.",
+      "safety_opsec": "교범 참조"
+    },
+    {
+      "id": "CHK-07",
+      "stage": "TFC",
+      "action": "흉부 관통상 유무를 확인하고 가슴밀봉패치를 전·후면에 부착한다.",
+      "safety_opsec": "배출 밸브 확인"
+    },
+    {
+      "id": "CHK-08",
+      "stage": "TFC",
+      "action": "DD Form 1380 사상자 처치 카드를 환자 가슴에 부착하고 시각을 기록한다.",
+      "safety_opsec": "부대 정보 미기재"
+    },
+    {
+      "id": "CHK-09",
+      "stage": "TFC",
+      "action": "상급 부대에 9-Line MEDEVAC 후송 요청을 3분 내 전파한다.",
+      "safety_opsec": "가상 좌표 사용"
+    },
+    {
+      "id": "CHK-10",
+      "stage": "TACEVAC",
+      "action": "저체온증 예방을 위해 보온 포낭 및 담요를 환자 전신에 포장한다.",
+      "safety_opsec": "체온 유지"
+    },
+    {
+      "id": "CHK-11",
+      "stage": "TACEVAC",
+      "action": "환자 인계용 MIST 서식을 완성하고 인수자에게 복창 인계한다.",
+      "safety_opsec": "환자 카드 교차 확인"
+    },
+    {
+      "id": "CHK-12",
+      "stage": "TACEVAC",
+      "action": "인수자 서명 및 들것 탑승 안전 결박을 최종 확인한다.",
+      "safety_opsec": "낙하 방지 결박"
+    }
+  ],
+  "pocket_guide_spec": {
+    "size": "A4 반접 포켓 사이즈 (방탄조끼 수납용)",
+    "reading_time_limit_sec": 30,
+    "key_sections": [
+      "1. 적 위협 시 즉각 조치",
+      "2. 은폐 후 생명유지 4단계",
+      "3. 3분 무전 보고 요약",
+      "4. 필수 기록 항목"
+    ]
+  }
+}

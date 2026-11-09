@@ -1,0 +1,82 @@
+{
+  "project": "K11",
+  "mission": "K11_M03",
+  "title": "근무 후 휴식 시간 점검하기",
+  "rest_rules_hours": {
+    "불침번": 6,
+    "당직": 12,
+    "경계근무": 2
+  },
+  "duty_checks": [
+    {
+      "id": "D01",
+      "name": "불침번",
+      "end": "Day 0 28:00 (04:00)",
+      "next_start": "Day 1 06:30",
+      "actual_rest_h": 2.5,
+      "req_rest_h": 6,
+      "deficit_h": 3.5,
+      "violation": true
+    },
+    {
+      "id": "D02",
+      "name": "불침번",
+      "end": "Day 2 24:00",
+      "next_start": "Day 3 06:30",
+      "actual_rest_h": 6.5,
+      "req_rest_h": 6,
+      "deficit_h": 0.0,
+      "violation": false
+    },
+    {
+      "id": "D03",
+      "name": "경계근무",
+      "end": "Day 3 18:00",
+      "next_start": "Day 3 21:00",
+      "actual_rest_h": 3.0,
+      "req_rest_h": 2,
+      "deficit_h": 0.0,
+      "violation": false
+    },
+    {
+      "id": "D04",
+      "name": "불침번",
+      "end": "Day 4 28:00 (04:00)",
+      "next_start": "Day 5 06:30",
+      "actual_rest_h": 2.5,
+      "req_rest_h": 6,
+      "deficit_h": 3.5,
+      "violation": true
+    },
+    {
+      "id": "D05",
+      "name": "당직 보조",
+      "end": "Day 7 08:00",
+      "next_start": "Day 7 09:00",
+      "actual_rest_h": 1.0,
+      "req_rest_h": 12,
+      "deficit_h": 11.0,
+      "violation": true
+    },
+    {
+      "id": "D06",
+      "name": "불침번",
+      "end": "Day 8 24:00",
+      "next_start": "Day 9 06:30",
+      "actual_rest_h": 6.5,
+      "req_rest_h": 6,
+      "deficit_h": 0.0,
+      "violation": false
+    },
+    {
+      "id": "D07",
+      "name": "불침번",
+      "end": "Day 9 24:00",
+      "next_start": "Day 10 06:30",
+      "actual_rest_h": 6.5,
+      "req_rest_h": 6,
+      "deficit_h": 0.0,
+      "violation": false
+    }
+  ]
+}

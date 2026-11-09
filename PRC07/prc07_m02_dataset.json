@@ -1,0 +1,76 @@
+{
+  "project": "PRC07",
+  "mission": "PRC07_M02",
+  "title": "국내외 공급업체 데이터 정제 및 부품 단종 공고 파싱 전처리",
+  "raw_csv_sample": "업체코드,업체명,국가,공급부품,리드타임,최근거래일\nV01,가상정밀(주),국내,P-0001,45일,2026-03-15\nV02,Alpha Tech Inc.,가상국가A,P-0002,18주,2026-02-20\nV03,Beta Avionics Ltd.,가상국가B,P-0003,6개월,2026-01-10\nV04,(주)가상전자,국내,P-0004,30일,2026-03-01\nV05,Delta Corp.,가상국가C,P-0005,1년,2025-12-15",
+  "raw_tsv_sample": "공급업체\t국적\t품목번호\t납기(일)\t최종거래\n가상정밀\tKOR\tP-0001\t45\t2026-03-15\nAlpha Tech\tUS\tP-0002\t126\t2026-02-20\nBeta Avionics\tUK\tP-0003\t180\t2026-01-10",
+  "raw_json_sample": {
+    "status": "SUCCESS",
+    "vendors": [
+      {
+        "code": "V01",
+        "name": "가상정밀 주식회사",
+        "nation": "KR",
+        "part": "P-0001",
+        "lead": "45d"
+      },
+      {
+        "code": "V02",
+        "name": "Alpha Tech",
+        "nation": "US",
+        "part": "P-0002",
+        "lead": "18w"
+      }
+    ]
+  },
+  "sample_notices": [
+    {
+      "notice_id": "DMSMS-2026-001",
+      "text": "[EOL Notice] 제조사: Alpha Tech, 부품번호: P-0012, 단종일자: 2026-12-31, 최종구매(LTB) 기한: 2026-06-30. 대체가능품: P-DOM-005"
+    },
+    {
+      "notice_id": "DMSMS-2026-002",
+      "text": "Product Discontinuation: Part No. P-0045 will reach End of Life on 2026-10-15. Last Time Buy date is 2026-05-31. Recommended replacement: P-DOM-018."
+    },
+    {
+      "notice_id": "DMSMS-2026-003",
+      "text": "공급중단 안내문: 대상품목 P-0078, 생산 종료일: 2027-03-31, 최종 발주 마감: 2026-09-30, 대체품목: 없음(국산화 필요)."
+    },
+    {
+      "notice_id": "DMSMS-2026-004",
+      "text": "URGENT EOL: Part P-0091, Discontinued: 2026-08-01, LTB Deadline: 2026-04-15, Alternative: P-DOM-032."
+    },
+    {
+      "notice_id": "DMSMS-2026-005",
+      "text": "단종 고지서: 품명 P-0023, 단종일: 2026-11-30, 최종구매: 2026-07-31, 대체선: P-DOM-010"
+    }
+  ],
+  "alias_dictionary": {
+    "vendor_name": [
+      "업체명",
+      "공급업체",
+      "name",
+      "Vendor",
+      "제조업체"
+    ],
+    "country": [
+      "국가",
+      "국적",
+      "nation",
+      "Country"
+    ],
+    "part_no": [
+      "공급부품",
+      "품목번호",
+      "part",
+      "Part No",
+      "대상품목"
+    ],
+    "lead_time": [
+      "리드타임",
+      "납기(일)",
+      "lead",
+      "Lead Time"
+    ]
+  }
+}

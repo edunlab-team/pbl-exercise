@@ -1,0 +1,35 @@
+{
+  "title": "MNT10_M06 관제 대시보드 UI 및 XAI 기여도 분석 데이터",
+  "total_requests_analyzed": 356,
+  "xai_coverage_pct": 100,
+  "avg_calc_time_ms": 8.4,
+  "dashboard_components": [
+    "지도 뷰 (정비반 위치 및 출동 경로 시각화)",
+    "정비반별 일일 부하율 게이지",
+    "작전 중요도별 대기열 큐",
+    "일별/장비별 도착시간 트렌드",
+    "SHAP Waterfall 국소 기여도 플롯",
+    "전 정비반 과부하 전술 조기 경보 바"
+  ],
+  "sample_explanation": {
+    "req_id": "R0142",
+    "equip_type": "fires (K-9 자주포 모사)",
+    "pred_repair_hours": 10.8,
+    "mean_diff_hours": 6.7,
+    "top3_contributors": [
+      {
+        "feature": "fault_type:engine",
+        "impact_h": 3.8
+      },
+      {
+        "feature": "distance_km",
+        "impact_h": 2.1
+      },
+      {
+        "feature": "weather:snow",
+        "impact_h": 0.8
+      }
+    ],
+    "narrative": "예상 정비 10.8시간(평균 대비 +6.7h 지연 예측). 주 원인은 엔진 계통 고장(+3.8h) 및 폭설로 인한 이동 지연(+0.8h)임. 즉시 예비반 수배 권고."
+  }
+}

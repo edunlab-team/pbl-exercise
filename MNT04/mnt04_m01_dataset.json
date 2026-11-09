@@ -1,0 +1,139 @@
+{
+  "title": "MNT04_M01 헬기/기갑 센서 시계열 및 군수 표준 스키마 데이터셋 샘플",
+  "fleet_size": 48,
+  "total_records": 7733,
+  "schema_fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "desc": "장비 고유 식별번호 (가상 NIIN/호기)"
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "desc": "측정 일시 (YYYY-MM-DD)"
+    },
+    {
+      "name": "op_mode",
+      "type": "string",
+      "desc": "운용 모드 (NORMAL, HIGH_LOAD, HOVER)"
+    },
+    {
+      "name": "vib_engine_rms",
+      "type": "float",
+      "desc": "엔진 구동부 진동 가속도 RMS (0.5~12.0 mm/s)"
+    },
+    {
+      "name": "vib_gearbox_kurtosis",
+      "type": "float",
+      "desc": "기어박스 진동 첨도 (Kurtosis, 2.5~9.0)"
+    },
+    {
+      "name": "vib_peak",
+      "type": "float",
+      "desc": "진동 가속도 최대 피크치 (0.0~20.0 g)"
+    },
+    {
+      "name": "temp_engine_oil",
+      "type": "float",
+      "desc": "엔진 윤활유 온도 (50.0~130.0 °C)"
+    },
+    {
+      "name": "temp_gearbox_bearing",
+      "type": "float",
+      "desc": "기어박스 베어링 온도 (40.0~110.0 °C)"
+    },
+    {
+      "name": "press_oil_psi",
+      "type": "float",
+      "desc": "오일 순환 압력 (20.0~65.0 psi)"
+    },
+    {
+      "name": "ambient_temp",
+      "type": "float",
+      "desc": "외부 기온 (-20.0~45.0 °C)"
+    },
+    {
+      "name": "flight_hours",
+      "type": "float",
+      "desc": "누적 기동/비행 시간 (hr)"
+    },
+    {
+      "name": "fail_history_cnt",
+      "type": "integer",
+      "desc": "과거 고장 이력 건수"
+    },
+    {
+      "name": "pbl_item_code",
+      "type": "string",
+      "desc": "PBL 수리부속 식별코드"
+    },
+    {
+      "name": "part_cost_usd",
+      "type": "integer",
+      "desc": "수리부속 기준 단가 (가정 단가)"
+    },
+    {
+      "name": "part_stock_level",
+      "type": "integer",
+      "desc": "중앙창 가용 재고 수량"
+    },
+    {
+      "name": "lead_time_days",
+      "type": "integer",
+      "desc": "조달 소요일수 (Lead Time)"
+    },
+    {
+      "name": "last_maint_date",
+      "type": "string",
+      "desc": "최근 창정비/야전정비 일자"
+    },
+    {
+      "name": "inspector_id",
+      "type": "string",
+      "desc": "담당 정비검사관 식별코드"
+    },
+    {
+      "name": "anomaly_label",
+      "type": "integer",
+      "desc": "실제 이상 발생 여부 (0: 정상, 1: 이상)"
+    },
+    {
+      "name": "true_rul_days",
+      "type": "integer",
+      "desc": "실제 잔존 수명 (RUL, 0~180일)"
+    }
+  ],
+  "injected_errors_sample": [
+    {
+      "case": 1,
+      "field": "press_oil_psi",
+      "value": -5.2,
+      "rule": "음수 불가 (압력 >= 0)"
+    },
+    {
+      "case": 2,
+      "field": "temp_engine_oil",
+      "value": 245.0,
+      "rule": "허용 범위 초과 (>150°C)"
+    },
+    {
+      "case": 3,
+      "field": "vib_engine_rms",
+      "value": null,
+      "rule": "필수키 결측치 누락"
+    },
+    {
+      "case": 4,
+      "field": "unit_id",
+      "value": "",
+      "rule": "식별자 공백 오류"
+    },
+    {
+      "case": 5,
+      "field": "op_mode",
+      "value": "UNKNOWN_MODE",
+      "rule": "허용 범주형 불일치"
+    }
+  ]
+}

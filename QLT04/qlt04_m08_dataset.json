@@ -1,0 +1,37 @@
+{
+  "title": "월간 배치 파이프라인 12개월 명세 및 과부하 벤치마크 지표",
+  "batch_steps": [
+    "적재(Load)",
+    "검증(Validate)",
+    "분석(Analyze)",
+    "보고(Report)"
+  ],
+  "total_batch_stages": 48,
+  "execution_benchmarks": {
+    "load_100_pct": {
+      "runtime_sec": 0.42,
+      "data_loss": 0,
+      "success_rate": 1.0
+    },
+    "load_200_pct": {
+      "runtime_sec": 0.85,
+      "data_loss": 0,
+      "success_rate": 1.0
+    },
+    "load_500_pct": {
+      "runtime_sec": 2.15,
+      "data_loss": 0,
+      "success_rate": 1.0
+    }
+  },
+  "chaos_test_scenario": {
+    "fault_injected_month": "6월 (2026-06)",
+    "fault_type": "지속성 DB 파티션 쓰기 오류",
+    "behavior": "6월 격리(Skip & Isolate) 후 7~12월 배치 무중단 완주 (47/48 성공, 성공률 97.9%)"
+  },
+  "roi_analysis": {
+    "manual_hours_per_year": 1200,
+    "automated_hours_per_year": 192,
+    "reduction_rate_pct": 84.0
+  }
+}
