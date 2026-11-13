@@ -1,0 +1,40 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M08",
+  "description": "100~600기(500% 증가) 동시 포화 부하 및 Fail-safe 기능 축소 검증용 가상 데이터셋",
+  "load_stages": [
+    {
+      "tracks": 100,
+      "increase_pct": "0%"
+    },
+    {
+      "tracks": 200,
+      "increase_pct": "100%"
+    },
+    {
+      "tracks": 300,
+      "increase_pct": "200%"
+    },
+    {
+      "tracks": 450,
+      "increase_pct": "350%"
+    },
+    {
+      "tracks": 600,
+      "increase_pct": "500%"
+    }
+  ],
+  "fault_injection": {
+    "corrupt_rate_default": 0.05,
+    "corrupt_rate_challenge": 0.3,
+    "duplicate_rate": 0.1,
+    "shuffle_order": true
+  },
+  "failsafe_test": {
+    "forced_budget_ms": 0.1,
+    "expected_degraded_mode": true,
+    "expected_urgent_targets": 197,
+    "expected_urgent_missed": 0,
+    "expected_data_loss_rate": 0.0
+  }
+}

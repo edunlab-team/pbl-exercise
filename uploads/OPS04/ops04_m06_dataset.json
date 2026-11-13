@@ -1,0 +1,62 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M06",
+  "description": "방공 지휘관 결심 지원 실시간 포화경보 우선순위 대시보드 시뮬레이션 데이터셋",
+  "virtual_assets": [
+    {
+      "asset": "A1",
+      "name": "CP(virtual)",
+      "x_km": 0.0,
+      "y_km": 0.0,
+      "value": 1.0
+    },
+    {
+      "asset": "A2",
+      "name": "Radar(virtual)",
+      "x_km": 4.0,
+      "y_km": -3.0,
+      "value": 0.8
+    },
+    {
+      "asset": "A3",
+      "name": "Depot(virtual)",
+      "x_km": -5.0,
+      "y_km": 4.0,
+      "value": 0.7
+    },
+    {
+      "asset": "A4",
+      "name": "Power(virtual)",
+      "x_km": 7.0,
+      "y_km": 6.0,
+      "value": 0.5
+    }
+  ],
+  "priority_bands": {
+    "P1": {
+      "label": "최우선 긴급(빨강)",
+      "tti_max_s_default": 180,
+      "tti_max_s_challenge": 120
+    },
+    "P2": {
+      "label": "긴급 주의(주황)",
+      "tti_max_s": 600
+    },
+    "SPOOF_SUSPECT": {
+      "label": "스푸핑 의심(보라)",
+      "action": "격리 표시"
+    }
+  },
+  "refresh_benchmark_spec": {
+    "refresh_interval_s": 1.0,
+    "simulated_cycles": 10,
+    "target_refresh_ms": 1000.0,
+    "target_query_ms": 100.0,
+    "sample_counts": {
+      "P1": 13,
+      "P2": 20,
+      "spoof_suspect": 6,
+      "other": 67
+    }
+  }
+}

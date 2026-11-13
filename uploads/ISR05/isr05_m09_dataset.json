@@ -1,0 +1,32 @@
+{
+  "project_id": "ISR05",
+  "mission_id": "ISR05_M09",
+  "mission_title": "피드백 반영 공격 주체 귀속 매트릭스 튜닝 및 민감도 분석",
+  "description": "피드백 반영 공격 주체 귀속 매트릭스 튜닝 및 민감도 분석 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 사례·증거·성명·점수는 교육용 가상 자료이며 실제 부대명, 위치, 무기 제원, 작전 정보는 포함하지 않습니다.",
+  "deliverables": [
+    "briefing/isr05_commander_1page_brief.md(pdf) (필수)"
+  ],
+  "provided_materials": [
+    {
+      "title": "민감도 분석 6개 조건 및 재검증 대상 7건",
+      "sensitivity_conditions": [
+        "C1: 기준 가중치 (Baseline)",
+        "C2: 물리 증거 가중치 +20%",
+        "C3: 물리 증거 가중치 -20%",
+        "C4: 주장·성명 가중치 +20%",
+        "C5: 확인 불가 감점 0.5 -> 1.0 상향",
+        "C6: 상정 임계 점수 차이 2.0 -> 3.5 상향"
+      ],
+      "revalidation_targets": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "AAR-A",
+        "AAR-B"
+      ]
+    }
+  ]
+}

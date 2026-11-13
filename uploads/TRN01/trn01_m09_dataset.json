@@ -1,0 +1,38 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M09",
+  "mission_title": "AAR 기반 교관 평가 점수와 AI 숙련도 점수 간 편차 분석 및 가중치 재튜닝",
+  "description": "AAR 기반 교관 평가 점수와 AI 숙련도 점수 간 편차 분석 및 가중치 재튜닝 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "docs/trn01_aar_report.md (필수)",
+    "configs/trn01_tuned_params.yaml (필수)"
+  ],
+  "sample_data": {
+    "initial_model_cohort": "day_only_baseline",
+    "aar_breakdown_axes": [
+      "condition (day/night/gust)",
+      "risk_event_count",
+      "pilot_habit"
+    ],
+    "grid_search_space": {
+      "feature_set": [
+        "basic",
+        "full"
+      ],
+      "condition_norm": [
+        true,
+        false
+      ],
+      "reg_alpha": [
+        0.1,
+        1.0,
+        5.0
+      ]
+    },
+    "regression_cohorts": [
+      "new_cohort_A",
+      "new_cohort_B"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "mission": "ISR03_M05",
+  "thresholds": {
+    "p_high": 0.7,
+    "entropy_max": 0.65,
+    "quality_min": 0.6
+  },
+  "cases": [
+    {
+      "flight_id": "FL5001",
+      "probs": {
+        "friendly": 0.08,
+        "civilian": 0.1,
+        "hostile": 0.82
+      },
+      "log_quality": 0.91,
+      "true_actor": "hostile"
+    },
+    {
+      "flight_id": "FL5002",
+      "probs": {
+        "friendly": 0.34,
+        "civilian": 0.32,
+        "hostile": 0.34
+      },
+      "log_quality": 0.85,
+      "true_actor": "civilian"
+    },
+    {
+      "flight_id": "FL5003",
+      "probs": {
+        "friendly": 0.15,
+        "civilian": 0.15,
+        "hostile": 0.7
+      },
+      "log_quality": 0.4,
+      "true_actor": "hostile"
+    }
+  ]
+}

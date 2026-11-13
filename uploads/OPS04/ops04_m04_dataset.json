@@ -1,0 +1,79 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M04",
+  "description": "방어자산 가치·지수 감쇠 TTI·위협 유사도 결합 다차원 평가 및 스푸핑 분리 검증용 가상 데이터셋",
+  "virtual_assets": [
+    {
+      "asset": "A1",
+      "name": "CP(virtual)",
+      "x_km": 0.0,
+      "y_km": 0.0,
+      "value": 1.0
+    },
+    {
+      "asset": "A2",
+      "name": "Radar(virtual)",
+      "x_km": 4.0,
+      "y_km": -3.0,
+      "value": 0.8
+    },
+    {
+      "asset": "A3",
+      "name": "Depot(virtual)",
+      "x_km": -5.0,
+      "y_km": 4.0,
+      "value": 0.7
+    },
+    {
+      "asset": "A4",
+      "name": "Power(virtual)",
+      "x_km": 7.0,
+      "y_km": 6.0,
+      "value": 0.5
+    }
+  ],
+  "model_features": [
+    "rcs",
+    "rcs_var",
+    "n_sensors",
+    "civ_iff"
+  ],
+  "scoring_formula": "asset_value * exp(-TTI / 300) * threat_similarity_prob",
+  "parameters": {
+    "decay_tau_s": 300.0,
+    "dynamic_step_s": 10.0,
+    "jump_max_default": 2.0,
+    "jump_max_challenge": 1.1,
+    "target_recall": 0.85,
+    "target_latency_ms": 200.0
+  },
+  "test_situations_3": [
+    {
+      "seed": 7,
+      "baseline_recall": 1.0,
+      "baseline_precision": 0.721,
+      "adv_recall": 0.968,
+      "adv_precision": 1.0,
+      "spoof_decoy_fp": 0,
+      "latency_ms": 7.677
+    },
+    {
+      "seed": 8,
+      "baseline_recall": 1.0,
+      "baseline_precision": 0.861,
+      "adv_recall": 1.0,
+      "adv_precision": 1.0,
+      "spoof_decoy_fp": 0,
+      "latency_ms": 6.501
+    },
+    {
+      "seed": 9,
+      "baseline_recall": 1.0,
+      "baseline_precision": 0.703,
+      "adv_recall": 1.0,
+      "adv_precision": 0.963,
+      "spoof_decoy_fp": 0,
+      "latency_ms": 6.603
+    }
+  ]
+}

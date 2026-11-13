@@ -1,0 +1,38 @@
+{
+  "mission": "ISR03_M09",
+  "min_recall": 0.95,
+  "aar_false_positives": [
+    {
+      "flight_id": "FL9101",
+      "cause": "survey_u_turn",
+      "weather": "clear"
+    },
+    {
+      "flight_id": "FL9102",
+      "cause": "wind_gust_dive",
+      "weather": "windy"
+    },
+    {
+      "flight_id": "FL9103",
+      "cause": "rare_normal",
+      "weather": "clear"
+    }
+  ],
+  "grid": {
+    "turn_rate_dps": [
+      30,
+      38,
+      45
+    ],
+    "dive_m_5s": [
+      30,
+      40,
+      50
+    ],
+    "ml_threshold": [
+      0.85,
+      0.95,
+      1.0
+    ]
+  }
+}

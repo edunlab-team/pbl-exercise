@@ -1,0 +1,46 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M05",
+  "description": "복합 신뢰도 지수(High/Med/Low) 및 가상 대응 자원 기반 '승인 대기' 권고 순위 검증용 데이터셋",
+  "confidence_components": [
+    "위협 유사도",
+    "센서 합의",
+    "신호 안정성",
+    "운동학 일관성"
+  ],
+  "grade_thresholds": {
+    "High_min_default": 0.7,
+    "High_min_challenge": 0.85,
+    "Med_min": 0.45,
+    "Low_action": "경보 보류"
+  },
+  "virtual_response_resources": [
+    {
+      "resource_id": "R1",
+      "name": "가상 요격포대 1",
+      "remaining_units": 8,
+      "abstract_success_score": 0.92
+    },
+    {
+      "resource_id": "R2",
+      "name": "가상 요격포대 2",
+      "remaining_units": 6,
+      "abstract_success_score": 0.88
+    },
+    {
+      "resource_id": "R3",
+      "name": "가상 근접방어 1",
+      "remaining_units": 4,
+      "abstract_success_score": 0.8
+    }
+  ],
+  "verification_targets": {
+    "baseline_far": 0.139,
+    "expected_far_after": 0.0,
+    "far_reduction_min": 0.4,
+    "noise_trials": 20,
+    "consistency_min": 0.9,
+    "default_status": "승인 대기",
+    "auto_approved_allowed": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "mission": "ISR03_M07",
+  "hold_limit_s": 1800,
+  "queue": [
+    {
+      "flight_id": "FL0110",
+      "priority": "High",
+      "hostile_prob": 0.84,
+      "hash_ok": true,
+      "source_verified": true,
+      "reviews": 2
+    },
+    {
+      "flight_id": "FL0112",
+      "priority": "High",
+      "hostile_prob": 0.79,
+      "hash_ok": false,
+      "source_verified": true,
+      "reviews": 0
+    },
+    {
+      "flight_id": "FL0115",
+      "priority": "Medium",
+      "hostile_prob": 0.52,
+      "hash_ok": true,
+      "source_verified": true,
+      "reviews": 1
+    }
+  ]
+}

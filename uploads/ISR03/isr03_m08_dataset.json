@@ -1,0 +1,23 @@
+{
+  "mission": "ISR03_M08",
+  "scenarios": [
+    {
+      "name": "baseline_1x",
+      "n_flights": 50,
+      "corrupt_ratio": 0.0,
+      "budget_ms": 5000
+    },
+    {
+      "name": "surge_500pct",
+      "n_flights": 250,
+      "corrupt_ratio": 0.05,
+      "budget_ms": 5000
+    },
+    {
+      "name": "low_budget",
+      "n_flights": 250,
+      "corrupt_ratio": 0.05,
+      "budget_ms": 1200
+    }
+  ]
+}

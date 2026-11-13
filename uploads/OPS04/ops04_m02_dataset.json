@@ -1,0 +1,151 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M02",
+  "description": "다방향 동시 침투 항적 정제·k-way 병합 및 중복·반사파·스푸핑 격리 검증용 가상 데이터셋",
+  "sensors": [
+    {
+      "sensor_id": "RDR-1",
+      "type": "감시레이더",
+      "location": "가상 거점 북서"
+    },
+    {
+      "sensor_id": "RDR-2",
+      "type": "추적레이더",
+      "location": "가상 거점 남동"
+    },
+    {
+      "sensor_id": "EO-1",
+      "type": "전자광학/적외선",
+      "location": "가상 지휘소 인근"
+    },
+    {
+      "sensor_id": "ACU-1",
+      "type": "음향 탐지기",
+      "location": "가상 전방 초소"
+    }
+  ],
+  "stream_summary": {
+    "raw_messages_total": 8100,
+    "message_breakdown": {
+      "valid": 7145,
+      "dup": 612,
+      "spoof": 240,
+      "ghost": 103
+    },
+    "expected_fused_reports": 3530,
+    "expected_tracks": 120,
+    "expected_spoof_tracks_isolated": 6,
+    "expected_sensor_dropouts": 14
+  },
+  "preprocess_parameters": {
+    "fusion_window_s": 1,
+    "snr_min_default": 0.25,
+    "snr_min_challenge": 0.45,
+    "target_throughput_per_sec": 1000,
+    "target_error_rate": 0.0
+  },
+  "sample_raw_messages": [
+    {
+      "track_id": "T11000",
+      "sensor_id": "RDR-1",
+      "timestamp_ms": 1700000051197,
+      "x_km": 9.85,
+      "y_km": -31.94,
+      "alt_m": 426.0,
+      "speed_mps": 45.2,
+      "heading_deg": 342.9,
+      "approach_dir": "S",
+      "class_hint": "uav_type",
+      "threat_grade": 2,
+      "rcs": 0.38,
+      "weather": "clear",
+      "pos_error_m": 72.0,
+      "comm_delay_ms": 574
+    },
+    {
+      "track_id": "T11001",
+      "sensor_id": "RDR-2",
+      "timestamp_ms": 1700000012201,
+      "x_km": 5.47,
+      "y_km": -35.67,
+      "alt_m": 64.0,
+      "speed_mps": 180.3,
+      "heading_deg": 351.3,
+      "approach_dir": "S",
+      "class_hint": "fast_type",
+      "threat_grade": 3,
+      "rcs": 0.13,
+      "weather": "rain",
+      "pos_error_m": 247.0,
+      "comm_delay_ms": 760
+    },
+    {
+      "track_id": "T11002",
+      "sensor_id": "EO-1",
+      "timestamp_ms": 1700000025962,
+      "x_km": -26.31,
+      "y_km": -23.35,
+      "alt_m": 775.0,
+      "speed_mps": 49.6,
+      "heading_deg": 48.4,
+      "approach_dir": "SW",
+      "class_hint": "unknown",
+      "threat_grade": 1,
+      "rcs": 0.61,
+      "weather": "fog",
+      "pos_error_m": 64.0,
+      "comm_delay_ms": 65
+    },
+    {
+      "track_id": "T11003",
+      "sensor_id": "ACU-1",
+      "timestamp_ms": 1700000002336,
+      "x_km": -7.92,
+      "y_km": 4.47,
+      "alt_m": 4141.0,
+      "speed_mps": 144.2,
+      "heading_deg": 119.4,
+      "approach_dir": "NW",
+      "class_hint": "civil",
+      "threat_grade": 1,
+      "rcs": 0.71,
+      "weather": "snow",
+      "pos_error_m": 150.0,
+      "comm_delay_ms": 501
+    },
+    {
+      "track_id": "T11004",
+      "sensor_id": "RDR-1",
+      "timestamp_ms": 1700000015312,
+      "x_km": -8.42,
+      "y_km": -13.1,
+      "alt_m": 274.0,
+      "speed_mps": 13.0,
+      "heading_deg": 32.7,
+      "approach_dir": "SW",
+      "class_hint": "bird",
+      "threat_grade": 1,
+      "rcs": 0.08,
+      "weather": "clear",
+      "pos_error_m": 148.0,
+      "comm_delay_ms": 334
+    },
+    {
+      "track_id": "T11005",
+      "sensor_id": "RDR-2",
+      "timestamp_ms": 1700000055064,
+      "x_km": 18.25,
+      "y_km": -27.51,
+      "alt_m": 158.0,
+      "speed_mps": 37.6,
+      "heading_deg": 326.4,
+      "approach_dir": "SE",
+      "class_hint": "uav_type",
+      "threat_grade": 2,
+      "rcs": 0.43,
+      "weather": "rain",
+      "pos_error_m": 164.0,
+      "comm_delay_ms": 80
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M03",
+  "description": "CPA(1.5 km) 및 TTI(600초) 기반 1차 공중위협 우선순위 Baseline 검증용 가상 데이터셋",
+  "virtual_assets": [
+    {
+      "asset": "A1",
+      "name": "CP(virtual)",
+      "x_km": 0.0,
+      "y_km": 0.0,
+      "value": 1.0
+    },
+    {
+      "asset": "A2",
+      "name": "Radar(virtual)",
+      "x_km": 4.0,
+      "y_km": -3.0,
+      "value": 0.8
+    },
+    {
+      "asset": "A3",
+      "name": "Depot(virtual)",
+      "x_km": -5.0,
+      "y_km": 4.0,
+      "value": 0.7
+    },
+    {
+      "asset": "A4",
+      "name": "Power(virtual)",
+      "x_km": 7.0,
+      "y_km": 6.0,
+      "value": 0.5
+    }
+  ],
+  "baseline_parameters": {
+    "cpa_km": 1.5,
+    "tti_urgent_s_default": 600,
+    "tti_urgent_s_challenge": 300,
+    "target_accuracy": 0.75
+  },
+  "simulation_benchmark": {
+    "virtual_tracks": 80,
+    "true_urgent_count": 31,
+    "baseline_predicted_urgent": 39,
+    "baseline_accuracy": 0.9,
+    "false_alarms_total": 8,
+    "false_alarms_decoy": 7
+  },
+  "sample_tracks_top5": [
+    {
+      "id": "T07061",
+      "tti_s": 42.0,
+      "speed_mps": 59.0,
+      "true_type": "decoy",
+      "true_urgent": false
+    },
+    {
+      "id": "T07055",
+      "tti_s": 53.0,
+      "speed_mps": 55.0,
+      "true_type": "uav_type",
+      "true_urgent": true
+    },
+    {
+      "id": "T07048",
+      "tti_s": 68.0,
+      "speed_mps": 221.0,
+      "true_type": "fast_type",
+      "true_urgent": true
+    },
+    {
+      "id": "T07014",
+      "tti_s": 103.0,
+      "speed_mps": 231.0,
+      "true_type": "fast_type",
+      "true_urgent": true
+    },
+    {
+      "id": "T07004",
+      "tti_s": 152.0,
+      "speed_mps": 224.0,
+      "true_type": "fast_type",
+      "true_urgent": true
+    }
+  ]
+}

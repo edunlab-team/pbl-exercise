@@ -1,0 +1,883 @@
+{
+  "mission": "ISR03_M01",
+  "note": "교육용 가상 샘플(정상 + 오류 주입)",
+  "valid_samples": [
+    {
+      "flight_id": "FL1001",
+      "n_records": 10,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "38401cde1720087f0e392729224df9e3723485115f894f52634595147cda5975"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL1002",
+      "n_records": 10,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "38401cde1720087f0e392729224df9e3723485115f894f52634595147cda5975"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL1003",
+      "n_records": 10,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "38401cde1720087f0e392729224df9e3723485115f894f52634595147cda5975"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL1004",
+      "n_records": 10,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "38401cde1720087f0e392729224df9e3723485115f894f52634595147cda5975"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL1005",
+      "n_records": 10,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "38401cde1720087f0e392729224df9e3723485115f894f52634595147cda5975"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    }
+  ],
+  "fault_injected": [
+    {
+      "flight_id": "FL9001",
+      "n_records": 5,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "1b7f15bf910c0d7b3c44a3ab21aca83989c5f9ebfe462105d02df9835b5918c5"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "hostile"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL9002",
+      "n_records": 5,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL9003",
+      "n_records": 5,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "1b7f15bf910c0d7b3c44a3ab21aca83989c5f9ebfe462105d02df9835b5918c5"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 120.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    }
+  ]
+}

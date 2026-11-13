@@ -1,0 +1,49 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M04",
+  "mission_title": "돌발 장애물 회피 및 비상 착륙 반응 속도 기반 정밀 숙련도 평가 엔진 고도화",
+  "description": "돌발 장애물 회피 및 비상 착륙 반응 속도 기반 정밀 숙련도 평가 엔진 고도화 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/models/trn01_advanced_detector.py (필수)",
+    "예외 탐지 테스트 결과 (필수)"
+  ],
+  "sample_data": {
+    "advanced_features": [
+      "obstacle_reaction_sec",
+      "avoid_dist_2_5s_m",
+      "touchdown_descent_mps",
+      "att_over_35deg_sec",
+      "stick_rate_rms",
+      "post_avoid_overshoot_m"
+    ],
+    "risk_events": [
+      "near_miss_obstacle",
+      "hard_landing",
+      "attitude_limit_exceeded"
+    ],
+    "scenarios_10": [
+      {
+        "scenario_id": "SC01",
+        "condition": "day",
+        "obstacle_dir": "front",
+        "video_latency_ms": 80,
+        "expected_event": "none"
+      },
+      {
+        "scenario_id": "SC02",
+        "condition": "night",
+        "obstacle_dir": "left",
+        "video_latency_ms": 220,
+        "expected_event": "near_miss_obstacle"
+      },
+      {
+        "scenario_id": "SC03",
+        "condition": "gust",
+        "obstacle_dir": "right",
+        "video_latency_ms": 150,
+        "expected_event": "attitude_limit_exceeded"
+      }
+    ]
+  }
+}

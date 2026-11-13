@@ -1,0 +1,112 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M07",
+  "description": "지휘관 HITL 승인·보류·반려·순위 변경·수동 전환 및 해시 체인 감사 로그 검증용 데이터셋",
+  "roles": {
+    "CDR-01": "commander",
+    "OPR-07": "operator",
+    "OPR-09": "operator"
+  },
+  "permissions": {
+    "APPROVE": [
+      "commander"
+    ],
+    "REORDER": [
+      "commander"
+    ],
+    "MODE": [
+      "commander"
+    ],
+    "HOLD": [
+      "commander",
+      "operator"
+    ],
+    "REJECT": [
+      "commander",
+      "operator"
+    ]
+  },
+  "hold_limit_s": 30,
+  "min_rationale_chars": 6,
+  "hash_genesis": "GENESIS",
+  "scenario_events_11": [
+    {
+      "t_s": 2,
+      "actor": "OPR-07",
+      "action": "APPROVE",
+      "track_id": "T09000",
+      "expected": "거부: 권한 없음"
+    },
+    {
+      "t_s": 3,
+      "actor": "CDR-01",
+      "action": "APPROVE",
+      "track_id": "T09000",
+      "expected": "OK"
+    },
+    {
+      "t_s": 5,
+      "actor": "CDR-01",
+      "action": "REORDER",
+      "track_id": "T09005",
+      "expected": "OK"
+    },
+    {
+      "t_s": 6,
+      "actor": "OPR-09",
+      "action": "HOLD",
+      "track_id": "T09003",
+      "expected": "OK"
+    },
+    {
+      "t_s": 7,
+      "actor": "CDR-01",
+      "action": "APPROVE",
+      "track_id": "T09003",
+      "expected": "거부: 판단 근거 6자 이상 필요"
+    },
+    {
+      "t_s": 8,
+      "actor": "OPR-07",
+      "action": "REJECT",
+      "track_id": "T09007",
+      "expected": "OK"
+    },
+    {
+      "t_s": 10,
+      "actor": "CDR-01",
+      "action": "MODE",
+      "track_id": "-",
+      "expected": "OK"
+    },
+    {
+      "t_s": 12,
+      "actor": "CDR-01",
+      "action": "APPROVE",
+      "track_id": "T09001",
+      "expected": "OK"
+    },
+    {
+      "t_s": 15,
+      "actor": "CDR-01",
+      "action": "APPROVE",
+      "track_id": "T09011",
+      "expected": "거부: Low 등급"
+    },
+    {
+      "t_s": 20,
+      "actor": "CDR-01",
+      "action": "APPROVE",
+      "track_id": "T09001",
+      "expected": "거부: 이미 종결"
+    },
+    {
+      "t_s": 25,
+      "actor": "CDR-01",
+      "action": "MODE",
+      "track_id": "-",
+      "expected": "OK"
+    }
+  ],
+  "tamper_test_target_record_no": 4
+}

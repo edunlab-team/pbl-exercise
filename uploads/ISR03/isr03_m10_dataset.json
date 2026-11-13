@@ -1,0 +1,21 @@
+{
+  "mission": "ISR03_M10",
+  "tuned_config": {
+    "turn_rate_dps": 38,
+    "dive_m_5s": 40,
+    "ml_threshold": 0.95,
+    "p_high": 0.7
+  },
+  "self_checks": [
+    "schema_validation",
+    "spoof_correction",
+    "baseline_rules",
+    "ml_hybrid",
+    "uncertainty_engine",
+    "no_assertive_text",
+    "hitl_no_auto_adopt",
+    "audit_hash_chain",
+    "corrupt_log_quarantine",
+    "dashboard_render"
+  ]
+}

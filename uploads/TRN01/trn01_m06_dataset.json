@@ -1,0 +1,40 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M06",
+  "mission_title": "조종자 비행 궤적 3D 재생 및 취약 구간 하이라이트 분석 대시보드 구현",
+  "description": "조종자 비행 궤적 3D 재생 및 취약 구간 하이라이트 분석 대시보드 구현 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/ui/trn01_dashboard.py (또는 웹 UI 컴포넌트) (필수)"
+  ],
+  "sample_data": {
+    "highlight_rules": {
+      "route_dev_m_gt": 3.0,
+      "attitude_deg_gt": 30.0,
+      "abrupt_stick_rate": true
+    },
+    "flight_phases": [
+      "takeoff",
+      "route",
+      "hover",
+      "avoidance",
+      "landing"
+    ],
+    "sample_vulnerable_segments": [
+      {
+        "pilot_id": "P004",
+        "phase": "avoidance",
+        "start_t": 24.5,
+        "end_t": 28.2,
+        "reason": "경로 이탈 3.8m 초과 및 자세 33도 초과"
+      },
+      {
+        "pilot_id": "P004",
+        "phase": "landing",
+        "start_t": 52.0,
+        "end_t": 55.1,
+        "reason": "착륙 직전 급조작 반복"
+      }
+    ]
+  }
+}

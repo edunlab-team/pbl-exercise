@@ -1,0 +1,731 @@
+{
+  "mission": "ISR03_M02",
+  "spoof_thr": {
+    "clear": 8.0,
+    "night": 9.0,
+    "windy": 14.0,
+    "rain": 16.0
+  },
+  "flights": [
+    {
+      "flight_id": "FL2001",
+      "n_records": 20,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "3cce8ec7014fb642b7ac6306193320d0186fee1cd410c6003395a50e026a80b0"
+      },
+      "tactical": {
+        "weather": "clear",
+        "position_error_m": 3.5,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 400.91,
+          "y_m": -169.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 7,
+          "x_m": 790.91,
+          "y_m": -389.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 8,
+          "x_m": 1220.91,
+          "y_m": -609.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 9,
+          "x_m": 1690.91,
+          "y_m": -829.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 10,
+          "x_m": 2200.91,
+          "y_m": -1049.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 11,
+          "x_m": 2750.91,
+          "y_m": -1269.09,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 4,
+          "hdop": 8.5
+        },
+        {
+          "t": 12,
+          "x_m": 2759.4,
+          "y_m": -1260.6,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 13,
+          "x_m": 2767.88,
+          "y_m": -1252.12,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 14,
+          "x_m": 2776.37,
+          "y_m": -1243.63,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 15,
+          "x_m": 2784.85,
+          "y_m": -1235.15,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 16,
+          "x_m": 2793.34,
+          "y_m": -1226.66,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 17,
+          "x_m": 2801.82,
+          "y_m": -1218.18,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 18,
+          "x_m": 2810.31,
+          "y_m": -1209.69,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 19,
+          "x_m": 2818.79,
+          "y_m": -1201.21,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL2002",
+      "n_records": 20,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "a2254bccd5ff491a628763517b267ff3aa27b01bcd2378e620b15d841d5250ef"
+      },
+      "tactical": {
+        "weather": "rain",
+        "position_error_m": 11.0,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 10,
+          "x_m": 93.34,
+          "y_m": 93.34,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 11,
+          "x_m": 101.82,
+          "y_m": 101.82,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 12,
+          "x_m": 110.31,
+          "y_m": 110.31,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 13,
+          "x_m": 118.79,
+          "y_m": 118.79,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 14,
+          "x_m": 127.28,
+          "y_m": 127.28,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 15,
+          "x_m": 135.76,
+          "y_m": 135.76,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 16,
+          "x_m": 144.25,
+          "y_m": 144.25,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 17,
+          "x_m": 152.74,
+          "y_m": 152.74,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 18,
+          "x_m": 161.22,
+          "y_m": 161.22,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 19,
+          "x_m": 169.71,
+          "y_m": 169.71,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    },
+    {
+      "flight_id": "FL2003",
+      "n_records": 20,
+      "collection": {
+        "source": "captured_device",
+        "collected_by": "COL-01",
+        "platform_type": "commercial",
+        "sha256": "a099bf6ee6dc72cb74df1b4c146648e59424b5be59c67cbf6a053aaca450b1d4"
+      },
+      "tactical": {
+        "weather": "windy",
+        "position_error_m": 11.0,
+        "comm_delay_ms": 45
+      },
+      "attribution": {
+        "status": "unassessed"
+      },
+      "records": [
+        {
+          "t": 0,
+          "x_m": 8.49,
+          "y_m": 8.49,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 1,
+          "x_m": 16.97,
+          "y_m": 16.97,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 2,
+          "x_m": 25.46,
+          "y_m": 25.46,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 3,
+          "x_m": 33.94,
+          "y_m": 33.94,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 4,
+          "x_m": 42.43,
+          "y_m": 42.43,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 5,
+          "x_m": 50.91,
+          "y_m": 50.91,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 6,
+          "x_m": 59.4,
+          "y_m": 59.4,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 7,
+          "x_m": 67.88,
+          "y_m": 67.88,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 8,
+          "x_m": 76.37,
+          "y_m": 76.37,
+          "alt_m": 980.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 14,
+          "hdop": 1.4
+        },
+        {
+          "t": 9,
+          "x_m": 84.85,
+          "y_m": 84.85,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 10,
+          "x_m": 93.34,
+          "y_m": 93.34,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 11,
+          "x_m": 101.82,
+          "y_m": 101.82,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 12,
+          "x_m": 110.31,
+          "y_m": 110.31,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 13,
+          "x_m": 118.79,
+          "y_m": 118.79,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 14,
+          "x_m": 127.28,
+          "y_m": 127.28,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 15,
+          "x_m": 135.76,
+          "y_m": 135.76,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 16,
+          "x_m": 144.25,
+          "y_m": 144.25,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 17,
+          "x_m": 152.74,
+          "y_m": 152.74,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 18,
+          "x_m": 161.22,
+          "y_m": 161.22,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        },
+        {
+          "t": 19,
+          "x_m": 169.71,
+          "y_m": 169.71,
+          "alt_m": 120.0,
+          "speed_mps": 12.0,
+          "heading_deg": 45.0,
+          "rc_link": 92.0,
+          "gps_sats": 15,
+          "hdop": 1.1
+        }
+      ]
+    }
+  ]
+}

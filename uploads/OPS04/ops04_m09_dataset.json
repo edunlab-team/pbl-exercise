@@ -1,0 +1,43 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M09",
+  "description": "AAR 판정 오류 3대 유형 분류 및 학습·시험 분리 격자 탐색 재보정용 가상 데이터셋",
+  "aar_error_categories": [
+    "비위협(기만체·조류·민항기) 과대 판정",
+    "스푸핑 항적 미격리",
+    "등급 경계 오차(도달시간 추정)"
+  ],
+  "initial_aar_benchmark": {
+    "accuracy": 0.756,
+    "total_errors": 21
+  },
+  "train_test_split": {
+    "train_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "unseen_test_seeds": [
+      7,
+      8,
+      9
+    ],
+    "target_accuracy_gain_pct_pt": 10.0,
+    "observed_test_before": 0.849,
+    "observed_test_after": 0.953,
+    "residual_case_id": "T07061"
+  },
+  "grid_search_params": {
+    "w_cls_candidates": [
+      0.5,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "w_cls_challenge": 1.5,
+    "tolerance_default": 0.002,
+    "tolerance_challenge": 0.005
+  }
+}

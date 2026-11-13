@@ -1,0 +1,23 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M10",
+  "mission_title": "드론 비행로그 숙련도 분석 시스템 통합 및 교육훈련 브리핑 패키지 완성",
+  "description": "드론 비행로그 숙련도 분석 시스템 통합 및 교육훈련 브리핑 패키지 완성 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/main_trn01.py, README.md, docs/trn01_final_report.pdf(md) (필수)"
+  ],
+  "sample_data": {
+    "e2e_self_checks": [
+      "log_loss_zero",
+      "missing_value_zero",
+      "grade_agreement_pass",
+      "risk_recall_pass",
+      "latency_within_limit",
+      "ai_auto_confirm_zero",
+      "function_coverage_pass"
+    ],
+    "injected_corrupt_logs_count": 2,
+    "briefing_target_minutes": 5
+  }
+}

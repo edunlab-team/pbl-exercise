@@ -1,0 +1,36 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M07",
+  "mission_title": "교관이 직접 조종자 성향을 진단하고 피드백을 입력하는 HITL 평가 인터페이스 설계",
+  "description": "교관이 직접 조종자 성향을 진단하고 피드백을 입력하는 HITL 평가 인터페이스 설계 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/hitl/trn01_approval_workflow.py (필수)",
+    "docs/trn01_hitl_guide.md (필수)"
+  ],
+  "sample_data": {
+    "hitl_rules": {
+      "ai_auto_confirm_allowed": false,
+      "priority_sort": [
+        "Low confidence",
+        "C grade"
+      ],
+      "mandatory_fields": [
+        "instructor_id",
+        "rationale"
+      ],
+      "two_person_confirm_actions": [
+        "retraining",
+        "qualification_hold"
+      ]
+    },
+    "rule_violation_test_cases_6": [
+      "RV01_instructor_id_missing",
+      "RV02_rationale_empty",
+      "RV03_retraining_without_second_instructor",
+      "RV04_same_instructor_second_confirm",
+      "RV05_ai_direct_finalize_attempt",
+      "RV06_audit_log_hash_mismatch"
+    ]
+  }
+}

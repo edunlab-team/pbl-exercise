@@ -1,0 +1,54 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M05",
+  "mission_title": "조종자별 조작 습관(급조작, 과보정) 분석 및 신뢰도 등급 산출 모듈 개발",
+  "description": "조종자별 조작 습관(급조작, 과보정) 분석 및 신뢰도 등급 산출 모듈 개발 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/verification/trn01_confidence_engine.py (필수)"
+  ],
+  "sample_data": {
+    "habit_thresholds": {
+      "abrupt_stick_rate_z": 1.5,
+      "overcorrection_overshoot_z": 1.5
+    },
+    "bootstrap_iterations": 500,
+    "confidence_levels": {
+      "High": ">= 0.85",
+      "Medium": "0.65 ~ 0.84",
+      "Low": "< 0.65"
+    },
+    "sample_pilots": [
+      {
+        "pilot_id": "P001",
+        "flights_6_scores": [
+          88,
+          90,
+          86,
+          89,
+          91,
+          87
+        ],
+        "grade": "A",
+        "confidence": "High",
+        "habits": []
+      },
+      {
+        "pilot_id": "P004",
+        "flights_6_scores": [
+          72,
+          68,
+          71,
+          69,
+          73,
+          67
+        ],
+        "grade": "B",
+        "confidence": "Low",
+        "habits": [
+          "과보정(overcorrection)"
+        ]
+      }
+    ]
+  }
+}

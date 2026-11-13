@@ -1,0 +1,56 @@
+{
+  "project_id": "OPS04",
+  "mission_id": "OPS04_M10",
+  "description": "OPS04 End-to-End 5개 상황 통합 실행·7대 자체 점검 및 지휘관 브리핑 패키지용 데이터셋",
+  "virtual_assets": [
+    {
+      "asset": "A1",
+      "name": "CP(virtual)",
+      "x_km": 0.0,
+      "y_km": 0.0,
+      "value": 1.0
+    },
+    {
+      "asset": "A2",
+      "name": "Radar(virtual)",
+      "x_km": 4.0,
+      "y_km": -3.0,
+      "value": 0.8
+    },
+    {
+      "asset": "A3",
+      "name": "Depot(virtual)",
+      "x_km": -5.0,
+      "y_km": 4.0,
+      "value": 0.7
+    },
+    {
+      "asset": "A4",
+      "name": "Power(virtual)",
+      "x_km": 7.0,
+      "y_km": 6.0,
+      "value": 0.5
+    }
+  ],
+  "integrated_situations_count": 5,
+  "self_check_7_items": [
+    "E2E 파이프라인 실행 성공률 100%",
+    "손상 메시지 전량 격리",
+    "스푸핑 의심 항적 경보 0건",
+    "자동 승인 0건(전부 승인 대기)",
+    "긴급 표적 경보 재현율 90% 이상",
+    "처리 시간 예산 이내",
+    "함수 커버리지 85% 이상"
+  ],
+  "config_challenge_param": {
+    "w_spoof_default": 1.0,
+    "w_spoof_challenge": 0.0
+  },
+  "briefing_summary_template_5": [
+    "1. 상황: 가상 비행체 평가 건수 및 긴급/주의/일반 분포",
+    "2. 성능: 판정 정확도, 긴급 재현율, 평균 처리시간",
+    "3. 권고: 대응 권고 전량 지휘관 승인 대기, 자동 승인 0건",
+    "4. 운용 유의: 순위는 권고이며 대응 여부는 지휘관 승인과 교전수칙·지휘계통에 따름",
+    "5. 한계: 추상 위협 지수와 가상 데이터 기반 결과로 실전 운용 전 실제 센서 자료 재검증 필수"
+  ]
+}

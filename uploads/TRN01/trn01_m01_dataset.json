@@ -1,0 +1,128 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M01",
+  "mission_title": "드론 조종 시뮬레이터 비행로그(스틱 조작, 자세각, 고도 유지, 경로 오차) 데이터 스키마 정의",
+  "description": "드론 조종 시뮬레이터 비행로그(스틱 조작, 자세각, 고도 유지, 경로 오차) 데이터 스키마 정의 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "data/schema/trn01_input_schema.json (필수)",
+    "docs/trn01_data_spec.md (필수)"
+  ],
+  "sample_data": {
+    "schema_groups": {
+      "session": [
+        "session_id",
+        "pilot_id (P001~)",
+        "course",
+        "sample_rate_hz",
+        "duration_sec"
+      ],
+      "tactical": [
+        "condition (day/night/gust)",
+        "wind_mps",
+        "gps_error_m",
+        "video_latency_ms"
+      ],
+      "records": [
+        "t",
+        "stick_roll",
+        "stick_pitch",
+        "stick_yaw",
+        "roll_deg",
+        "pitch_deg",
+        "alt_m",
+        "x_m",
+        "y_m",
+        "target_x_m",
+        "target_y_m"
+      ]
+    },
+    "valid_sessions_count": 20,
+    "sample_valid_session": {
+      "session_id": "S001",
+      "pilot_id": "P001",
+      "course": "route_hover_avoid_land",
+      "sample_rate_hz": 10,
+      "duration_sec": 60,
+      "tactical": {
+        "condition": "day",
+        "wind_mps": 2.5,
+        "gps_error_m": 0.4,
+        "video_latency_ms": 80
+      },
+      "records_sample": [
+        {
+          "t": 0.0,
+          "stick_roll": 0.02,
+          "stick_pitch": 0.15,
+          "stick_yaw": 0.0,
+          "roll_deg": 1.2,
+          "pitch_deg": -3.4,
+          "alt_m": 10.0,
+          "x_m": 0.0,
+          "y_m": 0.0,
+          "target_x_m": 0.0,
+          "target_y_m": 0.0
+        },
+        {
+          "t": 0.1,
+          "stick_roll": 0.03,
+          "stick_pitch": 0.18,
+          "stick_yaw": 0.01,
+          "roll_deg": 1.5,
+          "pitch_deg": -4.0,
+          "alt_m": 10.1,
+          "x_m": 0.5,
+          "y_m": 0.0,
+          "target_x_m": 0.5,
+          "target_y_m": 0.0
+        }
+      ]
+    },
+    "injected_error_cases": [
+      {
+        "case_id": "ERR_01",
+        "error_type": "실명형 ID",
+        "invalid_value": {
+          "pilot_id": "홍길동"
+        },
+        "expected_rule": "pilot_id 정규식(^P\\d{3,}$) 위반"
+      },
+      {
+        "case_id": "ERR_02",
+        "error_type": "허용되지 않은 조건",
+        "invalid_value": {
+          "condition": "typhoon"
+        },
+        "expected_rule": "tactical.condition enum(day/night/gust) 위반"
+      },
+      {
+        "case_id": "ERR_03",
+        "error_type": "누락 필드",
+        "invalid_value": {
+          "missing": "video_latency_ms"
+        },
+        "expected_rule": "tactical 필수 필드 누락"
+      },
+      {
+        "case_id": "ERR_04",
+        "error_type": "스틱 범위 초과",
+        "invalid_value": {
+          "stick_roll": 1.45
+        },
+        "expected_rule": "stick_* 범위(-1.0 ~ 1.0) 초과"
+      },
+      {
+        "case_id": "ERR_05",
+        "error_type": "시각 중복",
+        "invalid_value": {
+          "t": [
+            1.2,
+            1.2
+          ]
+        },
+        "expected_rule": "records[].t 단조 증가·중복 금지 위반"
+      }
+    ]
+  }
+}

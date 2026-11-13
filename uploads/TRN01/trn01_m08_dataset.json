@@ -1,0 +1,46 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M08",
+  "mission_title": "100명 조종자 대량 비행로그 배치 분석 스트레스 테스트 및 성능 프로파일링",
+  "description": "100명 조종자 대량 비행로그 배치 분석 스트레스 테스트 및 성능 프로파일링 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "tests/trn01_stress_test.py (필수)",
+    "스트레스 테스트 분석 보고서 (필수)"
+  ],
+  "sample_data": {
+    "stress_scenarios": [
+      {
+        "name": "normal_100",
+        "total_logs": 100,
+        "corrupt_ratio": 0.0,
+        "batch_exception": false
+      },
+      {
+        "name": "cohort_500",
+        "total_logs": 500,
+        "corrupt_ratio": 0.0,
+        "batch_exception": false
+      },
+      {
+        "name": "surge_600",
+        "total_logs": 600,
+        "corrupt_ratio": 0.0,
+        "batch_exception": false
+      },
+      {
+        "name": "corrupt_5pct",
+        "total_logs": 200,
+        "corrupt_ratio": 0.05,
+        "batch_exception": false
+      },
+      {
+        "name": "batch_fallback",
+        "total_logs": 200,
+        "corrupt_ratio": 0.05,
+        "batch_exception": true
+      }
+    ],
+    "invariant_check": "scored_count + quarantined_count == total_logs (loss == 0)"
+  }
+}

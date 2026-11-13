@@ -1,0 +1,61 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M02",
+  "mission_title": "시계열 비행 궤적 데이터 정제 및 이상 조작 노이즈 필터링 전처리 구현",
+  "description": "시계열 비행 궤적 데이터 정제 및 이상 조작 노이즈 필터링 전처리 구현 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/preprocess/trn01_preprocessor.py (필수)",
+    "전처리 전후 데이터셋 (필수)"
+  ],
+  "sample_data": {
+    "preprocessing_config": {
+      "target_hz": 10,
+      "pwm_min": 1000,
+      "pwm_max": 2000,
+      "deadband": 0.03,
+      "hampel_k": {
+        "day": 3.5,
+        "night": 4.0,
+        "gust": 4.5
+      }
+    },
+    "raw_anomalies_sample": [
+      {
+        "t": 1.0,
+        "pwm_roll": 1505,
+        "x_m": 10.2,
+        "y_m": 2.1,
+        "note": "중립 데드밴드 구간"
+      },
+      {
+        "t": 1.0,
+        "pwm_roll": 1505,
+        "x_m": 10.2,
+        "y_m": 2.1,
+        "note": "시각 중복"
+      },
+      {
+        "t": 1.1,
+        "pwm_roll": 1620,
+        "x_m": 88.5,
+        "y_m": 2.2,
+        "note": "GPS 튐(Spike)"
+      },
+      {
+        "t": 1.2,
+        "pwm_roll": null,
+        "x_m": null,
+        "y_m": null,
+        "note": "센서 단절(결측)"
+      }
+    ],
+    "unit_tests": [
+      "T1_timestamp_dedup_sort",
+      "T2_pwm_normalize_deadband",
+      "T3_hampel_gps_spike",
+      "T4_gap_interpolation",
+      "T5_condition_thresholds"
+    ]
+  }
+}

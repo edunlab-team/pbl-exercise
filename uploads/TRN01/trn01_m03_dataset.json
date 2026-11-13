@@ -1,0 +1,46 @@
+{
+  "project_id": "TRN01",
+  "mission_id": "TRN01_M03",
+  "mission_title": "비행 경로 이탈도 및 호버링 안정성 계산 1차 숙련도 채점 Baseline 알고리즘 구현",
+  "description": "비행 경로 이탈도 및 호버링 안정성 계산 1차 숙련도 채점 Baseline 알고리즘 구현 실습용 교육용 가상 데이터셋",
+  "security_notice": "본 파일의 모든 조종자 ID(P001~), 비행로그, 점수는 교육용 가상 자료이며 실제 부대명, 훈련생 성명·군번, 장비 제원은 포함하지 않습니다.",
+  "deliverables": [
+    "src/models/trn01_baseline_model.py (필수)",
+    "기본 추론 결과 보고서 (필수)"
+  ],
+  "sample_data": {
+    "baseline_weights": {
+      "route_rmse": 0.45,
+      "hover_drift": 0.35,
+      "alt_error": 0.2
+    },
+    "grade_cutoffs": {
+      "A": 85,
+      "B": 70,
+      "C": 0
+    },
+    "sample_evaluations": [
+      {
+        "pilot_id": "P001",
+        "condition": "day",
+        "route_rmse_m": 0.8,
+        "hover_drift_m": 0.4,
+        "alt_err_m": 0.3,
+        "baseline_score": 91.2,
+        "baseline_grade": "A",
+        "instructor_grade": "A"
+      },
+      {
+        "pilot_id": "P002",
+        "condition": "gust",
+        "route_rmse_m": 1.9,
+        "hover_drift_m": 1.1,
+        "alt_err_m": 0.8,
+        "baseline_score": 76.5,
+        "baseline_grade": "B",
+        "instructor_grade": "C",
+        "note": "돌발 장애물 회피 실패 미반영"
+      }
+    ]
+  }
+}
