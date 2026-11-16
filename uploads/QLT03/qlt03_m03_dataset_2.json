@@ -1,0 +1,407 @@
+{
+  "task": "QLT03",
+  "mission": 3,
+  "missionId": "QLT03_m03",
+  "title": "외관 결함 유무 1차 판별 Baseline 비전 모델 구현",
+  "note": "미션 학습자료 안내용 JSON입니다. 미션에서 쓰는 교육용 가상 자료의 위치·요약을 담았습니다. 전체 자료는 프로젝트 첨부 자료의 학습자배포 ZIP에 있습니다.",
+  "sources": [
+    {
+      "path": "src/m03.py",
+      "bytes": 16221,
+      "sha256": "c6b583717243849ad49c20ad40a6f790ca1f06dc9cd478fb40ae070fecead59d",
+      "preview_lines": [
+        "\"\"\"밝기 히스토그램과 평균 색만 쓰는 외관 결함 유무 1차 판별 Baseline 비전 모델(로지스틱 회귀)을 구현해 성능과 한계(작은 균열·조명 의존)를 확인하고, 탐색적 분석(EDA) 차트 8종·상관분석(p-value)·정비 공수 파레토(ABC)·제원 기록과의 불일치 분석으로 핵심 관리 대상을 찾는다.\"\"\"",
+        "import numpy as np",
+        "import pandas as pd",
+        "import matplotlib.pyplot as plt",
+        "from scipy import stats",
+        "from sklearn.linear_model import LogisticRegression",
+        "from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score",
+        "from sklearn.preprocessing import StandardScaler",
+        "from sklearn.pipeline import make_pipeline",
+        "",
+        "# ---------------------------------------------------------------------------",
+        "# [교육용가상자료] 장비 외관 사진 생성기 (실제 장비·조직·위치 사진이 아니라 난수로 그린 64x64 합성 이미지)",
+        "# 도장된 금속 표면에 균열(crack)·부식(corrosion)·파손(damage)·누유(leak)를 그리고, 조명 편차와 진흙(mud) 오염을 섞는다.",
+        "# 이미지와 함께 장비 관리 기록(제원 요약)과 정답 결함 마스크·손상도·정비 등급을 만든다.",
+        "# ---------------------------------------------------------------------------",
+        "from scipy import ndimage as ndi",
+        "",
+        "SZ = 64",
+        "CLASSES = [\"none\", \"crack\", \"corrosion\", \"damage\", \"leak\"]",
+        "KO_CLS = {\"none\": \"결함 없음\", \"crack\": \"균열\", \"corrosion\": \"부식\", \"damage\": \"파손\", \"leak\": \"누유\"}"
+      ]
+    },
+    {
+      "path": "data/samples/교육용_미리보기.json",
+      "bytes": 8059,
+      "sha256": "d72ce71da222db28cfee5d901c3d93240932b5dc7888d5b9a7b89c3585f3440d",
+      "preview": {
+        "label": "[교육용가상자료]",
+        "source": "src/m01.py",
+        "source_sha256": "848f99f5a16562bd5b2033e7ecf9c0bdd30b81f0a8b84663930beb5eb05dbc2e",
+        "note": "미션 1 기본 생성기의 미리보기. 전체 데이터는 코드로 생성한다. 실제 인물·조직·장비 자료 아님.",
+        "records": [
+          {
+            "photo": {
+              "img_id": "IMG000000",
+              "shot_day": 46,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.87,
+              "mud_ratio": 0.04
+            },
+            "spec": {
+              "equip_id": "VX-8405-9536",
+              "equip_type": "vehicle",
+              "mfg_year": 2007,
+              "op_hours": 3868.0,
+              "env": "coastal",
+              "reg_grade": 3
+            },
+            "label": {
+              "defect_class": "crack",
+              "bbox_x": 12,
+              "bbox_y": 19,
+              "bbox_w": 18,
+              "bbox_h": 7,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.108,
+              "depth_mm": 2.0,
+              "damage_idx": 78.8,
+              "grade": 2,
+              "confidence": 0.65
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000001",
+              "shot_day": 11,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.29,
+              "mud_ratio": 0.12
+            },
+            "spec": {
+              "equip_id": "VX-5081-9133",
+              "equip_type": "vehicle",
+              "mfg_year": 2012,
+              "op_hours": 6778.0,
+              "env": "coastal",
+              "reg_grade": 1
+            },
+            "label": {
+              "defect_class": "crack",
+              "bbox_x": 14,
+              "bbox_y": 14,
+              "bbox_w": 7,
+              "bbox_h": 29,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.145,
+              "depth_mm": 3.2,
+              "damage_idx": 27.7,
+              "grade": 1,
+              "confidence": 0.58
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000002",
+              "shot_day": 87,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.56,
+              "mud_ratio": 0.03
+            },
+            "spec": {
+              "equip_id": "VX-4820-6610",
+              "equip_type": "generator",
+              "mfg_year": 2019,
+              "op_hours": 5556.0,
+              "env": "inland",
+              "reg_grade": 2
+            },
+            "label": {
+              "defect_class": "corrosion",
+              "bbox_x": 1,
+              "bbox_y": 21,
+              "bbox_w": 18,
+              "bbox_h": 26,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.128,
+              "depth_mm": 5.1,
+              "damage_idx": 59.3,
+              "grade": 1,
+              "confidence": 0.63
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000003",
+              "shot_day": 31,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.56,
+              "mud_ratio": 0.15
+            },
+            "spec": {
+              "equip_id": "VX-8558-9827",
+              "equip_type": "trailer",
+              "mfg_year": 2001,
+              "op_hours": 7395.0,
+              "env": "coastal",
+              "reg_grade": 1
+            },
+            "label": {
+              "defect_class": "damage",
+              "bbox_x": 22,
+              "bbox_y": 23,
+              "bbox_w": 26,
+              "bbox_h": 9,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.038,
+              "depth_mm": 0.5,
+              "damage_idx": 85.5,
+              "grade": 2,
+              "confidence": 0.93
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000004",
+              "shot_day": 78,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.53,
+              "mud_ratio": 0.08
+            },
+            "spec": {
+              "equip_id": "VX-9274-1063",
+              "equip_type": "trailer",
+              "mfg_year": 2016,
+              "op_hours": 6507.0,
+              "env": "coastal",
+              "reg_grade": 3
+            },
+            "label": {
+              "defect_class": "leak",
+              "bbox_x": 8,
+              "bbox_y": 14,
+              "bbox_w": 10,
+              "bbox_h": 22,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.193,
+              "depth_mm": 0.9,
+              "damage_idx": 48.2,
+              "grade": 3,
+              "confidence": 0.95
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000005",
+              "shot_day": 71,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.61,
+              "mud_ratio": 0.01
+            },
+            "spec": {
+              "equip_id": "VX-4804-5407",
+              "equip_type": "comm",
+              "mfg_year": 2011,
+              "op_hours": 7459.0,
+              "env": "inland",
+              "reg_grade": 2
+            },
+            "label": {
+              "defect_class": "leak",
+              "bbox_x": 2,
+              "bbox_y": 19,
+              "bbox_w": 11,
+              "bbox_h": 11,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.042,
+              "depth_mm": 5.0,
+              "damage_idx": 6.3,
+              "grade": 2,
+              "confidence": 0.91
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000006",
+              "shot_day": 14,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.46,
+              "mud_ratio": 0.1
+            },
+            "spec": {
+              "equip_id": "VX-1283-7221",
+              "equip_type": "comm",
+              "mfg_year": 2004,
+              "op_hours": 3627.0,
+              "env": "inland",
+              "reg_grade": 1
+            },
+            "label": {
+              "defect_class": "damage",
+              "bbox_x": 7,
+              "bbox_y": 16,
+              "bbox_w": 15,
+              "bbox_h": 20,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.076,
+              "depth_mm": 4.4,
+              "damage_idx": 65.4,
+              "grade": 2,
+              "confidence": 0.72
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000007",
+              "shot_day": 79,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.64,
+              "mud_ratio": 0.24
+            },
+            "spec": {
+              "equip_id": "VX-8805-3412",
+              "equip_type": "generator",
+              "mfg_year": 2024,
+              "op_hours": 1847.0,
+              "env": "inland",
+              "reg_grade": 2
+            },
+            "label": {
+              "defect_class": "leak",
+              "bbox_x": 2,
+              "bbox_y": 7,
+              "bbox_w": 8,
+              "bbox_h": 11,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.052,
+              "depth_mm": 4.6,
+              "damage_idx": 69.8,
+              "grade": 1,
+              "confidence": 0.56
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000008",
+              "shot_day": 33,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.49,
+              "mud_ratio": 0.2
+            },
+            "spec": {
+              "equip_id": "VX-6148-5102",
+              "equip_type": "vehicle",
+              "mfg_year": 2014,
+              "op_hours": 7573.0,
+              "env": "inland",
+              "reg_grade": 2
+            },
+            "label": {
+              "defect_class": "corrosion",
+              "bbox_x": 10,
+              "bbox_y": 8,
+              "bbox_w": 16,
+              "bbox_h": 19,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.041,
+              "depth_mm": 1.7,
+              "damage_idx": 31.4,
+              "grade": 1,
+              "confidence": 0.66
+            }
+          },
+          {
+            "photo": {
+              "img_id": "IMG000009",
+              "shot_day": 82,
+              "width": 64,
+              "height": 64,
+              "channels": 3,
+              "brightness": 0.88,
+              "mud_ratio": 0.23
+            },
+            "spec": {
+              "equip_id": "VX-6189-2417",
+              "equip_type": "trailer",
+              "mfg_year": 2017,
+              "op_hours": 5413.0,
+              "env": "inland",
+              "reg_grade": 2
+            },
+            "label": {
+              "defect_class": "leak",
+              "bbox_x": 29,
+              "bbox_y": 20,
+              "bbox_w": 13,
+              "bbox_h": 17,
+              "emergency": false
+            },
+            "result": {
+              "area_frac": 0.098,
+              "depth_mm": 1.3,
+              "damage_idx": 13.3,
+              "grade": 2,
+              "confidence": 0.75
+            }
+          }
+        ],
+        "label_rules": {
+          "crack": "선형 어두운 균열, 길이 10px 이상",
+          "corrosion": "붉은 갈색 면, 면적 12px 이상",
+          "damage": "함몰·파단 윤곽(밝은 테두리 포함)",
+          "leak": "어둡고 번지는 액체 자국(아래 방향 흐름)",
+          "none": "결함 없음(무해한 얼룩·긁힘은 결함으로 라벨하지 않음)"
+        }
+      }
+    }
+  ],
+  "data_tree": [
+    "data/samples/교육용_미리보기.json"
+  ],
+  "paths_mentioned_in_cms_materialText": [
+    "03_참고자료/처음_시작할_때.md와",
+    "docs/원문_제출경로_연결표.md를",
+    "reports/m03_record.md에",
+    "reports/m03_record.md와",
+    "src/m03.py",
+    "work/m03_challenge.py(설명형"
+  ]
+}
